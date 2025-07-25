@@ -1,0 +1,72 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "footer": {
+      "type": "page-footer",
+      "blocks": {
+        "menu_TyWCqJ": {
+          "type": "menu",
+          "settings": {
+            "heading_links": "Categories",
+            "links": "categories"
+          }
+        },
+        "menu_DzCNd6": {
+          "type": "menu",
+          "settings": {
+            "heading_links": "Customer Service",
+            "links": "customer-service"
+          }
+        },
+        "menu_9YUhCX": {
+          "type": "menu",
+          "settings": {
+            "heading_links": "Information",
+            "links": "information"
+          }
+        },
+        "text_DY7pny": {
+          "type": "text",
+          "settings": {
+            "heading_text": "About Us",
+            "text": "<p>Wonder Beauty is a modern cosmetics brand inspired by the power of simplicity and nature. Visit our About page to learn more about the products featured in this demo and the story behind the brand.  <a href=\"/pages/contact\" title=\"Contact\">More Info</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "menu_TyWCqJ",
+        "menu_DzCNd6",
+        "menu_9YUhCX",
+        "text_DY7pny"
+      ],
+      "settings": {
+        "show-social-media-icons": true,
+        "show_country_selector": true,
+        "show_country_selector_label": true,
+        "show_country_selector_flag": true,
+        "show_language_selector": false,
+        "enable_follow_on_shop": true,
+        "show-payments-icons": true,
+        "show-copyright": false,
+        "text": "© 2025 Wonder Fashion Demo.  Powered by Shopify.",
+
+        "big-logo-width": 100,
+        "margin-top": 56,
+        "margin-bottom": 8
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

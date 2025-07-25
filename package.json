@@ -1,0 +1,16 @@
+{
+  "name": "drinkly",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "init": "yarn run logout && yarn run dev",
+    "dev": "shopify theme dev -s jszbmh-hw.myshopify.com",
+    "pull": "shopify theme pull && shopify theme dev",
+    "logout": "shopify auth logout",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

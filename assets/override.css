@@ -1,0 +1,12 @@
+.form__fieldset {
+  flex-direction: column!important;
+  gap: 8px!important;
+  margin-bottom: 1.5rem!important;
+}
+
+.component-counter-replica .drawer__list__item input {
+  display: block;
+  position: unset;
+  opacity: 1;
+  pointer-events: auto;
+}

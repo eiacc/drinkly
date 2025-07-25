@@ -1,0 +1,34 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Production build
+dist/
+build/
+
+# Optional npm cache directory
+.npm/
+
+# dotenv environment files
+.env
+.env.*.local
+
+# TypeScript cache
+*.tsbuildinfo
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+.shopify
