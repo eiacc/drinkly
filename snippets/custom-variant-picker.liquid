@@ -65,7 +65,7 @@
     {% endif %}
 
     {%- unless product.has_only_default_variant -%}
-      <variant-options
+      <custom-variant-options
         class="no-js-hidden wt-variant-options"
         data-section="{{ section.id }}"
         data-url="{{ product.url }}"
@@ -102,9 +102,9 @@
             endif
           -%}
         
-          <div class="js wt-product__option">
+          <div class="js wt-product__option" data-option="{{ picker_type }}">
             <div class="wt-product__option__title {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}">
-              <span class="label">{{ option.name }}: {{ option.selected_value }}</span> <strong class="value"></strong>
+              <span class="label">{{ option.name }}: </span> <strong class="value"></strong>
             </div>
 
             {% if options_body_class == 'drawer' %}
@@ -117,7 +117,7 @@
               {%- endfor -%}
 
               <div class="drawer__list-overlay hidden"></div>
-              <variant-dropdown>
+              <custom-variant-dropdown>
                 <button
                   aria-label="{{ 'aria-label.main-product-select-option' | t }}"
                   class="
@@ -136,8 +136,6 @@
                 </button>
             {% endif %}
 
-            {{ option | json }}
-            {{ picker_type }}
             <div class="wt-product__option__body wt-product__option__body--{{ options_body_class }}{% if options_body_class == 'drawer' %} {{ option.name | downcase }} {% endif %}">
               {% if options_body_class == 'drawer' %}
                 <div class="drawer__list-nav">
@@ -152,28 +150,29 @@
                   <ul class="{{ options_container_class }}__list {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}">
                     {%- for value in option.values -%}
                       <li
-                        class="{{ options_container_class }}__list__item"
+                        class="{{ options_container_class }}__list__item {{ options_container_class }}__list__item--{{ picker_type }}"
                       >
-                        <input
-                          type="radio"
-                          tabindex="-1"
-                          id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                          name="{{ option.name }}"
-                          value="{{ value | escape }}"
-                          form="{{ product_form_id }}"
-                          {% if selected_variant and option.selected_value == value %}
-                            checked
-                          {% endif %}
-                        >
+                        {%- unless picker_type == 'dropdown' -%}
+                          <input
+                            type="radio"
+                            tabindex="-1"
+                            id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                            name="{{ option.name }}"
+                            value="{{ value | escape }}"
+                            form="{{ product_form_id }}"
+                            {% if selected_variant and option.selected_value == value %}
+                              checked
+                            {% endif %}
+                          >
+                        {%- endunless -%}
+
                         {%- case picker_type -%}
                           {%- when 'dropdown' -%}
-                            <label
-                              tabindex="0"
-                              class="{{ options_container_class }}__list__link"
-                              for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                            >
-                              <span>{{ value }}</span>
-                            </label>
+                            <div class="{{ options_container_class }}__list__item-image" data-product-sub-id="{{ value | downcase | replace: ' ', '-' }}">
+                              {{ 'lifestyle-1' | placeholder_svg_tag }}
+                            </div>
+                            <span class="{{ options_container_class }}__list__item-title">{{ value }}</span>
+                            {%- render 'custom-component-counter', value: value -%}
                           {%- when 'button' -%}
                             <label
                               tabindex="0"
@@ -217,14 +216,14 @@
               </div>
             </div>
             {% if options_body_class == 'drawer' %}
-              </variant-dropdown>
+              </custom-variant-dropdown>
             {% endif %}
           </div>
         {%- endfor -%}
         <script type="application/json">
           {{ product.variants | json }}
         </script>
-      </variant-options>
+      </custom-variant-options>
     {%- endunless -%}
   </div>
   

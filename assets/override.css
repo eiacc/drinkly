@@ -78,3 +78,47 @@
 .inline-block {
   display: inline-block;
 }
+
+/* custom variant picker */
+.drawer__list {
+  gap: .6rem;
+}
+
+.drawer__list__item--dropdown {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+  align-items: center;  
+}
+
+.drawer__list__item-image {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  width: 3rem;
+}
+
+.drawer__list__item--dropdown .drawer__list__item-title {
+  flex: 1;
+}
+
+.drawer__list__item--dropdown input:checked + label,
+.drawer__list__item--dropdown input:checked + label::before {
+  background-color: transparent!important;
+  height: auto;
+}
+
+.drawer__list__item--dropdown label::after {
+  opacity: 0;
+}
+
+.drawer__list__item--dropdown .counter-wrapper {
+  width: max-content;
+}
+
+.drawer__list__item--dropdown input {
+  display: block!important;
+  position: unset!important;
+  pointer-events: auto!important;
+  opacity: 1!important;
+}

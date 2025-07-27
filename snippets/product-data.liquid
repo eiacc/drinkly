@@ -4,8 +4,10 @@
 {
   "variants": [
     {% for variant in product.variants %}
+      {%- assign sub_id = variant.options | join: '-' | split: ' ' | join: '-' | downcase -%}
       {
         "id": {{ variant.id | json }},
+        "sub_id": {{ sub_id | json }},
         "title": {{ variant.title | json }},
         "option1": {{ variant.option1 | json }},
         "option2": {{ variant.option2 | json }},
@@ -33,7 +35,11 @@
 }
 </script>
 <script>const productData = JSON.parse(document.getElementById('ProductDataJSON').textContent);</script>
+<script src="{{ 'custom-product-form.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'custom-metaproperty.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'custom-variant-options.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'custom-variant-picker.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'custom-variant-dropdown.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'custom-variant-randomizer.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'custom-quantity-counter.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'custom-sticky-buy-button.js' | asset_url }}" defer="defer"></script>
