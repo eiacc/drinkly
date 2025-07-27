@@ -1,4 +1,4 @@
-{% comment %} <style>
+<style>
   .wt-product__options {
       --section-gap-top: {{ block.settings.margin-top }}px;
       --section-gap-bottom: {{ block.settings.margin-bottom }}px;
@@ -12,8 +12,9 @@
       height: var(--custom-size, auto);
       width: fit-content;
   }
-</style> {% endcomment %}
-<div
+</style>
+
+<custom-variant-picker
   data-block-id="{{ block.id }}"
   style="
     {% if block.settings.radius == 'custom' %}--custom-border-radius: {{ block.settings.border_radius }}px;{% endif %}
@@ -72,37 +73,39 @@
         {{ block.shopify_attributes }}
       >
         {%- for option in product.options_with_values -%}
-          {% assign swatch_option_key = 'option' | append: forloop.index %}
+          {%- liquid
+            assign options_container_class = 'f-thumb'
+            assign option_name_downcase = option.name | downcase
+            assign options_body_class = 'tiles'
+            assign picker_type = block.settings.picker_type
+          
+            if variant_picture_swatch_names contains option_name_downcase
+              assign options_container_class = 'f-thumb'
+              assign options_body_class = 'thumbs'
+              assign picker_type = 'variant_picture'
+            elsif color_swatch_names contains option_name_downcase
+              assign options_container_class = 'f-swatch'
+              assign options_body_class = 'swatches'
+              assign picker_type = 'color_swatch'
+            elsif dropdown_swatch_names contains option_name_downcase
+              assign options_container_class = 'drawer'
+              assign options_body_class = 'drawer'
+              assign picker_type = 'dropdown'
+            else
+              case picker_type
+                when 'dropdown'
+                  assign options_container_class = 'drawer'
+                  assign options_body_class = 'drawer'
+                when 'button'
+                  assign options_container_class = 'f-button'
+              endcase
+            endif
+          -%}
+        
           <div class="js wt-product__option">
             <div class="wt-product__option__title {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}">
-              <span class="label">{{ option.name }}: </span> <strong class="value"></strong>
+              <span class="label">{{ option.name }}: {{ option.selected_value }}</span> <strong class="value"></strong>
             </div>
-
-            {% assign options_body_class = 'tiles' %}
-            {% assign option_name_downcase = option.name | downcase %}
-            {% if variant_picture_swatch_names contains option_name_downcase %}
-              {% assign options_container_class = 'f-thumb' %}
-              {% assign options_body_class = 'thumbs' %}
-              {% assign picker_type = 'variant_picture' %}
-            {% elsif color_swatch_names contains option_name_downcase %}
-              {% assign options_container_class = 'f-swatch' %}
-              {% assign options_body_class = 'swatches' %}
-              {% assign picker_type = 'color_swatch' %}
-            {% elsif dropdown_swatch_names contains option_name_downcase %}
-              {% assign options_body_class = 'drawer' %}
-              {% assign options_container_class = 'drawer' %}
-              {% assign picker_type = 'dropdown' %}
-            {% else %}
-              {% assign picker_type = block.settings.picker_type %}
-              {%- case block.settings.picker_type -%}
-                {%- when 'dropdown' -%}
-                  {% assign options_body_class = 'drawer' %}
-                  {% assign options_container_class = 'drawer' %}
-                  {% assign picker_type = 'dropdown' %}
-                {%- when 'button' -%}
-                  {% assign options_container_class = 'f-button' %}
-              {%- endcase -%}
-            {% endif %}
 
             {% if options_body_class == 'drawer' %}
               {% assign current_value = null %}
@@ -133,6 +136,8 @@
                 </button>
             {% endif %}
 
+            {{ option | json }}
+            {{ picker_type }}
             <div class="wt-product__option__body wt-product__option__body--{{ options_body_class }}{% if options_body_class == 'drawer' %} {{ option.name | downcase }} {% endif %}">
               {% if options_body_class == 'drawer' %}
                 <div class="drawer__list-nav">
@@ -222,4 +227,33 @@
       </variant-options>
     {%- endunless -%}
   </div>
-</div>
+  
+  <button
+    aria-label="
+      {%- if product.selected_or_first_available_variant.available -%}
+        {{ 'products.product.add_to_cart' | t }}
+      {%- else -%}
+        {{ 'products.product.sold_out' | t }}
+      {%- endif -%}
+    "
+    id="ProductSubmitButton-{{ section.id }}"
+    type="submit"
+    name="add"
+    class="inline-block mt-24 js-add-to-cart product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
+    {% if disable_button %}
+      disabled
+    {% endif %}
+  >
+    {% if settings['enable-bag-icon'] %}
+      {% render 'icons', id: 'bag' %}
+    {% endif %}
+    <span>
+      {%- if product.selected_or_first_available_variant.available -%}
+        {{ 'products.product.add_to_cart' | t }}
+      {%- else -%}
+        {{ 'products.product.sold_out' | t }}
+      {%- endif -%}
+    </span>
+    {% render 'button-loading-indicator' %}
+  </button>
+</custom-variant-picker>

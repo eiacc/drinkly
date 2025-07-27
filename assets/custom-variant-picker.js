@@ -1,0 +1,1 @@
+console.log('custom-variant-picker.js');

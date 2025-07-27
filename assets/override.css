@@ -1,3 +1,63 @@
+.wt-product__price__override * {
+  margin: 0!important;
+}
+
+.wt-product__price__override p {
+  font-size: 1.4rem;
+}
+
+.f-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.f-grid .f-button__list__link::before,
+.f-grid .counter-wrapper {
+  border: none;
+  border-radius: unset;
+}
+
+.f-grid .f-button__list__item {
+  border: 1px solid var(--color-border);
+  min-height: 65px;
+  place-items: center;
+  display: flex;
+  padding: 8px 12px;
+}
+
+.wt-product__option__body__cocktail__image svg {
+  width: 100%;
+  height: 100%;
+}
+
+.wt-product__option__body__cocktail__image {
+  aspect-ratio: 1;
+  width: 100%;
+  max-width: 30px;
+  display: grid;
+  place-items: center;
+}
+
+.flex {
+  display: flex
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.component-counter-replica input {
+  display: block!important;
+  position: unset!important;
+  opacity: 1!important;
+  pointer-events: auto!important;
+}
+
 .form__fieldset {
   flex-direction: column!important;
   gap: 8px!important;
@@ -9,4 +69,12 @@
   position: unset;
   opacity: 1;
   pointer-events: auto;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.inline-block {
+  display: inline-block;
 }

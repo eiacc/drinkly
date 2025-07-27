@@ -1,0 +1,9 @@
+<button
+  aria-label="{{ 'products.product.add_to_cart' | t }}"
+  class="js-add-to-cart wt-product__sticky-buy__button button button--full-width button--secondary"
+>
+  {% if settings['enable-bag-icon'] %}
+    {% render 'icons', id: 'bag' %}
+  {% endif %}
+  <span>{{ 'products.product.add_to_cart' | t }}</span>
+</button>

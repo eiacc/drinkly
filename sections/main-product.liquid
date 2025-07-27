@@ -302,6 +302,22 @@
   >
 {% endif %}
 
+{%- liquid
+  assign has_custom_variant_picker = false
+  for block in section.blocks
+    if block.type == 'custom_variant_picker'
+      assign has_custom_variant_picker = true
+      break
+    endif
+  endfor
+
+  if has_custom_variant_picker
+    render 'product-data', product: product
+  endif
+
+  echo '<h1>' | append: has_custom_variant_picker | append: '</h1>'
+-%}
+
 <section
   data-section-id="{{ section.id }}"
   data-product-handle="{{ product.handle }}"
@@ -1307,6 +1323,8 @@
                 {{ block.settings.content }}
                 {{ block.settings.page.content }}
               </div>
+            {%- when 'custom_variant_picker' -%}
+              {% render 'custom-variant-picker', product: product, block: block %}
             {% when 'upsell' %}
               <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
               <div
@@ -1371,7 +1389,9 @@
                 {%- endfor -%}
               </div>
             {%- when 'variant_picker' -%}
-              {%- render 'variant-picker', product: product, block: block -%}
+              {%- unless has_custom_variant_picker -%}
+                {%- render 'variant-picker', product: product, block: block -%}
+              {%- endunless -%}
 
             {%- when 'image' %}
               <div
@@ -1471,92 +1491,94 @@
               {% endif %}
 
             {%- when 'buy_buttons' -%}
-              <div
-                class="wt-product__add-to-cart_form main-product__buy-buttons--container {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %} {% if section.settings.desktop-media-size == 'large' %}large{% endif %}"
-                style="display:flex;justify-content:center;align-items:center"
-                data-block-id="{{ block.id }}"
-              >
-                {% assign gift_card_recipient_feature_active = false %}
-                {% if block.settings.show_gift_card_recipient and product.gift_card? %}
-                  {% assign gift_card_recipient_feature_active = true %}
-                {% endif %}
-                <product-form
-                  class="wt-product__add-to-cart"
-                  data-hide-errors="{{ gift_card_recipient_feature_active }}"
+              {%- if has_custom_variant_picker == false -%}
+                <div
+                  class="wt-product__add-to-cart_form main-product__buy-buttons--container {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %} {% if section.settings.desktop-media-size == 'large' %}large{% endif %}"
+                  style="display:flex;justify-content:center;align-items:center"
+                  data-block-id="{{ block.id }}"
                 >
-                  <div class="product-form__error-message-wrapper" role="alert" hidden>
-                    {% render 'icon-info' %}
-                    <span class="product-form__error-message"></span>
-                  </div>
-                  {%- form 'product',
-                    product,
-                    id: product_form_id,
-                    class: 'wt-product__add-to-cart_form form',
-                    novalidate: 'novalidate',
-                    data-type: 'add-to-cart-form'
-                  -%}
-                    {% if block.settings.show_gift_card_recipient and product.gift_card? %}
-                      {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
-                    {% endif %}
-                    <div class="wt-product__add-to-cart_form--wrapper">
-                      {% if block.settings.show_qty_selector %}
-                        {% render 'component-counter' %}
-                      {% endif %}
-
-                      {% assign disable_button = false %}
-                      {% if product.has_only_default_variant == false and product.selected_variant.available == false %}
-                        {% assign disable_button = true %}
-                      {% elsif product.has_only_default_variant == false and selected_variant == null %}
-                        {% assign disable_button = true %}
-                      {% elsif product.has_only_default_variant == true and product.available == false %}
-                        {% assign disable_button = true %}
-                      {% elsif product.selected_or_first_available_variant.available == false %}
-                        {% assign disable_button = true %}
-                      {% endif %}
-
-                      <input
-                        type="hidden"
-                        name="id"
-                        value="{%- if enabled_preselect and product.has_only_default_variant -%}{{product.selected_or_first_available_variant.id}}{%-elsif enabled_preselect -%}{{ selected_variant.id }}{%- else -%}{{ product.selected_or_first_available_variant.id }}{%- endif -%}"
-                      >
-                      <button
-                        aria-label="
-                          {%- if product.selected_or_first_available_variant.available -%}
-                            {{ 'products.product.add_to_cart' | t }}
-                          {%- else -%}
-                            {{ 'products.product.sold_out' | t }}
-                          {%- endif -%}
-                        "
-                        id="ProductSubmitButton-{{ section.id }}"
-                        type="submit"
-                        name="add"
-                        class="js-add-to-cart product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
-                        {% if disable_button %}
-                          disabled
-                        {% endif %}
-                      >
-                        {% if settings['enable-bag-icon'] %}
-                          {% render 'icons', id: 'bag' %}
-                        {% endif %}
-                        <span>
-                          {%- if product.selected_or_first_available_variant.available -%}
-                            {{ 'products.product.add_to_cart' | t }}
-                          {%- else -%}
-                            {{ 'products.product.sold_out' | t }}
-                          {%- endif -%}
-                        </span>
-                        {% render 'button-loading-indicator' %}
-                      </button>
+                  {% assign gift_card_recipient_feature_active = false %}
+                  {% if block.settings.show_gift_card_recipient and product.gift_card? %}
+                    {% assign gift_card_recipient_feature_active = true %}
+                  {% endif %}
+                  <product-form
+                    class="wt-product__add-to-cart"
+                    data-hide-errors="{{ gift_card_recipient_feature_active }}"
+                  >
+                    <div class="product-form__error-message-wrapper" role="alert" hidden>
+                      {% render 'icon-info' %}
+                      <span class="product-form__error-message"></span>
                     </div>
-                    {% if block.settings.show_dynamic_checkout and product.gift_card? != true %}
-                      {{ form | payment_button }}
-                    {% endif %}
-                  {%- endform -%}
-                  <div class="product-form__error-message-wrapper">
-                    <p class="product-form__error-message"></p>
-                  </div>
-                </product-form>
-              </div>
+                    {%- form 'product',
+                      product,
+                      id: product_form_id,
+                      class: 'wt-product__add-to-cart_form form',
+                      novalidate: 'novalidate',
+                      data-type: 'add-to-cart-form'
+                    -%}
+                      {% if block.settings.show_gift_card_recipient and product.gift_card? %}
+                        {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
+                      {% endif %}
+                      <div class="wt-product__add-to-cart_form--wrapper">
+                        {% if block.settings.show_qty_selector %}
+                          {% render 'component-counter' %}
+                        {% endif %}
+
+                        {% assign disable_button = false %}
+                        {% if product.has_only_default_variant == false and product.selected_variant.available == false %}
+                          {% assign disable_button = true %}
+                        {% elsif product.has_only_default_variant == false and selected_variant == null %}
+                          {% assign disable_button = true %}
+                        {% elsif product.has_only_default_variant == true and product.available == false %}
+                          {% assign disable_button = true %}
+                        {% elsif product.selected_or_first_available_variant.available == false %}
+                          {% assign disable_button = true %}
+                        {% endif %}
+
+                        <input
+                          type="hidden"
+                          name="id"
+                          value="{%- if enabled_preselect and product.has_only_default_variant -%}{{product.selected_or_first_available_variant.id}}{%-elsif enabled_preselect -%}{{ selected_variant.id }}{%- else -%}{{ product.selected_or_first_available_variant.id }}{%- endif -%}"
+                        >
+                        <button
+                          aria-label="
+                            {%- if product.selected_or_first_available_variant.available -%}
+                              {{ 'products.product.add_to_cart' | t }}
+                            {%- else -%}
+                              {{ 'products.product.sold_out' | t }}
+                            {%- endif -%}
+                          "
+                          id="ProductSubmitButton-{{ section.id }}"
+                          type="submit"
+                          name="add"
+                          class="js-add-to-cart product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
+                          {% if disable_button %}
+                            disabled
+                          {% endif %}
+                        >
+                          {% if settings['enable-bag-icon'] %}
+                            {% render 'icons', id: 'bag' %}
+                          {% endif %}
+                          <span>
+                            {%- if product.selected_or_first_available_variant.available -%}
+                              {{ 'products.product.add_to_cart' | t }}
+                            {%- else -%}
+                              {{ 'products.product.sold_out' | t }}
+                            {%- endif -%}
+                          </span>
+                          {% render 'button-loading-indicator' %}
+                        </button>
+                      </div>
+                      {% if block.settings.show_dynamic_checkout and product.gift_card? != true %}
+                        {{ form | payment_button }}
+                      {% endif %}
+                    {%- endform -%}
+                    <div class="product-form__error-message-wrapper">
+                      <p class="product-form__error-message"></p>
+                    </div>
+                  </product-form>
+                </div>
+              {%- endif -%}
 
             {%- when 'pickup-availability' -%}
               {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
@@ -2036,18 +2058,14 @@
       </div>
     </section>
 
-    {% if section.settings.enable_sticky_buy_button %}
+    {% if section.settings.enable_sticky_buy_button and has_custom_variant_picker == false %}
       <sticky-buy-button class="wt-product__sticky-buy">
-        <button
-          aria-label="{{ 'products.product.add_to_cart' | t }}"
-          class="js-add-to-cart wt-product__sticky-buy__button button button--full-width button--secondary"
-        >
-          {% if settings['enable-bag-icon'] %}
-            {% render 'icons', id: 'bag' %}
-          {% endif %}
-          <span>{{ 'products.product.add_to_cart' | t }}</span>
-        </button>
+        {%- render 'sticky-buy-button' -%}
       </sticky-buy-button>
+    {%- else -%}
+      <custom-sticky-buy-button class="wt-product__sticky-buy">
+        {%- render 'sticky-buy-button' -%}
+      </custom-sticky-buy-button>
     {% endif %}
   </div>
 </section>
@@ -2315,6 +2333,51 @@
           "type": "text",
           "id": "placeholder",
           "label": "Placeholder"
+        }
+      ]
+    },
+    {
+      "type": "custom_variant_picker",
+      "name": "Custom variant picker",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "picker_type",
+          "options": [
+            {
+              "value": "button",
+              "label": "Button"
+            },
+            {
+              "value": "swatch",
+              "label": "Swatch / Image"
+            }
+          ],
+          "default": "swatch",
+          "label": "Input type",
+          "info": "Select the type of input to display"
+        },
+        {
+          "type": "textarea",
+          "id": "color_swatch_names",
+          "label": "Options listed as color swatches",
+          "placeholder": "Color\nFront Color\nCover Color",
+          "info": "Overrides General swatches settings. Name of options that will be displayed as Color swatch (Each option in new line)."
+        },
+        {
+          "type": "textarea",
+          "id": "variant_picture_swatch_names",
+          "label": "Options listed as variant images",
+          "placeholder": "Color\nFront Color\nCover Color",
+          "info": "Overrides General swatches settings.  Name of options that will be displayed as Variant picture (Each option in new line)."
+        },
+        {
+          "type": "textarea",
+          "id": "dropdown_swatch_names",
+          "label": "Options listed as dropdown",
+          "placeholder": "Color\nFront Color\nCover Color",
+          "info": "Name of options that will be displayed as dropdown (Each option in new line)."
         }
       ]
     },
