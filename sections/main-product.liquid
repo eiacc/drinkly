@@ -898,7 +898,7 @@
                 </label>
                 <input
                   type="text"
-                  name="properties[{{ block.settings.property | escape }}]"
+                  name="properties[{{ block.settings.label | escape }}]"
                   id="PropertyField-{{ section.id }}-{{ block.id }}"
                   class="form__field__input"
                   placeholder="{{ block.settings.placeholder }}"
@@ -2323,11 +2323,6 @@
       "type": "metaproperty",
       "name": "Meta property",
       "settings": [
-        {
-          "type": "text", 
-          "id": "property",
-          "label": "Property"
-        },
         {
           "type": "text",
           "id": "label",

@@ -8,6 +8,8 @@ if (!customElements.get("custom-product-form")) {
         this.option_size = this.dataset.optionSize;
         this.metaproperties = [];
         this.variant_images = [];
+        this.cart = document.querySelector("cart-drawer");
+        this.cart_button = null
       }
 
       connectedCallback() {
@@ -20,6 +22,7 @@ if (!customElements.get("custom-product-form")) {
 
       init() {
         const variants = Array.isArray(productData?.variants) ? productData.variants : [];
+        this.cart_button = document.getElementById("cart-icon-bubble");
       
         this.variant_image_wrappers.forEach(wrapper => {
           const identifier = wrapper.dataset.productSubId;
@@ -43,13 +46,14 @@ if (!customElements.get("custom-product-form")) {
         const loader = this.form_button.querySelector('.loading-overlay__spinner');
 
         if (state) {
+
           loader.classList.remove('hidden');
           span.classList.add('hidden');
-          this.form_button.setAttribute('disabled', true);
+          this.form_button.setAttribute("aria-disabled", state);
         } else {
           loader.classList.add('hidden');
           span.classList.remove('hidden');
-          this.form_button.removeAttribute('disabled');
+          this.form_button.setAttribute("aria-disabled", state);
         }
       }
 
@@ -113,11 +117,11 @@ if (!customElements.get("custom-product-form")) {
             });
           });
   
-          console.log('final cart', cart);
           const response = await fetch('/cart/add.js', {
             method: 'POST',
             headers: {
-              'Content-Type': 'application/json'
+              'Content-Type': 'application/json',
+              'X-Requested-With': 'XMLHttpRequest'
             },
             body: JSON.stringify({ items: cart })
           });
@@ -127,13 +131,14 @@ if (!customElements.get("custom-product-form")) {
             throw new Error(errorData.description || 'Failed to add items');
           }
     
-          const cart_response = await response.json();
-          console.log('Items added successfully:', cart_response);
+          // const cart_response = await response.json();
+          console.log('Items added successfully:', response);
+          this.cart.refreshCartDrawer();
+
           setTimeout(() => {
-            window.location.reload();
             this.buttonLoad(false);
+            this.cart_button.click();
           }, 1000);
-          return cart_response;
         } catch (error) {
           this.buttonLoad(false);
           console.error('error', error);
