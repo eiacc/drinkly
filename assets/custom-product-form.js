@@ -53,7 +53,7 @@ if (!customElements.get("custom-product-form")) {
         }
       }
 
-      onFormButtonClick(e) {
+      async onFormButtonClick(e) {
         e.preventDefault();
         this.buttonLoad(true);
 
@@ -114,9 +114,26 @@ if (!customElements.get("custom-product-form")) {
           });
   
           console.log('final cart', cart);
+          const response = await fetch('/cart/add.js', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ items: cart })
+          });
+    
+          if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.description || 'Failed to add items');
+          }
+    
+          const cart_response = await response.json();
+          console.log('Items added successfully:', cart_response);
           setTimeout(() => {
+            window.location.reload();
             this.buttonLoad(false);
           }, 1000);
+          return cart_response;
         } catch (error) {
           this.buttonLoad(false);
           console.error('error', error);
