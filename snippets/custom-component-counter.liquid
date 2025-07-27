@@ -1,11 +1,4 @@
-<custom-counter
-  data-variant-id="{{ variant.id }}"
-  data-quantity="{{ variant.quantity }}"
-  data-max-quantity="{{ variant.max_quantity }}"
-  data-min-quantity="{{ variant.min_quantity }}"
-  data-step="{{ variant.step }}"
-  data-disabled="{{ variant.available }}"
->
+<custom-quantity-counter>
   <div class="counter-wrapper">
     <div class="counter">
       <button
@@ -16,10 +9,11 @@
         {% render 'icons', id: 'minus' %}
       </button>
       <input
+        data-value="{{ value | downcase | replace: ' ', '-' }}"
         type="text"
         name="quantity"
-        value="1"
-        min="1"
+        value="0"
+        min="0"
         max="999"
         class="js-counter-quantity"
         aria-label="{{ 'aria-label.component-counter-counter-quantity' | t }}"
@@ -33,4 +27,4 @@
       </button>
     </div>
   </div>
-</custom-counter>
+</custom-quantity-counter>

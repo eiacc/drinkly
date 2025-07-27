@@ -1,0 +1,127 @@
+if (!customElements.get("custom-product-form")) {
+  customElements.define(
+    "custom-product-form",
+    class CustomProductForm extends HTMLElement {
+      constructor() {
+        super();
+        this.form_button = null;
+        this.option_size = this.dataset.optionSize;
+        this.metaproperties = [];
+        this.variant_images = [];
+      }
+
+      connectedCallback() {
+        this.form_button = this.querySelector("button[type='submit']")
+        this.form_button.addEventListener("click", this.onFormButtonClick.bind(this));
+        this.quantities = this.querySelectorAll("input[name='quantity']")
+        this.variant_image_wrappers = this.querySelectorAll("[data-product-sub-id]")
+        this.init();
+      }
+
+      init() {
+        const variants = Array.isArray(productData?.variants) ? productData.variants : [];
+      
+        this.variant_image_wrappers.forEach(wrapper => {
+          const identifier = wrapper.dataset.productSubId;
+      
+          if (!identifier) return;
+      
+          const variant = variants.find(v => v.sub_id?.includes(identifier));
+      
+          if (variant?.featured_image) {
+            const img = document.createElement('img');
+            img.src = variant.featured_image;
+            img.alt = variant.title || 'Product Image';
+            wrapper.innerHTML = '';
+            wrapper.appendChild(img);
+          }
+        });
+      }
+
+      buttonLoad(state) {
+        const span = this.form_button.firstElementChild;
+        const loader = this.form_button.querySelector('.loading-overlay__spinner');
+
+        if (state) {
+          loader.classList.remove('hidden');
+          span.classList.add('hidden');
+          this.form_button.setAttribute('disabled', true);
+        } else {
+          loader.classList.add('hidden');
+          span.classList.remove('hidden');
+          this.form_button.removeAttribute('disabled');
+        }
+      }
+
+      onFormButtonClick(e) {
+        e.preventDefault();
+        this.buttonLoad(true);
+
+        try {
+          const productVariantInputs = this.querySelectorAll(".js.wt-product__option:not([data-option='dropdown']) input:checked")
+          const options = [];
+          const cart = [];
+          const cart_temp = [];
+          const properties = {};
+          let initial_sub_id = '';
+  
+          this.metaproperties = this.querySelectorAll('input[name^="properties["][name$="]"]');
+          this.metaproperties.forEach(property => {
+            const nameAttr = property.getAttribute('name');
+            const match = nameAttr.match(/^properties\[(.+)\]$/);
+          
+            if (match) {
+              const key = match[1];
+              properties[key] = property.value;
+            }
+          });
+  
+          productVariantInputs.forEach(input => {
+            initial_sub_id += (input.value).toLowerCase().replaceAll(' ', '-') + '-';
+            options.push(input.value);
+          });
+  
+          // checkpoint 1: see if quantity is greater than 0
+          for (let i = 0; i < this.quantities.length; i++) {
+            const quantity = this.quantities[i];
+  
+            if (quantity.value < 1) continue;
+            if (!options.includes(quantity.getAttribute('name'))) {
+              options.push(quantity.getAttribute('name'));
+            }
+            const sub_id = [initial_sub_id, quantity.dataset.value].join('');
+            cart_temp.push({
+              sub_id,
+              quantity: quantity.value
+            });
+          }
+  
+          if (options.length < this.option_size) throw new Error('please fill all options');
+  
+          if (cart_temp.length < 1) return;
+  
+          const variants = productData.variants;
+          if (!variants || variants.length < 1) return;
+  
+          cart_temp.forEach(item => {
+            const variant = variants.find(variant => variant.sub_id === item.sub_id);
+            if (!variant.available && variant.inventory_quantity < 1) return;
+            cart.push({
+              id: variant.id,
+              quantity: item.quantity > variant.inventory_quantity && !variant.available ? variant.inventory_quantity : item.quantity,
+              properties
+            });
+          });
+  
+          console.log('final cart', cart);
+          setTimeout(() => {
+            this.buttonLoad(false);
+          }, 1000);
+        } catch (error) {
+          this.buttonLoad(false);
+          console.error('error', error);
+        }
+      }
+    }
+  );
+}

@@ -311,11 +311,10 @@
     endif
   endfor
 
+  assign wrapper = 'div'
   if has_custom_variant_picker
-    render 'product-data', product: product
+    assign wrapper = 'custom-product-form'
   endif
-
-  echo '<h1>' | append: has_custom_variant_picker | append: '</h1>'
 -%}
 
 <section
@@ -327,7 +326,7 @@
   mobile-image-size="{{ section.settings.mobile-image }}"
   desktop-ratio="{{ section.settings.desktop-image-ratio }}"
 >
-  <div class="wt-product wt-product--{{ desktop_layout }}">
+  <{{ wrapper }} class="wt-product wt-product--{{ desktop_layout }}" data-option-size="{{ product.options_with_values.size }}">
     {% render 'product-head' %}
 
     <gallery-section
@@ -2067,7 +2066,7 @@
         {%- render 'sticky-buy-button' -%}
       </custom-sticky-buy-button>
     {% endif %}
-  </div>
+  </{{ wrapper }}>
 </section>
 
 {% if section.settings['desktop-layout'] == fashion_type %}
@@ -2129,6 +2128,11 @@
 
 <script type="module" src="{{ 'gallery.js' | asset_url }}" defer="defer"></script>
 <script type="module" src="{{ 'pdp.js' | asset_url }}" defer="defer"></script>
+{%- liquid 
+  if has_custom_variant_picker
+    render 'product-data', product: product
+  endif
+-%}
 
 {% schema %}
 {
