@@ -189,3 +189,8 @@
 .label-application__list input:checked + label::after {
   border-color: var(--color-body-text);
 }
+
+custom-variant-options.wt-variant-options {
+  display: grid;
+  gap: 1rem;
+}
