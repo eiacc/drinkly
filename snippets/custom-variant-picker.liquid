@@ -2,9 +2,6 @@
   .wt-product__options {
       --section-gap-top: {{ block.settings.margin-top }}px;
       --section-gap-bottom: {{ block.settings.margin-bottom }}px;
-  {% if block.settings.radius == 'custom' %}
-      --custom-border-radius: {{ block.settings.border_radius }}px;
-  {% endif %}
       --custom-size: {{ block.settings.thumb_size }}px;
 
   }
@@ -17,7 +14,6 @@
 <custom-variant-picker
   data-block-id="{{ block.id }}"
   style="
-    {% if block.settings.radius == 'custom' %}--custom-border-radius: {{ block.settings.border_radius }}px;{% endif %}
     {% if block.settings.thumb_size %}--custom-size: {{ block.settings.thumb_size }}px{% endif %}
   "
 >
@@ -144,6 +140,8 @@
                     {% render 'icons', id: 'close', icon_class: 'wt-options__close' %}
                   </button>
                 </div>
+
+                <ul class="drawer__filter-list"></ul>
               {% endif %}
               <div class="{% if options_body_class == 'drawer' %}drawer__content{% else %}swiper-container{% endif %}">
                 <fieldset class="js product-form__input">
@@ -200,11 +198,11 @@
                             -%}
                             <label
                               tabindex="0"
-                              class="{{ options_container_class }}__list__link  {% if settings.enable_round_color_swatches %} rounded {% endif %}{% if block.settings.radius == 'custom' %} custom-radius{% endif %}"
+                              class="{{ options_container_class }}__list__link  {% if settings.enable_round_color_swatches %} rounded {% endif %}"
                               for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
                             >
                               <div
-                                class="{{ options_container_class }}__list__link__content {% if settings.enable_round_color_swatches %} rounded {% endif %}{% if block.settings.radius == 'custom' %} custom-radius{% endif %}"
+                                class="{{ options_container_class }}__list__link__content {% if settings.enable_round_color_swatches %} rounded {% endif %}"
                                 style="{% render 'color-swatch-style', swatches_config: swatches_config, value: value %}"
                               ></div>
                             </label>
