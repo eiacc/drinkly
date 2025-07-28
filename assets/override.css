@@ -128,3 +128,23 @@
   gap: 12px;
   padding: calc(var(--gap, 8px) * 2) calc(var(--gap, 8px) * 4);
 }
+
+.order-summary[disabled] {
+  cursor: not-allowed;
+  opacity: .75;
+}
+
+.order-summary {
+  display: grid;
+  place-items: center;
+  padding: 1rem .75rem;
+  position: sticky;
+  top: 2rem;
+  left: 0;
+  z-index: 10;
+  transition: top .3s ease-in-out;
+}
+
+.sticky-enabled.sticky-show ~ main .order-summary {
+  top: 7rem;
+}
