@@ -17,6 +17,7 @@ if (!customElements.get("custom-product-form")) {
         this.form_button.addEventListener("click", this.onFormButtonClick.bind(this));
         this.quantities = this.querySelectorAll("input[name='quantity']")
         this.variant_image_wrappers = this.querySelectorAll("[data-product-sub-id]")
+        this.filter_list = this.querySelector(".drawer__filter-list")
         this.init();
       }
 
@@ -37,6 +38,49 @@ if (!customElements.get("custom-product-form")) {
             img.alt = variant.title || 'Product Image';
             wrapper.innerHTML = '';
             wrapper.appendChild(img);
+          }
+
+          wrapper.setAttribute('data-variant-tags', variant.tags.join(','));
+        });
+        this.filterList();
+      }
+
+      capitalize(str) {
+        return str.charAt(0).toUpperCase() + str.slice(1);
+      }
+
+      filterList() {
+        const tags = productData.variants.map(variant => variant.tags).flat();
+        const uniqueTags = [...new Set(tags)];
+
+        uniqueTags.forEach(tag => {
+          const li = document.createElement('li');
+          li.classList.add('f-button__list__item', 'f-button__list__item--button');
+          const id = `drawer-filter-${crypto.randomUUID()}`;
+          li.innerHTML = `
+            <input type="checkbox" tabindex="-1" id="${id}" name="drawer_filter" value="${tag}" form="">
+            <label tabindex="0" class="f-button__list__link" for="${id}">
+              ${this.capitalize(tag)}
+            </label>
+          `;
+          li.addEventListener('change', this.onFilterChange.bind(this));
+          this.filter_list.appendChild(li);
+        });
+      }
+
+      onFilterChange(e) {
+        const filter_values = [];
+
+        this.filter_list.querySelectorAll('input[name="drawer_filter"]').forEach(input => {
+          if (input.checked) filter_values.push(input.value);
+        });
+
+        this.querySelectorAll('[data-variant-tags]').forEach(wrapper => {
+          const variant_tags = wrapper.dataset.variantTags.split(',');
+          if (filter_values.every(value => variant_tags.includes(value))) {
+            wrapper.parentElement.classList.remove('hidden');
+          } else {
+            wrapper.parentElement.classList.add('hidden');
           }
         });
       }

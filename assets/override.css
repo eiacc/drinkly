@@ -122,3 +122,9 @@
   pointer-events: auto!important;
   opacity: 1!important;
 }
+
+.drawer__filter-list {
+  display: flex;
+  gap: 12px;
+  padding: calc(var(--gap, 8px) * 2) calc(var(--gap, 8px) * 4);
+}
