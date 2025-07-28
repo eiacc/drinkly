@@ -148,3 +148,44 @@
 .sticky-enabled.sticky-show ~ main .order-summary {
   top: 7rem;
 }
+
+.label-application__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.label-application__list input {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.label-application__list label {
+  display: flex;
+  gap: .8rem;
+  justify-content: space-between;
+  height: auto;
+  padding: .75rem 1.4rem;
+  position: relative;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.label-application__list label::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  border: 1px solid var(--color-border);
+  display: block;
+  transition: border-color 0.3s;
+  border-radius: 1.2rem;
+}
+
+.label-application__list label span:last-of-type {
+  white-space: nowrap;
+}
+
+.label-application__list input:checked + label::after {
+  border-color: var(--color-body-text);
+}
