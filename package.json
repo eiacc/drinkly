@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "yarn run init && yarn run pull",
     "init": "yarn run logout && yarn run dev",
     "dev": "shopify theme dev -s jszbmh-hw.myshopify.com",
-    "pull": "shopify theme pull && shopify theme dev",
-    "logout": "shopify auth logout",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pull": "shopify theme pull -o settings_data.json templates/*json sections/*.json && shopify theme dev",
+    "logout": "shopify auth logout"
   },
   "keywords": [],
   "author": "",

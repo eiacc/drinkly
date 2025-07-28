@@ -888,6 +888,10 @@
                   not-quick-add
                 >
               </div>
+            {%- when 'order_summary' -%}
+              {%- if has_custom_variant_picker == true -%}
+                {% render 'order-summary' %}
+              {%- endif -%}
             {%- when 'metaproperty' -%}
               <div class="form__fieldset">
                 <label
@@ -2316,6 +2320,18 @@
           "id": "custom_liquid",
           "label": "t:sections.custom-liquid.settings.custom_liquid.label",
           "info": "t:sections.custom-liquid.settings.custom_liquid.info"
+        }
+      ]
+    },
+    {
+      "type": "order_summary",
+      "name": "Order Summary",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Order Summary",
+          "info": "Only works with custom variant picker"
         }
       ]
     },
