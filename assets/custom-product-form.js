@@ -10,6 +10,7 @@ if (!customElements.get("custom-product-form")) {
         this.variant_images = [];
         this.cart = document.querySelector("cart-drawer");
         this.cart_button = null
+        this.variant_size = this.querySelectorAll('[data-field]');
       }
 
       connectedCallback() {
@@ -18,6 +19,7 @@ if (!customElements.get("custom-product-form")) {
         this.quantities = this.querySelectorAll("input[name='quantity']")
         this.variant_image_wrappers = this.querySelectorAll("[data-product-sub-id]")
         this.filter_list = this.querySelector(".drawer__filter-list")
+
         this.init();
       }
 
@@ -110,20 +112,11 @@ if (!customElements.get("custom-product-form")) {
           const options = [];
           const cart = [];
           const cart_temp = [];
-          const properties = {};
+          let properties = {};
           let initial_sub_id = '';
-  
-          this.metaproperties = this.querySelectorAll('input[name^="properties["][name$="]"]');
-          this.metaproperties.forEach(property => {
-            const nameAttr = property.getAttribute('name');
-            const match = nameAttr.match(/^properties\[(.+)\]$/);
-          
-            if (match) {
-              const key = match[1];
-              properties[key] = property.value;
-            }
-          });
-  
+
+          properties = this.checkProperties();
+
           productVariantInputs.forEach(input => {
             initial_sub_id += (input.value).toLowerCase().replaceAll(' ', '-') + '-';
             options.push(input.value);
@@ -188,6 +181,129 @@ if (!customElements.get("custom-product-form")) {
           console.error('error', error);
         }
       }
+
+      checkProperties() {
+        let errs = 0;
+        const properties = {};
+        this.querySelectorAll('custom-metaproperty').forEach(property => {
+          const input = property.querySelector('input');
+
+          if (!input.value) {
+            property.error()
+            errs += 1
+          } else {
+            property.filled()
+            errs -= 1
+          }
+
+          const nameAttr = input.getAttribute('name');
+          const match = nameAttr.match(/^properties\[(.+)\]$/);
+        
+          if (match) {
+            const key = match[1];
+            properties[key] = input.value;
+          }
+        });
+
+        if (errs > 0) throw new Error('please fill all metaproperties')
+        return properties;
+      }
     }
   );
+}
+
+if (!customElements.get('order-summary')) {
+  class OrderSummary extends HTMLElement {
+    constructor() {
+      super();
+      this.inputs = [];
+      this.data = [];
+      this.size = 0;
+
+      this.handleEvent = this.handleEvent.bind(this);
+      this.enable = this.enable.bind(this);
+      this.disable = this.disable.bind(this);
+    }
+
+    connectedCallback() {
+      this.inputs = document.querySelectorAll('input[data-input]');
+      const filtered = Array.from(this.inputs)
+      .filter(input => input.name !== 'quantity');
+    
+      // Create a Set of unique input names
+      const uniqueNames = new Set(filtered.map(input => input.name));
+      // Store unique names
+      this.inputNames = [...uniqueNames];
+
+      this.size = uniqueNames.size + 1;
+
+      this.inputs.forEach(input => {
+        const eventType = input.type === 'checkbox' || input.type === 'radio' ? 'change' : 'input';
+        input.addEventListener(eventType, this.handleEvent);
+      });
+    }
+
+    handleEvent() {
+      this.pullData();
+    
+      const hasAllInputs = this.inputNames.every(name =>
+        this.data.some(obj => obj.name === name)
+      );
+    
+      if (this.data.length >= this.size && hasAllInputs) {
+        this.enable();
+      } else {
+        this.disable();
+      }
+    
+      console.log(this.data);
+    }
+
+    pullData() {
+      const seenQuantities = new Set();
+      const data = [];
+    
+      this.inputs.forEach(input => {
+        if (!input.name) return;
+    
+        let value = null;
+    
+        if (input.name === 'quantity') {
+          const key = input.dataset.value;
+          if (!key || seenQuantities.has(key)) return;
+          if (Number(input.value) > 0) {
+            value = input.value;
+            seenQuantities.add(key);
+            data.push({ name: input.name, value, key });
+          }
+        } else {
+          if (input.type === 'checkbox') {
+            value = input.checked;
+          } else if (input.type === 'radio') {
+            if (!input.checked) return;
+            value = input.value;
+          } else if (input.value !== '') {
+            value = input.value;
+          }
+    
+          if (value !== null) {
+            data.push({ name: input.name, value });
+          }
+        }
+      });
+    
+      this.data = data;
+    }
+
+    disable() {
+      console.log('disable')
+      this.dataset.state = 'disabled';
+    }
+
+    enable() {
+      this.dataset.state = '';
+    }
+  }
+
+  customElements.define('order-summary', OrderSummary);
 }

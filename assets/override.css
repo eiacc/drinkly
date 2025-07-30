@@ -58,10 +58,17 @@
   pointer-events: auto!important;
 }
 
+custom-metaproperty .form__fieldset {
+  gap: 0;
+}
+
 .form__fieldset {
   flex-direction: column!important;
-  gap: 8px!important;
-  margin-bottom: 1.5rem!important;
+  margin-bottom: 1.6rem!important;
+}
+
+.form__fieldset label {
+  font-size: 1.4rem;
 }
 
 .component-counter-replica .drawer__list__item input {
@@ -123,36 +130,62 @@
   opacity: 1!important;
 }
 
+.drawer__filter-list:empty {
+  display: none;
+}
+
 .drawer__filter-list {
   display: flex;
   gap: 12px;
   padding: calc(var(--gap, 8px) * 2) calc(var(--gap, 8px) * 4);
 }
 
-.order-summary[disabled] {
+order-summary[data-state="disabled"] button {
   cursor: not-allowed;
-  opacity: .75;
+  opacity: .75!important;
 }
 
-.order-summary {
-  display: grid;
-  place-items: center;
-  padding: 1rem .75rem;
+order-summary {
   position: sticky;
   top: 2rem;
   left: 0;
   z-index: 10;
+}
+
+order-summary {
+  display: grid;
+  place-items: center;
   transition: top .3s ease-in-out;
 }
 
-.sticky-enabled.sticky-show ~ main .order-summary {
+order-summary custom-variant-dropdown {
+  width: 100%!important;
+}
+
+order-summary custom-variant-dropdown button {
+  border-radius: 0!important;
+  width: 100%!important;
+  background: var(--color-button-secondary-background-hover)!important;
+  margin: 0!important;
+  text-align: center!important;
+}
+
+.sticky-enabled.sticky-show ~ main order-summary {
   top: 7rem;
+}
+
+order-summary .drawer__list-overlay {
+  opacity: 1;
+}
+
+.label-application .wt-product__option__title {
+  font-size: 1.4rem;
 }
 
 .label-application__list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
+  gap: .8rem;
 }
 
 .label-application__list input {
@@ -166,9 +199,9 @@
   gap: .8rem;
   justify-content: space-between;
   height: auto;
-  padding: .75rem 1.4rem;
+  padding: 1.2rem 1.6rem;
   position: relative;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
@@ -192,5 +225,33 @@
 
 custom-variant-options.wt-variant-options {
   display: grid;
-  gap: 1rem;
+  gap: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.label-application {
+  margin-bottom: 1.6rem;
+}
+
+custom-product-form label p,
+custom-product-form .wt-product__option__title p {
+  margin-block: 0!important;
+}
+
+custom-metaproperty .error-message {
+  color: red;
+  font-size: 1.2rem;
+  display: none;
+  margin-top: .75rem;
+}
+
+custom-metaproperty[data-state="fill"] .error-message {}
+
+custom-metaproperty[data-state="error"] input {
+  border-color: red;
+  border-width: .2rem;
+}
+
+custom-metaproperty[data-state="error"] .error-message {
+  display: block;
 }

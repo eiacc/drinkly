@@ -11,6 +11,8 @@
   }
 </style>
 
+{% assign current_step = steps | default: 0 %}
+
 <custom-variant-picker
   data-block-id="{{ block.id }}"
   style="
@@ -70,6 +72,7 @@
       >
         {%- for option in product.options_with_values -%}
           {%- liquid
+            assign current_step = current_step | plus: 1
             assign options_container_class = 'f-thumb'
             assign option_name_downcase = option.name | downcase
             assign options_body_class = 'tiles'
@@ -98,8 +101,9 @@
             endif
           -%}
         
-          <div class="js wt-product__option" data-option="{{ picker_type }}">
+          <div class="js wt-product__option" data-option="{{ picker_type }}" data-field>
             <div class="wt-product__option__title {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}">
+              <p>Step {{ current_step }}</p>
               <span class="label">{{ option.name }}: </span> <strong class="value"></strong>
             </div>
 
@@ -157,6 +161,7 @@
                             id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
                             name="{{ option.name }}"
                             value="{{ value | escape }}"
+                            data-input="{{ current_step }}"
                             form="{{ product_form_id }}"
                             {% if selected_variant and option.selected_value == value %}
                               checked
@@ -170,7 +175,7 @@
                               {{ 'lifestyle-1' | placeholder_svg_tag }}
                             </div>
                             <span class="{{ options_container_class }}__list__item-title">{{ value }}</span>
-                            {%- render 'custom-component-counter', value: value -%}
+                            {%- render 'custom-component-counter', value: value, picker_type: picker_type, current_step: current_step -%}
                           {%- when 'button' -%}
                             <label
                               tabindex="0"
@@ -225,29 +230,43 @@
     {%- endunless -%}
   </div>
 
-  <div class="label-application">
-    <div class="wt-product__option__title  scroll-trigger animate--slide-in   disabled-on-mobile ">
-      <span>Step 6:</span>
-      <span>Label Application</span>
+  {%- assign product_add_on = block.settings.add_on -%}
+  {% if product_add_on != blank %}
+    {%- assign product_add_on_handle = product_add_on.handle | replace: '-', '_'-%}
+    <div class="label-application" data-field>
+      <div class="wt-product__option__title  scroll-trigger animate--slide-in   disabled-on-mobile ">
+        <p>Step {{ current_step | plus: 1 }}: {{ product_add_on.title }}</p>
+      </div>
+      {% if product_add_on.has_only_default_variant %}
+        {% assign product_add_on_variant = product_add_on.selected_or_first_available_variant %}
+        <div class="f-button__list__item f-button__list__item--button">
+          <input type="radio" tabindex="0" id="{{ product_add_on_handle }}" name="{{ product_add_on_handle }}" value="{{ product_add_on_variant.id }}" data-input="{{ current_step | plus: 1 }}">
+          <label tabindex="0" class="f-button__list__link" for="{{ product_add_on_handle }}">
+            <span>{{ product_add_on.title }}</span>
+            <span>{{ product_add_on_variant.price | money }}</span>
+          </label>
+        </div>
+      {% else %}
+        {% assign product_add_on_variant = product_add_on.variants.first %}
+        <ul class="label-application__list">
+          {%- for variant in product_add_on.variants -%}
+            <li class="f-button__list__item f-button__list__item--button">
+              <input type="radio" tabindex="0" id="{{ product_add_on_handle }}_{{ forloop.index0 }}" name="{{ product_add_on_handle }}" value="{{ variant.id }}" data-input="{{ current_step | plus: 1 }}">
+              <label tabindex="0" class="f-button__list__link" for="{{ product_add_on_handle }}_{{ forloop.index0 }}">
+                <span>{{ variant.title }}</span>
+                {%- if variant.price < 1 -%}
+                  <span>FREE</span>
+                {%- else -%}
+                  <span>{{ variant.price | money }}</span>
+                {%- endif -%}
+              </label>
+            </li>
+          {%- endfor -%}
+        </ul>
+      {% endif %}
     </div>
-    <ul class="label-application__list">
-      <li class="f-button__list__item f-button__list__item--button">
-        <input type="radio" tabindex="0" id="label_application_1" name="properties[Label Application]" value="FREE">
-        <label tabindex="0" class="f-button__list__link" for="label_application_1">
-          <span>I'LL APPLY IT MYSELF CUSTOM LABELS</span>
-          <span>FREE</span>
-        </label>
-      </li>
-      <li class="f-button__list__item f-button__list__item--button">
-        <input type="radio" tabindex="-1" id="label_application_2" name="properties[Label Application]" value="$30.9">
-        <label tabindex="0" class="f-button__list__link" for="label_application_2">
-          <span>ADD TO ORDER</span>
-          <span>$30.9</span>
-        </label>
-      </li>
-    </ul>
-  </div>
-  
+  {%- endif -%}
+
   <button
     aria-label="
       {%- if product.selected_or_first_available_variant.available -%}

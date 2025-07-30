@@ -315,6 +315,8 @@
   if has_custom_variant_picker
     assign wrapper = 'custom-product-form'
   endif
+
+  assign steps = 0
 -%}
 
 <section
@@ -893,24 +895,29 @@
                 {% render 'order-summary' %}
               {%- endif -%}
             {%- when 'metaproperty' -%}
-              <div class="form__fieldset">
-                <label
-                  class="wt-product__option__title scroll-trigger animate--slide-in disabled-on-mobile"
-                  for="PropertyField-{{ section.id }}-{{ block.id }}"
-                >
-                  {{ block.settings.label }}
-                </label>
-                <input
-                  type="text"
-                  name="properties[{{ block.settings.label | escape }}]"
-                  id="PropertyField-{{ section.id }}-{{ block.id }}"
-                  class="form__field__input"
-                  placeholder="{{ block.settings.placeholder }}"
-                  oninvalid="this.setCustomValidity('Please add {{ block.settings.label }}')"
-                  oninput="this.setCustomValidity('')"
-                  required
-                >
-              </div>
+              {% assign steps = steps | plus: 1 %}
+              <custom-metaproperty data-field data-state="fill">
+                <div class="form__fieldset">
+                  <label
+                    class="wt-product__option__title scroll-trigger animate--slide-in disabled-on-mobile"
+                    for="PropertyField-{{ section.id }}-{{ block.id }}"
+                  >
+                    Step {{ steps }}: {{ block.settings.label }}
+                  </label>
+                  <div>
+                    <input
+                      type="text"
+                      name="properties[{{ block.settings.label | escape }}]"
+                      id="PropertyField-{{ section.id }}-{{ block.id }}"
+                      class="form__field__input"
+                      placeholder="{{ block.settings.placeholder }}"
+                      data-input="{{ steps }}"
+                      required
+                    >
+                    <span class="error-message">Please add {{ block.settings.label }}</span>
+                  </div>
+                </div>
+              </custom-metaproperty>
             {%- when 'description' -%}
               <collapsible-section
                 class="wt-collapse wt-collapse--always {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}"
@@ -1327,7 +1334,11 @@
                 {{ block.settings.page.content }}
               </div>
             {%- when 'custom_variant_picker' -%}
-              {% render 'custom-variant-picker', product: product, block: block %}
+              {% render 'custom-variant-picker', product: product, block: block, steps: steps %}
+              {%- liquid
+                assign variant_size = product.options_with_values.size | plus: 1
+                assign steps = steps | plus: variant_size
+              -%}
             {% when 'upsell' %}
               <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
               <div
@@ -2356,6 +2367,11 @@
       "name": "Custom variant picker",
       "limit": 1,
       "settings": [
+        {
+          "type": "product",
+          "id": "add_on",
+          "label": "Product Add-on"
+        },
         {
           "type": "select",
           "id": "picker_type",

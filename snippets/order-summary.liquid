@@ -1,1 +1,22 @@
-<div class="order-summary button button--full-width button--primary" disabled>ORDER SUMMARY</div>
+{%- assign options_body_class = 'drawer' %}
+
+<order-summary data-state="disabled">
+  <custom-variant-dropdown>
+    <button
+      aria-label="{{ 'aria-label.main-product-select-option' | t }}"
+      class="
+        wt-product__option__dropdown
+        order-summary-button
+        {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}
+      "
+    >
+      <span>Order Summary</span>
+    </button>
+
+    <div class="wt-product__option__body wt-product__option__body--{{ options_body_class }}">
+      <div class="drawer__content">
+        s
+      </div>
+    </div>
+  </custom-variant-dropdown>
+</order-summary>

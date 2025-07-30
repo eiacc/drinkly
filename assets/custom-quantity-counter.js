@@ -36,6 +36,7 @@ class CustomQuantityCounter extends HTMLElement {
   updateValue(value) {
     this.counterEl.value = value;
 
+    this.counterEl.dispatchEvent(new Event("input", { bubbles: true }));
     this.counterEl.dispatchEvent(this.changeEvent);
   }
 }
