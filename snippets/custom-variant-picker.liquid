@@ -103,8 +103,7 @@
         
           <div class="js wt-product__option" data-option="{{ picker_type }}" data-field>
             <div class="wt-product__option__title {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}">
-              <p>Step {{ current_step }}</p>
-              <span class="label">{{ option.name }}: </span> <strong class="value"></strong>
+              <span class="label">Step {{ current_step }} {{ option.name }}</span> <strong class="value"></strong>
             </div>
 
             {% if options_body_class == 'drawer' %}
@@ -235,7 +234,7 @@
     {%- assign product_add_on_handle = product_add_on.handle | replace: '-', '_'-%}
     <div class="label-application" data-field data-addon>
       <div class="wt-product__option__title  scroll-trigger animate--slide-in   disabled-on-mobile ">
-        <p>Step {{ current_step | plus: 1 }}: {{ product_add_on.title }}</p>
+        <p>Step {{ current_step | plus: 1 }} {{ product_add_on.title }}</p>
       </div>
       {% if product_add_on.has_only_default_variant %}
         {% assign product_add_on_variant = product_add_on.selected_or_first_available_variant %}

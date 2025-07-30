@@ -138,7 +138,7 @@ if (!customElements.get("custom-variant-options")) {
           const dropdownSpan = fieldset.querySelector(
             ".wt-product__option__dropdown span",
           );
-          if (dropdownSpan) dropdownSpan.innerHTML = selectedOption;
+          if (dropdownSpan) dropdownSpan.innerHTML = ' - ' + selectedOption;
         });
       }
 
