@@ -165,10 +165,13 @@ order-summary custom-variant-dropdown {
 order-summary custom-variant-dropdown button.wt-product__option__dropdown {
   border-radius: 0!important;
   width: 100%!important;
-  background: var(--color-button-secondary-background-hover)!important;
+  background: #efefef!important;
   margin: 0!important;
   text-align: center!important;
-  color: white!important;
+  color: black!important;
+  text-transform: uppercase;
+  font-weight: 500;
+  justify-content: center!important
 }
 
 .sticky-enabled.sticky-show ~ main order-summary {
