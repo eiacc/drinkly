@@ -1,3 +1,5 @@
+window.productSummary = [];
+
 if (!customElements.get("custom-product-form")) {
   customElements.define(
     "custom-product-form",
@@ -220,6 +222,7 @@ if (!customElements.get('order-summary')) {
       this.data = [];
       this.size = 0;
 
+      this.dropdown = this.querySelector('custom-variant-dropdown button.wt-product__option__dropdown') || null;
       this.handleEvent = this.handleEvent.bind(this);
       this.enable = this.enable.bind(this);
       this.disable = this.disable.bind(this);
@@ -243,7 +246,7 @@ if (!customElements.get('order-summary')) {
       });
     }
 
-    handleEvent() {
+    handleEvent(type = null) {
       this.pullData();
     
       const hasAllInputs = this.inputNames.every(name =>
@@ -255,12 +258,19 @@ if (!customElements.get('order-summary')) {
       } else {
         this.disable();
       }
-    
-      console.log(this.data);
+
+      const sorted = this.data.sort((a, b) => {
+        const stepA = a.step ?? Number.MAX_SAFE_INTEGER;
+        const stepB = b.step ?? Number.MAX_SAFE_INTEGER;
+        return stepA - stepB;
+      });
+
+      window.productSummary = sorted;
     }
 
     pullData() {
-      const seenQuantities = new Set();
+      const seenVariantKeys = new Set();
+      const variants = [];
       const data = [];
     
       this.inputs.forEach(input => {
@@ -270,11 +280,18 @@ if (!customElements.get('order-summary')) {
     
         if (input.name === 'quantity') {
           const key = input.dataset.value;
-          if (!key || seenQuantities.has(key)) return;
+          if (!key || seenVariantKeys.has(key)) return;
+    
           if (Number(input.value) > 0) {
-            value = input.value;
-            seenQuantities.add(key);
-            data.push({ name: input.name, value, key });
+            seenVariantKeys.add(key);
+    
+            variants.push({
+              key,
+              value: input.value,
+              variant: input.dataset.variant,
+              name: input.dataset.name,
+              step: Number(input.dataset.input)
+            });
           }
         } else {
           if (input.type === 'checkbox') {
@@ -287,20 +304,27 @@ if (!customElements.get('order-summary')) {
           }
     
           if (value !== null) {
-            data.push({ name: input.name, value });
+            data.push({ name: input.name, value, step: Number(input.dataset.input) });
           }
         }
       });
     
+      // Only push the quantity object if variants exist
+      if (variants.length > 0) {
+        data.push({ name: 'quantity', name_override: variants[0].name, variants, step: variants[0].step });
+      }
+    
       this.data = data;
     }
+    
 
     disable() {
-      console.log('disable')
       this.dataset.state = 'disabled';
+      if (this.dropdown) this.dropdown.setAttribute('disabled', true);
     }
-
+    
     enable() {
+      if (this.dropdown) this.dropdown.removeAttribute('disabled');
       this.dataset.state = '';
     }
   }

@@ -9,8 +9,10 @@
         {% render 'icons', id: 'minus' %}
       </button>
       <input
-        {% if picker_type == 'dropdown' %}data-input="{{ current_step | plus: 1 }}"{% endif %}
+        {% if picker_type == 'dropdown' %}data-input="{{ current_step }}"{% endif %}
         data-value="{{ value | downcase | replace: ' ', '-' }}"
+        data-variant="{{ value }}"
+        data-name="{{ name }}"
         type="text"
         name="quantity"
         value="0"

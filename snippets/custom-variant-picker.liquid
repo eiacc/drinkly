@@ -175,7 +175,7 @@
                               {{ 'lifestyle-1' | placeholder_svg_tag }}
                             </div>
                             <span class="{{ options_container_class }}__list__item-title">{{ value }}</span>
-                            {%- render 'custom-component-counter', value: value, picker_type: picker_type, current_step: current_step -%}
+                            {%- render 'custom-component-counter', name: option.name,value: value, picker_type: picker_type, current_step: current_step -%}
                           {%- when 'button' -%}
                             <label
                               tabindex="0"
@@ -240,7 +240,7 @@
       {% if product_add_on.has_only_default_variant %}
         {% assign product_add_on_variant = product_add_on.selected_or_first_available_variant %}
         <div class="f-button__list__item f-button__list__item--button">
-          <input type="radio" tabindex="0" id="{{ product_add_on_handle }}" name="{{ product_add_on_handle }}" value="{{ product_add_on_variant.id }}" data-input="{{ current_step | plus: 1 }}">
+          <input type="radio" tabindex="0" id="{{ product_add_on_handle }}" name="{{ product_add_on.title }}" value="{{ product_add_on_variant.title }}" data-variant-id="{{ product_add_on_variant.id }}" data-input="{{ current_step | plus: 1 }}">
           <label tabindex="0" class="f-button__list__link" for="{{ product_add_on_handle }}">
             <span>{{ product_add_on.title }}</span>
             <span>{{ product_add_on_variant.price | money }}</span>
@@ -251,7 +251,7 @@
         <ul class="label-application__list">
           {%- for variant in product_add_on.variants -%}
             <li class="f-button__list__item f-button__list__item--button">
-              <input type="radio" tabindex="0" id="{{ product_add_on_handle }}_{{ forloop.index0 }}" name="{{ product_add_on_handle }}" value="{{ variant.id }}" data-input="{{ current_step | plus: 1 }}">
+              <input type="radio" tabindex="0" id="{{ product_add_on_handle }}_{{ forloop.index0 }}" name="{{ product_add_on.title }}" value="{{ variant.title }}" data-variant-id="{{ variant.id }}" data-input="{{ current_step | plus: 1 }}">
               <label tabindex="0" class="f-button__list__link" for="{{ product_add_on_handle }}_{{ forloop.index0 }}">
                 <span>{{ variant.title }}</span>
                 {%- if variant.price < 1 -%}

@@ -162,12 +162,13 @@ order-summary custom-variant-dropdown {
   width: 100%!important;
 }
 
-order-summary custom-variant-dropdown button {
+order-summary custom-variant-dropdown button.wt-product__option__dropdown {
   border-radius: 0!important;
   width: 100%!important;
   background: var(--color-button-secondary-background-hover)!important;
   margin: 0!important;
   text-align: center!important;
+  color: white!important;
 }
 
 .sticky-enabled.sticky-show ~ main order-summary {
@@ -176,6 +177,18 @@ order-summary custom-variant-dropdown button {
 
 order-summary .drawer__list-overlay {
   opacity: 1;
+}
+
+.drawer__content--padding {
+  padding: calc(var(--gap, 8px) * 2) calc(var(--gap, 8px) * 4);
+}
+
+.drawer__list__item--mb {
+  padding-bottom: .75rem;
+}
+
+.drawer__list__item--mb p {
+  margin: 0
 }
 
 .label-application .wt-product__option__title {

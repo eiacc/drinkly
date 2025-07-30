@@ -1,22 +1,26 @@
 {%- assign options_body_class = 'drawer' %}
 
 <order-summary data-state="disabled">
-  <custom-variant-dropdown>
+  <div class="drawer__list-overlay hidden"></div>
+  <custom-variant-dropdown data-component="summary">
     <button
+      disabled
       aria-label="{{ 'aria-label.main-product-select-option' | t }}"
       class="
         wt-product__option__dropdown
-        order-summary-button
         {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}
       "
-    >
-      <span>Order Summary</span>
-    </button>
+    >Order Summary</button>
 
     <div class="wt-product__option__body wt-product__option__body--{{ options_body_class }}">
-      <div class="drawer__content">
-        s
+      <div class="drawer__list-nav">
+        <div class="drawer__list-nav__title">ORDER SUMMARY</div>
+        <button class="drawer__list-nav__close" aria-label="{{ 'accessibility.close' | t }}">
+          {% render 'icons', id: 'close', icon_class: 'wt-options__close' %}
+        </button>
       </div>
+    
+      <div class="drawer__content drawer__content--padding"></div>
     </div>
   </custom-variant-dropdown>
 </order-summary>
