@@ -92,7 +92,6 @@ if (!customElements.get("custom-variant-dropdown")) {
           temp += `<li>${(variant.variant).replaceAll('-', ' ')} x${variant.value}</li>`
         }
 
-        console.log('temp', temp)
         return temp
       }
 

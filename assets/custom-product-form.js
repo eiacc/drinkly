@@ -146,12 +146,25 @@ if (!customElements.get("custom-product-form")) {
           const variants = productData.variants;
           if (!variants || variants.length < 1) return;
   
+          let totalVariants = 0;
           cart_temp.forEach(item => {
             const variant = variants.find(variant => variant.sub_id === item.sub_id);
             if (!variant.available && variant.inventory_quantity < 1) return;
+
+            const qty = item.quantity > variant.inventory_quantity && !variant.available ? variant.inventory_quantity : item.quantity
+            totalVariants += Number(qty);
+
             cart.push({
               id: variant.id,
-              quantity: item.quantity > variant.inventory_quantity && !variant.available ? variant.inventory_quantity : item.quantity,
+              quantity: qty
+            });
+          });
+
+          const addOns = this.querySelectorAll('[data-addon] input:checked')
+          addOns.forEach(addOn => {
+            cart.push({
+              id: addOn.dataset.variantId,
+              quantity: totalVariants,
               properties
             });
           });
@@ -170,8 +183,6 @@ if (!customElements.get("custom-product-form")) {
             throw new Error(errorData.description || 'Failed to add items');
           }
     
-          // const cart_response = await response.json();
-          console.log('Items added successfully:', response);
           this.cart.refreshCartDrawer();
 
           setTimeout(() => {

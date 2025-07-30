@@ -1,5 +1,3 @@
-console.log('custom-metaproperty.js');
-
 if (!customElements.get('custom-metaproperty')) {
   class CustomMetaproperty extends HTMLElement {
     constructor() {
