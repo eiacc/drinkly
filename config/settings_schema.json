@@ -825,6 +825,34 @@
         "id": "free_shipping_bar_text_success",
         "default": "You have unlocked free shipping!",
         "label": "t:settings_schema.cart.settings.free_shipping_bar_text_success.label"
+      },
+      {
+        "type": "header",
+        "content": "Product Discount",
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_product_discount",
+        "default": false,
+        "label": "Enable product discount"
+      },
+      {
+        "type": "text",
+        "id": "product_discount_amount",
+        "default": "100",
+        "label": "Discount amount"
+      },
+      {
+        "type": "text",
+        "id": "product_discount_text",
+        "default": "Spend ||amount|| more for FREE shipping!",
+        "label": "Discount text",
+      },
+      {
+        "type": "text",
+        "id": "product_discount_text_success",
+        "default": "You have unlocked free shipping!",
+        "label": "Discount text success"
       }
     ]
   },

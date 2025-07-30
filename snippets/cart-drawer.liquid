@@ -43,6 +43,10 @@
           {% render 'cart-free-shipping-bar' %}
         {% endif %}
 
+        {% if settings.enable_product_discount and cart != empty %}
+          {% render 'cart-product-discount' %}
+        {% endif %}
+
         <cart-drawer-items class="wt-cart__drawer__items">
           <form
             action="{{ routes.cart_url }}"

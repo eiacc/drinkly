@@ -76,7 +76,7 @@
     "show_view_cart": false,
     "enable_cross_sells": true,
     "product_limit_cross_sells": 6,
-    "enable_free_shipping_bar": true,
+    "enable_free_shipping_bar": false,
     "currency_code_enabled": false,
     "iconset": "option_1",
     "enable-bag-icon": false,
