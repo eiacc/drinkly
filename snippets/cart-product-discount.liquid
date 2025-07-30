@@ -1,53 +1,43 @@
-{% comment %}Parse the free shipping threshold based on currency{% endcomment %}
-{% assign product_discount_setting = settings.product_discount_amount | default: '100' %}
-{% assign product_discount_threshold = product_discount_setting | split: '|' | first | strip %}
+{%- if settings.enable_product_discount and settings.product_discount != blank -%}
+  {%- liquid
+    assign variant_ids = settings.product_discount.variants | map: 'id'
+    assign total_quantity = 0
 
-{% comment %}Check if we have currency-specific thresholds{% endcomment %}
-{% assign current_currency = cart.currency.iso_code %}
-{% assign currency_specific_threshold = '' %}
-{% assign setting_parts = free_shipping_setting | split: '|' %}
-{% for part in setting_parts %}
-  {% if part contains ':' %}
-    {% assign currency_amount = part | split: ':' %}
-    {% assign currency_code = currency_amount[0] | strip %}
-    {% if currency_code == current_currency %}
-      {% assign currency_specific_threshold = currency_amount[1] | strip %}
-      {% break %}
-    {% endif %}
-  {% endif %}
-{% endfor %}
+    for item in cart.items
+      if variant_ids contains item.variant_id
+        assign total_quantity = total_quantity | plus: item.quantity
+      endif
+    endfor
 
-{% if currency_specific_threshold != '' %}
-  {% assign product_discount_threshold = currency_specific_threshold %}
-{% endif %}
-{% assign cart_value = cart.total_price | divided_by: 100 | round: 2 %}
+    assign product_discount_setting = settings.product_discount_quantity | default: '100'
+    assign product_discount_threshold = product_discount_setting | split: '|' | first | strip | plus: 0
 
-{% assign remaining_amount = product_discount_threshold | minus: cart_value %}
-{% assign progress_percentage = cart_value | times: 100 | divided_by: product_discount_threshold | round %}
+    assign remaining_quantity = product_discount_threshold | minus: total_quantity
+    assign progress_percentage = total_quantity | times: 100 | divided_by: product_discount_threshold | round
 
-{% if remaining_amount < 0 %}
-  {% assign remaining_amount = 0 %}
-  {% assign progress_percentage = 100 %}
-{% endif %}
+    if remaining_quantity < 0
+      assign remaining_quantity = 0
+      assign progress_percentage = 100
+    endif
+  -%}
 
-{% assign remaining_amount_with_currency = remaining_amount | times: 100 | money %}
+  {%- assign custom_text = settings.product_discount_text | replace: '||quantity||', remaining_quantity -%}
 
-{% assign custom_text = settings.product_discount_text | replace: '||amount||', remaining_amount_with_currency %}
-
-<product-discount>
-  <div class="wt-free-shipping-bar">
-    <p class="wt-free-shipping-bar__text">
-      {% if remaining_amount > 0 %}
-        {{ custom_text }}
-      {% else %}
-        {{ settings.product_discount_text_success }}
-      {% endif %}
-    </p>
-    <div class="wt-progress-bar">
-      <div
-        class="wt-progress-bar__fill"
-        style="width: {{ progress_percentage }}%;"
-      ></div>
+  <product-discount>
+    <div class="wt-free-shipping-bar">
+      <p class="wt-free-shipping-bar__text">
+        {% if remaining_quantity > 0 %}
+          {{ custom_text }}
+        {% else %}
+          {{ settings.product_discount_text_success }}
+        {% endif %}
+      </p>
+      <div class="wt-progress-bar">
+        <div
+          class="wt-progress-bar__fill"
+          style="width: {{ progress_percentage }}%;"
+        ></div>
+      </div>
     </div>
-  </div>
-</product-discount>
+  </product-discount>
+{%- endif -%}

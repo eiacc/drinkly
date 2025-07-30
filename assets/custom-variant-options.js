@@ -130,15 +130,29 @@ if (!customElements.get("custom-variant-options")) {
         fieldsets.forEach((fieldset, index) => {
           const selectedOption = this.options[index];
 
-          if (!selectedOption) return;
-
-          fieldset.querySelector(
-            ".wt-product__option__title .value",
-          ).innerHTML = selectedOption;
+          const quantityInputs = fieldset.querySelectorAll('input[name="quantity"]');
           const dropdownSpan = fieldset.querySelector(
             ".wt-product__option__dropdown span",
           );
-          if (dropdownSpan) dropdownSpan.innerHTML = ' - ' + selectedOption;
+
+          if (quantityInputs.length > 0) {
+            const quantity = Array.from(quantityInputs).reduce((sum, input) => {
+              return sum + parseInt(input.value || '0', 10);
+            }, 0);
+
+            if (dropdownSpan && quantity > 0) {
+              dropdownSpan.innerHTML = 'Quantity: ' + quantity;
+            } else {
+              dropdownSpan.innerHTML = 'Select an option';
+            }
+          } else {
+            if (!selectedOption) return;
+
+            fieldset.querySelector(
+              ".wt-product__option__title .value",
+            ).innerHTML = selectedOption;
+            if (dropdownSpan) dropdownSpan.innerHTML = ' - ' + selectedOption;
+          }
         });
       }
 

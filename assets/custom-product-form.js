@@ -164,7 +164,7 @@ if (!customElements.get("custom-product-form")) {
           addOns.forEach(addOn => {
             cart.push({
               id: addOn.dataset.variantId,
-              quantity: totalVariants,
+              quantity: Math.ceil(totalVariants / 24) ,
               properties
             });
           });
@@ -240,6 +240,7 @@ if (!customElements.get('order-summary')) {
     }
 
     connectedCallback() {
+      this.add_to_cart_button = document.querySelector('custom-product-form button[type="submit"]');
       this.inputs = document.querySelectorAll('input[data-input]');
       const filtered = Array.from(this.inputs)
       .filter(input => input.name !== 'quantity');
@@ -332,10 +333,14 @@ if (!customElements.get('order-summary')) {
     disable() {
       this.dataset.state = 'disabled';
       if (this.dropdown) this.dropdown.setAttribute('disabled', true);
+      if (this.add_to_cart_button) this.add_to_cart_button.setAttribute('disabled', true);
+      this.removeAttribute('data-active');
     }
     
     enable() {
       if (this.dropdown) this.dropdown.removeAttribute('disabled');
+      if (this.add_to_cart_button) this.add_to_cart_button.removeAttribute('disabled');
+      this.setAttribute('data-active', '');
       this.dataset.state = '';
     }
   }

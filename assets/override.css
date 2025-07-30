@@ -146,13 +146,6 @@ order-summary[data-state="disabled"] button {
 }
 
 order-summary {
-  position: sticky;
-  top: 2rem;
-  left: 0;
-  z-index: 10;
-}
-
-order-summary {
   display: grid;
   place-items: center;
   transition: top .3s ease-in-out;
@@ -174,8 +167,21 @@ order-summary custom-variant-dropdown button.wt-product__option__dropdown {
   justify-content: center!important
 }
 
-.sticky-enabled.sticky-show ~ main order-summary {
+order-summary[data-active] {
+  position: sticky;
+  top: 2rem;
+  left: 0;
+  z-index: 10;
+}
+
+.sticky-enabled.sticky-show ~ main order-summary[data-active] {
   top: 7rem;
+}
+
+@media screen and (min-width: 768px) {
+  order-summary {
+    display: none;
+  }
 }
 
 order-summary .drawer__list-overlay {

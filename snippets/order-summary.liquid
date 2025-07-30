@@ -10,7 +10,12 @@
         wt-product__option__dropdown
         {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}
       "
-    >Order Summary</button>
+    >
+      <span>Order Summary</span>
+      <span hidden>
+        {% render 'icons', id: 'arrow-down' %}
+      </span>
+    </button>
 
     <div class="wt-product__option__body wt-product__option__body--{{ options_body_class }}">
       <div class="drawer__list-nav">

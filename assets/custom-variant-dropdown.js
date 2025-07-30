@@ -11,7 +11,7 @@ if (!customElements.get("custom-variant-dropdown")) {
         this.dropdownButton = this.querySelector(
           ".wt-product__option__dropdown",
         );
-        this.dropdownIcon = this.dropdownButton.querySelector("svg") || null;
+        this.dropdownIcon = this.dropdownButton.querySelector("svg");
 
         this.container = this.querySelector(".wt-product__option__body");
         this.drawerList = this.querySelector(".drawer__list");
@@ -38,7 +38,7 @@ if (!customElements.get("custom-variant-dropdown")) {
       }
 
       openDrawer() {
-        if (this.dropdownIcon) this.dropdownIcon.classList.add(this.classOpen);
+        this.dropdownIcon.classList.add(this.classOpen);
         this.container.classList.add(this.classOpen);
         this.overlay.classList.remove(this.classHidden);
         this.body.classList.add(this.classBodyOverlayed);
@@ -59,10 +59,8 @@ if (!customElements.get("custom-variant-dropdown")) {
         window.productSummary.forEach((product, idx) => {
           const match = product.name.match(/^properties\[(.+)\]$/);
           let key = match ? match[1] : product.name
-
           
           if (product.name === 'quantity') {
-            console.log('variants', product.variants, product.variants.length)
             const variants = this.setVariants(product.variants)
             this.drawerContent.innerHTML += `
               <div class="drawer__list__item drawer__list__item--mb">
@@ -99,7 +97,7 @@ if (!customElements.get("custom-variant-dropdown")) {
         this.container.classList.remove(this.classOpen);
         this.overlay.classList.add(this.classHidden);
         this.body.classList.remove(this.classBodyOverlayed);
-        if (this.dropdownIcon) this.dropdownIcon.classList.add(this.classOpen);
+        this.dropdownIcon.classList.add(this.classOpen);
         this.isDrawerOpen = false;
         if (this.isInsideFeaturedProductSection) {
           this.featuredProductSection.classList.remove(

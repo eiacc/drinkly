@@ -837,15 +837,21 @@
         "label": "Enable product discount"
       },
       {
+        "type": "product",
+        "id": "product_discount",
+        "label": "Choose product",
+        "info": "Choose the product that will be used to calculate the discount"
+      },
+      {
         "type": "text",
-        "id": "product_discount_amount",
+        "id": "product_discount_quantity",
         "default": "100",
-        "label": "Discount amount"
+        "label": "Discount quantity"
       },
       {
         "type": "text",
         "id": "product_discount_text",
-        "default": "Spend ||amount|| more for FREE shipping!",
+        "default": "Add ||quantity|| more to qualify for bottles at just $10.00 each!",
         "label": "Discount text",
       },
       {
