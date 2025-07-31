@@ -18,28 +18,28 @@
           "type": "menu",
           "settings": {
             "heading_links": "Categories",
-            "links": "categories"
+            "links": ""
           }
         },
         "menu_DzCNd6": {
           "type": "menu",
           "settings": {
             "heading_links": "Customer Service",
-            "links": "customer-service"
+            "links": ""
           }
         },
         "menu_9YUhCX": {
           "type": "menu",
           "settings": {
             "heading_links": "Information",
-            "links": "information"
+            "links": ""
           }
         },
         "text_DY7pny": {
           "type": "text",
           "settings": {
             "heading_text": "About Us",
-            "text": "<p>Wonder Beauty is a modern cosmetics brand inspired by the power of simplicity and nature. Visit our About page to learn more about the products featured in this demo and the story behind the brand.  <a href=\"/pages/contact\" title=\"Contact\">More Info</a></p>"
+            "text": "<p>Welcome to Drinkly by Three Foxes, where unforgettable gifts are bottled, labelled, and ready to impress.<br/><br/>Whether you're popping the question, pitching a client, or celebrating another lap around the sun, we make it personal (and seriously good-looking).<br/><br/>From custom cocktails to non-alc delights, everything’s crafted with style, cheek, and zero nasties—because gifting shouldn’t be boring, and neither should you.  <a href=\"/pages/contact\" title=\"Contact\">More Info</a></p>"
           }
         }
       },
@@ -59,7 +59,6 @@
         "show-payments-icons": true,
         "show-copyright": false,
         "text": "© 2025 Wonder Fashion Demo.  Powered by Shopify.",
-
         "big-logo-width": 100,
         "margin-top": 56,
         "margin-bottom": 8

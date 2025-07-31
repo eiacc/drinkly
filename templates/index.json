@@ -15,7 +15,7 @@
         "heading_yhch7c": {
           "type": "heading",
           "settings": {
-            "subheading": "<p>Empower Your Skin care</p>",
+            "subheading": "<p>Designed to impress</p>",
             "font_uppercase": "none",
             "disable_on_mobile": false
           }
@@ -23,7 +23,7 @@
         "text_JJPAfx": {
           "type": "text",
           "settings": {
-            "text": "The harmony between powerful PICTURE2 high-performance  ingredients PICTURE3 and exceptionally simple PICTURE1 skincare routines.",
+            "text": "Say cheers PICTURE1 your way with custom bottles for weddings PICTURE2 , brands, and celebrations PICTURE3. Impossible to ignore.",
             "font_uppercase": "none",
             "disable_on_mobile": false,
             "size_heading": 140,
@@ -53,11 +53,11 @@
         "1645137069a9c97a90-1": {
           "type": "image",
           "settings": {
-            "heading": "For Weddings & Engagements",
+            "heading": "Weddings",
             "heading_disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100,
-            "text": "Orchid Antioxidant Beauty Face Oil",
+            "text": "For Weddings & Engagements",
             "text_disable_on_mobile": false,
             "button_select": "secondary",
             "button_label": "Shop now",
@@ -81,7 +81,7 @@
             "heading_disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100,
-            "text": "Smoothing serum",
+            "text": "Brand Activations & Corporate Gifting",
             "text_disable_on_mobile": false,
             "button_select": "secondary",
             "button_label": "Shop now",
@@ -115,7 +115,7 @@
             "color-body-text": "rgba(0,0,0,0)",
             "color-overlay": "rgba(0,0,0,0)",
             "color-overlay-opacity": 0,
-            "desktop_image": "shopify://shop_images/Cat3-Special2.png",
+            "desktop_image": "shopify://shop_images/Cat3-Special.png",
             "desktop_text_vertical_position": "bottom",
             "desktop_text_horizontal_position": "center",
             "mobile_text_vertical_position": "bottom",
@@ -1045,7 +1045,7 @@
         "164916093728eec38a-0": {
           "type": "heading",
           "settings": {
-            "heading": "Get 20% off your first order",
+            "heading": "Get 10% off your first order",
             "heading_disable_on_mobile": false,
             "size_heading": 200,
             "size_heading_mobile": 180
