@@ -53,7 +53,7 @@
         "1645137069a9c97a90-1": {
           "type": "image",
           "settings": {
-            "heading": "Orchid",
+            "heading": "Weddings",
             "heading_disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100,
@@ -67,6 +67,7 @@
             "color-body-text": "rgba(0,0,0,0)",
             "color-overlay": "rgba(0,0,0,0)",
             "color-overlay-opacity": 0,
+            "desktop_image": "shopify://shop_images/esp-wed-bj-Photoroom.jpg",
             "desktop_text_vertical_position": "bottom",
             "desktop_text_horizontal_position": "center",
             "mobile_text_vertical_position": "bottom",
@@ -76,7 +77,7 @@
         "dd981072-2de5-4a9b-a045-b39d179adb7a": {
           "type": "image",
           "settings": {
-            "heading": "Bakuchiol",
+            "heading": "Brand",
             "heading_disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100,
@@ -90,6 +91,7 @@
             "color-body-text": "rgba(0,0,0,0)",
             "color-overlay": "rgba(0,0,0,0)",
             "color-overlay-opacity": 0,
+            "desktop_image": "shopify://shop_images/cra-crp-sf-Photoroom.jpg",
             "desktop_text_vertical_position": "bottom",
             "desktop_text_horizontal_position": "center",
             "mobile_text_vertical_position": "bottom",
@@ -99,11 +101,11 @@
         "1645137069a9c97a90-0": {
           "type": "image",
           "settings": {
-            "heading": "Eye Anti-Aging",
+            "heading": "Special Occasions",
             "heading_disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100,
-            "text": "Check out our Corrective eye cream Green tea",
+            "text": "Birthdays & Celerbrations",
             "text_disable_on_mobile": false,
             "button_select": "secondary",
             "button_label": "Shop now",
@@ -113,6 +115,7 @@
             "color-body-text": "rgba(0,0,0,0)",
             "color-overlay": "rgba(0,0,0,0)",
             "color-overlay-opacity": 0,
+            "desktop_image": "shopify://shop_images/neg-fox-st-Photoroom.jpg",
             "desktop_text_vertical_position": "bottom",
             "desktop_text_horizontal_position": "center",
             "mobile_text_vertical_position": "bottom",
