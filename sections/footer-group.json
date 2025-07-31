@@ -39,7 +39,7 @@
           "type": "text",
           "settings": {
             "heading_text": "About Us",
-            "text": "<p>Welcome to Drinkly by Three Foxes, where unforgettable gifts are bottled, labelled, and ready to impress.<br/><br/>Whether you're popping the question, pitching a client, or celebrating another lap around the sun, we make it personal (and seriously good-looking).<br/><br/>From custom cocktails to non-alc delights, everything’s crafted with style, cheek, and zero nasties—because gifting shouldn’t be boring, and neither should you.  <a href=\"/pages/contact\" title=\"Contact\">More Info</a></p>"
+            "text": "<p>Welcome to Drinkly by Three Foxes, where unforgettable gifts are bottled, labelled, and ready to impress. <a href=\"/pages/contact\" title=\"Contact\">More Info</a></p>"
           }
         }
       },

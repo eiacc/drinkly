@@ -148,7 +148,7 @@
         "heading_rtNxib": {
           "type": "heading",
           "settings": {
-            "heading": "Where Every Skincare Moment Counts.",
+            "heading": "Where Every Moment Counts",
             "disable_on_mobile": false,
             "size_heading": 300,
             "size_heading_mobile": 160
@@ -157,7 +157,7 @@
         "text_FPNX9w": {
           "type": "text",
           "settings": {
-            "text": "<p>At Beauty, we believe that skincare isn't just a routine; it's a journey of self-care and self-discovery. Our-Beauty curated selection of premium skincare products is designed to elevate your beauty regimen, <br/>offering you a sanctuary of indulgence and transformation. <br/></p>",
+            "text": "<p>Custom-labelled bottles for lovers, leaders, and legends, because every moment deserves your personal touch.<br/></p>",
             "disable_on_mobile": false
           }
         },
