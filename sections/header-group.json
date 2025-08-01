@@ -85,7 +85,7 @@
         "large_screen_logo_width": 120,
         "mobile_screen_logo_width": 90,
         "menu": "main-menu",
-        "teaser_menu": "main-menu",
+        "teaser_menu": "teaser",
         "mobile_footer_menu": "footer",
         "transparent_header_color": "#ffffff",
         "show_country_selector": false,
