@@ -179,9 +179,9 @@
       "settings": {
         "desktop_text_horizontal_position": "center",
         "rotation": 10,
-        "image_1": "shopify://shop_images/bottle-mimco.png",
+        "image_1": "shopify://shop_images/Bottle-Anton700.jpg",
         "button_link1": "shopify://collections/brand-cocktails",
-        "image_2": "shopify://shop_images/bottle-carlin.png",
+        "image_2": "shopify://shop_images/Bottle-Paige700.jpg",
         "button_link2": "shopify://collections/wedding-cocktails",
         "color-body-text": "rgba(0,0,0,0)",
         "background_color": "rgba(0,0,0,0)",
@@ -1026,54 +1026,92 @@
         "background_color": "#f7f3ee"
       }
     },
-    "164572276407aa76b1": {
-      "type": "testimonials",
+    "testimonial_images_9YE74N": {
+      "type": "testimonial-images",
       "blocks": {
-        "1645722764301b2090-0": {
-          "type": "image",
+        "testimonial_xgPPxD": {
+          "type": "testimonial",
           "settings": {
-            "icon_select": "none",
-            "text": "<p>\"Mokosh Face Cream is a game-changer. Its lightweight formula hydrates deeply without any greasiness. My skin feels nourished and looks radiant. A pure delight for sensitive skin!\"</p>",
-            "large_screen_logo_width": 80,
-            "mobile_screen_logo_width": 90,
-            "author": "Alex K."
+            "icon_select": "100",
+            "text": "<p><strong>Fantastic Service and Easy to Order.</strong><br/><br/>\"The process online was super efficient. Communication through out was fantastic and providing shipping information.<br/><br/>Great quality product, great value.<br/><br/>We ordered the negroni and then the next morning my partner changed his mind and we contacted them and they were great in changing to a different spirit, and were super responsive..\"</p>",
+            "author": "Michael Felix",
+            "desktop_image": "shopify://shop_images/Review_-_Michael_Felix.webp",
+            "image_link": ""
           }
         },
-        "1645722764301b2090-1": {
-          "type": "image",
+        "testimonial_bNPTby": {
+          "type": "testimonial",
           "settings": {
-            "icon_select": "none",
-            "text": "<p>\"I love Mokosh brand products , it absorbs quickly, for the day I use together with the cream, for the night only oil alone. <br/>I feel that the skin is very well moisturized and is not greasy. I recommend.\"</p>",
-            "large_screen_logo_width": 80,
-            "mobile_screen_logo_width": 90,
-            "author": "Monika R."
+            "icon_select": "100",
+            "text": "<p>\"We ordered some of the Foxtails & Co mini cocktails for our wedding as favours for our guests and we were so impressed! Everything was delivered so quickly, and the bottles were so gorgeously presented. We ordered a few different flavours, and our guests loved them! We had the Negroni & Blood Orange flavours ourselves and they were absolutely delicious. The perfect addition to your special event, your guests will thank you!\"</p>",
+            "author": "Kerrie Broos Revitt",
+            "desktop_image": "shopify://shop_images/Review_-_Kerrie_Broos_Revitt.webp",
+            "image_link": ""
           }
         },
-        "e15dcbd0-bf98-4d71-abed-51a2799236e6": {
-          "type": "image",
+        "testimonial_rqw8Lg": {
+          "type": "testimonial",
           "settings": {
-            "icon_select": "none",
-            "text": "<p>\"Mokosh Face Cream is a skincare hero. It absorbs quickly, leaving my skin supple and glowing. A must for anyone craving a natural, effective moisturizer.\"</p>",
-            "large_screen_logo_width": 80,
-            "mobile_screen_logo_width": 90,
-            "author": "Anna P."
+            "icon_select": "100",
+            "text": "<p><strong>Best Wedding Favours Ever – Our Guests Couldn't Get Enough!</strong><br/><br/>\"We decided to gift our guests mini bottles of homemade limoncello as wedding favours, and WOW—what a hit! From the moment they saw the cute packaging to the very last sip, everyone was raving about them.<br/>We wanted to give our guests something personal and fun, and this was hands-down the best decision. If you're looking for a favour that people will actually love, these limoncello cocktails are it. Zero waste—every bottle was gone! Highly recommend! 🍋✨.\"</p>",
+            "author": "Vanessa Burke",
+            "desktop_image": "shopify://shop_images/Review_-_Vaness_Burke.webp",
+            "image_link": ""
+          }
+        },
+        "testimonial_wTqp4R": {
+          "type": "testimonial",
+          "settings": {
+            "icon_select": "100",
+            "text": "<p>\"This is such cool thing to have for any special occasion. I just received my order for my sons 30th birthday and am so happy with the finished product, the photo is clear and precise , cant wait for guests reaction when I gift them this momento. Communication with Three Foxes was excellent they really helped me with my order and delivery prompt.\"</p>",
+            "author": "Liz Treloar",
+            "desktop_image": "shopify://shop_images/Review_-_Liz_Treloar.webp",
+            "image_link": ""
+          }
+        },
+        "testimonial_f4Chkg": {
+          "type": "testimonial",
+          "settings": {
+            "icon_select": "100",
+            "text": "<p>\"We just wanted to say a huge thankyou for our custom cocktails for our wedding day. The looked amazing! And we had so many compliments, they were a huge hit, thanks again.\"</p>",
+            "author": "Natasha Forrester",
+            "desktop_image": "shopify://shop_images/Review_-_Natasha.webp",
+            "image_link": ""
           }
         }
       },
       "block_order": [
-        "1645722764301b2090-0",
-        "1645722764301b2090-1",
-        "e15dcbd0-bf98-4d71-abed-51a2799236e6"
+        "testimonial_xgPPxD",
+        "testimonial_bNPTby",
+        "testimonial_rqw8Lg",
+        "testimonial_wTqp4R",
+        "testimonial_f4Chkg"
       ],
+      "name": "t:sections.testimonial_images.name",
       "settings": {
-        "heading": "",
-        "image_shape": "natural",
-        "testimonial_text_size_desktop": 160,
-        "testimonial_text_size": 120,
-        "text_color": "rgba(0,0,0,0)",
-        "background_color": "#f7f3ee",
-        "margin-top": 100,
-        "margin-bottom": 100
+        "title": "Testimonial images",
+        "text_style": "body",
+        "testimonial_text_size_desktop": 100,
+        "testimonial_text_size": 100,
+        "layout": "image_first",
+        "desktop-percentage-image-width": 50,
+        "full-width-enabled": false,
+        "auto-rotate": false,
+        "change_slider_time": 5,
+        "slide_height": "fixed_height",
+        "desktop_fixed_height": 480,
+        "mobile_fixed_height": 300,
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "center",
+        "mobile_text_horizontal_position": "center",
+        "section-color-body-text": "transparent",
+        "section-color-overlay": "transparent",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "transparent",
+        "color-overlay": "transparent",
+        "color-overlay-opacity": 100,
+        "margin-top": 20,
+        "margin-bottom": 20
       }
     },
     "button_qK8rAG": {
@@ -1188,92 +1226,6 @@
         "margin-top": 100,
         "margin-bottom": 100
       }
-    },
-    "testimonial_images_9YE74N": {
-      "type": "testimonial-images",
-      "blocks": {
-        "testimonial_xgPPxD": {
-          "type": "testimonial",
-          "settings": {
-            "icon_select": "100",
-            "text": "<p><strong>Fantastic Service and Easy to Order.</strong><br/><br/>\"The process online was super efficient. Communication through out was fantastic and providing shipping information.<br/><br/>Great quality product, great value.<br/><br/>We ordered the negroni and then the next morning my partner changed his mind and we contacted them and they were great in changing to a different spirit, and were super responsive..\"</p>",
-            "author": "Michael Felix",
-            "desktop_image": "shopify://shop_images/Review_-_Michael_Felix.webp",
-            "image_link": ""
-          }
-        },
-        "testimonial_rqw8Lg": {
-          "type": "testimonial",
-          "settings": {
-            "icon_select": "100",
-            "text": "<p><strong>Best Wedding Favours Ever – Our Guests Couldn't Get Enough!</strong><br/><br/>\"We decided to gift our guests mini bottles of homemade limoncello as wedding favours, and WOW—what a hit! From the moment they saw the cute packaging to the very last sip, everyone was raving about them.<br/><br/>Not only did they look gorgeous on the tables, they tasted amazing—refreshing, zesty, and the perfect little post-dinner treat. People were asking if they could take extras home (some even tried sneaking a few from empty seats!). It quickly became the talk of the night.<br/><br/>We wanted to give our guests something personal and fun, and this was hands-down the best decision. If you're looking for a favour that people will actually love, these limoncello cocktails are it. Zero waste—every bottle was gone!<br/><br/>Highly recommend! 🍋✨.\"</p>",
-            "author": "Vanessa Burke",
-            "desktop_image": "shopify://shop_images/Review_-_Vaness_Burke.webp",
-            "image_link": ""
-          }
-        },
-        "testimonial_bNPTby": {
-          "type": "testimonial",
-          "settings": {
-            "icon_select": "100",
-            "text": "<p>\"We ordered some of the Foxtails & Co mini cocktails for our wedding as favours for our guests and we were so impressed! Everything was delivered so quickly, and the bottles were so gorgeously presented. We ordered a few different flavours, and our guests loved them! We had the Negroni & Blood Orange flavours ourselves and they were absolutely delicious. The perfect addition to your special event, your guests will thank you!\"</p>",
-            "author": "Kerrie Broos Revitt",
-            "desktop_image": "shopify://shop_images/Review_-_Kerrie_Broos_Revitt.webp",
-            "image_link": ""
-          }
-        },
-        "testimonial_f4Chkg": {
-          "type": "testimonial",
-          "settings": {
-            "icon_select": "100",
-            "text": "<p>\"Your feedback goes here. Share your experience with our product or service.\"</p>",
-            "author": "Author name",
-            "image_link": ""
-          }
-        },
-        "testimonial_ckKdeL": {
-          "type": "testimonial",
-          "settings": {
-            "icon_select": "100",
-            "text": "<p>\"Your feedback goes here. Share your experience with our product or service.\"</p>",
-            "author": "Author name",
-            "image_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_xgPPxD",
-        "testimonial_rqw8Lg",
-        "testimonial_bNPTby",
-        "testimonial_f4Chkg",
-        "testimonial_ckKdeL"
-      ],
-      "name": "t:sections.testimonial_images.name",
-      "settings": {
-        "title": "Testimonial images",
-        "text_style": "body",
-        "testimonial_text_size_desktop": 100,
-        "testimonial_text_size": 100,
-        "layout": "image_first",
-        "desktop-percentage-image-width": 50,
-        "full-width-enabled": false,
-        "auto-rotate": false,
-        "change_slider_time": 5,
-        "slide_height": "fixed_height",
-        "desktop_fixed_height": 480,
-        "mobile_fixed_height": 300,
-        "desktop_text_vertical_position": "center",
-        "desktop_text_horizontal_position": "center",
-        "mobile_text_horizontal_position": "center",
-        "section-color-body-text": "transparent",
-        "section-color-overlay": "transparent",
-        "section-color-overlay-opacity": 100,
-        "color-body-text": "transparent",
-        "color-overlay": "transparent",
-        "color-overlay-opacity": 100,
-        "margin-top": 20,
-        "margin-bottom": 20
-      }
     }
   },
   "order": [
@@ -1296,10 +1248,9 @@
     "shoppable_image_RFxQtM",
     "1645701451ca57fd3c",
     "button_AcgMnQ",
-    "164572276407aa76b1",
+    "testimonial_images_9YE74N",
     "button_qK8rAG",
     "164580331540910010",
-    "1649160937e2665513",
-    "testimonial_images_9YE74N"
+    "1649160937e2665513"
   ]
 }
