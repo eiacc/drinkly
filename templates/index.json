@@ -179,8 +179,10 @@
       "settings": {
         "desktop_text_horizontal_position": "center",
         "rotation": 10,
-        "button_link1": "",
-        "button_link2": "",
+        "image_1": "shopify://shop_images/bottle-mimco.png",
+        "button_link1": "shopify://collections/brand-cocktails",
+        "image_2": "shopify://shop_images/bottle-carlin.png",
+        "button_link2": "shopify://collections/wedding-cocktails",
         "color-body-text": "rgba(0,0,0,0)",
         "background_color": "rgba(0,0,0,0)",
         "margin-top": 0,
@@ -193,67 +195,141 @@
         "image_wN7UMR": {
           "type": "image",
           "settings": {
-            "link": ""
+            "desktop_image": "shopify://shop_images/Corp-Logo-1.png",
+            "link": "shopify://collections/brand-cocktails"
           }
         },
         "image_zK7iiL": {
           "type": "image",
           "settings": {
-            "link": ""
+            "desktop_image": "shopify://shop_images/Corp-Logo-2.png",
+            "link": "shopify://collections/brand-cocktails"
           }
         },
         "image_Pt8e9B": {
           "type": "image",
           "settings": {
-            "link": ""
+            "desktop_image": "shopify://shop_images/Corp-Logo-3.png",
+            "link": "shopify://collections/brand-cocktails"
           }
         },
         "image_VFKc3c": {
           "type": "image",
           "settings": {
-            "link": ""
+            "desktop_image": "shopify://shop_images/Corp-Logo-4.png",
+            "link": "shopify://collections/brand-cocktails"
           }
         },
         "image_m7TNF8": {
           "type": "image",
           "settings": {
-            "link": ""
+            "desktop_image": "shopify://shop_images/Corp-Logo-5.png",
+            "link": "shopify://collections/brand-cocktails"
           }
         },
         "image_MJtbcg": {
           "type": "image",
           "settings": {
-            "link": ""
+            "desktop_image": "shopify://shop_images/Corp-Logo-6.png",
+            "link": "shopify://collections/brand-cocktails"
           }
         },
         "image_TDEHhf": {
           "type": "image",
           "settings": {
-            "link": ""
+            "desktop_image": "shopify://shop_images/Corp-Logo-7.png",
+            "link": "shopify://collections/brand-cocktails"
           }
         },
         "image_4KYJ9W": {
           "type": "image",
           "settings": {
-            "link": ""
+            "desktop_image": "shopify://shop_images/Corp-Logo-8.png",
+            "link": "shopify://collections/brand-cocktails"
           }
         },
         "image_HwxJQF": {
           "type": "image",
           "settings": {
-            "link": ""
+            "desktop_image": "shopify://shop_images/Corp-Logo-9.png",
+            "link": "shopify://collections/brand-cocktails"
           }
         },
         "image_3MGdWy": {
           "type": "image",
           "settings": {
-            "link": ""
+            "desktop_image": "shopify://shop_images/Corp-Logo-10.png",
+            "link": "shopify://collections/brand-cocktails"
           }
         },
         "image_Wg9K6t": {
           "type": "image",
           "settings": {
-            "link": ""
+            "desktop_image": "shopify://shop_images/Corp-Logo-11.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_33mDGy": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-12.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_Gji6Yi": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-13.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_bX3U9q": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-14.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_Nfn3AQ": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-15.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_jAMEie": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-16.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_7RGpHF": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-17.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_mwmwNf": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-18.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_RAYff8": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-19.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_TP7NLw": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-20.png",
+            "link": "shopify://collections/brand-cocktails"
           }
         }
       },
@@ -268,10 +344,19 @@
         "image_4KYJ9W",
         "image_HwxJQF",
         "image_3MGdWy",
-        "image_Wg9K6t"
+        "image_Wg9K6t",
+        "image_33mDGy",
+        "image_Gji6Yi",
+        "image_bX3U9q",
+        "image_Nfn3AQ",
+        "image_jAMEie",
+        "image_7RGpHF",
+        "image_mwmwNf",
+        "image_RAYff8",
+        "image_TP7NLw"
       ],
       "settings": {
-        "heading": "",
+        "heading": "Brands we've worked with!",
         "animation": "marquee",
         "animation_speed": "100",
         "color-body-text": "rgba(0,0,0,0)",
