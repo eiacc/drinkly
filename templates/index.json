@@ -442,17 +442,18 @@
     "button_6NaGjU": {
       "type": "button",
       "settings": {
-        "button_select": "link",
+        "button_select": "primary",
         "button_horizontal_position": "center",
-        "button_label": "View all products",
+        "button_label": "CUSTOMISE WITH YOUR BRAND",
         "button_link": "",
-        "margin-top": 32,
-        "margin-bottom": 60,
+        "margin-top": 56,
+        "margin-bottom": 56,
         "background_color": "#faece6"
       }
     },
     "1644542625dcf6daf0": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Our Bestsellers",
         "disable_on_mobile": false,
@@ -945,18 +946,6 @@
         "margin-bottom": 0
       }
     },
-    "button_AcgMnQ": {
-      "type": "button",
-      "settings": {
-        "button_select": "primary",
-        "button_horizontal_position": "center",
-        "button_label": "View all products",
-        "button_link": "",
-        "margin-top": 56,
-        "margin-bottom": 56,
-        "background_color": "#f7f3ee"
-      }
-    },
     "1645701451ca57fd3c": {
       "type": "multicolumn",
       "blocks": {
@@ -971,7 +960,8 @@
             "button_label": "Check it out",
             "button_disable_on_mobile": false,
             "button_link": "",
-            "button_link_in_new_window": false
+            "button_link_in_new_window": false,
+            "desktop_image": "shopify://shop_images/ELE-CRF-NAN_5208a7df-175f-41fe-a6ea-b096efe57d58.webp"
           }
         },
         "16457014517af02773-1": {
@@ -985,7 +975,8 @@
             "button_label": "Check now",
             "button_disable_on_mobile": false,
             "button_link": "",
-            "button_link_in_new_window": false
+            "button_link_in_new_window": false,
+            "desktop_image": "shopify://shop_images/ELE-CRF-NAN_5208a7df-175f-41fe-a6ea-b096efe57d58.webp"
           }
         },
         "16457014517af02773-2": {
@@ -999,7 +990,8 @@
             "button_label": "Check now",
             "button_disable_on_mobile": false,
             "button_link": "",
-            "button_link_in_new_window": false
+            "button_link_in_new_window": false,
+            "desktop_image": "shopify://shop_images/ELE-CRF-NAN_5208a7df-175f-41fe-a6ea-b096efe57d58.webp"
           }
         }
       },
@@ -1020,6 +1012,18 @@
         "background_color": "rgba(0,0,0,0)",
         "margin-top": 56,
         "margin-bottom": 48
+      }
+    },
+    "button_AcgMnQ": {
+      "type": "button",
+      "settings": {
+        "button_select": "primary",
+        "button_horizontal_position": "center",
+        "button_label": "SHOP WEDDING COCKTAILS",
+        "button_link": "shopify://collections/wedding-cocktails",
+        "margin-top": 56,
+        "margin-bottom": 56,
+        "background_color": "#f7f3ee"
       }
     },
     "164572276407aa76b1": {
@@ -1063,13 +1067,25 @@
       ],
       "settings": {
         "heading": "",
-        "image_shape": "circle",
+        "image_shape": "natural",
         "testimonial_text_size_desktop": 160,
         "testimonial_text_size": 120,
         "text_color": "rgba(0,0,0,0)",
         "background_color": "#f7f3ee",
         "margin-top": 100,
         "margin-bottom": 100
+      }
+    },
+    "button_qK8rAG": {
+      "type": "button",
+      "settings": {
+        "button_select": "primary",
+        "button_horizontal_position": "center",
+        "button_label": "SHOP WEDDING COCKTAILS",
+        "button_link": "shopify://collections/wedding-cocktails",
+        "margin-top": 56,
+        "margin-bottom": 56,
+        "background_color": "#f7f3ee"
       }
     },
     "164580331540910010": {
@@ -1172,6 +1188,92 @@
         "margin-top": 100,
         "margin-bottom": 100
       }
+    },
+    "testimonial_images_9YE74N": {
+      "type": "testimonial-images",
+      "blocks": {
+        "testimonial_xgPPxD": {
+          "type": "testimonial",
+          "settings": {
+            "icon_select": "100",
+            "text": "<p><strong>Fantastic Service and Easy to Order.</strong><br/><br/>\"The process online was super efficient. Communication through out was fantastic and providing shipping information.<br/><br/>Great quality product, great value.<br/><br/>We ordered the negroni and then the next morning my partner changed his mind and we contacted them and they were great in changing to a different spirit, and were super responsive..\"</p>",
+            "author": "Michael Felix",
+            "desktop_image": "shopify://shop_images/Review_-_Michael_Felix.webp",
+            "image_link": ""
+          }
+        },
+        "testimonial_rqw8Lg": {
+          "type": "testimonial",
+          "settings": {
+            "icon_select": "100",
+            "text": "<p><strong>Best Wedding Favours Ever – Our Guests Couldn't Get Enough!</strong><br/><br/>\"We decided to gift our guests mini bottles of homemade limoncello as wedding favours, and WOW—what a hit! From the moment they saw the cute packaging to the very last sip, everyone was raving about them.<br/><br/>Not only did they look gorgeous on the tables, they tasted amazing—refreshing, zesty, and the perfect little post-dinner treat. People were asking if they could take extras home (some even tried sneaking a few from empty seats!). It quickly became the talk of the night.<br/><br/>We wanted to give our guests something personal and fun, and this was hands-down the best decision. If you're looking for a favour that people will actually love, these limoncello cocktails are it. Zero waste—every bottle was gone!<br/><br/>Highly recommend! 🍋✨.\"</p>",
+            "author": "Vanessa Burke",
+            "desktop_image": "shopify://shop_images/Review_-_Vaness_Burke.webp",
+            "image_link": ""
+          }
+        },
+        "testimonial_bNPTby": {
+          "type": "testimonial",
+          "settings": {
+            "icon_select": "100",
+            "text": "<p>\"We ordered some of the Foxtails & Co mini cocktails for our wedding as favours for our guests and we were so impressed! Everything was delivered so quickly, and the bottles were so gorgeously presented. We ordered a few different flavours, and our guests loved them! We had the Negroni & Blood Orange flavours ourselves and they were absolutely delicious. The perfect addition to your special event, your guests will thank you!\"</p>",
+            "author": "Kerrie Broos Revitt",
+            "desktop_image": "shopify://shop_images/Review_-_Kerrie_Broos_Revitt.webp",
+            "image_link": ""
+          }
+        },
+        "testimonial_f4Chkg": {
+          "type": "testimonial",
+          "settings": {
+            "icon_select": "100",
+            "text": "<p>\"Your feedback goes here. Share your experience with our product or service.\"</p>",
+            "author": "Author name",
+            "image_link": ""
+          }
+        },
+        "testimonial_ckKdeL": {
+          "type": "testimonial",
+          "settings": {
+            "icon_select": "100",
+            "text": "<p>\"Your feedback goes here. Share your experience with our product or service.\"</p>",
+            "author": "Author name",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_xgPPxD",
+        "testimonial_rqw8Lg",
+        "testimonial_bNPTby",
+        "testimonial_f4Chkg",
+        "testimonial_ckKdeL"
+      ],
+      "name": "t:sections.testimonial_images.name",
+      "settings": {
+        "title": "Testimonial images",
+        "text_style": "body",
+        "testimonial_text_size_desktop": 100,
+        "testimonial_text_size": 100,
+        "layout": "image_first",
+        "desktop-percentage-image-width": 50,
+        "full-width-enabled": false,
+        "auto-rotate": false,
+        "change_slider_time": 5,
+        "slide_height": "fixed_height",
+        "desktop_fixed_height": 480,
+        "mobile_fixed_height": 300,
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "center",
+        "mobile_text_horizontal_position": "center",
+        "section-color-body-text": "transparent",
+        "section-color-overlay": "transparent",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "transparent",
+        "color-overlay": "transparent",
+        "color-overlay-opacity": 100,
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
     }
   },
   "order": [
@@ -1192,10 +1294,12 @@
     "collection_feature_8DMAk7",
     "rich_text_tJmRxp",
     "shoppable_image_RFxQtM",
-    "button_AcgMnQ",
     "1645701451ca57fd3c",
+    "button_AcgMnQ",
     "164572276407aa76b1",
+    "button_qK8rAG",
     "164580331540910010",
-    "1649160937e2665513"
+    "1649160937e2665513",
+    "testimonial_images_9YE74N"
   ]
 }
