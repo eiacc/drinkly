@@ -381,6 +381,7 @@
       "block_order": [
         "heading_YkTMiz"
       ],
+      "disabled": true,
       "settings": {
         "section_width": "regular",
         "desktop_text_horizontal_position": "center",
@@ -420,6 +421,7 @@
         "product_DyzE7d",
         "product_qRAMTG"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "full-width-enabled": false,
@@ -631,6 +633,7 @@
         "product_HVQQc6",
         "product_EGwNbR"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "full-width-enabled": true,
@@ -733,6 +736,7 @@
         "product_JVKChr",
         "product_hpQeLR"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Best Skincare Products",
         "quick-add-enabled": true,
@@ -779,6 +783,7 @@
         "1645292346b3e4e0be-1",
         "1645292346b3e4e0be-2"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "full-width-enabled": true,
@@ -849,6 +854,7 @@
         "column_zWrYmm",
         "column_QJXCtz"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "heading": "Popular Collection",
@@ -878,6 +884,7 @@
       "block_order": [
         "heading_qihJKT"
       ],
+      "disabled": true,
       "settings": {
         "section_width": "regular",
         "desktop_text_horizontal_position": "center",
@@ -926,6 +933,7 @@
         "dots_Gm9mL4",
         "dots_rPeKQn"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "full-width-enabled": false,
@@ -940,11 +948,11 @@
     "button_AcgMnQ": {
       "type": "button",
       "settings": {
-        "button_select": "link",
+        "button_select": "primary",
         "button_horizontal_position": "center",
         "button_label": "View all products",
         "button_link": "",
-        "margin-top": 32,
+        "margin-top": 56,
         "margin-bottom": 56,
         "background_color": "#f7f3ee"
       }
@@ -955,12 +963,12 @@
         "16457014517af02773-0": {
           "type": "column",
           "settings": {
-            "heading": "Facial Oil",
+            "heading": "The Elegant",
             "heading_disable_on_mobile": false,
-            "text": "<p>New from Mokosh -  body lotion</p>",
+            "text": "<p>Refined and graceful with a polished look.</p>",
             "text_disable_on_mobile": false,
             "button_select": "link",
-            "button_label": "Check now",
+            "button_label": "Check it out",
             "button_disable_on_mobile": false,
             "button_link": "",
             "button_link_in_new_window": false
@@ -969,9 +977,9 @@
         "16457014517af02773-1": {
           "type": "column",
           "settings": {
-            "heading": "BKIND Soup",
+            "heading": "Moderna",
             "heading_disable_on_mobile": false,
-            "text": "<p>Low-maintenance, high-performance</p>",
+            "text": "<p>Stylish and expressive with a sharp graphic edge.</p>",
             "text_disable_on_mobile": false,
             "button_select": "link",
             "button_label": "Check now",
@@ -983,9 +991,9 @@
         "16457014517af02773-2": {
           "type": "column",
           "settings": {
-            "heading": "Mokosh body lotion",
+            "heading": "Script Party",
             "heading_disable_on_mobile": false,
-            "text": "<p>Cushiony, smooth, pout-perfecting lip oil.</p>",
+            "text": "<p>Playful and handwritten, bringing festive flair to any fun occasion. </p>",
             "text_disable_on_mobile": false,
             "button_select": "link",
             "button_label": "Check now",
@@ -1001,7 +1009,7 @@
         "16457014517af02773-2"
       ],
       "settings": {
-        "heading": "New Beauty Products",
+        "heading": "Popular Products",
         "swipe_on_mobile": true,
         "full-width-enabled": false,
         "image_ratio": "adapt",
@@ -1067,21 +1075,21 @@
     "164580331540910010": {
       "type": "features-banner",
       "blocks": {
-        "164580331573ddb00a-0": {
-          "type": "image",
-          "settings": {
-            "select_icon": "bag",
-            "heading": "Vegan",
-            "text": "<p>Our entire collection is vegan and cruelty free.</p>",
-            "link": ""
-          }
-        },
         "164580331573ddb00a-1": {
           "type": "image",
           "settings": {
             "select_icon": "bag",
             "heading": "Fast & Free Shipping",
-            "text": "<p>Doorstep delivery to most of the US.</p>",
+            "text": "<p>For all orders over $90.</p>",
+            "link": ""
+          }
+        },
+        "164580331573ddb00a-0": {
+          "type": "image",
+          "settings": {
+            "select_icon": "bag",
+            "heading": "Australian Made",
+            "text": "<p>Fro farm to bottle to printing, 100% locally made.</p>",
             "link": ""
           }
         },
@@ -1089,8 +1097,8 @@
           "type": "image",
           "settings": {
             "select_icon": "bag",
-            "heading": "Natural",
-            "text": "<p>We only use the finest natural ingredients.</p>",
+            "heading": "Real Ingredients",
+            "text": "<p>No lab flavours or colours, we use only fruits and botanicals for our drinks.</p>",
             "link": ""
           }
         },
@@ -1105,8 +1113,8 @@
         }
       },
       "block_order": [
-        "164580331573ddb00a-0",
         "164580331573ddb00a-1",
+        "164580331573ddb00a-0",
         "164580331573ddb00a-2",
         "164580331573ddb00a-3"
       ],
