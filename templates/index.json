@@ -1132,24 +1132,27 @@
         "164580331573ddb00a-1": {
           "type": "image",
           "settings": {
-            "select_icon": "bag",
+            "desktop_image": "shopify://shop_images/ship-icon.png",
+            "select_icon": "close",
             "heading": "Fast & Free Shipping",
-            "text": "<p>For all orders over $90.</p>",
+            "text": "<p>Free for orders over $90. Includes free package insurance to your door to cover accidental breakage.</p>",
             "link": ""
           }
         },
         "164580331573ddb00a-0": {
           "type": "image",
           "settings": {
+            "desktop_image": "shopify://shop_images/Aus-icon.png",
             "select_icon": "bag",
             "heading": "Australian Made",
-            "text": "<p>Fro farm to bottle to printing, 100% locally made.</p>",
+            "text": "<p>From farm to bottle to printing, made from local producers and suppliers in our distillery in Melbourne.</p>",
             "link": ""
           }
         },
         "164580331573ddb00a-2": {
           "type": "image",
           "settings": {
+            "desktop_image": "shopify://shop_images/leaf-icon.png",
             "select_icon": "bag",
             "heading": "Real Ingredients",
             "text": "<p>No lab flavours or colours, we use only fruits and botanicals for our drinks.</p>",
@@ -1159,6 +1162,7 @@
         "164580331573ddb00a-3": {
           "type": "image",
           "settings": {
+            "desktop_image": "shopify://shop_images/recycle-icon.png",
             "select_icon": "bag",
             "heading": "Recyclable",
             "text": "<p>All packaging is recyclable and eco conscious.</p>",
