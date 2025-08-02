@@ -184,7 +184,7 @@
         "image_2": "shopify://shop_images/Bottle-Paige700.jpg",
         "button_link2": "shopify://collections/wedding-cocktails",
         "color-body-text": "rgba(0,0,0,0)",
-        "background_color": "rgba(0,0,0,0)",
+        "background_color": "#f7f3ee",
         "margin-top": 0,
         "margin-bottom": 0
       }
@@ -448,7 +448,7 @@
         "button_link": "",
         "margin-top": 56,
         "margin-bottom": 56,
-        "background_color": "#faece6"
+        "background_color": "#ffffff"
       }
     },
     "1644542625dcf6daf0": {
@@ -1009,7 +1009,7 @@
         "size_heading": 90,
         "size_heading_mobile": 90,
         "color-body-text": "rgba(0,0,0,0)",
-        "background_color": "rgba(0,0,0,0)",
+        "background_color": "#f7f3ee",
         "margin-top": 56,
         "margin-bottom": 48
       }
@@ -1123,7 +1123,7 @@
         "button_link": "shopify://collections/wedding-cocktails",
         "margin-top": 56,
         "margin-bottom": 56,
-        "background_color": "#f7f3ee"
+        "background_color": "#ffffff"
       }
     },
     "164580331540910010": {
@@ -1184,7 +1184,7 @@
         "color_body_icon": "rgba(0,0,0,0)",
         "color_background_icon": "rgba(0,0,0,0)",
         "color_body_text": "rgba(0,0,0,0)",
-        "background_color": "rgba(0,0,0,0)",
+        "background_color": "#f7f3ee",
         "margin-top": 88,
         "margin-bottom": 88
       }
