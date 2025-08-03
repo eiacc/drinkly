@@ -1089,7 +1089,7 @@
       ],
       "name": "t:sections.testimonial_images.name",
       "settings": {
-        "title": "Testimonial images",
+        "title": "What Our Customers Have Been Saying...",
         "text_style": "body",
         "testimonial_text_size_desktop": 100,
         "testimonial_text_size": 100,
