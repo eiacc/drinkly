@@ -136,6 +136,117 @@
         "margin-bottom": 16
       }
     },
+    "rich_text_bGVGWR_2": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_FCDk6m": {
+          "type": "heading",
+          "settings": {
+            "heading": "Need Help?",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        },
+        "text_jVQHcc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Book a call with one of our team to help you go through the options.<br/><br/></p>",
+            "disable_on_mobile": false
+          }
+        },
+        "button_LK4Bmq": {
+          "type": "button",
+          "settings": {
+            "button_select": "primary",
+            "button_label": "BOOK A DISCOVERY CALL",
+            "button_link": "/",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_FCDk6m",
+        "text_jVQHcc",
+        "button_LK4Bmq"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
+    "features_banner_Xqw4VW": {
+      "type": "features-banner",
+      "blocks": {
+        "image_hq6ykz": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/ship-icon.png",
+            "select_icon": "close",
+            "heading": "Fast & Free Shipping",
+            "text": "<p>Free for orders over $90. Includes free package insurance to your door to cover accidental breakage.</p>",
+            "link": ""
+          }
+        },
+        "image_zffmmm": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Aus-icon.png",
+            "select_icon": "bag",
+            "heading": "Australian Made",
+            "text": "<p>From farm to bottle to printing, made from local producers and suppliers in our distillery in Melbourne.</p>",
+            "link": ""
+          }
+        },
+        "image_Wt9AbJ": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/leaf-icon.png",
+            "select_icon": "bag",
+            "heading": "Real Ingredients",
+            "text": "<p>We don’t do synthetic. Only real fruit and botanicals, just the way drinks should be.</p>",
+            "link": ""
+          }
+        },
+        "image_QBgM9q": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/recycle-icon.png",
+            "select_icon": "bag",
+            "heading": "Recyclable",
+            "text": "<p>Our packaging’s planet-friendly, and the bottles double as vases, because great design deserves a second life.</p>",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_hq6ykz",
+        "image_zffmmm",
+        "image_Wt9AbJ",
+        "image_QBgM9q"
+      ],
+      "settings": {
+        "heading": "",
+        "size_heading_mobile": 80,
+        "size_heading": 70,
+        "icon_width_mobile": 52,
+        "icon_width_desktop": 64,
+        "icon_layout": "center",
+        "columns_desktop": "4",
+        "icon_layout_mobile": "grid",
+        "color_body_icon": "rgba(0,0,0,0)",
+        "color_background_icon": "rgba(0,0,0,0)",
+        "color_body_text": "rgba(0,0,0,0)",
+        "background_color": "#f7f3ee",
+        "margin-top": 52,
+        "margin-bottom": 68
+      }
+    },
     "rich_text_fr3Ftz": {
       "type": "rich-text",
       "blocks": {
@@ -423,6 +534,8 @@
     "product-grid",
     "rich_text_bGVGWR",
     "separator_qkXpB7",
+    "rich_text_bGVGWR_2",
+    "features_banner_Xqw4VW",
     "rich_text_fr3Ftz",
     "multicolumn_BLNpDn",
     "features_banner_48DfGA",

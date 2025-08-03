@@ -365,80 +365,6 @@
         "margin-bottom": 0
       }
     },
-    "rich_text_Nm4gMM": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_YkTMiz": {
-          "type": "heading",
-          "settings": {
-            "heading": "Your Daily Routine",
-            "disable_on_mobile": false,
-            "size_heading": 100,
-            "size_heading_mobile": 100
-          }
-        }
-      },
-      "block_order": [
-        "heading_YkTMiz"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_width": "regular",
-        "desktop_text_horizontal_position": "center",
-        "color-body-text": "#000000",
-        "background_color": "#faece6",
-        "margin-top": 28,
-        "margin-bottom": 0
-      }
-    },
-    "shoppable_video_BjfJTR": {
-      "type": "shoppable-video",
-      "blocks": {
-        "product_a96zJX": {
-          "type": "product",
-          "settings": {
-            "start_second": 3,
-            "featured_product": ""
-          }
-        },
-        "product_DyzE7d": {
-          "type": "product",
-          "settings": {
-            "start_second": 6.5,
-            "featured_product": ""
-          }
-        },
-        "product_qRAMTG": {
-          "type": "product",
-          "settings": {
-            "start_second": 14,
-            "featured_product": ""
-          }
-        }
-      },
-      "block_order": [
-        "product_a96zJX",
-        "product_DyzE7d",
-        "product_qRAMTG"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "",
-        "full-width-enabled": false,
-        "quick-add-enabled": true,
-        "rewind-enabled": true,
-        "hide-brand-name": false,
-        "desktop_fixed_height": 700,
-        "mobile_fixed_height": 600,
-        "enable_full_screen_mode": false,
-        "color-body-heading": "#000000",
-        "color-overlay": "#faece6",
-        "color-overlay-opacity": 100,
-        "color-body-text": "#000000",
-        "margin-top": 0,
-        "margin-bottom": 0
-      }
-    },
     "button_6NaGjU": {
       "type": "button",
       "settings": {
@@ -1237,8 +1163,6 @@
     "1645137069750a4751",
     "parallax_wrR7BD",
     "brands_ncdYQm",
-    "rich_text_Nm4gMM",
-    "shoppable_video_BjfJTR",
     "button_6NaGjU",
     "1644542625dcf6daf0",
     "scrolling_text_banner_gkJGQt",
