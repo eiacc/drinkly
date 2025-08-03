@@ -27,7 +27,7 @@
         "heading_EGn4xE": {
           "type": "heading",
           "settings": {
-            "heading": "Get 20% off your first order",
+            "heading": "Get 10% off your first order",
             "heading_disable_on_mobile": false,
             "size_heading": 200,
             "size_heading_mobile": 180
@@ -36,7 +36,7 @@
         "paragraph_kkt8WD": {
           "type": "paragraph",
           "settings": {
-            "paragraph": "<p>Be the first to know about new collections and exclusive offers.<\/p>",
+            "paragraph": "<p>Be the first to know about new collections and exclusive offers.</p>",
             "text_disable_on_mobile": false
           }
         },

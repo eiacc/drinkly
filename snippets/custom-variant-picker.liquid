@@ -103,7 +103,7 @@
         
           <div class="js wt-product__option" data-option="{{ picker_type }}" data-field>
             <div class="wt-product__option__title {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}">
-              <span class="label">Step {{ current_step }} {{ option.name }}</span> <strong class="value"></strong>
+              <span class="label">Step {{ current_step }} {{ option.name }}:</span> <strong class="value"></strong>
             </div>
 
             {% if options_body_class == 'drawer' %}
@@ -277,7 +277,7 @@
     id="ProductSubmitButton-{{ section.id }}"
     type="submit"
     name="add"
-    class="inline-block mt-24 js-add-to-cart product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
+    class="inline-block js-add-to-cart product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
     disabled
   >
     {% if settings['enable-bag-icon'] %}

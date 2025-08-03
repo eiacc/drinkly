@@ -52,7 +52,7 @@
         "size_heading": 140,
         "size_heading_mobile": 120,
         "color-body-text": "#000000",
-        "background_color": "#e6efe8",
+        "background_color": "#f7f3ee",
         "margin-top": 24,
         "margin-bottom": 32
       }
@@ -65,6 +65,7 @@
         "columns_desktop": "3",
         "spacing_desktop": "8",
         "full-width-enabled": false,
+        "spacing_mobile": "16",
         "image_ratio": "adapt",
         "show_video": false,
         "show_secondary_image": true,
@@ -78,6 +79,50 @@
         "filter_position": "always",
         "margin-top": 16,
         "margin-bottom": 0
+      }
+    },
+    "rich_text_bGVGWR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_FCDk6m": {
+          "type": "heading",
+          "settings": {
+            "heading": "Need Help?",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        },
+        "text_jVQHcc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Book a call with one of our team to help you go through the options.<br/><br/></p>",
+            "disable_on_mobile": false
+          }
+        },
+        "button_LK4Bmq": {
+          "type": "button",
+          "settings": {
+            "button_select": "primary",
+            "button_label": "BOOK A DISCOVERY CALL",
+            "button_link": "/",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_FCDk6m",
+        "text_jVQHcc",
+        "button_LK4Bmq"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "transparent",
+        "background_color": "transparent",
+        "margin-top": 20,
+        "margin-bottom": 20
       }
     },
     "separator_qkXpB7": {
@@ -111,7 +156,7 @@
         "section_width": "regular",
         "desktop_text_horizontal_position": "center",
         "color-body-text": "rgba(0,0,0,0)",
-        "background_color": "rgba(0,0,0,0)",
+        "background_color": "#f7f3ee",
         "margin-top": 0,
         "margin-bottom": 8
       }
@@ -129,9 +174,8 @@
             "button_select": "link",
             "button_label": "Check now",
             "button_disable_on_mobile": false,
-
-            "button_link_in_new_window": false,
-
+            "button_link": "",
+            "button_link_in_new_window": false
           }
         },
         "column_kh4Bab": {
@@ -144,9 +188,8 @@
             "button_select": "link",
             "button_label": "Check now",
             "button_disable_on_mobile": false,
-
-            "button_link_in_new_window": false,
-
+            "button_link": "",
+            "button_link_in_new_window": false
           }
         },
         "column_qjBE93": {
@@ -159,9 +202,8 @@
             "button_select": "link",
             "button_label": "Check now",
             "button_disable_on_mobile": false,
-
-            "button_link_in_new_window": false,
-
+            "button_link": "",
+            "button_link_in_new_window": false
           }
         }
       },
@@ -179,63 +221,9 @@
         "size_heading": 80,
         "size_heading_mobile": 80,
         "color-body-text": "rgba(0,0,0,0)",
-        "background_color": "rgba(0,0,0,0)",
+        "background_color": "#f7f3ee",
         "margin-top": 0,
         "margin-bottom": 48
-      }
-    },
-    "collection_feature_XmBEar": {
-      "type": "collection-feature",
-      "blocks": {
-        "column_xc8mrj": {
-          "type": "column",
-          "settings": {
-            "heading": "",
-            "color-body-text": "rgba(0,0,0,0)",
-            "background_color": "#faece6"
-          }
-        },
-        "column_nkp8dz": {
-          "type": "column",
-          "settings": {
-            "heading": "",
-            "color-body-text": "rgba(0,0,0,0)",
-            "background_color": "#ebf4fa"
-          }
-        },
-        "column_d7bUHp": {
-          "type": "column",
-          "settings": {
-            "heading": "",
-            "color-body-text": "rgba(0,0,0,0)",
-            "background_color": "#ecf7ee"
-          }
-        },
-        "column_igNhkc": {
-          "type": "column",
-          "settings": {
-            "heading": "Essential Oils",
-            "color-body-text": "rgba(0,0,0,0)",
-            "background_color": "#fcfbe8"
-          }
-        }
-      },
-      "block_order": [
-        "column_xc8mrj",
-        "column_nkp8dz",
-        "column_d7bUHp",
-        "column_igNhkc"
-      ],
-      "settings": {
-        "heading": "Didn't find the product you're looking for?\nCheck out other collections:",
-        "size_heading": 250,
-        "line_height": 1.4,
-        "size_heading_mobile": 150,
-        "line_height_mobile": 1.8,
-        "color-body-text": "rgba(0,0,0,0)",
-        "background_color": "#ecf7ee",
-        "margin-top": 64,
-        "margin-bottom": 72
       }
     },
     "features_banner_48DfGA": {
@@ -244,37 +232,37 @@
         "image_LpU9LC": {
           "type": "image",
           "settings": {
-
             "select_icon": "bag",
             "heading": "Vegan",
-            "text": "<p>Our entire collection is vegan and cruelty free.</p>"
+            "text": "<p>Our entire collection is vegan and cruelty free.</p>",
+            "link": ""
           }
         },
         "image_CKCXhM": {
           "type": "image",
           "settings": {
-
             "select_icon": "bag",
             "heading": "Fast & Free Shipping",
-            "text": "<p>Doorstep delivery to most of the US.</p>"
+            "text": "<p>Doorstep delivery to most of the US.</p>",
+            "link": ""
           }
         },
         "image_VGUkeA": {
           "type": "image",
           "settings": {
-
             "select_icon": "bag",
             "heading": "Natural",
-            "text": "<p>We only use the finest natural ingredients.</p>"
+            "text": "<p>We only use the finest natural ingredients.</p>",
+            "link": ""
           }
         },
         "image_McECbz": {
           "type": "image",
           "settings": {
-
             "select_icon": "bag",
             "heading": "Recyclable",
-            "text": "<p>All packaging is recyclable and eco conscious.</p>"
+            "text": "<p>All packaging is recyclable and eco conscious.</p>",
+            "link": ""
           }
         }
       },
@@ -288,9 +276,13 @@
         "heading": "",
         "size_heading_mobile": 70,
         "size_heading": 70,
+        "icon_width_mobile": 36,
+        "icon_width_desktop": 48,
         "icon_layout": "center",
+        "columns_desktop": "4",
         "icon_layout_mobile": "grid",
         "color_body_icon": "rgba(0,0,0,0)",
+        "color_background_icon": "rgba(0,0,0,0)",
         "color_body_text": "rgba(0,0,0,0)",
         "background_color": "rgba(0,0,0,0)",
         "margin-top": 60,
@@ -303,7 +295,7 @@
         "heading_KhxnCQ": {
           "type": "heading",
           "settings": {
-            "heading": "Get 20% off your first order",
+            "heading": "Get 10% off your first order",
             "heading_disable_on_mobile": false,
             "size_heading": 200,
             "size_heading_mobile": 160
@@ -334,6 +326,94 @@
         "margin-top": 100,
         "margin-bottom": 100
       }
+    },
+    "testimonial_images_PAzxhF": {
+      "type": "testimonial-images",
+      "blocks": {
+        "testimonial_mxNBBV": {
+          "type": "testimonial",
+          "settings": {
+            "icon_select": "100",
+            "text": "<p><strong>Fantastic Service and Easy to Order.</strong><br/><br/>\"The process online was super efficient. Communication through out was fantastic and providing shipping information.<br/><br/>Great quality product, great value.<br/><br/>We ordered the negroni and then the next morning my partner changed his mind and we contacted them and they were great in changing to a different spirit, and were super responsive..\"</p>",
+            "author": "Michael Felix",
+            "desktop_image": "shopify://shop_images/Review_-_Michael_Felix.webp",
+            "image_link": ""
+          }
+        },
+        "testimonial_z7kcUd": {
+          "type": "testimonial",
+          "settings": {
+            "icon_select": "100",
+            "text": "<p>\"We ordered some of the Foxtails & Co mini cocktails for our wedding as favours for our guests and we were so impressed! Everything was delivered so quickly, and the bottles were so gorgeously presented. We ordered a few different flavours, and our guests loved them! We had the Negroni & Blood Orange flavours ourselves and they were absolutely delicious. The perfect addition to your special event, your guests will thank you!\"</p>",
+            "author": "Kerrie Broos Revitt",
+            "desktop_image": "shopify://shop_images/Review_-_Kerrie_Broos_Revitt.webp",
+            "image_link": ""
+          }
+        },
+        "testimonial_i6LNzP": {
+          "type": "testimonial",
+          "settings": {
+            "icon_select": "100",
+            "text": "<p><strong>Best Wedding Favours Ever – Our Guests Couldn't Get Enough!</strong><br/><br/>\"We decided to gift our guests mini bottles of homemade limoncello as wedding favours, and WOW—what a hit! From the moment they saw the cute packaging to the very last sip, everyone was raving about them.<br/>We wanted to give our guests something personal and fun, and this was hands-down the best decision. If you're looking for a favour that people will actually love, these limoncello cocktails are it. Zero waste—every bottle was gone! Highly recommend! 🍋✨.\"</p>",
+            "author": "Vanessa Burke",
+            "desktop_image": "shopify://shop_images/Review_-_Vaness_Burke.webp",
+            "image_link": ""
+          }
+        },
+        "testimonial_8bNBcr": {
+          "type": "testimonial",
+          "settings": {
+            "icon_select": "100",
+            "text": "<p>\"This is such cool thing to have for any special occasion. I just received my order for my sons 30th birthday and am so happy with the finished product, the photo is clear and precise , cant wait for guests reaction when I gift them this momento. Communication with Three Foxes was excellent they really helped me with my order and delivery prompt.\"</p>",
+            "author": "Liz Treloar",
+            "desktop_image": "shopify://shop_images/Review_-_Liz_Treloar.webp",
+            "image_link": ""
+          }
+        },
+        "testimonial_WtrJtV": {
+          "type": "testimonial",
+          "settings": {
+            "icon_select": "100",
+            "text": "<p>\"We just wanted to say a huge thankyou for our custom cocktails for our wedding day. The looked amazing! And we had so many compliments, they were a huge hit, thanks again.\"</p>",
+            "author": "Natasha Forrester",
+            "desktop_image": "shopify://shop_images/Review_-_Natasha.webp",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_mxNBBV",
+        "testimonial_z7kcUd",
+        "testimonial_i6LNzP",
+        "testimonial_8bNBcr",
+        "testimonial_WtrJtV"
+      ],
+      "name": "t:sections.testimonial_images.name",
+      "settings": {
+        "title": "What Our Customers Have Been Saying...",
+        "text_style": "body",
+        "testimonial_text_size_desktop": 100,
+        "testimonial_text_size": 100,
+        "layout": "image_first",
+        "desktop-percentage-image-width": 50,
+        "full-width-enabled": false,
+        "auto-rotate": false,
+        "change_slider_time": 5,
+        "slide_height": "fixed_height",
+        "desktop_fixed_height": 480,
+        "mobile_fixed_height": 300,
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "center",
+        "mobile_text_horizontal_position": "center",
+        "section-color-body-text": "transparent",
+        "section-color-overlay": "transparent",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "transparent",
+        "color-overlay": "transparent",
+        "color-overlay-opacity": 100,
+        "margin-top": 52,
+        "margin-bottom": 20
+      }
     }
   },
   "order": [
@@ -341,11 +421,12 @@
     "banner",
     "title",
     "product-grid",
+    "rich_text_bGVGWR",
     "separator_qkXpB7",
     "rich_text_fr3Ftz",
     "multicolumn_BLNpDn",
-    "collection_feature_XmBEar",
     "features_banner_48DfGA",
-    "newsletter_KQitJE"
+    "newsletter_KQitJE",
+    "testimonial_images_PAzxhF"
   ]
 }

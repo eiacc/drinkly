@@ -143,6 +143,7 @@ custom-metaproperty .form__fieldset {
 order-summary[data-state="disabled"] button {
   cursor: not-allowed;
   opacity: .75!important;
+  text-decoration: line-through;
 }
 
 order-summary {
@@ -164,7 +165,8 @@ order-summary custom-variant-dropdown button.wt-product__option__dropdown {
   color: black!important;
   text-transform: uppercase;
   font-weight: 500;
-  justify-content: center!important
+  justify-content: center!important;
+  font-size: 1.2rem;
 }
 
 order-summary[data-active] {
@@ -276,4 +278,30 @@ custom-metaproperty[data-state="error"] input {
 
 custom-metaproperty[data-state="error"] .error-message {
   display: block;
+}
+
+input[type="radio"][name="Colour"]:checked + .f-swatch__list__link::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+custom-variant-picker {
+  display: block;
+  margin-bottom: 1.6rem;
+}
+
+@media screen and (max-width: 767px) {
+  custom-product-form label {
+    margin-bottom: 1.2rem;
+    display: inline-block;
+  }
 }

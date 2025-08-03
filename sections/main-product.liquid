@@ -259,6 +259,7 @@
 <script src="{{ 'model_element.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'variant-dropdown.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'custom-variant-dropdown.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'review.js' | asset_url }}" defer="defer"></script>
 
 {% assign selected_variant = product.selected_variant %}
 {% assign enabled_preselect = false %}
@@ -902,7 +903,7 @@
                     class="wt-product__option__title scroll-trigger animate--slide-in disabled-on-mobile"
                     for="PropertyField-{{ section.id }}-{{ block.id }}"
                   >
-                    Step {{ steps }}: {{ block.settings.label }}
+                    Step {{ steps }} {{ block.settings.label }}:
                   </label>
                   <div>
                     <input

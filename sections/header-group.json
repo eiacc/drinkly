@@ -18,14 +18,14 @@
           "type": "announcement",
           "settings": {
             "text": "Free Shipping Over $50! Returns are always on us.",
-
+            "link": ""
           }
         },
         "announcement_YnK6g6": {
           "type": "announcement",
           "settings": {
             "text": "Free Shipping Over $50! Returns are always on us.",
-
+            "link": ""
           }
         }
       },
@@ -49,26 +49,21 @@
           "settings": {
             "title": "Bestseller",
             "promo_section_width": 4,
-
             "heading_1": "",
             "text_1": "Firming face serum Orange",
-
-
+            "link_1": "",
             "heading_2": "",
             "text_2": "Moisturizing hand lotion",
-
-
+            "link_2": "",
             "heading_3": "",
             "text_3": "Floral face moisturized",
-
-
+            "link_3": "",
             "heading_4": "",
             "text_4": "Body salt scrub 300g",
-
-
+            "link_4": "",
             "heading_5": "",
             "text_5": "Nourishing hand balm",
-
+            "link_5": "",
             "heading_6": "",
             "text_6": "",
             "link_6": ""
@@ -87,37 +82,37 @@
         "header_always_blurred": false,
         "show_line_separator": true,
         "show_shadow": false,
-
+        "logo": "shopify://shop_images/drinkly-header.png",
         "large_screen_logo_width": 120,
         "mobile_screen_logo_width": 90,
         "menu": "main-menu",
-        "teaser_menu": "main-menu",
+        "teaser_menu": "teaser",
         "mobile_footer_menu": "footer",
         "transparent_header_color": "#ffffff",
-        "show_country_selector": true,
+        "show_country_selector": false,
         "show_country_selector_label": false,
-        "show_country_selector_flag": true,
+        "show_country_selector_flag": false,
         "show_language_selector": false,
         "drawer_title": "Shop by",
         "typing_search": "Find a product...",
         "suggestions_title": "Top Sellers",
-        "suggestions_menu": "search"
+        "suggestions_menu": ""
       }
     },
     "page_header_logo_banner_DJLpfi": {
       "type": "page-header-logo-banner",
       "settings": {
-
-
+        "logo_image": "shopify://shop_images/2.png",
+        "image_hosted": "shopify://shop_images/Elsa_Campbell_30_1500x1000_bfc56741-b0be-441e-ac80-7b952dc7219a.jpg",
         "additional_text": "",
         "button_style": "link",
-        "button_label": "Where skincare Begins",
+        "button_label": "Make it your own",
         "button_disable_on_mobile": false,
-
+        "button_link": "shopify://collections",
         "button_link_in_new_window": false,
         "color-body-text": "#ffffff",
-        "color-overlay": "#000000",
-        "color-overlay-opacity": 0
+        "color-overlay": "#ff9900",
+        "color-overlay-opacity": 3
       }
     },
     "notification_popup_LER4nx": {

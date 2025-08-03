@@ -15,7 +15,7 @@
         "heading_yhch7c": {
           "type": "heading",
           "settings": {
-            "subheading": "<p>Empower Your Skin care</p>",
+            "subheading": "<p>Designed to impress</p>",
             "font_uppercase": "none",
             "disable_on_mobile": false
           }
@@ -23,14 +23,17 @@
         "text_JJPAfx": {
           "type": "text",
           "settings": {
-            "text": "The harmony between powerful PICTURE2 high-performance  ingredients PICTURE3 and exceptionally simple PICTURE1 skincare routines.",
+            "text": "Say cheers PICTURE1 your way with custom bottles for weddings PICTURE2 , brands, and celebrations PICTURE3. Impossible to ignore.",
             "font_uppercase": "none",
             "disable_on_mobile": false,
             "size_heading": 140,
             "size_heading_mobile": 100,
             "line_height": 1.7,
+            "picture1": "shopify://shop_images/pic1-icon_003b7f32-f05f-4d7b-a923-f93492dd3f51.png",
             "button_link1": "",
+            "picture2": "shopify://shop_images/pic2-icon.png",
             "button_link2": "",
+            "picture3": "shopify://shop_images/pic3-icon_fd41590d-38d9-45d3-9d4c-26edacbe3914.png",
             "button_link3": ""
           }
         }
@@ -53,11 +56,11 @@
         "1645137069a9c97a90-1": {
           "type": "image",
           "settings": {
-            "heading": "Orchid",
+            "heading": "Weddings",
             "heading_disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100,
-            "text": "Orchid Antioxidant Beauty Face Oil",
+            "text": "For Weddings & Engagements",
             "text_disable_on_mobile": false,
             "button_select": "secondary",
             "button_label": "Shop now",
@@ -67,6 +70,7 @@
             "color-body-text": "rgba(0,0,0,0)",
             "color-overlay": "rgba(0,0,0,0)",
             "color-overlay-opacity": 0,
+            "desktop_image": "shopify://shop_images/Cat1-Wedding.png",
             "desktop_text_vertical_position": "bottom",
             "desktop_text_horizontal_position": "center",
             "mobile_text_vertical_position": "bottom",
@@ -76,11 +80,11 @@
         "dd981072-2de5-4a9b-a045-b39d179adb7a": {
           "type": "image",
           "settings": {
-            "heading": "Bakuchiol",
+            "heading": "Brand",
             "heading_disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100,
-            "text": "Smoothing serum",
+            "text": "Brand Activations & Corporate Gifting",
             "text_disable_on_mobile": false,
             "button_select": "secondary",
             "button_label": "Shop now",
@@ -90,6 +94,7 @@
             "color-body-text": "rgba(0,0,0,0)",
             "color-overlay": "rgba(0,0,0,0)",
             "color-overlay-opacity": 0,
+            "desktop_image": "shopify://shop_images/Cat2-Corp.png",
             "desktop_text_vertical_position": "bottom",
             "desktop_text_horizontal_position": "center",
             "mobile_text_vertical_position": "bottom",
@@ -99,11 +104,11 @@
         "1645137069a9c97a90-0": {
           "type": "image",
           "settings": {
-            "heading": "Eye Anti-Aging",
+            "heading": "Special Occasions",
             "heading_disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100,
-            "text": "Check out our Corrective eye cream Green tea",
+            "text": "Birthdays & Celerbrations",
             "text_disable_on_mobile": false,
             "button_select": "secondary",
             "button_label": "Shop now",
@@ -113,6 +118,7 @@
             "color-body-text": "rgba(0,0,0,0)",
             "color-overlay": "rgba(0,0,0,0)",
             "color-overlay-opacity": 0,
+            "desktop_image": "shopify://shop_images/Cat3-Special.png",
             "desktop_text_vertical_position": "bottom",
             "desktop_text_horizontal_position": "center",
             "mobile_text_vertical_position": "bottom",
@@ -131,7 +137,7 @@
         "full-width-enabled": true,
         "image_ratio": "adapt",
         "color-body-text": "rgba(0,0,0,0)",
-        "background_color": "rgba(0,0,0,0)",
+        "background_color": "#ffeac7",
         "margin-top": 0,
         "margin-bottom": 0
       }
@@ -142,7 +148,7 @@
         "heading_rtNxib": {
           "type": "heading",
           "settings": {
-            "heading": "Where Every Skincare Moment Counts.",
+            "heading": "Where Every Moment Counts",
             "disable_on_mobile": false,
             "size_heading": 300,
             "size_heading_mobile": 160
@@ -151,7 +157,7 @@
         "text_FPNX9w": {
           "type": "text",
           "settings": {
-            "text": "<p>At Beauty, we believe that skincare isn't just a routine; it's a journey of self-care and self-discovery. Our-Beauty curated selection of premium skincare products is designed to elevate your beauty regimen, <br/>offering you a sanctuary of indulgence and transformation. <br/></p>",
+            "text": "<p>Custom-labelled bottles for lovers, leaders, and legends, because every moment deserves your personal touch.<br/></p>",
             "disable_on_mobile": false
           }
         },
@@ -173,10 +179,12 @@
       "settings": {
         "desktop_text_horizontal_position": "center",
         "rotation": 10,
-        "button_link1": "",
-        "button_link2": "",
+        "image_1": "shopify://shop_images/Bottle-Anton700.jpg",
+        "button_link1": "shopify://collections/brand-cocktails",
+        "image_2": "shopify://shop_images/Bottle-Paige700.jpg",
+        "button_link2": "shopify://collections/wedding-cocktails",
         "color-body-text": "rgba(0,0,0,0)",
-        "background_color": "rgba(0,0,0,0)",
+        "background_color": "#f7f3ee",
         "margin-top": 0,
         "margin-bottom": 0
       }
@@ -187,67 +195,141 @@
         "image_wN7UMR": {
           "type": "image",
           "settings": {
-            "link": ""
+            "desktop_image": "shopify://shop_images/Corp-Logo-1.png",
+            "link": "shopify://collections/brand-cocktails"
           }
         },
         "image_zK7iiL": {
           "type": "image",
           "settings": {
-            "link": ""
+            "desktop_image": "shopify://shop_images/Corp-Logo-2.png",
+            "link": "shopify://collections/brand-cocktails"
           }
         },
         "image_Pt8e9B": {
           "type": "image",
           "settings": {
-            "link": ""
+            "desktop_image": "shopify://shop_images/Corp-Logo-3.png",
+            "link": "shopify://collections/brand-cocktails"
           }
         },
         "image_VFKc3c": {
           "type": "image",
           "settings": {
-            "link": ""
+            "desktop_image": "shopify://shop_images/Corp-Logo-4.png",
+            "link": "shopify://collections/brand-cocktails"
           }
         },
         "image_m7TNF8": {
           "type": "image",
           "settings": {
-            "link": ""
+            "desktop_image": "shopify://shop_images/Corp-Logo-5.png",
+            "link": "shopify://collections/brand-cocktails"
           }
         },
         "image_MJtbcg": {
           "type": "image",
           "settings": {
-            "link": ""
+            "desktop_image": "shopify://shop_images/Corp-Logo-6.png",
+            "link": "shopify://collections/brand-cocktails"
           }
         },
         "image_TDEHhf": {
           "type": "image",
           "settings": {
-            "link": ""
+            "desktop_image": "shopify://shop_images/Corp-Logo-7.png",
+            "link": "shopify://collections/brand-cocktails"
           }
         },
         "image_4KYJ9W": {
           "type": "image",
           "settings": {
-            "link": ""
+            "desktop_image": "shopify://shop_images/Corp-Logo-8.png",
+            "link": "shopify://collections/brand-cocktails"
           }
         },
         "image_HwxJQF": {
           "type": "image",
           "settings": {
-            "link": ""
+            "desktop_image": "shopify://shop_images/Corp-Logo-9.png",
+            "link": "shopify://collections/brand-cocktails"
           }
         },
         "image_3MGdWy": {
           "type": "image",
           "settings": {
-            "link": ""
+            "desktop_image": "shopify://shop_images/Corp-Logo-10.png",
+            "link": "shopify://collections/brand-cocktails"
           }
         },
         "image_Wg9K6t": {
           "type": "image",
           "settings": {
-            "link": ""
+            "desktop_image": "shopify://shop_images/Corp-Logo-11.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_33mDGy": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-12.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_Gji6Yi": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-13.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_bX3U9q": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-14.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_Nfn3AQ": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-15.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_jAMEie": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-16.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_7RGpHF": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-17.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_mwmwNf": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-18.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_RAYff8": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-19.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_TP7NLw": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-20.png",
+            "link": "shopify://collections/brand-cocktails"
           }
         }
       },
@@ -262,15 +344,24 @@
         "image_4KYJ9W",
         "image_HwxJQF",
         "image_3MGdWy",
-        "image_Wg9K6t"
+        "image_Wg9K6t",
+        "image_33mDGy",
+        "image_Gji6Yi",
+        "image_bX3U9q",
+        "image_Nfn3AQ",
+        "image_jAMEie",
+        "image_7RGpHF",
+        "image_mwmwNf",
+        "image_RAYff8",
+        "image_TP7NLw"
       ],
       "settings": {
-        "heading": "",
+        "heading": "Brands we've worked with!",
         "animation": "marquee",
         "animation_speed": "100",
         "color-body-text": "rgba(0,0,0,0)",
         "background_color": "rgba(0,0,0,0)",
-        "margin-top": 20,
+        "margin-top": 52,
         "margin-bottom": 0
       }
     },
@@ -290,6 +381,7 @@
       "block_order": [
         "heading_YkTMiz"
       ],
+      "disabled": true,
       "settings": {
         "section_width": "regular",
         "desktop_text_horizontal_position": "center",
@@ -329,6 +421,7 @@
         "product_DyzE7d",
         "product_qRAMTG"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "full-width-enabled": false,
@@ -349,17 +442,18 @@
     "button_6NaGjU": {
       "type": "button",
       "settings": {
-        "button_select": "link",
+        "button_select": "primary",
         "button_horizontal_position": "center",
-        "button_label": "View all products",
+        "button_label": "CUSTOMISE WITH YOUR BRAND",
         "button_link": "",
-        "margin-top": 32,
-        "margin-bottom": 60,
-        "background_color": "#faece6"
+        "margin-top": 20,
+        "margin-bottom": 52,
+        "background_color": "#ffffff"
       }
     },
     "1644542625dcf6daf0": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Our Bestsellers",
         "disable_on_mobile": false,
@@ -540,6 +634,7 @@
         "product_HVQQc6",
         "product_EGwNbR"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "full-width-enabled": true,
@@ -642,6 +737,7 @@
         "product_JVKChr",
         "product_hpQeLR"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Best Skincare Products",
         "quick-add-enabled": true,
@@ -688,6 +784,7 @@
         "1645292346b3e4e0be-1",
         "1645292346b3e4e0be-2"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "full-width-enabled": true,
@@ -758,6 +855,7 @@
         "column_zWrYmm",
         "column_QJXCtz"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "heading": "Popular Collection",
@@ -787,6 +885,7 @@
       "block_order": [
         "heading_qihJKT"
       ],
+      "disabled": true,
       "settings": {
         "section_width": "regular",
         "desktop_text_horizontal_position": "center",
@@ -835,6 +934,7 @@
         "dots_Gm9mL4",
         "dots_rPeKQn"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "full-width-enabled": false,
@@ -846,61 +946,52 @@
         "margin-bottom": 0
       }
     },
-    "button_AcgMnQ": {
-      "type": "button",
-      "settings": {
-        "button_select": "link",
-        "button_horizontal_position": "center",
-        "button_label": "View all products",
-        "button_link": "",
-        "margin-top": 32,
-        "margin-bottom": 56,
-        "background_color": "#f7f3ee"
-      }
-    },
     "1645701451ca57fd3c": {
       "type": "multicolumn",
       "blocks": {
         "16457014517af02773-0": {
           "type": "column",
           "settings": {
-            "heading": "Facial Oil",
+            "heading": "The Elegant",
             "heading_disable_on_mobile": false,
-            "text": "<p>New from Mokosh -  body lotion</p>",
+            "text": "<p>Refined and graceful with a polished look.</p>",
             "text_disable_on_mobile": false,
             "button_select": "link",
-            "button_label": "Check now",
+            "button_label": "SHOP ELEGANT",
             "button_disable_on_mobile": false,
             "button_link": "",
-            "button_link_in_new_window": false
+            "button_link_in_new_window": false,
+            "desktop_image": "shopify://shop_images/ELE-CRF-NAN_5208a7df-175f-41fe-a6ea-b096efe57d58.webp"
           }
         },
         "16457014517af02773-1": {
           "type": "column",
           "settings": {
-            "heading": "BKIND Soup",
+            "heading": "Moderna",
             "heading_disable_on_mobile": false,
-            "text": "<p>Low-maintenance, high-performance</p>",
+            "text": "<p>Stylish and expressive with a sharp graphic edge.</p>",
             "text_disable_on_mobile": false,
             "button_select": "link",
-            "button_label": "Check now",
+            "button_label": "SHOP MODERNA",
             "button_disable_on_mobile": false,
             "button_link": "",
-            "button_link_in_new_window": false
+            "button_link_in_new_window": false,
+            "desktop_image": "shopify://shop_images/ELE-CRF-NAN_5208a7df-175f-41fe-a6ea-b096efe57d58.webp"
           }
         },
         "16457014517af02773-2": {
           "type": "column",
           "settings": {
-            "heading": "Mokosh body lotion",
+            "heading": "Script Party",
             "heading_disable_on_mobile": false,
-            "text": "<p>Cushiony, smooth, pout-perfecting lip oil.</p>",
+            "text": "<p>Playful and handwritten, bringing festive flair to any fun occasion. </p>",
             "text_disable_on_mobile": false,
             "button_select": "link",
-            "button_label": "Check now",
+            "button_label": "SHOP SCRIPT PARTY",
             "button_disable_on_mobile": false,
             "button_link": "",
-            "button_link_in_new_window": false
+            "button_link_in_new_window": false,
+            "desktop_image": "shopify://shop_images/ELE-CRF-NAN_5208a7df-175f-41fe-a6ea-b096efe57d58.webp"
           }
         }
       },
@@ -910,7 +1001,7 @@
         "16457014517af02773-2"
       ],
       "settings": {
-        "heading": "New Beauty Products",
+        "heading": "Popular Products",
         "swipe_on_mobile": true,
         "full-width-enabled": false,
         "image_ratio": "adapt",
@@ -918,104 +1009,170 @@
         "size_heading": 90,
         "size_heading_mobile": 90,
         "color-body-text": "rgba(0,0,0,0)",
-        "background_color": "rgba(0,0,0,0)",
-        "margin-top": 56,
-        "margin-bottom": 48
+        "background_color": "#f7f3ee",
+        "margin-top": 52,
+        "margin-bottom": 20
       }
     },
-    "164572276407aa76b1": {
-      "type": "testimonials",
+    "button_AcgMnQ": {
+      "type": "button",
+      "settings": {
+        "button_select": "primary",
+        "button_horizontal_position": "center",
+        "button_label": "SHOP WEDDING COCKTAILS",
+        "button_link": "shopify://collections/wedding-cocktails",
+        "margin-top": 20,
+        "margin-bottom": 52,
+        "background_color": "#f7f3ee"
+      }
+    },
+    "testimonial_images_9YE74N": {
+      "type": "testimonial-images",
       "blocks": {
-        "1645722764301b2090-0": {
-          "type": "image",
+        "testimonial_xgPPxD": {
+          "type": "testimonial",
           "settings": {
-            "icon_select": "none",
-            "text": "<p>\"Mokosh Face Cream is a game-changer. Its lightweight formula hydrates deeply without any greasiness. My skin feels nourished and looks radiant. A pure delight for sensitive skin!\"</p>",
-            "large_screen_logo_width": 80,
-            "mobile_screen_logo_width": 90,
-            "author": "Alex K."
+            "icon_select": "100",
+            "text": "<p><strong>Fantastic Service and Easy to Order.</strong><br/><br/>\"The process online was super efficient. Communication through out was fantastic and providing shipping information.<br/><br/>Great quality product, great value.<br/><br/>We ordered the negroni and then the next morning my partner changed his mind and we contacted them and they were great in changing to a different spirit, and were super responsive..\"</p>",
+            "author": "Michael Felix",
+            "desktop_image": "shopify://shop_images/Review_-_Michael_Felix.webp",
+            "image_link": ""
           }
         },
-        "1645722764301b2090-1": {
-          "type": "image",
+        "testimonial_bNPTby": {
+          "type": "testimonial",
           "settings": {
-            "icon_select": "none",
-            "text": "<p>\"I love Mokosh brand products , it absorbs quickly, for the day I use together with the cream, for the night only oil alone. <br/>I feel that the skin is very well moisturized and is not greasy. I recommend.\"</p>",
-            "large_screen_logo_width": 80,
-            "mobile_screen_logo_width": 90,
-            "author": "Monika R."
+            "icon_select": "100",
+            "text": "<p>\"We ordered some of the Foxtails & Co mini cocktails for our wedding as favours for our guests and we were so impressed! Everything was delivered so quickly, and the bottles were so gorgeously presented. We ordered a few different flavours, and our guests loved them! We had the Negroni & Blood Orange flavours ourselves and they were absolutely delicious. The perfect addition to your special event, your guests will thank you!\"</p>",
+            "author": "Kerrie Broos Revitt",
+            "desktop_image": "shopify://shop_images/Review_-_Kerrie_Broos_Revitt.webp",
+            "image_link": ""
           }
         },
-        "e15dcbd0-bf98-4d71-abed-51a2799236e6": {
-          "type": "image",
+        "testimonial_rqw8Lg": {
+          "type": "testimonial",
           "settings": {
-            "icon_select": "none",
-            "text": "<p>\"Mokosh Face Cream is a skincare hero. It absorbs quickly, leaving my skin supple and glowing. A must for anyone craving a natural, effective moisturizer.\"</p>",
-            "large_screen_logo_width": 80,
-            "mobile_screen_logo_width": 90,
-            "author": "Anna P."
+            "icon_select": "100",
+            "text": "<p><strong>Best Wedding Favours Ever – Our Guests Couldn't Get Enough!</strong><br/><br/>\"We decided to gift our guests mini bottles of homemade limoncello as wedding favours, and WOW—what a hit! From the moment they saw the cute packaging to the very last sip, everyone was raving about them.<br/>We wanted to give our guests something personal and fun, and this was hands-down the best decision. If you're looking for a favour that people will actually love, these limoncello cocktails are it. Zero waste—every bottle was gone! Highly recommend! 🍋✨.\"</p>",
+            "author": "Vanessa Burke",
+            "desktop_image": "shopify://shop_images/Review_-_Vaness_Burke.webp",
+            "image_link": ""
+          }
+        },
+        "testimonial_wTqp4R": {
+          "type": "testimonial",
+          "settings": {
+            "icon_select": "100",
+            "text": "<p>\"This is such cool thing to have for any special occasion. I just received my order for my sons 30th birthday and am so happy with the finished product, the photo is clear and precise , cant wait for guests reaction when I gift them this momento. Communication with Three Foxes was excellent they really helped me with my order and delivery prompt.\"</p>",
+            "author": "Liz Treloar",
+            "desktop_image": "shopify://shop_images/Review_-_Liz_Treloar.webp",
+            "image_link": ""
+          }
+        },
+        "testimonial_f4Chkg": {
+          "type": "testimonial",
+          "settings": {
+            "icon_select": "100",
+            "text": "<p>\"We just wanted to say a huge thankyou for our custom cocktails for our wedding day. The looked amazing! And we had so many compliments, they were a huge hit, thanks again.\"</p>",
+            "author": "Natasha Forrester",
+            "desktop_image": "shopify://shop_images/Review_-_Natasha.webp",
+            "image_link": ""
           }
         }
       },
       "block_order": [
-        "1645722764301b2090-0",
-        "1645722764301b2090-1",
-        "e15dcbd0-bf98-4d71-abed-51a2799236e6"
+        "testimonial_xgPPxD",
+        "testimonial_bNPTby",
+        "testimonial_rqw8Lg",
+        "testimonial_wTqp4R",
+        "testimonial_f4Chkg"
       ],
+      "name": "t:sections.testimonial_images.name",
       "settings": {
-        "heading": "",
-        "image_shape": "circle",
-        "testimonial_text_size_desktop": 160,
-        "testimonial_text_size": 120,
-        "text_color": "rgba(0,0,0,0)",
-        "background_color": "#f7f3ee",
-        "margin-top": 100,
-        "margin-bottom": 100
+        "title": "What Our Customers Have Been Saying...",
+        "text_style": "body",
+        "testimonial_text_size_desktop": 100,
+        "testimonial_text_size": 100,
+        "layout": "image_first",
+        "desktop-percentage-image-width": 50,
+        "full-width-enabled": false,
+        "auto-rotate": false,
+        "change_slider_time": 5,
+        "slide_height": "fixed_height",
+        "desktop_fixed_height": 480,
+        "mobile_fixed_height": 300,
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "center",
+        "mobile_text_horizontal_position": "center",
+        "section-color-body-text": "transparent",
+        "section-color-overlay": "transparent",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "transparent",
+        "color-overlay": "transparent",
+        "color-overlay-opacity": 100,
+        "margin-top": 52,
+        "margin-bottom": 20
+      }
+    },
+    "button_qK8rAG": {
+      "type": "button",
+      "settings": {
+        "button_select": "primary",
+        "button_horizontal_position": "center",
+        "button_label": "SHOP WEDDING COCKTAILS",
+        "button_link": "shopify://collections/wedding-cocktails",
+        "margin-top": 56,
+        "margin-bottom": 56,
+        "background_color": "#ffffff"
       }
     },
     "164580331540910010": {
       "type": "features-banner",
       "blocks": {
-        "164580331573ddb00a-0": {
-          "type": "image",
-          "settings": {
-            "select_icon": "bag",
-            "heading": "Vegan",
-            "text": "<p>Our entire collection is vegan and cruelty free.</p>",
-            "link": ""
-          }
-        },
         "164580331573ddb00a-1": {
           "type": "image",
           "settings": {
-            "select_icon": "bag",
+            "desktop_image": "shopify://shop_images/ship-icon.png",
+            "select_icon": "close",
             "heading": "Fast & Free Shipping",
-            "text": "<p>Doorstep delivery to most of the US.</p>",
+            "text": "<p>Free for orders over $90. Includes free package insurance to your door to cover accidental breakage.</p>",
+            "link": ""
+          }
+        },
+        "164580331573ddb00a-0": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Aus-icon.png",
+            "select_icon": "bag",
+            "heading": "Australian Made",
+            "text": "<p>From farm to bottle to printing, made from local producers and suppliers in our distillery in Melbourne.</p>",
             "link": ""
           }
         },
         "164580331573ddb00a-2": {
           "type": "image",
           "settings": {
+            "desktop_image": "shopify://shop_images/leaf-icon.png",
             "select_icon": "bag",
-            "heading": "Natural",
-            "text": "<p>We only use the finest natural ingredients.</p>",
+            "heading": "Real Ingredients",
+            "text": "<p>No lab flavours or colours, we use only fruits and botanicals for our drinks.</p>",
             "link": ""
           }
         },
         "164580331573ddb00a-3": {
           "type": "image",
           "settings": {
+            "desktop_image": "shopify://shop_images/recycle-icon.png",
             "select_icon": "bag",
             "heading": "Recyclable",
-            "text": "<p>All packaging is recyclable and eco conscious.</p>",
+            "text": "<p>All packaging is recyclable and the ornamental glass bottles make great vases we encourage re-using.</p>",
             "link": ""
           }
         }
       },
       "block_order": [
-        "164580331573ddb00a-0",
         "164580331573ddb00a-1",
+        "164580331573ddb00a-0",
         "164580331573ddb00a-2",
         "164580331573ddb00a-3"
       ],
@@ -1031,7 +1188,7 @@
         "color_body_icon": "rgba(0,0,0,0)",
         "color_background_icon": "rgba(0,0,0,0)",
         "color_body_text": "rgba(0,0,0,0)",
-        "background_color": "rgba(0,0,0,0)",
+        "background_color": "#f7f3ee",
         "margin-top": 88,
         "margin-bottom": 88
       }
@@ -1042,7 +1199,7 @@
         "164916093728eec38a-0": {
           "type": "heading",
           "settings": {
-            "heading": "Get 20% off your first order",
+            "heading": "Get 10% off your first order",
             "heading_disable_on_mobile": false,
             "size_heading": 200,
             "size_heading_mobile": 180
@@ -1093,9 +1250,10 @@
     "collection_feature_8DMAk7",
     "rich_text_tJmRxp",
     "shoppable_image_RFxQtM",
-    "button_AcgMnQ",
     "1645701451ca57fd3c",
-    "164572276407aa76b1",
+    "button_AcgMnQ",
+    "testimonial_images_9YE74N",
+    "button_qK8rAG",
     "164580331540910010",
     "1649160937e2665513"
   ]

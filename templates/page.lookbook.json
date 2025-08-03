@@ -15,77 +15,72 @@
         "165403149033c6e38b-0": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify://shop_images/Untitled-6.jpg",
+            "desktop_image": "shopify://shop_images/Brandon_Kellie_04.jpg",
+            "button_select": "primary",
             "link": ""
           }
         },
         "e0e65e1d-9db5-40fb-aa20-ca8d64764927": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify://shop_images/lady-2_1100x_efefde0a-e5fd-4c9e-8efc-68b86512957c.webp",
+            "desktop_image": "shopify://shop_images/UGC_-_Lucy_James_-_03.jpg",
+            "button_select": "primary",
             "link": ""
           }
         },
         "914a1ef1-2299-430f-b59f-c92b47c0b2c0": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify://shop_images/1c.jpg",
+            "desktop_image": "shopify://shop_images/UGC_-_Lucy_James_-_02.jpg",
+            "button_select": "primary",
             "link": ""
           }
         },
         "96385f4d-1978-4698-a429-dcb4ce024765": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify://shop_images/foto-test.jpg",
+            "desktop_image": "shopify://shop_images/Sarah_Evan_-_The_Small_Things_Co_-_14.jpg",
+            "button_select": "primary",
             "link": ""
           }
         },
         "7b1b6bc3-f154-471d-b3b4-f28018c67f9c": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify://shop_images/shop-the-room.jpg",
+            "desktop_image": "shopify://shop_images/Brandon_Kellie_01.jpg",
+            "button_select": "primary",
             "link": ""
           }
         },
         "f4ac8b60-e686-4437-91b9-da06bb0d48a9": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify://shop_images/mobile-steps-in-alcove.jpg",
+            "desktop_image": "shopify://shop_images/DSC_3959.jpg",
+            "button_select": "primary",
             "link": ""
           }
         },
         "dc1e9b66-7129-4303-8b3e-6ab6814c66a7": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify://shop_images/woman-infront-of-tree-with-berries.jpeg",
+            "desktop_image": "shopify://shop_images/Groom_Preping_Foxtail.jpg",
+            "button_select": "primary",
             "link": ""
           }
         },
         "e8ea11e0-aaca-4515-b1ff-2c9ad9ff6eb3": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify://shop_images/woman-in-park-afternoon.jpeg",
+            "desktop_image": "shopify://shop_images/Guest_Tag_Foxtail_sq.jpg",
+            "button_select": "primary",
             "link": ""
           }
         },
         "9f4a9a8b-d9ef-4fbe-aa5c-dbde2e0811c3": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify://shop_images/bright-floral-womens-summer-fashion.jpg",
-            "link": ""
-          }
-        },
-        "c56510b3-3068-455a-9bac-ca00e8ea36bf": {
-          "type": "image",
-          "settings": {
-            "desktop_image": "shopify://shop_images/fashion-portrait.jpg",
-            "link": ""
-          }
-        },
-        "e55ded58-1cd5-423c-83df-a15ea51295cb": {
-          "type": "image",
-          "settings": {
-            "desktop_image": "shopify://shop_images/fashion-model-in-fur.jpg",
+            "desktop_image": "shopify://shop_images/Christopher_Shelly_-_1.jpg",
+            "button_select": "primary",
             "link": ""
           }
         }
@@ -99,12 +94,17 @@
         "f4ac8b60-e686-4437-91b9-da06bb0d48a9",
         "dc1e9b66-7129-4303-8b3e-6ab6814c66a7",
         "e8ea11e0-aaca-4515-b1ff-2c9ad9ff6eb3",
-        "9f4a9a8b-d9ef-4fbe-aa5c-dbde2e0811c3",
-        "c56510b3-3068-455a-9bac-ca00e8ea36bf",
-        "e55ded58-1cd5-423c-83df-a15ea51295cb"
+        "9f4a9a8b-d9ef-4fbe-aa5c-dbde2e0811c3"
       ],
       "settings": {
-        "heading": "Lookbook",
+        "heading": "Wedding & Engagement Inspiration",
+        "heading_disable_on_mobile": false,
+        "full-width-enabled": false,
+        "column_gap_desk": 16,
+        "column_gap": 8,
+        "color-body-text": "rgba(0,0,0,0)",
+        "color-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
         "margin-top": 40,
         "margin-bottom": 0
       }
@@ -113,15 +113,33 @@
       "type": "main-page",
       "disabled": true,
       "settings": {
+        "compact-size-enabled": true,
         "size_heading": 140,
         "size_heading_mobile": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "color-bg-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
         "margin-top": 40,
         "margin-bottom": 0
+      }
+    },
+    "button_brmmkp": {
+      "type": "button",
+      "name": "t:sections.button.presets.name",
+      "settings": {
+        "button_select": "primary",
+        "button_horizontal_position": "center",
+        "button_label": "SHOP WEDDING COCKTAILS",
+        "button_link": "shopify://collections/wedding-cocktails",
+        "margin-top": 52,
+        "margin-bottom": 52,
+        "background_color": "transparent"
       }
     }
   },
   "order": [
     "16540314906fe3fb2b",
-    "main"
+    "main",
+    "button_brmmkp"
   ]
 }

@@ -83,7 +83,7 @@
         "custom_variant_picker_Tzyh7n": {
           "type": "custom_variant_picker",
           "settings": {
-            "add_on": "label-application",
+            "add_on": "",
             "picker_type": "button",
             "color_swatch_names": "Colour",
             "variant_picture_swatch_names": "",
@@ -265,162 +265,97 @@
         "margin-bottom": 28
       }
     },
-    "before_and_after_AFCUre": {
-      "type": "before-and-after",
-      "blocks": {
-        "heading_9WVPE8": {
-          "type": "heading",
-          "settings": {
-            "heading": "We know you are unique.",
-            "disable_on_mobile": false,
-            "size_heading": 160,
-            "size_heading_mobile": 140
-          }
-        },
-        "text_Dra7CK": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Take care of your complexion to make it healthy and radiant. In the range of facial care products you will find creams, scrubs, masks, toners, gels and much more.</p>",
-            "text_style": "body",
-            "disable_on_mobile": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_9WVPE8",
-        "text_Dra7CK"
-      ],
-      "settings": {
-        "title": "",
-        "layout": "image_first",
-        "desktop-percentage-image-width": 58,
-        "full-width-enabled": true,
-        "slide_height": "adapt_to_first_image",
-        "desktop_fixed_height": 320,
-        "mobile_fixed_height": 460,
-        "enable_badges": true,
-        "before_badge": "Before",
-        "after_badge": "After",
-        "section-color-body-text": "rgba(0,0,0,0)",
-        "section-color-overlay": "rgba(0,0,0,0)",
-        "section-color-overlay-opacity": 100,
-        "color-body-text": "rgba(0,0,0,0)",
-        "color-overlay": "#f7efe3",
-        "color-overlay-opacity": 100,
-        "desktop_text_vertical_position": "center",
-        "desktop_text_horizontal_position": "center",
-        "mobile_text_horizontal_position": "center",
-        "margin-top": 0,
-        "margin-bottom": 0
-      }
+    "reviews_GHHQiG": {
+      "type": "reviews",
+      "name": "Reviews (Stamped)",
+      "settings": {}
     },
-    "image_with_text_WxXpEB": {
-      "type": "image-with-text",
+    "testimonial_images_AGzLYr": {
+      "type": "testimonial-images",
       "blocks": {
-        "heading_WcihaF": {
-          "type": "heading",
+        "testimonial_FJLx47": {
+          "type": "testimonial",
           "settings": {
-            "heading": "Your Daily Routine",
-            "disable_on_mobile": false,
-            "size_heading": 200,
-            "size_heading_mobile": 100
+            "icon_select": "100",
+            "text": "<p><strong>Fantastic Service and Easy to Order.</strong><br/><br/>\"The process online was super efficient. Communication through out was fantastic and providing shipping information.<br/><br/>Great quality product, great value.<br/><br/>We ordered the negroni and then the next morning my partner changed his mind and we contacted them and they were great in changing to a different spirit, and were super responsive..\"</p>",
+            "author": "Michael Felix",
+            "desktop_image": "shopify://shop_images/Review_-_Michael_Felix.webp",
+            "image_link": ""
           }
         },
-        "text_gYtHLC": {
-          "type": "text",
+        "testimonial_bGDFcn": {
+          "type": "testimonial",
           "settings": {
-            "text": "<p>Discover products for daily care.</p>",
-            "text_style": "body",
-            "disable_on_mobile": false
+            "icon_select": "100",
+            "text": "<p>\"We ordered some of the Foxtails & Co mini cocktails for our wedding as favours for our guests and we were so impressed! Everything was delivered so quickly, and the bottles were so gorgeously presented. We ordered a few different flavours, and our guests loved them! We had the Negroni & Blood Orange flavours ourselves and they were absolutely delicious. The perfect addition to your special event, your guests will thank you!\"</p>",
+            "author": "Kerrie Broos Revitt",
+            "desktop_image": "shopify://shop_images/Review_-_Kerrie_Broos_Revitt.webp",
+            "image_link": ""
           }
         },
-        "button_KUwMHB": {
-          "type": "button",
+        "testimonial_EAxdFK": {
+          "type": "testimonial",
           "settings": {
-            "button_select": "primary",
-            "button_label": "Check now",
-            "button_link": "/",
-            "disable_on_mobile": false
+            "icon_select": "100",
+            "text": "<p><strong>Best Wedding Favours Ever – Our Guests Couldn't Get Enough!</strong><br/><br/>\"We decided to gift our guests mini bottles of homemade limoncello as wedding favours, and WOW—what a hit! From the moment they saw the cute packaging to the very last sip, everyone was raving about them.<br/>We wanted to give our guests something personal and fun, and this was hands-down the best decision. If you're looking for a favour that people will actually love, these limoncello cocktails are it. Zero waste—every bottle was gone! Highly recommend! 🍋✨.\"</p>",
+            "author": "Vanessa Burke",
+            "desktop_image": "shopify://shop_images/Review_-_Vaness_Burke.webp",
+            "image_link": ""
+          }
+        },
+        "testimonial_VhF8kY": {
+          "type": "testimonial",
+          "settings": {
+            "icon_select": "100",
+            "text": "<p>\"This is such cool thing to have for any special occasion. I just received my order for my sons 30th birthday and am so happy with the finished product, the photo is clear and precise , cant wait for guests reaction when I gift them this momento. Communication with Three Foxes was excellent they really helped me with my order and delivery prompt.\"</p>",
+            "author": "Liz Treloar",
+            "desktop_image": "shopify://shop_images/Review_-_Liz_Treloar.webp",
+            "image_link": ""
+          }
+        },
+        "testimonial_Piembh": {
+          "type": "testimonial",
+          "settings": {
+            "icon_select": "100",
+            "text": "<p>\"We just wanted to say a huge thankyou for our custom cocktails for our wedding day. The looked amazing! And we had so many compliments, they were a huge hit, thanks again.\"</p>",
+            "author": "Natasha Forrester",
+            "desktop_image": "shopify://shop_images/Review_-_Natasha.webp",
+            "image_link": ""
           }
         }
       },
       "block_order": [
-        "heading_WcihaF",
-        "text_gYtHLC",
-        "button_KUwMHB"
+        "testimonial_FJLx47",
+        "testimonial_bGDFcn",
+        "testimonial_EAxdFK",
+        "testimonial_VhF8kY",
+        "testimonial_Piembh"
       ],
-      "disabled": true,
+      "name": "t:sections.testimonial_images.name",
       "settings": {
-        "title": "",
+        "title": "What Our Customers Have Been Saying...",
+        "text_style": "body",
+        "testimonial_text_size_desktop": 100,
+        "testimonial_text_size": 100,
         "layout": "image_first",
         "desktop-percentage-image-width": 50,
-        "full-width-enabled": true,
-        "slide_height": "adapt_to_first_image",
-        "desktop_fixed_height": 320,
-        "mobile_fixed_height": 460,
+        "full-width-enabled": false,
+        "auto-rotate": false,
+        "change_slider_time": 5,
+        "slide_height": "fixed_height",
+        "desktop_fixed_height": 480,
+        "mobile_fixed_height": 300,
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "center",
+        "mobile_text_horizontal_position": "center",
         "section-color-body-text": "rgba(0,0,0,0)",
         "section-color-overlay": "rgba(0,0,0,0)",
         "section-color-overlay-opacity": 100,
         "color-body-text": "rgba(0,0,0,0)",
-        "color-overlay": "#e5f8f8",
+        "color-overlay": "rgba(0,0,0,0)",
         "color-overlay-opacity": 100,
-        "desktop_text_vertical_position": "center",
-        "desktop_text_horizontal_position": "center",
-        "mobile_text_horizontal_position": "center",
-        "margin-top": 0,
-        "margin-bottom": 60
-      }
-    },
-    "video_reels_dqWnMm": {
-      "type": "video-reels",
-      "blocks": {
-        "product_bi68pi": {
-          "type": "product",
-          "settings": {
-            "featured_product": ""
-          }
-        },
-        "product_pUBFTB": {
-          "type": "product",
-          "settings": {
-            "featured_product": ""
-          }
-        },
-        "product_PaaDXj": {
-          "type": "product",
-          "settings": {
-            "featured_product": ""
-          }
-        },
-        "product_AYNM9a": {
-          "type": "product",
-          "settings": {
-            "featured_product": ""
-          }
-        },
-        "product_TwBDzA": {
-          "type": "product",
-          "settings": {
-            "featured_product": ""
-          }
-        }
-      },
-      "block_order": [
-        "product_bi68pi",
-        "product_pUBFTB",
-        "product_PaaDXj",
-        "product_AYNM9a",
-        "product_TwBDzA"
-      ],
-      "settings": {
-        "heading": "Recommended by our Customers",
-        "quick-add-enabled": true,
-        "hide-brand-name": false,
-        "video_button": true,
-        "color-body-text": "rgba(0,0,0,0)",
-        "background_color": "rgba(0,0,0,0)",
-        "margin-top": 40,
-        "margin-bottom": 68
+        "margin-top": 52,
+        "margin-bottom": 20
       }
     },
     "newsletter_dznx9H": {
@@ -429,7 +364,7 @@
         "heading_mnJyLx": {
           "type": "heading",
           "settings": {
-            "heading": "Get 20% off your first order",
+            "heading": "Get 10% off your first order",
             "heading_disable_on_mobile": false,
             "size_heading": 200,
             "size_heading_mobile": 100
@@ -465,9 +400,8 @@
   "order": [
     "breadcrumbs",
     "main",
-    "before_and_after_AFCUre",
-    "image_with_text_WxXpEB",
-    "video_reels_dqWnMm",
+    "reviews_GHHQiG",
+    "testimonial_images_AGzLYr",
     "newsletter_dznx9H"
   ]
 }

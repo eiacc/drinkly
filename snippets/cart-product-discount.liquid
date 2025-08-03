@@ -35,7 +35,7 @@
       <div class="wt-progress-bar">
         <div
           class="wt-progress-bar__fill"
-          style="width: {{ progress_percentage }}%;"
+          style="width: {{ progress_percentage }}%; background-color: {% if progress_percentage == 100 %}green{% else %}red{%- endif -%};"
         ></div>
       </div>
     </div>

@@ -1,0 +1,223 @@
+{% style %}
+.section--reviews h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.section--reviews div[data-widget-style*=standard] .stamped-summary-actions {
+  display: none!important;
+}
+
+.section--reviews .summary-overview {
+  display: flex!important;
+  align-items: center!important;
+  width: 100%!important;
+  gap: 1rem;
+}
+
+.section--review .summary-overview > span {
+  display: inline-block;
+}
+
+.section--reviews .stamped-summary-caption .stamped-summary-text {
+  margin: 0!important;
+}
+
+.section--reviews div[data-widget-style*=standard] .stamped-tab-container {
+  height: 0!important;
+}
+
+.section--reviews .stamped-review {
+  border-top: 1px solid #000 !important;
+}
+
+.section--review .stamped-review-header-starratings {
+  display: block;
+}
+
+.section--review .stamped-review-body [data-widget-style=standard2] .stamped-review-header-title {
+  display: block!important;
+  text-transform: uppercase!important;
+  margin: 0!important;
+}
+
+[data-count="0"] .stamped-summary-starrating{
+  width: auto !important;
+}
+
+div[data-widget-style*=standard] .stamped-summary-starrating i:before,
+[data-count="0"] .stamped-summary-starrating i:before{
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 768px){
+  div[data-count="0"] .summary-overview, div[data-widget-style*=standard][data-count="0"] .summary-overview{
+    width: auto !important;
+    float: left !important;
+  }
+}
+
+[data-widget-style=slider] .slick-next:before,[data-widget-style=slider] .slick-prev:before{
+  font-weight: 500 !important;
+}
+[data-widget-style=slider] .stamped-review{
+  border-color: #000;	
+}
+div[data-widget-style*=standard] .stamped-header {
+  margin-bottom: 0 !important;
+}
+.bestseller .summary-overview,.stamped-review-content,[data-widget-style=slider] .stamped-review-body,[data-widget-style=slider] .stamped-review-content-body {
+  margin-bottom: 0 !important;
+}
+.stamped-container .stamped-review-image {
+  margin-top: 0px !important;
+}
+.coll_title{
+	line-height: 1;
+}
+@media only screen and (max-width: 991px){
+  .coll_description{
+    margin-top: 10px;
+  }
+}
+[data-widget-style=slider] .stamped-review{
+  border-color: #000;	
+}
+div[data-widget-style*=standard] .stamped-header {
+  margin-bottom: 0 !important;
+}
+.bestseller .summary-overview,.stamped-review-content,[data-widget-style=slider] .stamped-review-body,[data-widget-style=slider] .stamped-review-content-body {
+  margin-bottom: 0 !important;
+}
+.stamped-container .stamped-review-image {
+  margin-top: 0px !important;
+}
+
+.stamped-summary-text-1[data-count="0"],.stamped-summary-caption .stamped-summary-text[data-count="0"] {
+  display: flex!important;
+}
+
+[data-count="0"] .stamped-summary-starrating{
+  width: auto !important;
+}
+[data-count="0"] .stamped-summary-starrating i:before{
+  color: #e97b42;
+}
+@media only screen and (min-width: 768px){
+  div[data-count="0"] .summary-overview, div[data-widget-style*=standard][data-count="0"] .summary-overview{
+    width: auto !important;
+    float: left !important;
+  }
+}
+
+.stamped-carousel-title{
+  font-size: 3.2rem !important;
+}
+
+.stamped-reviews-title .stamped-reviews-link,.stamped-review-header-title{
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.container{
+  max-width:100% !important;
+  padding-left: 2% !important;
+  padding-right: 2% !important;
+}
+.product-container .container,.stamped-container,#stamped-reviews-widget[data-widget-type=carousel]{
+  max-width: 1350px !important;
+}
+.container_review_title{
+  padding: 0 30px;
+}
+
+.faq_favour_des p:last-child{
+	margin-bottom:0;
+}
+  
+.stamped-summary-caption.stamped-summary-caption-1 strong {
+  font-size: 1.2rem!important;
+}
+
+.stamped-summary-text {
+  font-size: 1.4rem;
+}
+
+.section--reviews p,
+.section--reviews span.stamped-summary-text-1,
+.section--reviews strong, {
+  font-family: var(--font-base)!important;  
+}
+  
+@media screen and (min-width: 768px) {
+  .stamped-summary-text {
+    font-size: 1.6rem;
+  }
+  
+  .stamped-summary-caption.stamped-summary-caption-1 strong {
+    font-size: 1.4rem;
+  }
+}
+{% endstyle %}
+
+<script>function myInit(){ StampedFn.init({ apiKey: 'pubkey-PNx70h5b4sH37q468yGmtCJKq3x817', sId: '148969' }); }</script>
+<script async onload="myInit()" type="text/javascript" src="https://cdn1.stamped.io/files/widget.min.js"></script>
+
+{% if template.name == 'product' and product.metafields.custom.select_product_for_review.value == blank %}
+  <!--Start Stamped.io Auto Installation Single Product review-->
+  <div class="container-fluid reviews_section_bottom pt-sml">
+    <div class="container">
+      <h2 class="hero-title text-center h2">What our customers are saying</h2>
+        <div id="stamped-main-widget" class="stamped-main-widget" data-widget-style="standard" 
+          data-product-id="{{ product.id }}" 
+          data-name="{{ product.title | escape }}" 
+          data-url="{{ shop.url }}{{ product.url }}" 
+          data-image-url="{{ product.featured_image | product_img_url: "large" |replace: '?', '%3F' | replace: '&','%26'}}" 
+          data-description="{{ product.description | escape }}" 
+          data-product-sku="{{product.handle}}" 
+          data-product-type="{{product.type}}" 
+          style="padding-left:0;padding-right:0;">
+        </div>
+    </div>
+  </div>
+  <!--End Stamped.io Auto Installation-->
+
+{% endif %}
+
+{% if template.name == 'product' and product.metafields.custom.select_product_for_review.value != blank %}
+  <!--Start Stamped.io Auto Installation Single Product review-->
+  <div class="container-fluid reviews_section_bottom pt-sml">
+    <div class="container">
+      <h2 class="headline__title">{{ section.settings.title }}</h2>
+      {% capture ids %}{% for value in product.metafields.custom.select_product_for_review.value %}{{ value.id }}{% if forloop.last == false %},{%endif%}{% endfor %}{% endcapture %}
+        <div id="stamped-main-widget" class="stamped-main-widget" data-widget-style="standard" 
+          data-product-ids="{{ids}}" 
+          data-name="{{ product.title | escape }}" 
+          data-url="{{ shop.url }}{{ product.url }}" 
+          data-image-url="{{ product.featured_image | product_img_url: "large" |replace: '?', '%3F' | replace: '&','%26'}}" 
+          style="padding-left:0;padding-right:0;">
+        </div>
+    </div>
+  </div>
+  <!--End Stamped.io Auto Installation-->
+{% endif %}
+
+{% schema %}
+{
+  "name": "Reviews (Stamped)",
+  "class": "section--reviews",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "What Our Customers Have Been Saying..."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Reviews (Stamped)"
+    }
+  ]
+}
+{% endschema %}

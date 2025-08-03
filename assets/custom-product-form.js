@@ -156,7 +156,8 @@ if (!customElements.get("custom-product-form")) {
 
             cart.push({
               id: variant.id,
-              quantity: qty
+              quantity: qty,
+              properties
             });
           });
 
@@ -165,7 +166,6 @@ if (!customElements.get("custom-product-form")) {
             cart.push({
               id: addOn.dataset.variantId,
               quantity: Math.ceil(totalVariants / 24) ,
-              properties
             });
           });
   
