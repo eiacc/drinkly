@@ -363,6 +363,7 @@
         "product_AYNM9a",
         "product_TwBDzA"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Recommended by our Customers",
         "quick-add-enabled": true,
