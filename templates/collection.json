@@ -81,6 +81,63 @@
         "margin-bottom": 0
       }
     },
+    "rich_text_bGVGWR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_FCDk6m": {
+          "type": "heading",
+          "settings": {
+            "heading": "Need Help?",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        },
+        "text_jVQHcc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make annuncements, or welcome customers to your store.</p>",
+            "disable_on_mobile": false
+          }
+        },
+        "button_LK4Bmq": {
+          "type": "button",
+          "settings": {
+            "button_select": "primary",
+            "button_label": "BOOK A DISCOVERY CALL",
+            "button_link": "/",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_FCDk6m",
+        "text_jVQHcc",
+        "button_LK4Bmq"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "transparent",
+        "background_color": "transparent",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
+    "button_GLPdbJ": {
+      "type": "button",
+      "name": "t:sections.button.presets.name",
+      "settings": {
+        "button_select": "primary",
+        "button_horizontal_position": "center",
+        "button_label": "BOOK A DISCOVERY CALL",
+        "button_link": "",
+        "margin-top": 20,
+        "margin-bottom": 20,
+        "background_color": "transparent"
+      }
+    },
     "separator_qkXpB7": {
       "type": "separator",
       "settings": {
@@ -377,6 +434,8 @@
     "banner",
     "title",
     "product-grid",
+    "rich_text_bGVGWR",
+    "button_GLPdbJ",
     "separator_qkXpB7",
     "rich_text_fr3Ftz",
     "multicolumn_BLNpDn",
