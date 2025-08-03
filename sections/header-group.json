@@ -80,7 +80,7 @@
         "header_bg_opacity": 100,
         "header_bg_blur": 0,
         "header_always_blurred": false,
-        "show_line_separator": true,
+        "show_line_separator": false,
         "show_shadow": false,
         "logo": "shopify://shop_images/drinkly-header.png",
         "large_screen_logo_width": 120,
@@ -146,7 +146,6 @@
         "paragraph_RW4bNP",
         "email_form_XwetR3"
       ],
-      "disabled": true,
       "name": "t:sections.notification_popup.name",
       "settings": {
         "max_width": 450,
