@@ -83,7 +83,7 @@
         "custom_variant_picker_Tzyh7n": {
           "type": "custom_variant_picker",
           "settings": {
-            "add_on": "label-application",
+            "add_on": "",
             "picker_type": "button",
             "color_swatch_names": "Colour",
             "variant_picture_swatch_names": "",
