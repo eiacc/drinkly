@@ -119,8 +119,8 @@
       "settings": {
         "section_width": "regular",
         "desktop_text_horizontal_position": "center",
-        "color-body-text": "transparent",
-        "background_color": "transparent",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
         "margin-top": 20,
         "margin-bottom": 20
       }
@@ -226,67 +226,71 @@
         "margin-bottom": 48
       }
     },
-    "features_banner_48DfGA": {
+    "features_banner_Xqw4VW": {
       "type": "features-banner",
       "blocks": {
-        "image_LpU9LC": {
+        "image_hq6ykz": {
           "type": "image",
           "settings": {
-            "select_icon": "bag",
-            "heading": "Vegan",
-            "text": "<p>Our entire collection is vegan and cruelty free.</p>",
-            "link": ""
-          }
-        },
-        "image_CKCXhM": {
-          "type": "image",
-          "settings": {
-            "select_icon": "bag",
+            "desktop_image": "shopify://shop_images/ship-icon.png",
+            "select_icon": "close",
             "heading": "Fast & Free Shipping",
-            "text": "<p>Doorstep delivery to most of the US.</p>",
+            "text": "<p>Free for orders over $90. Includes free package insurance to your door to cover accidental breakage.</p>",
             "link": ""
           }
         },
-        "image_VGUkeA": {
+        "image_zffmmm": {
           "type": "image",
           "settings": {
+            "desktop_image": "shopify://shop_images/Aus-icon.png",
             "select_icon": "bag",
-            "heading": "Natural",
-            "text": "<p>We only use the finest natural ingredients.</p>",
+            "heading": "Australian Made",
+            "text": "<p>From farm to bottle to printing, made from local producers and suppliers in our distillery in Melbourne.</p>",
             "link": ""
           }
         },
-        "image_McECbz": {
+        "image_Wt9AbJ": {
           "type": "image",
           "settings": {
+            "desktop_image": "shopify://shop_images/leaf-icon.png",
+            "select_icon": "bag",
+            "heading": "Real Ingredients",
+            "text": "<p>We don’t do synthetic. Only real fruit and botanicals, just the way drinks should be.</p>",
+            "link": ""
+          }
+        },
+        "image_QBgM9q": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/recycle-icon.png",
             "select_icon": "bag",
             "heading": "Recyclable",
-            "text": "<p>All packaging is recyclable and eco conscious.</p>",
+            "text": "<p>Our packaging’s planet-friendly, and the bottles double as vases, because great design deserves a second life.</p>",
             "link": ""
           }
         }
       },
       "block_order": [
-        "image_LpU9LC",
-        "image_CKCXhM",
-        "image_VGUkeA",
-        "image_McECbz"
+        "image_hq6ykz",
+        "image_zffmmm",
+        "image_Wt9AbJ",
+        "image_QBgM9q"
       ],
       "settings": {
         "heading": "",
-        "size_heading_mobile": 70,
+        "size_heading_mobile": 80,
         "size_heading": 70,
-        "icon_width_mobile": 36,
-        "icon_width_desktop": 48,
+        "icon_width_mobile": 52,
+        "icon_width_desktop": 64,
         "icon_layout": "center",
         "columns_desktop": "4",
         "icon_layout_mobile": "grid",
         "color_body_icon": "rgba(0,0,0,0)",
         "color_background_icon": "rgba(0,0,0,0)",
         "color_body_text": "rgba(0,0,0,0)",
-        "background_color": "rgba(0,0,0,0)",
-        "margin-top": 60,
-        "margin-bottom": 60
+        "background_color": "#f7f3ee",
+        "margin-top": 88,
+        "margin-bottom": 88
       }
     },
     "newsletter_KQitJE": {
@@ -405,11 +409,11 @@
         "desktop_text_vertical_position": "center",
         "desktop_text_horizontal_position": "center",
         "mobile_text_horizontal_position": "center",
-        "section-color-body-text": "transparent",
-        "section-color-overlay": "transparent",
+        "section-color-body-text": "rgba(0,0,0,0)",
+        "section-color-overlay": "rgba(0,0,0,0)",
         "section-color-overlay-opacity": 100,
-        "color-body-text": "transparent",
-        "color-overlay": "transparent",
+        "color-body-text": "rgba(0,0,0,0)",
+        "color-overlay": "rgba(0,0,0,0)",
         "color-overlay-opacity": 100,
         "margin-top": 52,
         "margin-bottom": 20
@@ -421,12 +425,12 @@
     "banner",
     "title",
     "product-grid",
-    "rich_text_bGVGWR",
     "separator_qkXpB7",
+    "rich_text_bGVGWR",
+    "features_banner_Xqw4VW",
     "rich_text_fr3Ftz",
     "multicolumn_BLNpDn",
-    "features_banner_48DfGA",
-    "newsletter_KQitJE",
-    "testimonial_images_PAzxhF"
+    "testimonial_images_PAzxhF",
+    "newsletter_KQitJE"
   ]
 }
