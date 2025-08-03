@@ -265,55 +265,6 @@
         "margin-bottom": 28
       }
     },
-    "before_and_after_AFCUre": {
-      "type": "before-and-after",
-      "blocks": {
-        "heading_9WVPE8": {
-          "type": "heading",
-          "settings": {
-            "heading": "We know you are unique.",
-            "disable_on_mobile": false,
-            "size_heading": 160,
-            "size_heading_mobile": 140
-          }
-        },
-        "text_Dra7CK": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Take care of your complexion to make it healthy and radiant. In the range of facial care products you will find creams, scrubs, masks, toners, gels and much more.</p>",
-            "text_style": "body",
-            "disable_on_mobile": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_9WVPE8",
-        "text_Dra7CK"
-      ],
-      "settings": {
-        "title": "",
-        "layout": "image_first",
-        "desktop-percentage-image-width": 58,
-        "full-width-enabled": true,
-        "slide_height": "adapt_to_first_image",
-        "desktop_fixed_height": 320,
-        "mobile_fixed_height": 460,
-        "enable_badges": true,
-        "before_badge": "Before",
-        "after_badge": "After",
-        "section-color-body-text": "rgba(0,0,0,0)",
-        "section-color-overlay": "rgba(0,0,0,0)",
-        "section-color-overlay-opacity": 100,
-        "color-body-text": "rgba(0,0,0,0)",
-        "color-overlay": "#f7efe3",
-        "color-overlay-opacity": 100,
-        "desktop_text_vertical_position": "center",
-        "desktop_text_horizontal_position": "center",
-        "mobile_text_horizontal_position": "center",
-        "margin-top": 0,
-        "margin-bottom": 0
-      }
-    },
     "image_with_text_WxXpEB": {
       "type": "image-with-text",
       "blocks": {
@@ -429,7 +380,7 @@
         "heading_mnJyLx": {
           "type": "heading",
           "settings": {
-            "heading": "Get 20% off your first order",
+            "heading": "Get 10% off your first order",
             "heading_disable_on_mobile": false,
             "size_heading": 200,
             "size_heading_mobile": 100
@@ -465,7 +416,6 @@
   "order": [
     "breadcrumbs",
     "main",
-    "before_and_after_AFCUre",
     "image_with_text_WxXpEB",
     "video_reels_dqWnMm",
     "newsletter_dznx9H"
