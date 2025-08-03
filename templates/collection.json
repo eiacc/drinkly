@@ -112,7 +112,7 @@
         "section_width": "regular",
         "desktop_text_horizontal_position": "center",
         "color-body-text": "rgba(0,0,0,0)",
-        "background_color": "rgba(0,0,0,0)",
+        "background_color": "#f7f3ee",
         "margin-top": 0,
         "margin-bottom": 8
       }
@@ -177,7 +177,7 @@
         "size_heading": 80,
         "size_heading_mobile": 80,
         "color-body-text": "rgba(0,0,0,0)",
-        "background_color": "rgba(0,0,0,0)",
+        "background_color": "#f7f3ee",
         "margin-top": 0,
         "margin-bottom": 48
       }
