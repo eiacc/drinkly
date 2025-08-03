@@ -81,6 +81,17 @@
         "margin-bottom": 0
       }
     },
+    "separator_qkXpB7": {
+      "type": "separator",
+      "settings": {
+        "heading": "",
+        "show-separator-line": true,
+        "full-width-line": false,
+        "color-background": "#dfdfdf",
+        "margin-top": 20,
+        "margin-bottom": 16
+      }
+    },
     "rich_text_bGVGWR": {
       "type": "rich-text",
       "blocks": {
@@ -125,15 +136,71 @@
         "margin-bottom": 20
       }
     },
-    "separator_qkXpB7": {
-      "type": "separator",
+    "features_banner_Xqw4VW": {
+      "type": "features-banner",
+      "blocks": {
+        "image_hq6ykz": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/ship-icon.png",
+            "select_icon": "close",
+            "heading": "Fast & Free Shipping",
+            "text": "<p>Free for orders over $90. Includes free package insurance to your door to cover accidental breakage.</p>",
+            "link": ""
+          }
+        },
+        "image_zffmmm": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Aus-icon.png",
+            "select_icon": "bag",
+            "heading": "Australian Made",
+            "text": "<p>From farm to bottle to printing, made from local producers and suppliers in our distillery in Melbourne.</p>",
+            "link": ""
+          }
+        },
+        "image_Wt9AbJ": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/leaf-icon.png",
+            "select_icon": "bag",
+            "heading": "Real Ingredients",
+            "text": "<p>We don’t do synthetic. Only real fruit and botanicals, just the way drinks should be.</p>",
+            "link": ""
+          }
+        },
+        "image_QBgM9q": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/recycle-icon.png",
+            "select_icon": "bag",
+            "heading": "Recyclable",
+            "text": "<p>Our packaging’s planet-friendly, and the bottles double as vases, because great design deserves a second life.</p>",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_hq6ykz",
+        "image_zffmmm",
+        "image_Wt9AbJ",
+        "image_QBgM9q"
+      ],
       "settings": {
         "heading": "",
-        "show-separator-line": true,
-        "full-width-line": false,
-        "color-background": "#dfdfdf",
-        "margin-top": 20,
-        "margin-bottom": 16
+        "size_heading_mobile": 80,
+        "size_heading": 70,
+        "icon_width_mobile": 52,
+        "icon_width_desktop": 64,
+        "icon_layout": "center",
+        "columns_desktop": "4",
+        "icon_layout_mobile": "grid",
+        "color_body_icon": "rgba(0,0,0,0)",
+        "color_background_icon": "rgba(0,0,0,0)",
+        "color_body_text": "rgba(0,0,0,0)",
+        "background_color": "#f7f3ee",
+        "margin-top": 52,
+        "margin-bottom": 68
       }
     },
     "rich_text_fr3Ftz": {
@@ -226,111 +293,6 @@
         "margin-bottom": 48
       }
     },
-    "features_banner_Xqw4VW": {
-      "type": "features-banner",
-      "blocks": {
-        "image_hq6ykz": {
-          "type": "image",
-          "settings": {
-            "desktop_image": "shopify://shop_images/ship-icon.png",
-            "select_icon": "close",
-            "heading": "Fast & Free Shipping",
-            "text": "<p>Free for orders over $90. Includes free package insurance to your door to cover accidental breakage.</p>",
-            "link": ""
-          }
-        },
-        "image_zffmmm": {
-          "type": "image",
-          "settings": {
-            "desktop_image": "shopify://shop_images/Aus-icon.png",
-            "select_icon": "bag",
-            "heading": "Australian Made",
-            "text": "<p>From farm to bottle to printing, made from local producers and suppliers in our distillery in Melbourne.</p>",
-            "link": ""
-          }
-        },
-        "image_Wt9AbJ": {
-          "type": "image",
-          "settings": {
-            "desktop_image": "shopify://shop_images/leaf-icon.png",
-            "select_icon": "bag",
-            "heading": "Real Ingredients",
-            "text": "<p>We don’t do synthetic. Only real fruit and botanicals, just the way drinks should be.</p>",
-            "link": ""
-          }
-        },
-        "image_QBgM9q": {
-          "type": "image",
-          "settings": {
-            "desktop_image": "shopify://shop_images/recycle-icon.png",
-            "select_icon": "bag",
-            "heading": "Recyclable",
-            "text": "<p>Our packaging’s planet-friendly, and the bottles double as vases, because great design deserves a second life.</p>",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_hq6ykz",
-        "image_zffmmm",
-        "image_Wt9AbJ",
-        "image_QBgM9q"
-      ],
-      "settings": {
-        "heading": "",
-        "size_heading_mobile": 80,
-        "size_heading": 70,
-        "icon_width_mobile": 52,
-        "icon_width_desktop": 64,
-        "icon_layout": "center",
-        "columns_desktop": "4",
-        "icon_layout_mobile": "grid",
-        "color_body_icon": "rgba(0,0,0,0)",
-        "color_background_icon": "rgba(0,0,0,0)",
-        "color_body_text": "rgba(0,0,0,0)",
-        "background_color": "#f7f3ee",
-        "margin-top": 88,
-        "margin-bottom": 88
-      }
-    },
-    "newsletter_KQitJE": {
-      "type": "newsletter",
-      "blocks": {
-        "heading_KhxnCQ": {
-          "type": "heading",
-          "settings": {
-            "heading": "Get 10% off your first order",
-            "heading_disable_on_mobile": false,
-            "size_heading": 200,
-            "size_heading_mobile": 160
-          }
-        },
-        "paragraph_KJ3cj8": {
-          "type": "paragraph",
-          "settings": {
-            "paragraph": "<p>Be the first to know about new collections and exclusive offers.</p>",
-            "text_disable_on_mobile": false
-          }
-        },
-        "email_form_UAcpDk": {
-          "type": "email_form",
-          "settings": {
-            "button_select": "primary"
-          }
-        }
-      },
-      "block_order": [
-        "heading_KhxnCQ",
-        "paragraph_KJ3cj8",
-        "email_form_UAcpDk"
-      ],
-      "settings": {
-        "color-body-text": "rgba(0,0,0,0)",
-        "background_color": "#ecf5f4",
-        "margin-top": 100,
-        "margin-bottom": 100
-      }
-    },
     "testimonial_images_PAzxhF": {
       "type": "testimonial-images",
       "blocks": {
@@ -417,6 +379,44 @@
         "color-overlay-opacity": 100,
         "margin-top": 52,
         "margin-bottom": 20
+      }
+    },
+    "newsletter_KQitJE": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_KhxnCQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get 10% off your first order",
+            "heading_disable_on_mobile": false,
+            "size_heading": 200,
+            "size_heading_mobile": 160
+          }
+        },
+        "paragraph_KJ3cj8": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "<p>Be the first to know about new collections and exclusive offers.</p>",
+            "text_disable_on_mobile": false
+          }
+        },
+        "email_form_UAcpDk": {
+          "type": "email_form",
+          "settings": {
+            "button_select": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_KhxnCQ",
+        "paragraph_KJ3cj8",
+        "email_form_UAcpDk"
+      ],
+      "settings": {
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "#ecf5f4",
+        "margin-top": 100,
+        "margin-bottom": 100
       }
     }
   },
