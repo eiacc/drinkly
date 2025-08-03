@@ -137,7 +137,7 @@
         "full-width-enabled": true,
         "image_ratio": "adapt",
         "color-body-text": "rgba(0,0,0,0)",
-        "background_color": "rgba(0,0,0,0)",
+        "background_color": "#ffeac7",
         "margin-top": 0,
         "margin-bottom": 0
       }
@@ -361,7 +361,7 @@
         "animation_speed": "100",
         "color-body-text": "rgba(0,0,0,0)",
         "background_color": "rgba(0,0,0,0)",
-        "margin-top": 20,
+        "margin-top": 52,
         "margin-bottom": 0
       }
     },
@@ -446,8 +446,8 @@
         "button_horizontal_position": "center",
         "button_label": "CUSTOMISE WITH YOUR BRAND",
         "button_link": "",
-        "margin-top": 56,
-        "margin-bottom": 56,
+        "margin-top": 20,
+        "margin-bottom": 52,
         "background_color": "#ffffff"
       }
     },
@@ -957,7 +957,7 @@
             "text": "<p>Refined and graceful with a polished look.</p>",
             "text_disable_on_mobile": false,
             "button_select": "link",
-            "button_label": "Check it out",
+            "button_label": "SHOP ELEGANT",
             "button_disable_on_mobile": false,
             "button_link": "",
             "button_link_in_new_window": false,
@@ -972,7 +972,7 @@
             "text": "<p>Stylish and expressive with a sharp graphic edge.</p>",
             "text_disable_on_mobile": false,
             "button_select": "link",
-            "button_label": "Check now",
+            "button_label": "SHOP MODERNA",
             "button_disable_on_mobile": false,
             "button_link": "",
             "button_link_in_new_window": false,
@@ -987,7 +987,7 @@
             "text": "<p>Playful and handwritten, bringing festive flair to any fun occasion. </p>",
             "text_disable_on_mobile": false,
             "button_select": "link",
-            "button_label": "Check now",
+            "button_label": "SHOP SCRIPT PARTY",
             "button_disable_on_mobile": false,
             "button_link": "",
             "button_link_in_new_window": false,
@@ -1010,8 +1010,8 @@
         "size_heading_mobile": 90,
         "color-body-text": "rgba(0,0,0,0)",
         "background_color": "#f7f3ee",
-        "margin-top": 56,
-        "margin-bottom": 48
+        "margin-top": 52,
+        "margin-bottom": 20
       }
     },
     "button_AcgMnQ": {
@@ -1021,8 +1021,8 @@
         "button_horizontal_position": "center",
         "button_label": "SHOP WEDDING COCKTAILS",
         "button_link": "shopify://collections/wedding-cocktails",
-        "margin-top": 56,
-        "margin-bottom": 56,
+        "margin-top": 20,
+        "margin-bottom": 52,
         "background_color": "#f7f3ee"
       }
     },
@@ -1110,7 +1110,7 @@
         "color-body-text": "transparent",
         "color-overlay": "transparent",
         "color-overlay-opacity": 100,
-        "margin-top": 20,
+        "margin-top": 52,
         "margin-bottom": 20
       }
     },
