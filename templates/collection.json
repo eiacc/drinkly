@@ -96,7 +96,7 @@
         "text_jVQHcc": {
           "type": "text",
           "settings": {
-            "text": "<p>Book a call with one of our team to help you go through the options.<br/></p>",
+            "text": "<p>Book a call with one of our team to help you go through the options.<br/><br/></p>",
             "disable_on_mobile": false
           }
         },
@@ -123,19 +123,6 @@
         "background_color": "transparent",
         "margin-top": 20,
         "margin-bottom": 20
-      }
-    },
-    "button_GLPdbJ": {
-      "type": "button",
-      "name": "t:sections.button.presets.name",
-      "settings": {
-        "button_select": "primary",
-        "button_horizontal_position": "center",
-        "button_label": "BOOK A DISCOVERY CALL",
-        "button_link": "",
-        "margin-top": 20,
-        "margin-bottom": 20,
-        "background_color": "transparent"
       }
     },
     "separator_qkXpB7": {
@@ -435,7 +422,6 @@
     "title",
     "product-grid",
     "rich_text_bGVGWR",
-    "button_GLPdbJ",
     "separator_qkXpB7",
     "rich_text_fr3Ftz",
     "multicolumn_BLNpDn",
