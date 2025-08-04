@@ -80,19 +80,8 @@
             "placeholder": "26th May 2027"
           }
         },
-        "custom_variant_picker_Tzyh7n": {
-          "type": "custom_variant_picker",
-          "settings": {
-            "add_on": "",
-            "picker_type": "button",
-            "color_swatch_names": "Colour",
-            "variant_picture_swatch_names": "",
-            "dropdown_swatch_names": "Cocktail"
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
-          "disabled": true,
           "settings": {
             "picker_type": "button",
             "color_swatch_names": "",
@@ -233,7 +222,6 @@
         "price",
         "metaproperty_bYmTwG",
         "metaproperty_KqwHmR",
-        "custom_variant_picker_Tzyh7n",
         "variant_picker",
         "buy_buttons",
         "promo_67ttgj",
@@ -268,7 +256,9 @@
     "reviews_GHHQiG": {
       "type": "reviews",
       "name": "Reviews (Stamped)",
-      "settings": {}
+      "settings": {
+        "title": "What Our Customers Have Been Saying..."
+      }
     },
     "testimonial_images_AGzLYr": {
       "type": "testimonial-images",
