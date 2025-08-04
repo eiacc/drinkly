@@ -1030,11 +1030,11 @@
         "desktop_text_vertical_position": "center",
         "desktop_text_horizontal_position": "center",
         "mobile_text_horizontal_position": "center",
-        "section-color-body-text": "transparent",
-        "section-color-overlay": "transparent",
+        "section-color-body-text": "rgba(0,0,0,0)",
+        "section-color-overlay": "rgba(0,0,0,0)",
         "section-color-overlay-opacity": 100,
-        "color-body-text": "transparent",
-        "color-overlay": "transparent",
+        "color-body-text": "rgba(0,0,0,0)",
+        "color-overlay": "rgba(0,0,0,0)",
         "color-overlay-opacity": 100,
         "margin-top": 52,
         "margin-bottom": 20
@@ -1119,13 +1119,57 @@
         "margin-bottom": 88
       }
     },
+    "rich_text_6EyfWk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4eCfCV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        },
+        "text_DMGpDQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make annuncements, or welcome customers to your store.</p>",
+            "disable_on_mobile": false
+          }
+        },
+        "button_4rMbnk": {
+          "type": "button",
+          "settings": {
+            "button_select": "primary",
+            "button_label": "Button label",
+            "button_link": "/",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_4eCfCV",
+        "text_DMGpDQ",
+        "button_4rMbnk"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "transparent",
+        "background_color": "transparent",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
     "1649160937e2665513": {
       "type": "newsletter",
       "blocks": {
         "164916093728eec38a-0": {
           "type": "heading",
           "settings": {
-            "heading": "Get 10% off your first order",
+            "heading": "Get $20 off your first order",
             "heading_disable_on_mobile": false,
             "size_heading": 200,
             "size_heading_mobile": 180
@@ -1179,6 +1223,7 @@
     "testimonial_images_9YE74N",
     "button_qK8rAG",
     "164580331540910010",
+    "rich_text_6EyfWk",
     "1649160937e2665513"
   ]
 }

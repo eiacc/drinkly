@@ -146,6 +146,7 @@
         "paragraph_RW4bNP",
         "email_form_XwetR3"
       ],
+      "disabled": true,
       "name": "t:sections.notification_popup.name",
       "settings": {
         "max_width": 450,
