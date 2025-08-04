@@ -10,9 +10,30 @@ if (!customElements.get("custom-product-form")) {
         this.option_size = this.dataset.optionSize;
         this.metaproperties = [];
         this.variant_images = [];
+        this.cart_data = [];
+        this.updated_cart = {
+          message: '',
+          data: {
+            toAdd: [],
+            toUpdate: {}
+          }
+        };
         this.cart = document.querySelector("cart-drawer");
         this.cart_button = null
         this.variant_size = this.querySelectorAll('[data-field]');
+        this.product_popup_cart = document.querySelector('.product-cart-popup');
+
+        this.product_popup_cart_update_button = null
+        this.product_popup_cart_cancel_buttons = []
+
+        if (this.product_popup_cart) {
+          this.product_popup_cart_update_button = this.product_popup_cart.querySelector('[data-button-type="update"]');
+          this.product_popup_cart_cancel_buttons = this.product_popup_cart.querySelectorAll('[data-button-type="cancel"]');
+          this.product_popup_cart_update_button.addEventListener('click', this.popupAddToCart.bind(this));
+          this.product_popup_cart_cancel_buttons.forEach(button => {
+            button.addEventListener('click', this.onPopupCartCancel.bind(this));
+          });
+        }
       }
 
       connectedCallback() {
@@ -168,6 +189,21 @@ if (!customElements.get("custom-product-form")) {
               quantity: Math.ceil(totalVariants / 24) ,
             });
           });
+
+          // fetch cart data
+          const { alteredItems, foundAltered, remainingItems } = await this.fetchCart(cart);
+
+          if (foundAltered) {
+            this.updated_cart = {
+              message: 'You already have this item in your cart',
+              data: {
+                toAdd: remainingItems,
+                toUpdate: alteredItems
+              }
+            }
+
+            throw new Error('alter_cart');
+          }
   
           const response = await fetch('/cart/add.js', {
             method: 'POST',
@@ -191,10 +227,128 @@ if (!customElements.get("custom-product-form")) {
           }, 1000);
         } catch (error) {
           this.buttonLoad(false);
-          console.error('error', error);
+
+          if (error.message === 'alter_cart') {
+            // console.error('error', error);
+            this.product_popup_cart.setAttribute('data-state', 'active');
+          }
         }
       }
 
+      async popupAddToCart(e) {
+        e.preventDefault();
+        this.product_popup_cart_update_button.setAttribute('disabled', true);
+        this.product_popup_cart.setAttribute('data-state', 'active');
+      
+        this.product_popup_cart_update_button.firstElementChild.classList.add('hidden');
+        this.product_popup_cart_update_button.lastElementChild.classList.remove('hidden');
+      
+        try {
+          // console.log('updated_cart.data.cartItems', this.updated_cart.data)
+
+          for (const [line, quantity] of Object.entries(this.updated_cart.data.toUpdate)) {
+            await fetch('/cart/change.js', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest',
+              },
+              body: JSON.stringify({ line: Number(line), quantity: Number(quantity) })
+            });
+          }
+
+          // ➕ Bulk add new items
+          if (this.updated_cart.data.toAdd.length > 0) {
+            const addRes = await fetch('/cart/add.js', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest'
+              },
+              body: JSON.stringify({ items: this.updated_cart.data.toAdd })
+            });
+
+            if (!addRes.ok) {
+              const errorData = await addRes.json();
+              throw new Error(errorData.description || 'Failed to add items');
+            }
+          }
+      
+          await this.cart.refreshCartDrawer();
+      
+          setTimeout(() => {
+            this.product_popup_cart_update_button.firstElementChild.classList.remove('hidden');
+            this.product_popup_cart_update_button.lastElementChild.classList.add('hidden');
+            this.product_popup_cart_update_button.removeAttribute('disabled');
+            this.onPopupCartCancel();
+            this.cart_button.click();
+          }, 1000);
+        } catch (error) {
+          // console.error(error);
+        } finally {
+          this.product_popup_cart_update_button.firstElementChild.classList.remove('hidden');
+          this.product_popup_cart_update_button.lastElementChild.classList.add('hidden');
+          this.product_popup_cart_update_button.removeAttribute('disabled');
+          this.updated_cart = {
+            message: '',
+            data: {
+              toAdd: [],
+              toUpdate: {}
+            }
+          };
+        }
+      }      
+      
+      onPopupCartCancel() {
+        this.product_popup_cart.setAttribute('data-state', '');
+      }
+
+      async fetchCart(dataToCompare = []) {
+        try {
+          const response = await fetch('/cart.js');
+          if (!response.ok) throw new Error('Network response was not ok');
+      
+          const cart = await response.json();
+      
+          const updates = {}; // line index => quantity
+          const remainingItems = [...dataToCompare];
+          let lineIndex = 1;
+      
+          for (const item of cart.items) {
+            const matchIndex = remainingItems.findIndex(compare =>
+              compare.id === item.id &&
+              JSON.stringify(compare.properties || {}) === JSON.stringify(item.properties || {})
+            );
+      
+            if (matchIndex !== -1) {
+              const match = remainingItems[matchIndex];
+              updates[lineIndex] = Number(match.quantity);
+              remainingItems.splice(matchIndex, 1);
+            }
+      
+            lineIndex += 1;
+          }
+      
+          const foundAltered = Object.keys(updates).length > 0;
+      
+          return {
+            alteredItems: updates,
+            remainingItems,
+            foundAltered
+          };
+      
+        } catch (error) {
+          // console.error('Failed to fetch cart:', error);
+          return {
+            alteredItems: {},
+            remainingItems: [],
+            foundAltered: false
+          };
+        }
+      }
+      
+      
+      
       checkProperties() {
         let errs = 0;
         const properties = {};
