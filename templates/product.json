@@ -68,6 +68,7 @@
         },
         "metaproperty_bYmTwG": {
           "type": "metaproperty",
+          "disabled": true,
           "settings": {
             "label": "Main Text",
             "placeholder": "Bridget & Joshua"
@@ -75,6 +76,7 @@
         },
         "metaproperty_KqwHmR": {
           "type": "metaproperty",
+          "disabled": true,
           "settings": {
             "label": "Date or Comment Text",
             "placeholder": "26th May 2027"
