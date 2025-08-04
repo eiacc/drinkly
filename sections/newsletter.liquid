@@ -61,6 +61,7 @@
             <div class="{% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %} hero__text newsletter__text{% if block.settings.text_disable_on_mobile == true %} hero__text--mobile{% endif %} rte">
               {{ block.settings.paragraph }}
             </div>
+            <div class="klaviyo-form-VRitxW"></div>
           {%- when 'email_form' -%}
             {% form 'customer', class: 'newsletter-form' %}
               <input type="hidden" name="contact[email]" value="newsletter">
@@ -242,7 +243,6 @@
       ]
     },
     
-  
     
     {
       "type": "email_form",
