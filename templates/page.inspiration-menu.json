@@ -33,7 +33,7 @@
             "heading_disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100,
-            "text": "Give customers details about the image or content on the template.",
+            "text": "",
             "text_disable_on_mobile": false,
             "button_select": "primary",
             "button_label": "SEE INSPO",
@@ -52,11 +52,11 @@
         "image_JReGnB": {
           "type": "image",
           "settings": {
-            "heading": "Column",
+            "heading": "Brand",
             "heading_disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100,
-            "text": "Give customers details about the image or content on the template.",
+            "text": "",
             "text_disable_on_mobile": false,
             "button_select": "primary",
             "button_label": "Button label",
@@ -75,11 +75,11 @@
         "image_z3mJUJ": {
           "type": "image",
           "settings": {
-            "heading": "Column",
+            "heading": "Special Occaission",
             "heading_disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100,
-            "text": "Give customers details about the image or content on the template.",
+            "text": "",
             "text_disable_on_mobile": false,
             "button_select": "primary",
             "button_label": "Button label",
