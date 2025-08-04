@@ -101,7 +101,7 @@
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true,
-            "show_qty_selector": false,
+            "show_qty_selector": true,
             "text_color": "rgba(0,0,0,0)",
             "background_color": "rgba(0,0,0,0)"
           }
