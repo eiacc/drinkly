@@ -13,15 +13,109 @@
       "type": "main-page",
       "custom_css": [],
       "settings": {
+        "compact-size-enabled": true,
         "size_heading": 140,
         "size_heading_mobile": 100,
         "color-body-text": "#151515",
+        "color-bg-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
         "margin-top": 60,
         "margin-bottom": 60
+      }
+    },
+    "grid_view_7Nq7UA": {
+      "type": "grid-view",
+      "blocks": {
+        "image_pk7c3E": {
+          "type": "image",
+          "settings": {
+            "heading": "Weddings",
+            "heading_disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100,
+            "text": "Give customers details about the image or content on the template.",
+            "text_disable_on_mobile": false,
+            "button_select": "primary",
+            "button_label": "SEE INSPO",
+            "button_disable_on_mobile": false,
+            "button_link": "",
+            "button_link_in_new_window": false,
+            "color-body-text": "transparent",
+            "color-overlay": "transparent",
+            "color-overlay-opacity": 0,
+            "desktop_text_vertical_position": "center",
+            "desktop_text_horizontal_position": "center",
+            "mobile_text_vertical_position": "center",
+            "mobile_text_horizontal_position": "center"
+          }
+        },
+        "image_JReGnB": {
+          "type": "image",
+          "settings": {
+            "heading": "Column",
+            "heading_disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100,
+            "text": "Give customers details about the image or content on the template.",
+            "text_disable_on_mobile": false,
+            "button_select": "primary",
+            "button_label": "Button label",
+            "button_disable_on_mobile": false,
+            "button_link": "",
+            "button_link_in_new_window": false,
+            "color-body-text": "transparent",
+            "color-overlay": "transparent",
+            "color-overlay-opacity": 0,
+            "desktop_text_vertical_position": "center",
+            "desktop_text_horizontal_position": "center",
+            "mobile_text_vertical_position": "center",
+            "mobile_text_horizontal_position": "center"
+          }
+        },
+        "image_z3mJUJ": {
+          "type": "image",
+          "settings": {
+            "heading": "Column",
+            "heading_disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100,
+            "text": "Give customers details about the image or content on the template.",
+            "text_disable_on_mobile": false,
+            "button_select": "primary",
+            "button_label": "Button label",
+            "button_disable_on_mobile": false,
+            "button_link": "",
+            "button_link_in_new_window": false,
+            "color-body-text": "transparent",
+            "color-overlay": "transparent",
+            "color-overlay-opacity": 0,
+            "desktop_text_vertical_position": "center",
+            "desktop_text_horizontal_position": "center",
+            "mobile_text_vertical_position": "center",
+            "mobile_text_horizontal_position": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_pk7c3E",
+        "image_JReGnB",
+        "image_z3mJUJ"
+      ],
+      "name": "t:sections.grid-view.settings.presets.name",
+      "settings": {
+        "title": "Grid view",
+        "swipe_on_mobile": false,
+        "full-width-enabled": false,
+        "image_ratio": "adapt",
+        "color-body-text": "transparent",
+        "background_color": "transparent",
+        "margin-top": 20,
+        "margin-bottom": 20
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "grid_view_7Nq7UA"
   ]
 }
