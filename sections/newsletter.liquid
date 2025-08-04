@@ -62,7 +62,8 @@
               {{ block.settings.paragraph }}
             </div>
             <div class="klaviyo-form-VRitxW"></div>
-          {%- when 'email_form' -%}
+
+          {%comment%} {%- when 'email_form' -%}
             {% form 'customer', class: 'newsletter-form' %}
               <input type="hidden" name="contact[email]" value="newsletter">
 
@@ -92,6 +93,7 @@
                   </span>
                 </button>
               </div>
+              
               {%- if form.errors -%}
                 {% for error in form.errors %}
                   <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
@@ -113,6 +115,7 @@
                 </div>
               {%- endif -%}
             {% endform %}
+             {%endcomment%}
         {%- endcase -%}
       {%- endfor -%}
     </div>
