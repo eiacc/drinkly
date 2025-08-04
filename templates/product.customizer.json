@@ -59,7 +59,7 @@
         "price": {
           "type": "price",
           "settings": {
-            "override_price": "<h4><strong>$10 per bottle</strong></h4><p>for orders over 24</p>",
+            "override_price": "<h2><strong>$10-$18</strong></h2><p><strong> per bottle<br/></strong></p>",
             "show_tax_included": true,
             "show_shipping_policy": true,
             "size_text": 120,
@@ -118,10 +118,19 @@
         "promo_67ttgj": {
           "type": "promo",
           "settings": {
-            "content": "<p>🎟️ Use code \"Beauty\" for 10% OFF!</p>",
+            "content": "<p>Order over 24 Cocktails to unlock best price</p>",
             "text_alignment": "center",
             "color-body-text": "#a04848",
             "background_color": "#f6f2ea"
+          }
+        },
+        "promo_dJtMQK": {
+          "type": "promo",
+          "settings": {
+            "content": "<p>Deluxe Foil has a min order of 18 bottles</p>",
+            "text_alignment": "center",
+            "color-body-text": "#a04848",
+            "background_color": "#ffffff"
           }
         },
         "payments_badge_EFynmG": {
@@ -237,6 +246,7 @@
         "variant_picker",
         "buy_buttons",
         "promo_67ttgj",
+        "promo_dJtMQK",
         "payments_badge_EFynmG",
         "separator_DwMham",
         "e23830b4-3ca6-452f-a7d1-cb245a3e9282",
@@ -268,7 +278,9 @@
     "reviews_GHHQiG": {
       "type": "reviews",
       "name": "Reviews (Stamped)",
-      "settings": {}
+      "settings": {
+        "title": "What Our Customers Have Been Saying..."
+      }
     },
     "testimonial_images_AGzLYr": {
       "type": "testimonial-images",
