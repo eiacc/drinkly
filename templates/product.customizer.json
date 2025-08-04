@@ -118,10 +118,10 @@
         "promo_67ttgj": {
           "type": "promo",
           "settings": {
-            "content": "<p>Order over 24 Cocktails to unlock best price</p>",
+            "content": "<p>Order 24 bottles or more to unlock bulk price!</p>",
             "text_alignment": "center",
-            "color-body-text": "#a04848",
-            "background_color": "#f6f2ea"
+            "color-body-text": "#151515",
+            "background_color": "#ecf5e9"
           }
         },
         "promo_dJtMQK": {
@@ -275,6 +275,50 @@
         "margin-bottom": 28
       }
     },
+    "rich_text_pBEcyh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XFEBjE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Need Help?",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        },
+        "text_FJqdbX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Book a call with one of our team to help you go through the options.<br/><br/></p>",
+            "disable_on_mobile": false
+          }
+        },
+        "button_BKbwiU": {
+          "type": "button",
+          "settings": {
+            "button_select": "primary",
+            "button_label": "BOOK A DISCOVERY CALL",
+            "button_link": "/",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_XFEBjE",
+        "text_FJqdbX",
+        "button_BKbwiU"
+      ],
+      "name": "Need Help",
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "#f7f3ee",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
     "reviews_GHHQiG": {
       "type": "reviews",
       "name": "Reviews (Stamped)",
@@ -412,6 +456,7 @@
   "order": [
     "breadcrumbs",
     "main",
+    "rich_text_pBEcyh",
     "reviews_GHHQiG",
     "testimonial_images_AGzLYr",
     "newsletter_dznx9H"

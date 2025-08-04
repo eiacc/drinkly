@@ -81,50 +81,6 @@
         "margin-bottom": 0
       }
     },
-    "rich_text_bGVGWR": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_FCDk6m": {
-          "type": "heading",
-          "settings": {
-            "heading": "Need Help?",
-            "disable_on_mobile": false,
-            "size_heading": 100,
-            "size_heading_mobile": 100
-          }
-        },
-        "text_jVQHcc": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Book a call with one of our team to help you go through the options.<br/><br/></p>",
-            "disable_on_mobile": false
-          }
-        },
-        "button_LK4Bmq": {
-          "type": "button",
-          "settings": {
-            "button_select": "primary",
-            "button_label": "BOOK A DISCOVERY CALL",
-            "button_link": "/",
-            "disable_on_mobile": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_FCDk6m",
-        "text_jVQHcc",
-        "button_LK4Bmq"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "section_width": "regular",
-        "desktop_text_horizontal_position": "center",
-        "color-body-text": "transparent",
-        "background_color": "transparent",
-        "margin-top": 20,
-        "margin-bottom": 20
-      }
-    },
     "separator_qkXpB7": {
       "type": "separator",
       "settings": {
@@ -170,7 +126,7 @@
         "text_jVQHcc",
         "button_LK4Bmq"
       ],
-      "name": "t:sections.rich-text.presets.name",
+      "name": "Need Help",
       "settings": {
         "section_width": "regular",
         "desktop_text_horizontal_position": "center",
@@ -337,107 +293,6 @@
         "margin-bottom": 48
       }
     },
-    "features_banner_48DfGA": {
-      "type": "features-banner",
-      "blocks": {
-        "image_LpU9LC": {
-          "type": "image",
-          "settings": {
-            "select_icon": "bag",
-            "heading": "Vegan",
-            "text": "<p>Our entire collection is vegan and cruelty free.</p>",
-            "link": ""
-          }
-        },
-        "image_CKCXhM": {
-          "type": "image",
-          "settings": {
-            "select_icon": "bag",
-            "heading": "Fast & Free Shipping",
-            "text": "<p>Doorstep delivery to most of the US.</p>",
-            "link": ""
-          }
-        },
-        "image_VGUkeA": {
-          "type": "image",
-          "settings": {
-            "select_icon": "bag",
-            "heading": "Natural",
-            "text": "<p>We only use the finest natural ingredients.</p>",
-            "link": ""
-          }
-        },
-        "image_McECbz": {
-          "type": "image",
-          "settings": {
-            "select_icon": "bag",
-            "heading": "Recyclable",
-            "text": "<p>All packaging is recyclable and eco conscious.</p>",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_LpU9LC",
-        "image_CKCXhM",
-        "image_VGUkeA",
-        "image_McECbz"
-      ],
-      "settings": {
-        "heading": "",
-        "size_heading_mobile": 70,
-        "size_heading": 70,
-        "icon_width_mobile": 36,
-        "icon_width_desktop": 48,
-        "icon_layout": "center",
-        "columns_desktop": "4",
-        "icon_layout_mobile": "grid",
-        "color_body_icon": "rgba(0,0,0,0)",
-        "color_background_icon": "rgba(0,0,0,0)",
-        "color_body_text": "rgba(0,0,0,0)",
-        "background_color": "rgba(0,0,0,0)",
-        "margin-top": 60,
-        "margin-bottom": 60
-      }
-    },
-    "newsletter_KQitJE": {
-      "type": "newsletter",
-      "blocks": {
-        "heading_KhxnCQ": {
-          "type": "heading",
-          "settings": {
-            "heading": "Get 10% off your first order",
-            "heading_disable_on_mobile": false,
-            "size_heading": 200,
-            "size_heading_mobile": 160
-          }
-        },
-        "paragraph_KJ3cj8": {
-          "type": "paragraph",
-          "settings": {
-            "paragraph": "<p>Be the first to know about new collections and exclusive offers.</p>",
-            "text_disable_on_mobile": false
-          }
-        },
-        "email_form_UAcpDk": {
-          "type": "email_form",
-          "settings": {
-            "button_select": "primary"
-          }
-        }
-      },
-      "block_order": [
-        "heading_KhxnCQ",
-        "paragraph_KJ3cj8",
-        "email_form_UAcpDk"
-      ],
-      "settings": {
-        "color-body-text": "rgba(0,0,0,0)",
-        "background_color": "#ecf5f4",
-        "margin-top": 100,
-        "margin-bottom": 100
-      }
-    },
     "testimonial_images_PAzxhF": {
       "type": "testimonial-images",
       "blocks": {
@@ -516,14 +371,52 @@
         "desktop_text_vertical_position": "center",
         "desktop_text_horizontal_position": "center",
         "mobile_text_horizontal_position": "center",
-        "section-color-body-text": "transparent",
-        "section-color-overlay": "transparent",
+        "section-color-body-text": "rgba(0,0,0,0)",
+        "section-color-overlay": "rgba(0,0,0,0)",
         "section-color-overlay-opacity": 100,
-        "color-body-text": "transparent",
-        "color-overlay": "transparent",
+        "color-body-text": "rgba(0,0,0,0)",
+        "color-overlay": "rgba(0,0,0,0)",
         "color-overlay-opacity": 100,
         "margin-top": 52,
         "margin-bottom": 20
+      }
+    },
+    "newsletter_KQitJE": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_KhxnCQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get 10% off your first order",
+            "heading_disable_on_mobile": false,
+            "size_heading": 200,
+            "size_heading_mobile": 160
+          }
+        },
+        "paragraph_KJ3cj8": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "<p>Be the first to know about new collections and exclusive offers.</p>",
+            "text_disable_on_mobile": false
+          }
+        },
+        "email_form_UAcpDk": {
+          "type": "email_form",
+          "settings": {
+            "button_select": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_KhxnCQ",
+        "paragraph_KJ3cj8",
+        "email_form_UAcpDk"
+      ],
+      "settings": {
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "#ecf5f4",
+        "margin-top": 100,
+        "margin-bottom": 100
       }
     }
   },
@@ -532,14 +425,12 @@
     "banner",
     "title",
     "product-grid",
-    "rich_text_bGVGWR",
     "separator_qkXpB7",
     "rich_text_bGVGWR_2",
     "features_banner_Xqw4VW",
     "rich_text_fr3Ftz",
     "multicolumn_BLNpDn",
-    "features_banner_48DfGA",
-    "newsletter_KQitJE",
-    "testimonial_images_PAzxhF"
+    "testimonial_images_PAzxhF",
+    "newsletter_KQitJE"
   ]
 }
