@@ -70,7 +70,7 @@
             "color-body-text": "rgba(0,0,0,0)",
             "color-overlay": "rgba(0,0,0,0)",
             "color-overlay-opacity": 0,
-            "desktop_image": "shopify://shop_images/Cat1-Wedding.png",
+            "desktop_image": "shopify://shop_images/Cat1-Clear.png",
             "desktop_text_vertical_position": "bottom",
             "desktop_text_horizontal_position": "center",
             "mobile_text_vertical_position": "bottom",
@@ -94,7 +94,7 @@
             "color-body-text": "rgba(0,0,0,0)",
             "color-overlay": "rgba(0,0,0,0)",
             "color-overlay-opacity": 0,
-            "desktop_image": "shopify://shop_images/Cat2-Corp.png",
+            "desktop_image": "shopify://shop_images/Cat2-Clear.png",
             "desktop_text_vertical_position": "bottom",
             "desktop_text_horizontal_position": "center",
             "mobile_text_vertical_position": "bottom",
@@ -118,7 +118,7 @@
             "color-body-text": "rgba(0,0,0,0)",
             "color-overlay": "rgba(0,0,0,0)",
             "color-overlay-opacity": 0,
-            "desktop_image": "shopify://shop_images/Cat3-Special.png",
+            "desktop_image": "shopify://shop_images/Cat3-Clear.png",
             "desktop_text_vertical_position": "bottom",
             "desktop_text_horizontal_position": "center",
             "mobile_text_vertical_position": "bottom",
@@ -137,7 +137,7 @@
         "full-width-enabled": true,
         "image_ratio": "adapt",
         "color-body-text": "rgba(0,0,0,0)",
-        "background_color": "#ffeac7",
+        "background_color": "rgba(0,0,0,0)",
         "margin-top": 0,
         "margin-bottom": 0
       }
@@ -371,7 +371,7 @@
         "button_select": "primary",
         "button_horizontal_position": "center",
         "button_label": "CUSTOMISE WITH YOUR BRAND",
-        "button_link": "",
+        "button_link": "shopify://collections/brand-cocktails",
         "margin-top": 20,
         "margin-bottom": 52,
         "background_color": "#ffffff"
@@ -1119,50 +1119,6 @@
         "margin-bottom": 88
       }
     },
-    "rich_text_6EyfWk": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_4eCfCV": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "disable_on_mobile": false,
-            "size_heading": 100,
-            "size_heading_mobile": 100
-          }
-        },
-        "text_DMGpDQ": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make annuncements, or welcome customers to your store.</p>",
-            "disable_on_mobile": false
-          }
-        },
-        "button_4rMbnk": {
-          "type": "button",
-          "settings": {
-            "button_select": "primary",
-            "button_label": "Button label",
-            "button_link": "/",
-            "disable_on_mobile": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_4eCfCV",
-        "text_DMGpDQ",
-        "button_4rMbnk"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "section_width": "regular",
-        "desktop_text_horizontal_position": "center",
-        "color-body-text": "transparent",
-        "background_color": "transparent",
-        "margin-top": 20,
-        "margin-bottom": 20
-      }
-    },
     "1649160937e2665513": {
       "type": "newsletter",
       "blocks": {
@@ -1223,7 +1179,6 @@
     "testimonial_images_9YE74N",
     "button_qK8rAG",
     "164580331540910010",
-    "rich_text_6EyfWk",
     "1649160937e2665513"
   ]
 }
