@@ -116,7 +116,7 @@
           "settings": {
             "button_select": "primary",
             "button_label": "BOOK A DISCOVERY CALL",
-            "button_link": "/https://calendly.com/hello-threefoxes/discovery-call",
+            "button_link": "https://calendly.com/hello-threefoxes/discovery-call",
             "disable_on_mobile": false
           }
         }
