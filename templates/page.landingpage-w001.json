@@ -72,7 +72,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "heading": "Image banner",
+        "heading": "",
         "full-width-enabled": false,
         "slide_height": "fixed_height",
         "desktop_fixed_height": 320,
@@ -81,11 +81,11 @@
         "desktop_text_horizontal_position": "center",
         "mobile_text_vertical_position": "center",
         "mobile_text_horizontal_position": "center",
-        "color-heading": "transparent",
-        "section-color-overlay": "transparent",
+        "color-heading": "rgba(0,0,0,0)",
+        "section-color-overlay": "rgba(0,0,0,0)",
         "section-color-overlay-opacity": 100,
-        "color-body-text": "transparent",
-        "text-container-color": "transparent",
+        "color-body-text": "rgba(0,0,0,0)",
+        "text-container-color": "rgba(0,0,0,0)",
         "color-overlay-opacity": 100,
         "margin-top": 20,
         "margin-bottom": 20
@@ -157,18 +157,32 @@
         "button_select": "primary",
         "size_heading": 100,
         "size_heading_mobile": 100,
-        "color-body-heading": "transparent",
-        "color-overlay": "transparent",
+        "color-body-heading": "rgba(0,0,0,0)",
+        "color-overlay": "rgba(0,0,0,0)",
         "color-overlay-opacity": 100,
-        "color-body-text": "transparent",
+        "color-body-text": "rgba(0,0,0,0)",
         "margin-top": 20,
         "margin-bottom": 20
+      }
+    },
+    "button_dNqtVc": {
+      "type": "button",
+      "name": "t:sections.button.presets.name",
+      "settings": {
+        "button_select": "primary",
+        "button_horizontal_position": "center",
+        "button_label": "SHOP NOW",
+        "button_link": "",
+        "margin-top": 20,
+        "margin-bottom": 20,
+        "background_color": "transparent"
       }
     }
   },
   "order": [
     "main",
     "image_banner_pwxXE9",
-    "benefits_product_nN3UYD"
+    "benefits_product_nN3UYD",
+    "button_dNqtVc"
   ]
 }
