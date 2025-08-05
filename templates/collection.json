@@ -81,17 +81,6 @@
         "margin-bottom": 0
       }
     },
-    "separator_qkXpB7": {
-      "type": "separator",
-      "settings": {
-        "heading": "",
-        "show-separator-line": true,
-        "full-width-line": false,
-        "color-background": "#dfdfdf",
-        "margin-top": 20,
-        "margin-bottom": 16
-      }
-    },
     "rich_text_bGVGWR_2": {
       "type": "rich-text",
       "blocks": {
@@ -425,7 +414,6 @@
     "banner",
     "title",
     "product-grid",
-    "separator_qkXpB7",
     "rich_text_bGVGWR_2",
     "features_banner_Xqw4VW",
     "rich_text_fr3Ftz",
