@@ -30,14 +30,14 @@
         "subheading_NF4bXr": {
           "type": "subheading",
           "settings": {
-            "subheading": "Tell you story",
+            "subheading": "",
             "subheading_disable_on_mobile": false
           }
         },
         "heading_rK3m4U": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "",
             "disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100
@@ -46,19 +46,19 @@
         "text_VK9Yiq": {
           "type": "text",
           "settings": {
-            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
+            "text": "",
             "disable_on_mobile": false
           }
         },
         "button_Hk3W4F": {
           "type": "button",
           "settings": {
-            "button_select": "primary",
-            "button_label": "Button label",
+            "button_select": "secondary",
+            "button_label": "SHOP WEDDING COCKTAILS",
             "disable_on_mobile": false,
-            "button_link": "/",
-            "second_button_select": "primary",
-            "second_button_label": "Button label",
+            "button_link": "shopify://collections/wedding-cocktails",
+            "second_button_select": "secondary",
+            "second_button_label": "Button labels",
             "second_disable_on_mobile": false,
             "second_button_link": ""
           }
@@ -75,8 +75,9 @@
         "heading": "",
         "full-width-enabled": false,
         "slide_height": "fixed_height",
-        "desktop_fixed_height": 320,
+        "desktop_fixed_height": 460,
         "mobile_fixed_height": 460,
+        "desktop_image": "shopify://shop_images/Couple_Laughing_-_182.webp",
         "desktop_text_vertical_position": "center",
         "desktop_text_horizontal_position": "center",
         "mobile_text_vertical_position": "center",
@@ -85,8 +86,53 @@
         "section-color-overlay": "rgba(0,0,0,0)",
         "section-color-overlay-opacity": 100,
         "color-body-text": "rgba(0,0,0,0)",
-        "text-container-color": "rgba(0,0,0,0)",
-        "color-overlay-opacity": 100,
+        "text-container-color": "#ff9900",
+        "color-overlay-opacity": 9,
+        "margin-top": 32,
+        "margin-bottom": 32
+      }
+    },
+    "rich_text_3PnVUe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_DHhmYH": {
+          "type": "heading",
+          "settings": {
+            "heading": "For Couples That Dont Do Boring",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        },
+        "text_MhtV4P": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make annuncements, or welcome customers to your store.</p>",
+            "disable_on_mobile": false
+          }
+        },
+        "button_wDNYcH": {
+          "type": "button",
+          "settings": {
+            "button_select": "primary",
+            "button_label": "SHOP WEDDING COCKTAILS",
+            "button_link": "shopify://collections/wedding-cocktails",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_DHhmYH",
+        "text_MhtV4P",
+        "button_wDNYcH"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "transparent",
+        "background_color": "transparent",
         "margin-top": 20,
         "margin-bottom": 20
       }
@@ -97,8 +143,9 @@
         "benefit_8Cw7tj": {
           "type": "benefit",
           "settings": {
-            "item_heading": "Benefit heading",
-            "text": "<p>Designed to deliver effective and consistent outcomes.</p>"
+            "image": "shopify://shop_images/Aus-icon.png",
+            "item_heading": "100% Local",
+            "text": "<p>From printing to packaging to the delicious liquid itself, everything’s crafted locally at Three Foxes Distillery in Melbourne.</p>"
           }
         },
         "benefit_yVcYgK": {
@@ -172,7 +219,7 @@
       "settings": {
         "button_select": "primary",
         "button_horizontal_position": "center",
-        "button_label": "SHOP NOW",
+        "button_label": "START CUSTOMISING",
         "button_link": "",
         "margin-top": 20,
         "margin-bottom": 20,
@@ -223,60 +270,16 @@
         "margin-bottom": 20
       }
     },
-    "features_banner_RmQbqt": {
-      "type": "features-banner",
-      "blocks": {
-        "image_RTcxrW": {
-          "type": "image",
-          "settings": {
-            "select_icon": "user",
-            "heading": "Banner title",
-            "text": "<p>Items you love at prices that fit your budget.</p>",
-            "link": "#"
-          }
-        },
-        "image_Bq8cAB": {
-          "type": "image",
-          "settings": {
-            "select_icon": "bag",
-            "heading": "Banner title",
-            "text": "<p>Items you love at prices that fit your budget.</p>",
-            "link": "#"
-          }
-        }
-      },
-      "block_order": [
-        "image_RTcxrW",
-        "image_Bq8cAB"
-      ],
-      "name": "Icon with links",
-      "settings": {
-        "heading": "Icon with links",
-        "size_heading_mobile": 80,
-        "size_heading": 80,
-        "icon_width_mobile": 36,
-        "icon_width_desktop": 48,
-        "icon_layout": "left",
-        "columns_desktop": "2",
-        "icon_layout_mobile": "grid",
-        "color_body_icon": "transparent",
-        "color_background_icon": "transparent",
-        "color_body_text": "transparent",
-        "background_color": "transparent",
-        "margin-top": 20,
-        "margin-bottom": 20
-      }
-    },
     "button_QPxrMf": {
       "type": "button",
       "name": "t:sections.button.presets.name",
       "settings": {
         "button_select": "primary",
         "button_horizontal_position": "center",
-        "button_label": "SHOP NOW",
+        "button_label": "EXPLORE OPTIONS",
         "button_link": "",
-        "margin-top": 20,
-        "margin-bottom": 20,
+        "margin-top": 52,
+        "margin-bottom": 52,
         "background_color": "transparent"
       }
     },
@@ -410,10 +413,10 @@
   "order": [
     "main",
     "image_banner_pwxXE9",
+    "rich_text_3PnVUe",
     "benefits_product_nN3UYD",
     "button_dNqtVc",
     "testimonial_images_q7xd4V",
-    "features_banner_RmQbqt",
     "button_QPxrMf",
     "testimonial_images_mJ8bxN",
     "newsletter_jEkxVg"
