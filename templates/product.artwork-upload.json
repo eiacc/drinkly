@@ -124,15 +124,6 @@
             "background_color": "#ecf5e9"
           }
         },
-        "promo_dJtMQK": {
-          "type": "promo",
-          "settings": {
-            "content": "<p>Deluxe Foil has a min order of 18 bottles</p>",
-            "text_alignment": "center",
-            "color-body-text": "#a04848",
-            "background_color": "#ffffff"
-          }
-        },
         "payments_badge_EFynmG": {
           "type": "payments_badge",
           "settings": {
@@ -246,7 +237,6 @@
         "variant_picker",
         "buy_buttons",
         "promo_67ttgj",
-        "promo_dJtMQK",
         "payments_badge_EFynmG",
         "separator_DwMham",
         "e23830b4-3ca6-452f-a7d1-cb245a3e9282",
