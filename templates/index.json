@@ -65,7 +65,7 @@
             "button_select": "secondary",
             "button_label": "Shop now",
             "button_disable_on_mobile": false,
-            "button_link": "",
+            "button_link": "shopify://collections/wedding-cocktails",
             "button_link_in_new_window": false,
             "color-body-text": "rgba(0,0,0,0)",
             "color-overlay": "rgba(0,0,0,0)",
@@ -89,7 +89,7 @@
             "button_select": "secondary",
             "button_label": "Shop now",
             "button_disable_on_mobile": false,
-            "button_link": "",
+            "button_link": "shopify://collections/brand-cocktails",
             "button_link_in_new_window": false,
             "color-body-text": "rgba(0,0,0,0)",
             "color-overlay": "rgba(0,0,0,0)",
@@ -104,7 +104,7 @@
         "1645137069a9c97a90-0": {
           "type": "image",
           "settings": {
-            "heading": "Special Occasions",
+            "heading": "Occasions",
             "heading_disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100,
@@ -113,7 +113,7 @@
             "button_select": "secondary",
             "button_label": "Shop now",
             "button_disable_on_mobile": false,
-            "button_link": "",
+            "button_link": "shopify://collections/occasions-cocktails",
             "button_link_in_new_window": false,
             "color-body-text": "rgba(0,0,0,0)",
             "color-overlay": "rgba(0,0,0,0)",
@@ -885,9 +885,9 @@
             "button_select": "link",
             "button_label": "SHOP ELEGANT",
             "button_disable_on_mobile": false,
-            "button_link": "",
+            "button_link": "shopify://products/elegant-personalised-cocktails",
             "button_link_in_new_window": false,
-            "desktop_image": "shopify://shop_images/ELE-CRF-NAN_5208a7df-175f-41fe-a6ea-b096efe57d58.webp"
+            "desktop_image": "shopify://shop_images/ELE-CRF-ESP.webp"
           }
         },
         "16457014517af02773-1": {
@@ -900,9 +900,9 @@
             "button_select": "link",
             "button_label": "SHOP MODERNA",
             "button_disable_on_mobile": false,
-            "button_link": "",
+            "button_link": "shopify://products/moderna-personalised-cocktails",
             "button_link_in_new_window": false,
-            "desktop_image": "shopify://shop_images/ELE-CRF-NAN_5208a7df-175f-41fe-a6ea-b096efe57d58.webp"
+            "desktop_image": "shopify://shop_images/MOD-BKC-MRT_84145994-a70d-47dc-9330-2980d273cd74.webp"
           }
         },
         "16457014517af02773-2": {
@@ -915,9 +915,9 @@
             "button_select": "link",
             "button_label": "SHOP SCRIPT PARTY",
             "button_disable_on_mobile": false,
-            "button_link": "",
+            "button_link": "shopify://products/script-party-personalised-cocktails",
             "button_link_in_new_window": false,
-            "desktop_image": "shopify://shop_images/ELE-CRF-NAN_5208a7df-175f-41fe-a6ea-b096efe57d58.webp"
+            "desktop_image": "shopify://shop_images/SPA-VRC-NAN.webp"
           }
         }
       },
@@ -927,7 +927,7 @@
         "16457014517af02773-2"
       ],
       "settings": {
-        "heading": "Popular Products",
+        "heading": "Popular Wedding Products",
         "swipe_on_mobile": true,
         "full-width-enabled": false,
         "image_ratio": "adapt",
