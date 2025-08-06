@@ -59,7 +59,7 @@
         "price": {
           "type": "price",
           "settings": {
-            "override_price": "<h2><strong>$10-$18</strong></h2><p><strong> per bottle<br/></strong></p>",
+            "override_price": "<h2><strong>$</strong><strong>{{ product.metafields.custom.from_price.value }}</strong></h2><p><strong> per bottle for over 24<br/>+$2 for Deluxe foil finish</strong></p>",
             "show_tax_included": true,
             "show_shipping_policy": true,
             "size_text": 120,
@@ -206,8 +206,8 @@
         "5fed6e0f-fb7e-4874-8ba9-3321623fc828": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Ingredients ",
-            "content": "<p>Water, Glycerin, Niacinamide, Panthenol, Allantoin, Sodium Hyaluronate, Rose Extract, Preservatives.</p>",
+            "heading": "All Natural",
+            "content": "<p>Three Foxes cocktails are not made in the traditional sense by mixing bottled liquor. All the flavours are created with the actual fruits and botanicals to create the classics as well as a few of our their own creations. For the ingredients they believe in farms over factories. As for methods, they stick to the labour intensive techniques perfected over four generations.</p>",
             "metafield_variables": "",
             "page": "",
             "icon": "leaf"
@@ -225,8 +225,8 @@
         "d162f900-ee92-4311-b27d-d5f312fa73f2": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Delivery  and  return policy",
-            "content": "<p>Our team will ship your order within 5 business days. The time it takes to receive your order depends on the shipping method chosen at checkout. </p><p><br/></p><p>We hope you to love it, but if you need to make a return, breathe easy. Returns are always free and can be done in person or by mail. </p>",
+            "heading": "Free Delivery and Insurance",
+            "content": "<p>We know event planning can be full-on, so we’ve got your back. Every order over $50 includes free delivery and complimentary insurance, covering accidental breakage during transit, right to your door. If the courier has an off day, your drinks won’t.</p>",
             "metafield_variables": "",
             "page": "",
             "icon": "box"
