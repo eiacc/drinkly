@@ -85,7 +85,7 @@
             "button_select": "secondary",
             "button_label": "SEE OCCASIONS GALLERY",
             "button_disable_on_mobile": false,
-            "button_link": "shopify://pages/special-occasion-inspiration",
+            "button_link": "shopify://pages/occasion-gallery",
             "desktop_image": "shopify://shop_images/isp-Sahagian-50th.webp",
             "desktop_text_vertical_position": "center",
             "desktop_text_horizontal_position": "center",
