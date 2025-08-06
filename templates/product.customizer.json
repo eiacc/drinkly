@@ -184,14 +184,14 @@
             "margin-bottom": 0
           }
         },
-        "1c9b0bb2-fe62-4649-9439-76836162d773": {
+        "d162f900-ee92-4311-b27d-d5f312fa73f2": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Cocktail Identification Label",
-            "content": "<p>No matter which label you choose, we’ll add a small clear label on the back with all the required details, including the cocktail name, alcohol content and legal info. It keeps things compliant without cramping your style.</p>",
+            "heading": "Free Delivery and Insurance",
+            "content": "<p>We know event planning can be full-on, so we’ve got your back. Every order over $50 includes free delivery and complimentary insurance, covering accidental breakage during transit, right to your door. If the courier has an off day, your drinks won’t.</p>",
             "metafield_variables": "",
             "page": "",
-            "icon": "question_mark"
+            "icon": "box"
           }
         },
         "2ce0b4b1-3440-40cd-92c2-15d46e61dfca": {
@@ -203,14 +203,14 @@
             "margin-bottom": 0
           }
         },
-        "d162f900-ee92-4311-b27d-d5f312fa73f2": {
+        "1c9b0bb2-fe62-4649-9439-76836162d773": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Free Delivery and Insurance",
-            "content": "<p>We know event planning can be full-on, so we’ve got your back. Every order over $50 includes free delivery and complimentary insurance, covering accidental breakage during transit, right to your door. If the courier has an off day, your drinks won’t.</p>",
+            "heading": "Cocktail Identification Label",
+            "content": "<p>No matter which label you choose, we’ll add a small clear label on the back with all the required details, including the cocktail name, alcohol content and legal info. It keeps things compliant without cramping your style.</p>",
             "metafield_variables": "",
             "page": "",
-            "icon": "box"
+            "icon": "question_mark"
           }
         },
         "78809992-2318-4893-9402-6cfd49f50b6a": {
@@ -225,8 +225,8 @@
         "5fed6e0f-fb7e-4874-8ba9-3321623fc828": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "All Natural",
-            "content": "<p><strong>Espresso Martini</strong><br/>Silky vodka, bold cold brew espresso, cocoa, vanilla, and a hint of hazelnut.</p><p><strong>Negroni</strong><br/>Bittersweet blend of gin, vermouth, and aromatic bitters with spiced citrus depth.<br/><br/><strong>Martini</strong><br/>Three Foxes gin, dry vermouth, and house bitters with subtle herbal and pine notes.</p><p><strong>Limoncello</strong><br/>Riverina lemons—peel, pulp, juice—infused separately in high-proof organic spirit. Zesty and bright.</p><p><strong>Cranberry Bellini</strong><br/>Tart cranberries, juicy peach, and rose—light, fruity and floral with balanced sweetness.</p><p><strong>Tropical Sunset</strong><br/>White rum meets refreshing coconut, crisp pear, and tropical pineapple in a breezy blend.</p><p><strong>Blood Orange Aperitivo</strong><br/>Vibrant blood orange, subtle spice, and citrus bitterness with a touch of savoury depth.<br/><br/><strong>Non-Alc Espresso Martini</strong><br/>Bold cold brew coffee, cocoa, vanilla, hazelnut essence—zero alcohol, all the indulgent flavour.</p><p><strong>Non-Alc Negroni</strong><br/>Bitters, citrus peel, spice, and botanicals—slow-sipping bitterness without the booze.</p><p><strong>Non-Alc Blood Orange Aperitivo</strong><br/><br/>Blood orange, spice, citrus zest, and a savoury twist—vibrant and complex, without the alcohol.</p>",
+            "heading": "Cocktail Description",
+            "content": "<p><strong>Espresso Martini</strong><br/>Silky vodka, bold cold brew espresso, cocoa, vanilla, and a hint of hazelnut.</p><p><strong>Negroni</strong><br/>Bittersweet blend of gin, vermouth, and aromatic bitters with spiced citrus depth.<br/><br/><strong>Martini</strong><br/>Three Foxes gin, dry vermouth, and house bitters with subtle herbal and pine notes.</p><p><strong>Limoncello</strong><br/>Riverina lemons, peel, pulp, juice, infused separately in high-proof organic spirit. Zesty and bright.</p><p><strong>Cranberry Bellini</strong><br/>Tart cranberries, juicy peach, and rose, light, fruity and floral with balanced sweetness.</p><p><strong>Tropical Sunset</strong><br/>White rum meets refreshing coconut, crisp pear, and tropical pineapple in a breezy blend.</p><p><strong>Blood Orange Aperitivo</strong><br/>Vibrant blood orange, subtle spice, and citrus bitterness with a touch of savoury depth.<br/><br/><strong>Non-Alc Espresso Martini</strong><br/>Bold cold brew coffee, cocoa, vanilla, hazelnut essence—zero alcohol, all the indulgent flavour.</p><p><strong>Non-Alc Negroni</strong><br/>Bitters, citrus peel, spice, and botanicals, slow-sipping bitterness without the booze.</p><p><strong>Non-Alc Blood Orange Aperitivo</strong><br/>Blood orange, spice, citrus zest, and a savoury twist, vibrant and complex, without the alcohol.</p>",
             "metafield_variables": "",
             "page": "",
             "icon": "leaf"
@@ -253,9 +253,9 @@
         "00841757-ace4-48f5-8edb-08c8c579a24f",
         "description",
         "a8e9c281-a34c-4fe4-94a1-ea9a3880dc33",
-        "1c9b0bb2-fe62-4649-9439-76836162d773",
-        "2ce0b4b1-3440-40cd-92c2-15d46e61dfca",
         "d162f900-ee92-4311-b27d-d5f312fa73f2",
+        "2ce0b4b1-3440-40cd-92c2-15d46e61dfca",
+        "1c9b0bb2-fe62-4649-9439-76836162d773",
         "78809992-2318-4893-9402-6cfd49f50b6a",
         "5fed6e0f-fb7e-4874-8ba9-3321623fc828"
       ],
