@@ -62,7 +62,7 @@
             "button_select": "secondary",
             "button_label": "SEE BRAND GALLERY",
             "button_disable_on_mobile": false,
-            "button_link": "shopify://pages/brand-inspirations",
+            "button_link": "shopify://pages/brand-gallery",
             "desktop_image": "shopify://shop_images/isp-Giftset-Mimco.webp",
             "desktop_text_vertical_position": "center",
             "desktop_text_horizontal_position": "center",
