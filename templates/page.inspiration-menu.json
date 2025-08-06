@@ -39,13 +39,13 @@
             "button_select": "secondary",
             "button_label": "SEE WEDDING GALLERY",
             "button_disable_on_mobile": false,
-            "button_link": "",
+            "button_link": "shopify://pages/wedding-gallery",
             "desktop_image": "shopify://shop_images/Couple_Laughing_-_182.webp",
             "desktop_text_vertical_position": "center",
             "desktop_text_horizontal_position": "center",
             "mobile_text_vertical_position": "center",
             "mobile_text_horizontal_position": "center",
-            "color-body-text": "transparent",
+            "color-body-text": "rgba(0,0,0,0)",
             "color-overlay": "#ff9900",
             "color-overlay-opacity": 10
           }
@@ -68,7 +68,7 @@
             "desktop_text_horizontal_position": "center",
             "mobile_text_vertical_position": "center",
             "mobile_text_horizontal_position": "center",
-            "color-body-text": "transparent",
+            "color-body-text": "rgba(0,0,0,0)",
             "color-overlay": "#ff9900",
             "color-overlay-opacity": 10
           }
@@ -91,7 +91,7 @@
             "desktop_text_horizontal_position": "center",
             "mobile_text_vertical_position": "center",
             "mobile_text_horizontal_position": "center",
-            "color-body-text": "transparent",
+            "color-body-text": "rgba(0,0,0,0)",
             "color-overlay": "#ff9900",
             "color-overlay-opacity": 10
           }
@@ -107,8 +107,8 @@
         "heading": "See Our Galleries for Inspiration",
         "full-width-enabled": false,
         "desktop_layout": "row",
-        "color-body-text": "transparent",
-        "background_color": "transparent",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
         "margin-top": 20,
         "margin-bottom": 20
       }
