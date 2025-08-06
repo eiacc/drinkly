@@ -187,7 +187,7 @@
         "1c9b0bb2-fe62-4649-9439-76836162d773": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Cocktail Identification",
+            "heading": "Cocktail Identification Label",
             "content": "<p>No matter which label you choose, we’ll add a small clear label on the back with all the required details, including the cocktail name, alcohol content and legal info. It keeps things compliant without cramping your style.</p>",
             "metafield_variables": "",
             "page": "",
@@ -226,7 +226,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "All Natural",
-            "content": "<p>Three Foxes cocktails are not made in the traditional sense by mixing bottled liquor. All the flavours are created with the actual fruits and botanicals to create the classics as well as a few of our their own creations. For the ingredients they believe in farms over factories. As for methods, they stick to the labour intensive techniques perfected over four generations.</p>",
+            "content": "<p><strong>Espresso Martini</strong><br/>Silky vodka, bold cold brew espresso, cocoa, vanilla, and a hint of hazelnut.</p><p><strong>Negroni</strong><br/>Bittersweet blend of gin, vermouth, and aromatic bitters with spiced citrus depth.<br/><br/><strong>Martini</strong><br/>Three Foxes gin, dry vermouth, and house bitters with subtle herbal and pine notes.</p><p><strong>Limoncello</strong><br/>Riverina lemons—peel, pulp, juice—infused separately in high-proof organic spirit. Zesty and bright.</p><p><strong>Cranberry Bellini</strong><br/>Tart cranberries, juicy peach, and rose—light, fruity and floral with balanced sweetness.</p><p><strong>Tropical Sunset</strong><br/>White rum meets refreshing coconut, crisp pear, and tropical pineapple in a breezy blend.</p><p><strong>Blood Orange Aperitivo</strong><br/>Vibrant blood orange, subtle spice, and citrus bitterness with a touch of savoury depth.<br/><br/><strong>Non-Alc Espresso Martini</strong><br/>Bold cold brew coffee, cocoa, vanilla, hazelnut essence—zero alcohol, all the indulgent flavour.</p><p><strong>Non-Alc Negroni</strong><br/>Bitters, citrus peel, spice, and botanicals—slow-sipping bitterness without the booze.</p><p><strong>Non-Alc Blood Orange Aperitivo</strong><br/><br/>Blood orange, spice, citrus zest, and a savoury twist—vibrant and complex, without the alcohol.</p>",
             "metafield_variables": "",
             "page": "",
             "icon": "leaf"
