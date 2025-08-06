@@ -97,7 +97,7 @@
         "9f4a9a8b-d9ef-4fbe-aa5c-dbde2e0811c3"
       ],
       "settings": {
-        "heading": "Wedding & Engagement Inspiration",
+        "heading": "Special Occasion Inspiration",
         "heading_disable_on_mobile": false,
         "full-width-enabled": false,
         "column_gap_desk": 16,
@@ -133,7 +133,7 @@
         "button_link": "shopify://collections/wedding-cocktails",
         "margin-top": 52,
         "margin-bottom": 52,
-        "background_color": "transparent"
+        "background_color": "rgba(0,0,0,0)"
       }
     }
   },
