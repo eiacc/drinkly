@@ -59,7 +59,7 @@
         "price": {
           "type": "price",
           "settings": {
-            "override_price": "<h2><strong>$10-$18</strong></h2><p><strong> per bottle<br/></strong></p>",
+            "override_price": "<h2><strong>$10-$16</strong></h2><p><strong> per bottle<br/></strong></p>",
             "show_tax_included": true,
             "show_shipping_policy": true,
             "size_text": 120,
@@ -122,15 +122,6 @@
             "text_alignment": "center",
             "color-body-text": "#151515",
             "background_color": "#ecf5e9"
-          }
-        },
-        "promo_dJtMQK": {
-          "type": "promo",
-          "settings": {
-            "content": "<p>Deluxe Foil has a min order of 18 bottles</p>",
-            "text_alignment": "center",
-            "color-body-text": "#a04848",
-            "background_color": "#ffffff"
           }
         },
         "payments_badge_EFynmG": {
@@ -246,7 +237,6 @@
         "variant_picker",
         "buy_buttons",
         "promo_67ttgj",
-        "promo_dJtMQK",
         "payments_badge_EFynmG",
         "separator_DwMham",
         "e23830b4-3ca6-452f-a7d1-cb245a3e9282",
