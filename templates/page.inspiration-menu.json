@@ -75,14 +75,14 @@
         "image_KzGiQj": {
           "type": "image",
           "settings": {
-            "heading": "Collage image",
+            "heading": "",
             "heading_disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100,
-            "text": "<p>A mosaic of your identity</p>",
+            "text": "",
             "text_disable_on_mobile": false,
-            "button_select": "primary",
-            "button_label": "Button label",
+            "button_select": "secondary",
+            "button_label": "SEE OCCASIONS GALLERY",
             "button_disable_on_mobile": false,
             "button_link": "",
             "desktop_text_vertical_position": "center",
@@ -90,8 +90,8 @@
             "mobile_text_vertical_position": "center",
             "mobile_text_horizontal_position": "center",
             "color-body-text": "transparent",
-            "color-overlay": "transparent",
-            "color-overlay-opacity": 100
+            "color-overlay": "#ff9900",
+            "color-overlay-opacity": 10
           }
         }
       },
