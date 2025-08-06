@@ -955,13 +955,13 @@
     "testimonial_images_9YE74N": {
       "type": "testimonial-images",
       "blocks": {
-        "testimonial_xgPPxD": {
+        "testimonial_rqw8Lg": {
           "type": "testimonial",
           "settings": {
             "icon_select": "100",
-            "text": "<p><strong>Fantastic Service and Easy to Order.</strong><br/><br/>\"The process online was super efficient. Communication through out was fantastic and providing shipping information.<br/><br/>Great quality product, great value.<br/><br/>We ordered the negroni and then the next morning my partner changed his mind and we contacted them and they were great in changing to a different spirit, and were super responsive..\"</p>",
-            "author": "Michael Felix",
-            "desktop_image": "shopify://shop_images/Review_-_Michael_Felix.webp",
+            "text": "<p><strong>Best Wedding Favours Ever – Our Guests Couldn't Get Enough!</strong><br/><br/>\"We decided to gift our guests mini bottles of homemade limoncello as wedding favours, and WOW—what a hit! From the moment they saw the cute packaging to the very last sip, everyone was raving about them.<br/>We wanted to give our guests something personal and fun, and this was hands-down the best decision. If you're looking for a favour that people will actually love, these limoncello cocktails are it. Zero waste—every bottle was gone! Highly recommend! 🍋✨.\"</p>",
+            "author": "Vanessa Burke",
+            "desktop_image": "shopify://shop_images/Review_-_Vaness_Burke.webp",
             "image_link": ""
           }
         },
@@ -972,16 +972,6 @@
             "text": "<p>\"We ordered some of the Foxtails & Co mini cocktails for our wedding as favours for our guests and we were so impressed! Everything was delivered so quickly, and the bottles were so gorgeously presented. We ordered a few different flavours, and our guests loved them! We had the Negroni & Blood Orange flavours ourselves and they were absolutely delicious. The perfect addition to your special event, your guests will thank you!\"</p>",
             "author": "Kerrie Broos Revitt",
             "desktop_image": "shopify://shop_images/Review_-_Kerrie_Broos_Revitt.webp",
-            "image_link": ""
-          }
-        },
-        "testimonial_rqw8Lg": {
-          "type": "testimonial",
-          "settings": {
-            "icon_select": "100",
-            "text": "<p><strong>Best Wedding Favours Ever – Our Guests Couldn't Get Enough!</strong><br/><br/>\"We decided to gift our guests mini bottles of homemade limoncello as wedding favours, and WOW—what a hit! From the moment they saw the cute packaging to the very last sip, everyone was raving about them.<br/>We wanted to give our guests something personal and fun, and this was hands-down the best decision. If you're looking for a favour that people will actually love, these limoncello cocktails are it. Zero waste—every bottle was gone! Highly recommend! 🍋✨.\"</p>",
-            "author": "Vanessa Burke",
-            "desktop_image": "shopify://shop_images/Review_-_Vaness_Burke.webp",
             "image_link": ""
           }
         },
@@ -1004,14 +994,24 @@
             "desktop_image": "shopify://shop_images/Review_-_Natasha.webp",
             "image_link": ""
           }
+        },
+        "testimonial_xgPPxD": {
+          "type": "testimonial",
+          "settings": {
+            "icon_select": "100",
+            "text": "<p><strong>Fantastic Service and Easy to Order.</strong><br/><br/>\"The process online was super efficient. Communication through out was fantastic and providing shipping information.<br/><br/>Great quality product, great value.<br/><br/>We ordered the negroni and then the next morning my partner changed his mind and we contacted them and they were great in changing to a different spirit, and were super responsive..\"</p>",
+            "author": "Michael Felix",
+            "desktop_image": "shopify://shop_images/Review_-_Michael_Felix.webp",
+            "image_link": ""
+          }
         }
       },
       "block_order": [
-        "testimonial_xgPPxD",
-        "testimonial_bNPTby",
         "testimonial_rqw8Lg",
+        "testimonial_bNPTby",
         "testimonial_wTqp4R",
-        "testimonial_f4Chkg"
+        "testimonial_f4Chkg",
+        "testimonial_xgPPxD"
       ],
       "name": "t:sections.testimonial_images.name",
       "settings": {
@@ -1061,7 +1061,7 @@
             "desktop_image": "shopify://shop_images/ship-icon.png",
             "select_icon": "close",
             "heading": "Fast & Free Shipping",
-            "text": "<p>Free for orders over $90. Includes free package insurance to your door to cover accidental breakage.</p>",
+            "text": "<p>Free for orders over $50. Includes free package insurance to your door to cover accidental breakage.</p>",
             "link": ""
           }
         },
