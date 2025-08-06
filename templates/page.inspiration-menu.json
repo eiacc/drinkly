@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "compact-size-enabled": true,
@@ -23,90 +24,87 @@
         "margin-bottom": 60
       }
     },
-    "grid_view_7Nq7UA": {
-      "type": "grid-view",
+    "collage_dXXqgH": {
+      "type": "collage",
       "blocks": {
-        "image_pk7c3E": {
+        "image_8qmb9L": {
           "type": "image",
           "settings": {
-            "heading": "Weddings",
+            "heading": "",
             "heading_disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100,
             "text": "",
             "text_disable_on_mobile": false,
-            "button_select": "primary",
-            "button_label": "SEE INSPO",
+            "button_select": "secondary",
+            "button_label": "SEE WEDDING GALLERY",
             "button_disable_on_mobile": false,
             "button_link": "",
-            "button_link_in_new_window": false,
-            "color-body-text": "transparent",
-            "color-overlay": "transparent",
-            "color-overlay-opacity": 0,
+            "desktop_image": "shopify://shop_images/Couple_Laughing_-_182.webp",
             "desktop_text_vertical_position": "center",
             "desktop_text_horizontal_position": "center",
             "mobile_text_vertical_position": "center",
-            "mobile_text_horizontal_position": "center"
+            "mobile_text_horizontal_position": "center",
+            "color-body-text": "transparent",
+            "color-overlay": "#ff9900",
+            "color-overlay-opacity": 10
           }
         },
-        "image_JReGnB": {
+        "image_WFmXUw": {
           "type": "image",
           "settings": {
-            "heading": "Brand",
+            "heading": "",
             "heading_disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100,
             "text": "",
+            "text_disable_on_mobile": false,
+            "button_select": "secondary",
+            "button_label": "SEE BRAND GALLERY",
+            "button_disable_on_mobile": false,
+            "button_link": "shopify://pages/brand-inspirations",
+            "desktop_text_vertical_position": "center",
+            "desktop_text_horizontal_position": "center",
+            "mobile_text_vertical_position": "center",
+            "mobile_text_horizontal_position": "center",
+            "color-body-text": "transparent",
+            "color-overlay": "#ff9900",
+            "color-overlay-opacity": 10
+          }
+        },
+        "image_KzGiQj": {
+          "type": "image",
+          "settings": {
+            "heading": "Collage image",
+            "heading_disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100,
+            "text": "<p>A mosaic of your identity</p>",
             "text_disable_on_mobile": false,
             "button_select": "primary",
             "button_label": "Button label",
             "button_disable_on_mobile": false,
             "button_link": "",
-            "button_link_in_new_window": false,
-            "color-body-text": "transparent",
-            "color-overlay": "transparent",
-            "color-overlay-opacity": 0,
             "desktop_text_vertical_position": "center",
             "desktop_text_horizontal_position": "center",
             "mobile_text_vertical_position": "center",
-            "mobile_text_horizontal_position": "center"
-          }
-        },
-        "image_z3mJUJ": {
-          "type": "image",
-          "settings": {
-            "heading": "Special Occaission",
-            "heading_disable_on_mobile": false,
-            "size_heading": 100,
-            "size_heading_mobile": 100,
-            "text": "",
-            "text_disable_on_mobile": false,
-            "button_select": "primary",
-            "button_label": "Button label",
-            "button_disable_on_mobile": false,
-            "button_link": "",
-            "button_link_in_new_window": false,
+            "mobile_text_horizontal_position": "center",
             "color-body-text": "transparent",
             "color-overlay": "transparent",
-            "color-overlay-opacity": 0,
-            "desktop_text_vertical_position": "center",
-            "desktop_text_horizontal_position": "center",
-            "mobile_text_vertical_position": "center",
-            "mobile_text_horizontal_position": "center"
+            "color-overlay-opacity": 100
           }
         }
       },
       "block_order": [
-        "image_pk7c3E",
-        "image_JReGnB",
-        "image_z3mJUJ"
+        "image_8qmb9L",
+        "image_WFmXUw",
+        "image_KzGiQj"
       ],
-      "name": "t:sections.grid-view.settings.presets.name",
+      "name": "t:sections.collage.settings.presets.name",
       "settings": {
-        "title": "Grid view",
-        "swipe_on_mobile": false,
+        "heading": "See Our Galleries for Inspiration",
         "full-width-enabled": false,
-        "image_ratio": "adapt",
+        "desktop_layout": "row",
         "color-body-text": "transparent",
         "background_color": "transparent",
         "margin-top": 20,
@@ -116,6 +114,6 @@
   },
   "order": [
     "main",
-    "grid_view_7Nq7UA"
+    "collage_dXXqgH"
   ]
 }
