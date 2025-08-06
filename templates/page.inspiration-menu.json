@@ -86,7 +86,7 @@
             "button_label": "SEE OCCASIONS GALLERY",
             "button_disable_on_mobile": false,
             "button_link": "shopify://pages/occasion-gallery",
-            "desktop_image": "shopify://shop_images/isp-Sahagian-50th.webp",
+            "desktop_image": "shopify://shop_images/Foxtails_April33_1f4e239e-9c1b-425a-9b83-64ad20819d37.webp",
             "desktop_text_vertical_position": "center",
             "desktop_text_horizontal_position": "center",
             "mobile_text_vertical_position": "center",
@@ -104,7 +104,7 @@
       ],
       "name": "t:sections.collage.settings.presets.name",
       "settings": {
-        "heading": "See Our Galleries for Inspiration",
+        "heading": "Inspiration Gallery",
         "full-width-enabled": false,
         "desktop_layout": "row",
         "color-body-text": "rgba(0,0,0,0)",
