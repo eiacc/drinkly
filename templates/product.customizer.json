@@ -203,14 +203,14 @@
             "margin-bottom": 0
           }
         },
-        "5fed6e0f-fb7e-4874-8ba9-3321623fc828": {
+        "d162f900-ee92-4311-b27d-d5f312fa73f2": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "All Natural",
-            "content": "<p>Three Foxes cocktails are not made in the traditional sense by mixing bottled liquor. All the flavours are created with the actual fruits and botanicals to create the classics as well as a few of our their own creations. For the ingredients they believe in farms over factories. As for methods, they stick to the labour intensive techniques perfected over four generations.</p>",
+            "heading": "Free Delivery and Insurance",
+            "content": "<p>We know event planning can be full-on, so we’ve got your back. Every order over $50 includes free delivery and complimentary insurance, covering accidental breakage during transit, right to your door. If the courier has an off day, your drinks won’t.</p>",
             "metafield_variables": "",
             "page": "",
-            "icon": "leaf"
+            "icon": "box"
           }
         },
         "78809992-2318-4893-9402-6cfd49f50b6a": {
@@ -222,14 +222,14 @@
             "margin-bottom": 0
           }
         },
-        "d162f900-ee92-4311-b27d-d5f312fa73f2": {
+        "5fed6e0f-fb7e-4874-8ba9-3321623fc828": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Free Delivery and Insurance",
-            "content": "<p>We know event planning can be full-on, so we’ve got your back. Every order over $50 includes free delivery and complimentary insurance, covering accidental breakage during transit, right to your door. If the courier has an off day, your drinks won’t.</p>",
+            "heading": "All Natural",
+            "content": "<p>Three Foxes cocktails are not made in the traditional sense by mixing bottled liquor. All the flavours are created with the actual fruits and botanicals to create the classics as well as a few of our their own creations. For the ingredients they believe in farms over factories. As for methods, they stick to the labour intensive techniques perfected over four generations.</p>",
             "metafield_variables": "",
             "page": "",
-            "icon": "box"
+            "icon": "leaf"
           }
         }
       },
@@ -255,9 +255,9 @@
         "a8e9c281-a34c-4fe4-94a1-ea9a3880dc33",
         "1c9b0bb2-fe62-4649-9439-76836162d773",
         "2ce0b4b1-3440-40cd-92c2-15d46e61dfca",
-        "5fed6e0f-fb7e-4874-8ba9-3321623fc828",
+        "d162f900-ee92-4311-b27d-d5f312fa73f2",
         "78809992-2318-4893-9402-6cfd49f50b6a",
-        "d162f900-ee92-4311-b27d-d5f312fa73f2"
+        "5fed6e0f-fb7e-4874-8ba9-3321623fc828"
       ],
       "settings": {
         "enable_sticky_buy_button": true,
