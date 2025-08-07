@@ -80,7 +80,7 @@
     "enable_product_discount": true,
     "product_discount": "elegant-personalised-cocktails",
     "product_discount_quantity": "24",
-    "product_discount_text": "Add ||quantity|| more to qualify for bottles at just $10.00 each!",
+    "product_discount_text": "Add ||quantity|| more to qualify for a $6 discount per bottle!",
     "product_discount_text_success": "You have unlocked the discount!",
     "currency_code_enabled": false,
     "iconset": "option_3",
