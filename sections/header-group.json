@@ -114,56 +114,11 @@
         "color-overlay": "#ff9900",
         "color-overlay-opacity": 3
       }
-    },
-    "notification_popup_LER4nx": {
-      "type": "notification-popup",
-      "blocks": {
-        "heading_GMQ7CY": {
-          "type": "heading",
-          "settings": {
-            "heading": "Subscribe to our emails",
-            "heading_disable_on_mobile": false,
-            "size_heading": 100,
-            "size_heading_mobile": 100
-          }
-        },
-        "paragraph_RW4bNP": {
-          "type": "paragraph",
-          "settings": {
-            "paragraph": "<p>Be the first to know about new collections and exclusive offers.</p>",
-            "text_disable_on_mobile": false
-          }
-        },
-        "email_form_XwetR3": {
-          "type": "email_form",
-          "settings": {
-            "button_select": "primary"
-          }
-        }
-      },
-      "block_order": [
-        "heading_GMQ7CY",
-        "paragraph_RW4bNP",
-        "email_form_XwetR3"
-      ],
-      "disabled": true,
-      "name": "t:sections.notification_popup.name",
-      "settings": {
-        "max_width": 450,
-        "delay": 0,
-        "show_border": false,
-        "show_shadow": true,
-        "desktop_vertical_position": "center",
-        "desktop_horizontal_position": "center",
-        "color-body-text": "rgba(0,0,0,0)",
-        "background_color": "rgba(0,0,0,0)"
-      }
     }
   },
   "order": [
     "announcement-bar",
     "header",
-    "page_header_logo_banner_DJLpfi",
-    "notification_popup_LER4nx"
+    "page_header_logo_banner_DJLpfi"
   ]
 }
