@@ -183,8 +183,9 @@
         "benefit_wwBBA6": {
           "type": "benefit",
           "settings": {
-            "item_heading": "Benefit heading",
-            "text": "<p>Designed to deliver effective and consistent outcomes.</p>"
+            "image": "shopify://shop_images/recycle-icon.png",
+            "item_heading": "100% Recyclable",
+            "text": "<p>Your order is 100% recyclable—from the glass to the cardboard. The bottle? Reuse it as a vase, it’s too pretty to toss.</p>"
           }
         }
       },
