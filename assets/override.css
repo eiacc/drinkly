@@ -67,6 +67,7 @@ custom-metaproperty .form__fieldset {
   margin-bottom: 1.6rem!important;
 }
 
+.wt-product__option__title .label,
 .form__fieldset label {
   font-size: 1.4rem;
 }
@@ -304,4 +305,16 @@ custom-variant-picker {
     margin-bottom: 1.2rem;
     display: inline-block;
   }
+}
+
+.upload-container {
+  display: none;
+}
+
+.cl-upload--wrapper:not(:first-of-type) {
+  display: none;
+}
+
+.extend {
+  margin-bottom: 1.6rem;
 }

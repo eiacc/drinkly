@@ -266,6 +266,19 @@
     </div>
   {%- endif -%}
 
+  {%- if block.settings.enable_upload -%}
+    <custom-metaproperty class="extend">
+      <div class="wt-product__option__title">
+        <p class="label">Step {{ current_step | plus: 1 }} Upload:</p>
+      </div>
+    
+      <div>
+        <div class="upload-lift"></div>
+        <div class="logo_field"></div>
+      </div>
+    </custom-metaproperty>
+  {%- endif -%}
+
   <button
     aria-label="
       {%- if product.selected_or_first_available_variant.available -%}

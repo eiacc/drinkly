@@ -260,6 +260,8 @@
 <script src="{{ 'variant-dropdown.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'custom-variant-dropdown.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'review.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'cloudlift.js' | asset_url }}" defer="defer"></script>
+<script src="https://assets.cloudlift.app/api/assets/upload.js?shop=jszbmh-hw.myshopify.com"></script>
 
 {% assign selected_variant = product.selected_variant %}
 {% assign enabled_preselect = false %}
@@ -827,6 +829,7 @@
           {%- case block.type -%}
             {%- when '@app' -%}
               {% render block %}
+              {% comment %} {%- if %} {% endcomment %}
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
             {%- when 'title' -%}
@@ -2370,6 +2373,12 @@
       "name": "Custom variant picker",
       "limit": 1,
       "settings": [
+        {
+          "type": "checkbox",
+          "id": "enable_upload",
+          "label": "Enable file upload",
+          "default": false
+        },
         {
           "type": "product",
           "id": "add_on",

@@ -2,15 +2,13 @@
   "name": "drinkly",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": "git@merf:eiacc/drinkly.git",
   "scripts": {
     "start": "yarn run init && yarn run pull",
     "init": "yarn run logout && yarn run dev",
-    "dev": "shopify theme dev -s jszbmh-hw.myshopify.com",
-    "pull": "shopify theme pull -o settings_data.json templates/*json sections/*.json && shopify theme dev",
+    "dev": "shopify theme dev -s drinkly.myshopify.com",
+    "pull": "shopify theme pull -o settings_data.json templates/*json sections/*.json",
     "logout": "shopify auth logout"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "license": "MIT"
 }

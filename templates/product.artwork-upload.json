@@ -83,6 +83,7 @@
         "custom_variant_picker_Tzyh7n": {
           "type": "custom_variant_picker",
           "settings": {
+            "enable_upload": true,
             "add_on": "",
             "picker_type": "button",
             "color_swatch_names": "Colour",

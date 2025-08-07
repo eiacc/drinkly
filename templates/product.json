@@ -213,6 +213,13 @@
             "page": "",
             "icon": "box"
           }
+        },
+        "upload_lift_app_block_PjNJ7A": {
+          "type": "shopify://apps/upload-lift/blocks/app-block/3c98bdcb-7587-4ade-bfe4-7d8af00d05ca",
+          "settings": {
+            "product": "{{product}}",
+            "field": ""
+          }
         }
       },
       "block_order": [
@@ -237,7 +244,8 @@
         "2ce0b4b1-3440-40cd-92c2-15d46e61dfca",
         "5fed6e0f-fb7e-4874-8ba9-3321623fc828",
         "78809992-2318-4893-9402-6cfd49f50b6a",
-        "d162f900-ee92-4311-b27d-d5f312fa73f2"
+        "d162f900-ee92-4311-b27d-d5f312fa73f2",
+        "upload_lift_app_block_PjNJ7A"
       ],
       "settings": {
         "enable_sticky_buy_button": true,
