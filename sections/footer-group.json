@@ -24,14 +24,14 @@
         "menu_DzCNd6": {
           "type": "menu",
           "settings": {
-            "heading_links": "Customer Service",
-            "links": ""
+            "heading_links": "Legal Stuff",
+            "links": "legal-stuff"
           }
         },
         "menu_9YUhCX": {
           "type": "menu",
           "settings": {
-            "heading_links": "Information",
+            "heading_links": "",
             "links": ""
           }
         },
