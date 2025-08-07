@@ -13,15 +13,43 @@
       "type": "main-page",
       "custom_css": [],
       "settings": {
+        "compact-size-enabled": true,
         "size_heading": 140,
         "size_heading_mobile": 100,
         "color-body-text": "#151515",
+        "color-bg-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
         "margin-top": 60,
         "margin-bottom": 60
+      }
+    },
+    "rich_text_zMamdU": {
+      "type": "rich-text",
+      "blocks": {
+        "text_6Xe7AM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Drink.com.au by Three Foxes Pty Ltd, trading as Drinkly mandates the Responsible Service of Alcohol and supports socially responsible drinking.</p><p>Warning</p><p>Under the Liquor Control Reform Act 1998 it is an offence to supply alcohol to a person under the age of 18 years (Penalty exceeds $17,000) - For a person under the age of 18 years to purchase or receive liquor. (Penalty exceeds $700).</p><p><br/>Use of this website including all sale of liquor and communications signifies your acceptance with our <a href=\"https://threefoxes.com.au/pages/terms-conditions\"><strong>Terms & Conditions</strong>.</a></p><p><br/>The sale of liquor pursuant to the offer to purchase from this website is made at our licensed premises attached to the licence numbers listed below. Your offer to purchase is subject to acceptance from Drinkly by Three Foxes of your offer in accordance to our <a href=\"https://threefoxes.com.au/pages/terms-conditions\"><strong>Terms and Conditions</strong>.</a><br/><br/>33775997 (VIC)<br/>36159205 (VIC)<br/>32811643 (VIC)</p>",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "text_6Xe7AM"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "transparent",
+        "background_color": "transparent",
+        "margin-top": 20,
+        "margin-bottom": 20
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_zMamdU"
   ]
 }
