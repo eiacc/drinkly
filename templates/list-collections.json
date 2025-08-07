@@ -16,7 +16,7 @@
         "size_heading": 100,
         "size_heading_mobile": 100,
         "collection": "3",
-        "sort": "alphabetical",
+        "sort": "alphabetical_reversed",
         "margin-top": 40,
         "margin-bottom": 40
       }

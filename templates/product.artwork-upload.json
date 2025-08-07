@@ -411,10 +411,10 @@
         "heading_mnJyLx": {
           "type": "heading",
           "settings": {
-            "heading": "Get 10% off your first order",
+            "heading": "Get $20 off your first order",
             "heading_disable_on_mobile": false,
             "size_heading": 200,
-            "size_heading_mobile": 100
+            "size_heading_mobile": 180
           }
         },
         "paragraph_afW3hE": {
