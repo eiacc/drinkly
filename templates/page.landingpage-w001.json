@@ -131,8 +131,8 @@
       "settings": {
         "section_width": "regular",
         "desktop_text_horizontal_position": "center",
-        "color-body-text": "transparent",
-        "background_color": "transparent",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
         "margin-top": 20,
         "margin-bottom": 20
       }
@@ -151,6 +151,7 @@
         "benefit_yVcYgK": {
           "type": "benefit",
           "settings": {
+            "image": "shopify://shop_images/gift-icon.png",
             "item_heading": "Gifts Guests Actually Keep",
             "text": "<p>Forget sugared almonds—our bottles get raved about, Instagrammed, and often… <em>taken home for seconds</em>.</p>"
           }
@@ -223,7 +224,7 @@
         "button_link": "",
         "margin-top": 20,
         "margin-bottom": 20,
-        "background_color": "transparent"
+        "background_color": "rgba(0,0,0,0)"
       }
     },
     "testimonial_images_q7xd4V": {
@@ -280,7 +281,7 @@
         "button_link": "",
         "margin-top": 52,
         "margin-bottom": 52,
-        "background_color": "transparent"
+        "background_color": "rgba(0,0,0,0)"
       }
     },
     "testimonial_images_mJ8bxN": {
