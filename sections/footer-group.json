@@ -28,13 +28,6 @@
             "links": "legal-stuff"
           }
         },
-        "menu_9YUhCX": {
-          "type": "menu",
-          "settings": {
-            "heading_links": "",
-            "links": ""
-          }
-        },
         "text_DY7pny": {
           "type": "text",
           "settings": {
@@ -46,7 +39,6 @@
       "block_order": [
         "menu_TyWCqJ",
         "menu_DzCNd6",
-        "menu_9YUhCX",
         "text_DY7pny"
       ],
       "settings": {
