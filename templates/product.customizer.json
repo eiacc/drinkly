@@ -59,7 +59,7 @@
         "price": {
           "type": "price",
           "settings": {
-            "override_price": "<h2><strong>$</strong><strong>{{ product.metafields.custom.from_price.value }}</strong></h2><p><strong> per bottle for over 24<br/>+$2 for Deluxe foil finish</strong></p>",
+            "override_price": "<h2><strong>$</strong><strong>{{ product.metafields.custom.from_price.value }}</strong></h2><p>Per bottle for over 24. Add $2 for Deluxe foil finish.</p>",
             "show_tax_included": true,
             "show_shipping_policy": true,
             "size_text": 120,
