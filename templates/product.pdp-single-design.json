@@ -82,6 +82,7 @@
         },
         "custom_variant_picker_Tzyh7n": {
           "type": "custom_variant_picker",
+          "disabled": true,
           "settings": {
             "enable_upload": false,
             "add_on": "",
@@ -93,9 +94,8 @@
         },
         "variant_picker": {
           "type": "variant_picker",
-          "disabled": true,
           "settings": {
-            "picker_type": "button",
+            "picker_type": "dropdown",
             "color_swatch_names": "",
             "variant_picture_swatch_names": "",
             "thumb_size": 60,
