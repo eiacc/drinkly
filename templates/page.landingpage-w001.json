@@ -58,7 +58,7 @@
             "disable_on_mobile": false,
             "button_link": "shopify://collections/wedding-cocktails",
             "second_button_select": "secondary",
-            "second_button_label": "Button labels",
+            "second_button_label": "SHOP YOUR DESIGN",
             "second_disable_on_mobile": false,
             "second_button_link": ""
           }
@@ -161,7 +161,7 @@
           "settings": {
             "image": "shopify://shop_images/cocktail-icon.png",
             "item_heading": "Award winning",
-            "text": "<p>Award winning cocktails crafted by only fruits and botanicals with no lab flavours.</p>"
+            "text": "<p>Choose from 10 award winning cocktails crafted by only fruits and botanicals with no lab flavours.</p>"
           }
         },
         "benefit_k3rRTH": {
