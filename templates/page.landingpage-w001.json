@@ -167,15 +167,17 @@
         "benefit_k3rRTH": {
           "type": "benefit",
           "settings": {
-            "item_heading": "Benefit heading",
-            "text": "<p>Designed to deliver effective and consistent outcomes.</p>"
+            "image": "shopify://shop_images/leaf-icon.png",
+            "item_heading": "No Micro Plastics",
+            "text": "<p>Served in glass and aluminium, totally reusable and safe from micro plastics.</p>"
           }
         },
         "benefit_JmYY7A": {
           "type": "benefit",
           "settings": {
-            "item_heading": "Benefit heading",
-            "text": "<p>Designed to deliver effective and consistent outcomes.</p>"
+            "image": "shopify://shop_images/ship-icon.png",
+            "item_heading": "Free Insurance",
+            "text": "<p>If the courier has an off day, no worries...we’ll replace any lost or damaged order, free and express.</p>"
           }
         },
         "benefit_wwBBA6": {
