@@ -59,7 +59,7 @@
         "price": {
           "type": "price",
           "settings": {
-            "override_price": "<h2><strong>$10-$18</strong></h2><p><strong> per bottle<br/></strong></p>",
+            "override_price": "<h2><strong>$</strong><strong>{{ product.metafields.custom.from_price.value }}</strong></h2><p> per bottle for over 24<br/><br/></p>",
             "show_tax_included": true,
             "show_shipping_policy": true,
             "size_text": 120,
