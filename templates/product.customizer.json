@@ -95,7 +95,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button",
+            "picker_type": "dropdown",
             "color_swatch_names": "",
             "variant_picture_swatch_names": "",
             "thumb_size": 60,
