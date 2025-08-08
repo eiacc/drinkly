@@ -228,6 +228,15 @@
         {% endif %}
       </{{ title_tag }}>
      
+{% # SK CODE %}
+{%- assign fp = product.metafields.custom.fromprice -%}
+{%- assign from_text = blank -%}
+{%- if fp and fp.value and fp.value > 0 -%}
+{%- assign from_text = 'From ' | append: (fp.value | times: 100 | money_without_trailing_zeros) -%}
+{%- endif -%}
+
+
+
       {% if price and collection_list != true %}
         <div class="card__price">
           {% if price_old -%}
