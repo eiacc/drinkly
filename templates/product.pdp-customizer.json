@@ -59,7 +59,7 @@
         "price": {
           "type": "price",
           "settings": {
-            "override_price": "<h2><strong>$</strong><strong>{{ product.metafields.custom.from_price.value }}</strong></h2><p> per bottle for over 24<br/><strong><br/></strong></p>",
+            "override_price": "<h2><strong>$</strong><strong>{{ product.metafields.custom.fromprice.value }}</strong></h2><p> per bottle for over 24<br/><strong><br/></strong></p>",
             "show_tax_included": true,
             "show_shipping_policy": true,
             "size_text": 120,
@@ -421,6 +421,18 @@
         "margin-bottom": 20
       }
     },
+    "separator_hHXNyb": {
+      "type": "separator",
+      "name": "t:sections.separator.presets.name",
+      "settings": {
+        "heading": "",
+        "show-separator-line": false,
+        "full-width-line": false,
+        "color-background": "#000000",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
     "reviews_GHHQiG": {
       "type": "reviews",
       "name": "Reviews (Stamped)",
@@ -464,18 +476,6 @@
         "background_color": "#edf5f4",
         "margin-top": 100,
         "margin-bottom": 100
-      }
-    },
-    "separator_hHXNyb": {
-      "type": "separator",
-      "name": "t:sections.separator.presets.name",
-      "settings": {
-        "heading": "",
-        "show-separator-line": false,
-        "full-width-line": false,
-        "color-background": "#000000",
-        "margin-top": 20,
-        "margin-bottom": 20
       }
     }
   },
