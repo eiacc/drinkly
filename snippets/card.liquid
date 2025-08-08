@@ -227,6 +227,8 @@
           {% if default_title %}{{ default_title }}{% else %}{{ placeholder_title }}{% endif %}
         {% endif %}
       </{{ title_tag }}>
+      {%comment%} 
+      THIS IS COMMENTED OUT TO BE REPLACED WITH SK CODE SO THAT IT TAKES METAFIELD FROM PRICE INSTEAD
       {% if price and collection_list != true %}
         <div class="card__price">
           {% if price_old -%}
@@ -243,6 +245,36 @@
           {% render 'price', product: product, show_compare_at_price: true, price_class: '' %}
         </div>
       {% endif %}
+      {% endcomment %}
+
+
+      {% comment %} NEW SK CODE TO REPLACE PREVIOUS {% endcomment %}
+      {% if price and collection_list != true %}
+  <div class="card__price">
+    {% if product.metafields.custom.from_price != blank %}
+      <span class="price__from">From {{ product.metafields.custom.from_price | money }}</span>
+    {% else %}
+      {% if price_old -%}
+        <span class="card__price__old">{{ price_old }}</span>
+      {%- endif %}
+      {% if settings.currency_code_enabled %}
+        {{ price | money_with_currency }}
+      {% else %}
+        {{ price | money }}
+      {% endif %}
+    {% endif %}
+  </div>
+  {% elsif product and collection_list != true %}
+  <div class="card__price">
+    {% if product.metafields.custom.from_price != blank %}
+      <span class="price__from">From {{ product.metafields.custom.from_price | money }}</span>
+    {% else %}
+      {% render 'price', product: product, show_compare_at_price: true, price_class: '' %}
+    {% endif %}
+  </div>
+{% endif %}
+{% comment %} --------------------------------------------- {% endcomment %}
+
 
       {% if rating and reviews %}
         {% render 'rating', reviews: reviews, text_alignment: text_alignment %}
