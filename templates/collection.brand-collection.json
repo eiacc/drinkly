@@ -70,12 +70,12 @@
         "show_video": false,
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_product_rating": false,
+        "show_product_rating": true,
         "enable_quick_add_button": true,
         "text_alignment": "center",
         "toolbar_style": "buttons",
-        "enable_sorting": true,
-        "enable_filtering": true,
+        "enable_sorting": false,
+        "enable_filtering": false,
         "filter_position": "always",
         "margin-top": 16,
         "margin-bottom": 0
@@ -509,7 +509,7 @@
         "text_irNUkw": {
           "type": "text",
           "settings": {
-            "text": "<p>Make your brand unforgettable with <strong>customised corporate gifts</strong> and <strong>branded cocktails</strong> from Drinkly by Three Foxes. Whether you’re planning a <strong>product launch</strong>, hosting a <strong>brand activation</strong>, or sending a <strong>premium corporate gift</strong> to valued clients or team members, our personalised bottled cocktails deliver impact in every pour.</p><p>Each drink is <strong>crafted in Melbourne</strong> from premium, all-natural ingredients, and presented in a bottle that’s customised with <strong>your logo, colours, and messaging</strong>. From sleek, minimalist designs that put your brand front and centre, to fully bespoke labels that take over the entire bottle, we make your brand the hero.</p><p>Perfect for <strong>corporate events, trade shows, client thank-yous, influencer mailers, employee recognition gifts, and high-profile launches</strong>, our branded cocktails are designed to be both <strong>Instagram-worthy</strong> and <strong>memorable in real life</strong>.</p><p>With <strong>full-service customisation</strong>, quick turnaround, and Australia-wide delivery, we take care of everything—from <strong>printing and packaging</strong> to crafting the perfect drink to match your brand’s personality. Make your next campaign stand out, spark conversation, and leave a lasting impression—one sip at a time.</p>",
+            "text": "<p>Make your brand unforgettable with <strong>customised corporate gifts</strong> and <strong>branded cocktails</strong> from Drinkly by Three Foxes. Whether you’re planning a <strong>product launch</strong>, hosting a <strong>brand activation</strong>, or sending a <strong>premium corporate gift</strong> to valued clients or team members, our personalised bottled cocktails deliver impact in every pour.</p><p>Each drink is <strong>crafted in Melbourne</strong> from premium, all-natural ingredients, and presented in a bottle that’s customised with <strong>your logo, colours, and messaging</strong>. From sleek, minimalist designs that put your brand front and centre, to fully bespoke labels that take over the entire bottle, we make your brand the hero.</p><p>Perfect for <strong>corporate events, trade shows, client thank-yous, influencer mailers, employee recognition gifts, and high-profile launches</strong>, our branded cocktails are designed to be both <strong>Instagram-worthy</strong> and <strong>memorable in real life</strong>.</p><p>With <strong>full-service customisation</strong>, quick turnaround, and Australia-wide delivery, we take care of everything—from <strong>printing and packaging</strong> to crafting the perfect drink to match your brand’s personality. Make your next campaign stand out, spark conversation, and leave a lasting impression one sip at a time.<br/><br/></p><p></p><p></p>",
             "disable_on_mobile": false
           }
         },
@@ -517,8 +517,8 @@
           "type": "button",
           "settings": {
             "button_select": "primary",
-            "button_label": "SHOP BRAND COCKTAILS",
-            "button_link": "/",
+            "button_label": "SHOP FULLY CUSTOMISED",
+            "button_link": "shopify://products/totally-you-personalised-cocktails",
             "disable_on_mobile": false
           }
         }
@@ -537,73 +537,6 @@
         "margin-top": 20,
         "margin-bottom": 20
       }
-    },
-    "image_banner_3cGQJV": {
-      "type": "image-banner",
-      "blocks": {
-        "subheading_AAzNgP": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "",
-            "subheading_disable_on_mobile": false
-          }
-        },
-        "heading_Ma88ip": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "disable_on_mobile": false,
-            "size_heading": 100,
-            "size_heading_mobile": 100
-          }
-        },
-        "text_3eakNL": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Make your brand unforgettable with <strong>customised corporate gifts</strong> and <strong>branded cocktails</strong> from Drinkly by Three Foxes. Whether you’re planning a <strong>product launch</strong>, hosting a <strong>brand activation</strong>, or sending a <strong>premium corporate gift</strong> to valued clients or team members, our personalised bottled cocktails deliver impact in every pour.</p><p>Each drink is <strong>crafted in Melbourne</strong> from premium, all-natural ingredients, and presented in a bottle that’s customised with <strong>your logo, colours, and messaging</strong>. From sleek, minimalist designs that put your brand front and centre, to fully bespoke labels that take over the entire bottle, we make your brand the hero.</p><p>Perfect for <strong>corporate events, trade shows, client thank-yous, influencer mailers, employee recognition gifts, and high-profile launches</strong>, our branded cocktails are designed to be both <strong>Instagram-worthy</strong> and <strong>memorable in real life</strong>.</p><p>With <strong>full-service customisation</strong>, quick turnaround, and Australia-wide delivery, we take care of everything—from <strong>printing and packaging</strong> to crafting the perfect drink to match your brand’s personality. Make your next campaign stand out, spark conversation, and leave a lasting impression—one sip at a time.</p>",
-            "disable_on_mobile": false
-          }
-        },
-        "button_zByFH3": {
-          "type": "button",
-          "settings": {
-            "button_select": "primary",
-            "button_label": "LOGO COCKTAILS",
-            "disable_on_mobile": false,
-            "button_link": "shopify://products/logo-luxe-personalised-cocktails",
-            "second_button_select": "primary",
-            "second_button_label": "FULL LABEL COCKTAILS",
-            "second_disable_on_mobile": false,
-            "second_button_link": "shopify://products/totally-you-personalised-cocktails"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_AAzNgP",
-        "heading_Ma88ip",
-        "text_3eakNL",
-        "button_zByFH3"
-      ],
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "heading": "Custom Corporate Gifts, Brand Activations & Event Launch Cocktails",
-        "full-width-enabled": false,
-        "slide_height": "adapt_to_first_image",
-        "desktop_fixed_height": 320,
-        "mobile_fixed_height": 460,
-        "desktop_text_vertical_position": "center",
-        "desktop_text_horizontal_position": "center",
-        "mobile_text_vertical_position": "center",
-        "mobile_text_horizontal_position": "center",
-        "color-heading": "transparent",
-        "section-color-overlay": "transparent",
-        "section-color-overlay-opacity": 100,
-        "color-body-text": "transparent",
-        "text-container-color": "transparent",
-        "color-overlay-opacity": 100,
-        "margin-top": 20,
-        "margin-bottom": 20
-      }
     }
   },
   "order": [
@@ -616,7 +549,6 @@
     "features_banner_Xqw4VW",
     "testimonial_images_PAzxhF",
     "newsletter_KQitJE",
-    "rich_text_JdnBGe",
-    "image_banner_3cGQJV"
+    "rich_text_JdnBGe"
   ]
 }
