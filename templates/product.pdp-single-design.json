@@ -25,7 +25,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "brand": "{{ product.vendor }}",
+            "brand": "100ml BOTTLED COCKTAIL",
             "size_text": 180,
             "size_text_mobile": 160
           }
