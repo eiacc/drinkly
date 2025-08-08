@@ -25,7 +25,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "brand": "{{ product.vendor }}",
+            "brand": "100ml COCKTAIL",
             "size_text": 180,
             "size_text_mobile": 160
           }
@@ -162,14 +162,15 @@
             "margin-bottom": 0
           }
         },
-        "1c9b0bb2-fe62-4649-9439-76836162d773": {
+        "collapsible_tab_gQetUi": {
           "type": "collapsible_tab",
+          "name": "Delivery - Collapsible row",
           "settings": {
-            "heading": "How to use",
-            "content": "<p>Apply a small amount of the product to clean, dry skin. Massage gently until fully absorbed. Use daily for best results.</p>",
+            "heading": "Free Delivery and Insurance",
+            "content": "<p>We know event planning can be full-on, so we’ve got your back. Every order over $50 includes free delivery and complimentary insurance, covering accidental breakage during transit, right to your door. If the courier has an off day, your drinks won’t.</p>",
             "metafield_variables": "",
             "page": "",
-            "icon": "question_mark"
+            "icon": "box"
           }
         },
         "2ce0b4b1-3440-40cd-92c2-15d46e61dfca": {
@@ -228,7 +229,7 @@
         "00841757-ace4-48f5-8edb-08c8c579a24f",
         "description",
         "a8e9c281-a34c-4fe4-94a1-ea9a3880dc33",
-        "1c9b0bb2-fe62-4649-9439-76836162d773",
+        "collapsible_tab_gQetUi",
         "2ce0b4b1-3440-40cd-92c2-15d46e61dfca",
         "5fed6e0f-fb7e-4874-8ba9-3321623fc828",
         "78809992-2318-4893-9402-6cfd49f50b6a",
