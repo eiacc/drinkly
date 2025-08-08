@@ -333,13 +333,6 @@
         "margin-bottom": 20
       }
     },
-    "reviews_GHHQiG": {
-      "type": "reviews",
-      "name": "Reviews (Stamped)",
-      "settings": {
-        "title": "What Our Customers Have Been Saying..."
-      }
-    },
     "testimonial_images_AGzLYr": {
       "type": "testimonial-images",
       "blocks": {
@@ -428,6 +421,13 @@
         "margin-bottom": 20
       }
     },
+    "reviews_GHHQiG": {
+      "type": "reviews",
+      "name": "Reviews (Stamped)",
+      "settings": {
+        "title": "What Our Customers Have Been Saying..."
+      }
+    },
     "newsletter_wEBAGH": {
       "type": "newsletter",
       "blocks": {
@@ -465,14 +465,27 @@
         "margin-top": 100,
         "margin-bottom": 100
       }
+    },
+    "separator_hHXNyb": {
+      "type": "separator",
+      "name": "t:sections.separator.presets.name",
+      "settings": {
+        "heading": "",
+        "show-separator-line": false,
+        "full-width-line": false,
+        "color-background": "#000000",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
     }
   },
   "order": [
     "breadcrumbs",
     "main",
     "rich_text_pBEcyh",
-    "reviews_GHHQiG",
     "testimonial_images_AGzLYr",
+    "separator_hHXNyb",
+    "reviews_GHHQiG",
     "newsletter_wEBAGH"
   ]
 }
