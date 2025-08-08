@@ -327,3 +327,7 @@ custom-variant-picker {
   color: black!important;
   font-size: 1.4rem!important;
 }
+
+#cl67e45fc1 .filepond--drop-label u {
+  text-decoration-color: currentColor!important;
+}
