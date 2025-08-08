@@ -318,3 +318,7 @@ custom-variant-picker {
 .extend {
   margin-bottom: 1.6rem;
 }
+
+.filepond--drop-label {
+  background-color: rgb(231, 231, 231)!important;
+}
