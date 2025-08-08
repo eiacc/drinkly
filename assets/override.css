@@ -333,6 +333,6 @@ custom-variant-picker {
 }
 
 #cl67e45fc1 .filepond--root {
-  border-radius: 5rem !important;
-  overflow: hidden;
+  /* border-radius: 5rem !important;
+  overflow: hidden; */
 }
