@@ -228,13 +228,6 @@
         {% endif %}
       </{{ title_tag }}>
      
-        {% #SK CODE FOR COLLECTION PAGE META FIELD %}
-        {%- assign fp = product.metafields.custom.fromprice -%}
-        {%- if fp and fp.value and fp.value > 0 -%}
-          {%- assign price = fp.value | times: 100 -%}
-          {%- assign price_old = blank -%}
-        {%- endif -%}
-
       {% if price and collection_list != true %}
         <div class="card__price">
           {% if price_old -%}
@@ -252,11 +245,6 @@
         </div>
       {% endif %}
     
-
-
-  
-
-
       {% if rating and reviews %}
         {% render 'rating', reviews: reviews, text_alignment: text_alignment %}
       {% endif %}
