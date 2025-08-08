@@ -66,20 +66,6 @@
             "size_text_mobile": 140
           }
         },
-        "metaproperty_bYmTwG": {
-          "type": "metaproperty",
-          "settings": {
-            "label": "Main Text",
-            "placeholder": "Bridget & Joshua"
-          }
-        },
-        "metaproperty_KqwHmR": {
-          "type": "metaproperty",
-          "settings": {
-            "label": "Date or Comment Text",
-            "placeholder": "26th May 2027"
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -227,8 +213,6 @@
         "separator_Qt7zAY",
         "order_summary_FdWjWT",
         "price",
-        "metaproperty_bYmTwG",
-        "metaproperty_KqwHmR",
         "variant_picker",
         "buy_buttons",
         "promo_67ttgj",
