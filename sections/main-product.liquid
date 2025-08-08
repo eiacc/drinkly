@@ -856,15 +856,15 @@
                   </div>
                 {%- else -%}
                   {% #SK CODE FOR FROM PRICE METAFIELD ON PRODUCT PAGES %}
-                  {% if product.metafields.custom.fromprice != blank %}
-                    <div class="price">
+                  {%- comment -%} FROM PRICE (Decimal metafield: custom.fromprice) {%- endcomment -%}
+                  {% assign fp = product.metafields.custom.fromprice %}
+                  {% if fp and fp.value and fp.value > 0 %}
+                    <div class="wt-product__price__from">
                       <span class="price-item price-item--regular">
-                        From {{ product.metafields.custom.fromprice.value | times: 100 | money_without_trailing_zeros }}
+                        From {{ fp.value | times: 100 | money_without_trailing_zeros }}
                       </span>
                     </div>
                   {% endif %}
-
-
 
 
                   {%- render 'price',
