@@ -25,7 +25,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "brand": "100ml COCKTAIL",
+            "brand": "100ml BOTTLED COCKTAIL",
             "size_text": 180,
             "size_text_mobile": 160
           }
@@ -182,14 +182,15 @@
             "margin-bottom": 0
           }
         },
-        "5fed6e0f-fb7e-4874-8ba9-3321623fc828": {
+        "collapsible_tab_37GzzB": {
           "type": "collapsible_tab",
+          "name": "Cocktail ID - Collapsible row",
           "settings": {
-            "heading": "Ingredients ",
-            "content": "<p>Water, Glycerin, Niacinamide, Panthenol, Allantoin, Sodium Hyaluronate, Rose Extract, Preservatives.</p>",
+            "heading": "Cocktail Identification Label",
+            "content": "<p>No matter which label you choose, we’ll add a small clear label on the back with all the required details, including the cocktail name, alcohol content and legal info. It keeps things compliant without cramping your style.</p>",
             "metafield_variables": "",
             "page": "",
-            "icon": "leaf"
+            "icon": "question_mark"
           }
         },
         "78809992-2318-4893-9402-6cfd49f50b6a": {
@@ -201,14 +202,15 @@
             "margin-bottom": 0
           }
         },
-        "d162f900-ee92-4311-b27d-d5f312fa73f2": {
+        "collapsible_tab_wqfcXQ": {
           "type": "collapsible_tab",
+          "name": "Cocktails - Collapsible row",
           "settings": {
-            "heading": "Delivery  and  return policy",
-            "content": "<p>Our team will ship your order within 5 business days. The time it takes to receive your order depends on the shipping method chosen at checkout. </p><p><br/></p><p>We hope you to love it, but if you need to make a return, breathe easy. Returns are always free and can be done in person or by mail. </p>",
+            "heading": "Cocktail Description",
+            "content": "<p><strong>OUR 100ml BOTTLED COCKTAILS<br/><br/>Espresso Martini </strong><br/>Silky vodka, bold cold brew espresso, cocoa, vanilla, and a hint of hazelnut.<br/>13% alc.vol.</p><p><strong>Negroni</strong><br/>Bittersweet blend of gin, vermouth, and aromatic bitters with spiced citrus depth.<br/>18% alc.vol.<br/><br/><strong>Martini</strong><br/>Three Foxes gin, dry vermouth, and house bitters with subtle herbal and pine notes.<br/>23% alc.vol.</p><p><strong>Limoncello</strong><br/>Riverina lemons, peel, pulp, juice, infused separately in high-proof organic spirit. Zesty and bright.<br/>20% alc.vol.</p><p><strong>Cranberry Peach & Rose</strong><br/>Tart cranberries, juicy peach, and rose, light, fruity and floral with balanced sweetness.<br/>13% alc.vol.</p><p><strong>Coconut Pine Pear</strong><br/>White rum meets refreshing coconut, crisp pear, and tropical pineapple in a breezy blend.<br/>13% Alc.Vol.</p><p><strong>Blood Orange Aperitivo</strong><br/>Vibrant blood orange, subtle spice, and citrus bitterness with a touch of savoury depth.<br/>13% alc.vol.<br/><br/><strong>Non-Alc Espresso Martini</strong><br/>Bold cold brew coffee, cocoa, vanilla, hazelnut essence—zero alcohol, all the indulgent flavour.</p><p><strong>Non-Alc Negroni</strong><br/>Bitters, citrus peel, spice, and botanicals, slow-sipping bitterness without the booze.</p><p><strong>Non-Alc Blood Orange Aperitivo</strong><br/>Blood orange, spice, citrus zest, and a savoury twist, vibrant and complex, without the alcohol.</p>",
             "metafield_variables": "",
             "page": "",
-            "icon": "box"
+            "icon": "star"
           }
         }
       },
@@ -231,9 +233,9 @@
         "a8e9c281-a34c-4fe4-94a1-ea9a3880dc33",
         "collapsible_tab_gQetUi",
         "2ce0b4b1-3440-40cd-92c2-15d46e61dfca",
-        "5fed6e0f-fb7e-4874-8ba9-3321623fc828",
+        "collapsible_tab_37GzzB",
         "78809992-2318-4893-9402-6cfd49f50b6a",
-        "d162f900-ee92-4311-b27d-d5f312fa73f2"
+        "collapsible_tab_wqfcXQ"
       ],
       "settings": {
         "enable_sticky_buy_button": true,
