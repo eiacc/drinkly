@@ -321,6 +321,9 @@ custom-variant-picker {
 
 .filepond--drop-label {
   background-color: rgb(231, 231, 231)!important;
-  color: black;
-  font-size: 1.4rem;
+}
+
+.filepond--drop-label label {
+  color: black!important;
+  font-size: 1.4rem!important;
 }
