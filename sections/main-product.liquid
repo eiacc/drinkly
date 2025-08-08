@@ -843,7 +843,20 @@
                 <h1 class="wt-product__name">{{ product.title }}</h1>
               </div>
             {%- when 'price' -%}
+              
+              {% #SK CODE FOR FROMPRICE META FIELD ON PRODUCT PAGE %}
+              {% assign fp = product.metafields.custom.fromprice %}
+              {% if fp and fp.value and fp.value > 0 %}
+                <div class="price">
+                  <span class="price-item price-item--regular">
+                    From {{ fp.value | times: 100 | money_without_trailing_zeros }}
+                  </span>
+                </div>
+              {% endif %}
+              {% #--------------------------------------------- %}
+              
               <div
+                
                 class="wt-product__price no-js-hidden {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}"
                 data-block-id="{{ block.id }}"
                 id="price-{{ section.id }}"
@@ -855,18 +868,7 @@
                     {{ block.settings.override_price }}
                   </div>
                 {%- else -%}
-                  {% #SK CODE FOR FROM PRICE METAFIELD ON PRODUCT PAGES %}
-                  {%- comment -%} FROM PRICE (Decimal metafield: custom.fromprice) {%- endcomment -%}
-                  {% assign fp = product.metafields.custom.fromprice %}
-                  {% if fp and fp.value and fp.value > 0 %}
-                    <div class="wt-product__price__from">
-                      <span class="price-item price-item--regular">
-                        From {{ fp.value | times: 100 | money_without_trailing_zeros }}
-                      </span>
-                    </div>
-                  {% endif %}
-
-
+                  
                   {%- render 'price',
                     product: product,
                     use_variant: true,
