@@ -134,6 +134,15 @@
             "background_color": "#ffffff"
           }
         },
+        "separator_X8PfGJ": {
+          "type": "separator",
+          "settings": {
+            "show-separator-line": false,
+            "color-background": "#000000",
+            "margin-top": 8,
+            "margin-bottom": 8
+          }
+        },
         "payments_badge_EFynmG": {
           "type": "payments_badge",
           "settings": {
@@ -251,6 +260,7 @@
         "buy_buttons",
         "promo_67ttgj",
         "promo_dJtMQK",
+        "separator_X8PfGJ",
         "payments_badge_EFynmG",
         "separator_DwMham",
         "e23830b4-3ca6-452f-a7d1-cb245a3e9282",
@@ -333,13 +343,13 @@
     "testimonial_images_AGzLYr": {
       "type": "testimonial-images",
       "blocks": {
-        "testimonial_FJLx47": {
+        "testimonial_EAxdFK": {
           "type": "testimonial",
           "settings": {
             "icon_select": "100",
-            "text": "<p><strong>Fantastic Service and Easy to Order.</strong><br/><br/>\"The process online was super efficient. Communication through out was fantastic and providing shipping information.<br/><br/>Great quality product, great value.<br/><br/>We ordered the negroni and then the next morning my partner changed his mind and we contacted them and they were great in changing to a different spirit, and were super responsive..\"</p>",
-            "author": "Michael Felix",
-            "desktop_image": "shopify://shop_images/Review_-_Michael_Felix.webp",
+            "text": "<p><strong>Best Wedding Favours Ever – Our Guests Couldn't Get Enough!</strong><br/><br/>\"We decided to gift our guests mini bottles of homemade limoncello as wedding favours, and WOW—what a hit! From the moment they saw the cute packaging to the very last sip, everyone was raving about them.<br/>We wanted to give our guests something personal and fun, and this was hands-down the best decision. If you're looking for a favour that people will actually love, these limoncello cocktails are it. Zero waste—every bottle was gone! Highly recommend! 🍋✨.\"</p>",
+            "author": "Vanessa Burke",
+            "desktop_image": "shopify://shop_images/Review_-_Vaness_Burke.webp",
             "image_link": ""
           }
         },
@@ -350,16 +360,6 @@
             "text": "<p>\"We ordered some of the Foxtails & Co mini cocktails for our wedding as favours for our guests and we were so impressed! Everything was delivered so quickly, and the bottles were so gorgeously presented. We ordered a few different flavours, and our guests loved them! We had the Negroni & Blood Orange flavours ourselves and they were absolutely delicious. The perfect addition to your special event, your guests will thank you!\"</p>",
             "author": "Kerrie Broos Revitt",
             "desktop_image": "shopify://shop_images/Review_-_Kerrie_Broos_Revitt.webp",
-            "image_link": ""
-          }
-        },
-        "testimonial_EAxdFK": {
-          "type": "testimonial",
-          "settings": {
-            "icon_select": "100",
-            "text": "<p><strong>Best Wedding Favours Ever – Our Guests Couldn't Get Enough!</strong><br/><br/>\"We decided to gift our guests mini bottles of homemade limoncello as wedding favours, and WOW—what a hit! From the moment they saw the cute packaging to the very last sip, everyone was raving about them.<br/>We wanted to give our guests something personal and fun, and this was hands-down the best decision. If you're looking for a favour that people will actually love, these limoncello cocktails are it. Zero waste—every bottle was gone! Highly recommend! 🍋✨.\"</p>",
-            "author": "Vanessa Burke",
-            "desktop_image": "shopify://shop_images/Review_-_Vaness_Burke.webp",
             "image_link": ""
           }
         },
@@ -382,18 +382,28 @@
             "desktop_image": "shopify://shop_images/Review_-_Natasha.webp",
             "image_link": ""
           }
+        },
+        "testimonial_FJLx47": {
+          "type": "testimonial",
+          "settings": {
+            "icon_select": "100",
+            "text": "<p><strong>Fantastic Service and Easy to Order.</strong><br/><br/>\"The process online was super efficient. Communication through out was fantastic and providing shipping information.<br/><br/>Great quality product, great value.<br/><br/>We ordered the negroni and then the next morning my partner changed his mind and we contacted them and they were great in changing to a different spirit, and were super responsive..\"</p>",
+            "author": "Michael Felix",
+            "desktop_image": "shopify://shop_images/Review_-_Michael_Felix.webp",
+            "image_link": ""
+          }
         }
       },
       "block_order": [
-        "testimonial_FJLx47",
-        "testimonial_bGDFcn",
         "testimonial_EAxdFK",
+        "testimonial_bGDFcn",
         "testimonial_VhF8kY",
-        "testimonial_Piembh"
+        "testimonial_Piembh",
+        "testimonial_FJLx47"
       ],
       "name": "t:sections.testimonial_images.name",
       "settings": {
-        "title": "What Our Customers Have Been Saying...",
+        "title": "",
         "text_style": "body",
         "testimonial_text_size_desktop": 100,
         "testimonial_text_size": 100,
