@@ -855,6 +855,18 @@
                     {{ block.settings.override_price }}
                   </div>
                 {%- else -%}
+                  {% #SK CODE FOR FROM PRICE METAFIELD ON PRODUCT PAGES %}
+                  {% if product.metafields.custom.fromprice != blank %}
+                    <div class="price">
+                      <span class="price-item price-item--regular">
+                        From {{ product.metafields.custom.fromprice.value | times: 100 | money_without_trailing_zeros }}
+                      </span>
+                    </div>
+                  {% endif %}
+
+
+
+
                   {%- render 'price',
                     product: product,
                     use_variant: true,
