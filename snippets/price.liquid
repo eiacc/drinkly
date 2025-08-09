@@ -8,9 +8,6 @@
 {%# SK CODE END %}
 
 
-
-
-
 {%- liquid
   if use_variant
     assign target = product.selected_or_first_available_variant
@@ -36,6 +33,8 @@
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
 -%}
+{% if from_text %}{% assign money_price = from_text %}{% endif %}
+
 
 <div
   class="
