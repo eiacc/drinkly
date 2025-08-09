@@ -80,6 +80,17 @@
             "placeholder": "26th May 2027"
           }
         },
+        "custom_variant_picker_6HefFW": {
+          "type": "custom_variant_picker",
+          "settings": {
+            "enable_upload": false,
+            "add_on": "",
+            "picker_type": "swatch",
+            "color_swatch_names": "",
+            "variant_picture_swatch_names": "",
+            "dropdown_swatch_names": "Label Finish"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "disabled": true,
@@ -235,6 +246,7 @@
         "price",
         "metaproperty_bYmTwG",
         "metaproperty_KqwHmR",
+        "custom_variant_picker_6HefFW",
         "variant_picker",
         "buy_buttons",
         "promo_67ttgj",
