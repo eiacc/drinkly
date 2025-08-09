@@ -1,3 +1,16 @@
+{%# SK CODE START %}
+{%- assign fp = product.metafields.custom.fromprice -%}
+{%- assign from_text = blank -%}
+{%- if fp and fp.value and fp.value > 0 -%}
+  {%- capture fp_money -%}{{ fp.value | times: 100 | money_without_trailing_zeros }}{%- endcapture -%}
+  {%- assign from_text = 'From ' | append: fp_money -%}
+{%- endif -%}
+{%# SK CODE END %}
+
+
+
+
+
 {%- liquid
   if use_variant
     assign target = product.selected_or_first_available_variant
@@ -61,16 +74,33 @@
           {%- endunless -%}
         {%- endif -%}
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
+        
         <span class="price-item price-item--regular">
           {{- 'products.product.volume_pricing.price_range' | t: minimum: money_price_min, maximum: money_price_max -}}
         </span>
+      
       {%- else -%}
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
+        
+        {%# SK CODE NEEDS THIS COMMENTED OUT %}
+        {% comment %} 
         <span class="price-item price-item--regular wt-product__price__final wt-product__price__final">
           {{ money_price }}
         </span>
+        {% endcomment %}
+        
+        {%# SK CODE START %}
+        <span class="price-item price-item--regular wt-product__price__final wt-product__price__final">
+        {% if from_text %}{{ from_text }}{% else %}{{ money_price }}{% endif %}
+        </span>
+        {%# SK CODE END %}
+      
       {%- endif -%}
     </div>
+    
+    
+    
+    
     <div class="price__sale {% if compare_at_price > price and main_product != true %}visible{% endif %} {%if compare_at_price > price and main_product %}visible-main-product{%endif%}">
       <div class="price__sale__details-wrapper">
         <span class="price-item price-item--sale price-item--last wt-product__price__final">
