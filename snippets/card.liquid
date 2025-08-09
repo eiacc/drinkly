@@ -227,13 +227,46 @@
           {% if default_title %}{{ default_title }}{% else %}{{ placeholder_title }}{% endif %}
         {% endif %}
       </{{ title_tag }}>
+     
+{% # SK CODE %}
+{%- assign fp = product.metafields.custom.fromprice -%}
+{%- assign from_text = blank -%}
+{%- if fp and fp.value and fp.value > 0 -%}
+{%- assign from_text = 'From ' | append: (fp.value | times: 100 | money_without_trailing_zeros) -%}
+{%- endif -%}
 
-      {% # SK CODE %}
-      {%- assign fp = product.metafields.custom.fromprice -%}
-      {%- if fp and fp.value and fp.value > 0 -%}
-        From {{ fp.value | times: 100 | money_without_trailing_zeros }}
-      {%- endif -%}
 
+{% if price and collection_list != true %}
+  <div class="card__price">
+    {% if from_text %}
+      {{ from_text }}
+    {% else %}
+      {% if price_old -%}
+        <span class="card__price__old">{{ price_old }}</span>
+      {%- endif %}
+      {% if settings.currency_code_enabled %}
+        {{ price | money_with_currency }}
+      {% else %}
+        {{ price | money }}
+      {% endif %}
+    {% endif %}
+  </div>
+
+  {% elsif product and collection_list != true %}
+  <div class="card__price">
+    {% if from_text %}
+      {{ from_text }}
+    {% else %}
+      {% render 'price', product: product, show_compare_at_price: true, price_class: '' %}
+    {% endif %}
+  </div>
+{% endif %}
+
+{%# SK CODE END  %}
+
+
+{%comment%} 
+{%# ORIGNAL CODE END  %}
       {% if price and collection_list != true %}
         <div class="card__price">
           {% if price_old -%}
@@ -250,7 +283,9 @@
           {% render 'price', product: product, show_compare_at_price: true, price_class: '' %}
         </div>
       {% endif %}
-    
+    {%endcomment%}
+
+
       {% if rating and reviews %}
         {% render 'rating', reviews: reviews, text_alignment: text_alignment %}
       {% endif %}
