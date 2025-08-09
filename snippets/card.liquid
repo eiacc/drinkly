@@ -228,15 +228,13 @@
         {% endif %}
       </{{ title_tag }}>
      
-{% # SK CODE %}
-{%- assign fp = product.metafields.custom.fromprice -%}
+{% # SK CODE START %}
+{%- assign fp = product.metafields.custom.from_price -%}
 {%- assign from_text = blank -%}
 {%- if fp and fp.value and fp.value > 0 -%}
   {%- capture fp_money -%}{{ fp.value | times: 100 | money_without_trailing_zeros }}{%- endcapture -%}
-  {%- assign from_text = 'From ' | append: fp_money -%}
+  {%- capture from_text -%}<span class="price-item price-item--regular">From {{ fp_money }}</span>{%- endcapture -%}
 {%- endif -%}
-
-
 
 {% if price and collection_list != true %}
   <div class="card__price">
@@ -253,8 +251,7 @@
       {% endif %}
     {% endif %}
   </div>
-
-  {% elsif product and collection_list != true %}
+{% elsif product and collection_list != true %}
   <div class="card__price">
     {% if from_text %}
       {{ from_text }}
@@ -263,12 +260,11 @@
     {% endif %}
   </div>
 {% endif %}
+{%# SK CODE END %}
 
-{%# SK CODE END  %}
 
-
-{%comment%} 
-{%# ORIGNAL CODE END  %}
+    {%# ORIGNAL CODE START  %}
+    {%comment%}
       {% if price and collection_list != true %}
         <div class="card__price">
           {% if price_old -%}
@@ -286,7 +282,7 @@
         </div>
       {% endif %}
     {%endcomment%}
-
+    {%# ORIGINAL CODE END  %}
 
       {% if rating and reviews %}
         {% render 'rating', reviews: reviews, text_alignment: text_alignment %}
