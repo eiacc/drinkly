@@ -59,7 +59,7 @@
         "price": {
           "type": "price",
           "settings": {
-            "override_price": "<p><strong><br/></strong></p>",
+            "override_price": "",
             "show_tax_included": true,
             "show_shipping_policy": true,
             "size_text": 120,
