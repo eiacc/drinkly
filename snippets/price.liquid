@@ -1,11 +1,12 @@
-{%#SK CODE START%}
+{%#SK CODE %}
 {%- assign fp = product.metafields.custom.fromprice -%}
 {%- assign from_text = blank -%}
 {%- if fp and fp.value and fp.value > 0 -%}
   {%- capture fp_money -%}{{ fp.value | times: 100 | money_without_trailing_zeros }}{%- endcapture -%}
-  {%- capture from_text -%}<span class="price-item price-item--regular">From {{ fp_money }}</span>{%- endcapture -%}
+  {%- assign from_text = 'From ' | append: fp_money -%}
 {%- endif -%}
 {%#SK CODE END%}
+
 
 
 
