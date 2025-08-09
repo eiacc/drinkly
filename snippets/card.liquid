@@ -229,7 +229,7 @@
       </{{ title_tag }}>
      
 {% # SK CODE START %}
-{%- assign fp = product.metafields.custom.from_price -%}
+{%- assign fp = product.metafields.custom.fromprice -%}
 {%- assign from_text = blank -%}
 {%- if fp and fp.value and fp.value > 0 -%}
   {%- capture fp_money -%}{{ fp.value | times: 100 | money_without_trailing_zeros }}{%- endcapture -%}
@@ -261,6 +261,7 @@
   </div>
 {% endif %}
 {%# SK CODE END %}
+
 
 
     {%# ORIGNAL CODE START  %}
