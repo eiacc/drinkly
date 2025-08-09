@@ -2376,15 +2376,22 @@
       "limit": 1,
       "settings": [
         {
+          "type": "product",
+          "id": "add_on",
+          "label": "Product Add-on"
+        },        
+        {
           "type": "checkbox",
           "id": "enable_upload",
           "label": "Enable file upload",
           "default": false
         },
         {
-          "type": "product",
-          "id": "add_on",
-          "label": "Product Add-on"
+          "type": "html",
+          "id": "filter_variants",
+          "label": "Filter out variants",
+          "placeholder": "Non alc\n",
+          "info": "Exclude all variants if the variant title contains data below"
         },
         {
           "type": "select",

@@ -2,6 +2,7 @@ class CustomQuantityCounter extends HTMLElement {
   constructor() {
     super();
     this.changeEvent = new Event("change", { bubbles: true });
+    this.gallery_section = document.querySelector("gallery-section") || null;
   }
 
   connectedCallback() {
@@ -16,28 +17,34 @@ class CustomQuantityCounter extends HTMLElement {
     this.decreaseBtn.addEventListener("click", this.onDecrease.bind(this));
   }
 
-  onIncrease() {    
+  onIncrease(e) {    
     const currentValue = parseInt(this.counterEl.value);
+    const imageId = this.dataset.featuredImageId ? this.dataset.featuredImageId : null;
     if (currentValue < this.max) {
-      this.updateValue(currentValue + 1);
+      this.updateValue(currentValue + 1, imageId);
     }
   }
 
-  onDecrease() {
+  onDecrease(e) {
     const currentValue = parseInt(this.counterEl.value);
+    const imageId = this.dataset.featuredImageId ? this.dataset.featuredImageId : null;
     if (this.dataset.cart) this.min = 0;
     if (currentValue > this.min) {
-      this.updateValue(currentValue - 1);
+      this.updateValue(currentValue - 1, imageId);
     } else {
-      this.updateValue(0);
+      this.updateValue(0, imageId);
     }
   }
 
-  updateValue(value) {
+  updateValue(value, switchImage = null) {
     this.counterEl.value = value;
 
     this.counterEl.dispatchEvent(new Event("input", { bubbles: true }));
     this.counterEl.dispatchEvent(this.changeEvent);
+  
+    if (this.gallery_section && switchImage) {
+      this.gallery_section.setActiveMedia(switchImage, true);
+    }
   }
 }
 

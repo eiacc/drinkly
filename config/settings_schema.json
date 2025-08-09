@@ -843,6 +843,12 @@
         "info": "Choose the product that will be used to calculate the discount"
       },
       {
+        "type": "product_list",
+        "id": "product_discounted_list",
+        "label": "Choose products with discounts",
+        "info": "Choose the product that will be used to calculate the discount"
+      },
+      {
         "type": "text",
         "id": "product_discount_quantity",
         "default": "100",

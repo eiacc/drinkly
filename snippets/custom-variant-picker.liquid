@@ -152,7 +152,9 @@
                     {%- for value in option.values -%}
                       {%- liquid 
                         assign variant_title = value | downcase
-                        if variant_title contains 'non alc'
+                        assign variant_filter_rules = block.settings.filter_variants | downcase | split: '\n'
+
+                        if variant_filter_rules contains variant_title
                           continue
                         endif
                       -%}

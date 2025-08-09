@@ -15,8 +15,9 @@
         "available": {{ variant.available | json }},
         "inventory_quantity": {{ variant.inventory_quantity | json }},
         "price": {{ variant.price | money | json }},
-        {% if variant.featured_image %}
-          "featured_image": {{ variant.featured_image | image_url: width: 600 | json }},
+        {% if variant.featured_media %}
+          "featured_image": {{ variant.featured_media | image_url: width: 600 | json }},
+          "featured_image_id": {{ variant.featured_media.id | json }},
         {% endif %}
         "tags": {{ variant.metafields.custom.tag | default: '[]' }}
       }{% unless forloop.last %},{% endunless %}
@@ -43,6 +44,4 @@
 <script src="{{ 'custom-variant-options.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'custom-variant-picker.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'custom-variant-dropdown.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'custom-variant-randomizer.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'custom-quantity-counter.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'custom-sticky-buy-button.js' | asset_url }}" defer="defer"></script>

@@ -1,5 +1,17 @@
 {%- if settings.enable_product_discount and settings.product_discount != blank -%}
   {%- liquid
+    assign discounted_product_ids = ""
+
+    for product in settings.product_discounted_list
+      if product.variants.size > 0
+        for variant in product.variants
+          assign discounted_product_ids = discounted_product_ids | append: variant.id | append: ',' 
+        endfor
+      else
+        assign discounted_product_ids = discounted_product_ids | append: product.id | append: ',' 
+      endif
+    endfor
+
     assign variant_ids = settings.product_discount.variants | map: 'id'
     assign total_quantity = 0
 

@@ -340,3 +340,7 @@ custom-variant-picker {
   /* border-radius: 5rem !important;
   overflow: hidden; */
 }
+
+.wt-product__option__body--swatches input.disabled + label::after {
+  background-color: transparent;
+}

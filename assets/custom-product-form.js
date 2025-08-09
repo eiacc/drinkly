@@ -65,6 +65,10 @@ document.addEventListener("DOMContentLoaded", () => {
               img.alt = variant.title || 'Product Image';
               wrapper.innerHTML = '';
               wrapper.appendChild(img);
+
+              // attach featured image id to input[name="quantity"]
+              const quantity_input = wrapper.parentElement.lastElementChild;
+              if (quantity_input) quantity_input.dataset.featuredImageId = variant.featured_image_id;
             }
   
             wrapper.setAttribute('data-variant-tags', variant.tags.join(','));
@@ -205,6 +209,8 @@ document.addEventListener("DOMContentLoaded", () => {
               throw new Error('alter_cart');
             }
     
+            console.log('cart', cart);
+
             const response = await fetch('/cart/add.js', {
               method: 'POST',
               headers: {
@@ -350,8 +356,6 @@ document.addEventListener("DOMContentLoaded", () => {
             };
           }
         }
-        
-        
         
         checkProperties() {
           let errs = 0;
