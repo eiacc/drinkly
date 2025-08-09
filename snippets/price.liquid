@@ -3,7 +3,7 @@
 {%- assign from_text = blank -%}
 {%- if fp and fp.value and fp.value > 0 -%}
   {%- capture fp_money -%}{{ fp.value | times: 100 | money_without_trailing_zeros }}{%- endcapture -%}
-  {%- assign from_text = '$' | append: fp_money -%}
+  {%- assign from_text = '' | append: fp_money -%}
 {%- endif -%}
 {%# SK CODE END %}
 
