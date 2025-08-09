@@ -53,11 +53,12 @@ document.addEventListener("DOMContentLoaded", () => {
         
           this.variant_image_wrappers.forEach(wrapper => {
             const identifier = wrapper.dataset.productSubId;
-        
+            
             if (!identifier) return;
-        
+            
             const variant = variants.find(v => v.sub_id?.includes(identifier));
-        
+            
+            wrapper.innerHTML = '';
             if (variant?.featured_image) {
               const img = document.createElement('img');
               img.src = variant.featured_image;
@@ -358,7 +359,7 @@ document.addEventListener("DOMContentLoaded", () => {
           this.querySelectorAll('custom-metaproperty').forEach(property => {
             const input = property.querySelector('input[name^="properties["]');
   
-            console.log('input', input);
+            // console.log('input', input);
   
             if (!input.value) {
               property.error()

@@ -106,6 +106,10 @@ custom-metaproperty .form__fieldset {
   width: 3rem;
 }
 
+.drawer__list__item-image:empty {
+  display: none;
+}
+
 .drawer__list__item--dropdown .drawer__list__item-title {
   flex: 1;
 }

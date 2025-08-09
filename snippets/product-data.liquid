@@ -15,7 +15,9 @@
         "available": {{ variant.available | json }},
         "inventory_quantity": {{ variant.inventory_quantity | json }},
         "price": {{ variant.price | money | json }},
-        "featured_image": {{ variant.featured_image | image_url: width: 600 | json }},
+        {% if variant.featured_image %}
+          "featured_image": {{ variant.featured_image | image_url: width: 600 | json }},
+        {% endif %}
         "tags": {{ variant.metafields.custom.tag | default: '[]' }}
       }{% unless forloop.last %},{% endunless %}
     {% endfor %}
