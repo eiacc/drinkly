@@ -837,16 +837,10 @@
         "label": "Enable product discount"
       },
       {
-        "type": "product",
-        "id": "product_discount",
-        "label": "Choose product",
-        "info": "Choose the product that will be used to calculate the discount"
-      },
-      {
         "type": "product_list",
         "id": "product_discounted_list",
         "label": "Choose products with discounts",
-        "info": "Choose the product that will be used to calculate the discount"
+        "info": "Choose the product that will be used to calculate the discount. Add discounts <a href='https://admin.shopify.com/store/jszbmh-hw/discounts'>here</a>"
       },
       {
         "type": "text",

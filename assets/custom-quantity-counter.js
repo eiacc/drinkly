@@ -27,12 +27,11 @@ class CustomQuantityCounter extends HTMLElement {
 
   onDecrease(e) {
     const currentValue = parseInt(this.counterEl.value);
-    const imageId = this.dataset.featuredImageId ? this.dataset.featuredImageId : null;
     if (this.dataset.cart) this.min = 0;
     if (currentValue > this.min) {
-      this.updateValue(currentValue - 1, imageId);
+      this.updateValue(currentValue - 1);
     } else {
-      this.updateValue(0, imageId);
+      this.updateValue(0);
     }
   }
 
