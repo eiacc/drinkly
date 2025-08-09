@@ -10950,3 +10950,8 @@ main#root > .wt-featured-nav {
 .rte .shopify_subscriptions_app_policy {
   margin-top: 0.5em;
 }
+.price-suffix {
+  font-size: 0.8em;
+  margin-left: 0.25em;
+  opacity: 0.85;
+}
