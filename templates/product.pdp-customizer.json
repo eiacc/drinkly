@@ -83,8 +83,9 @@
         "custom_variant_picker_Tzyh7n": {
           "type": "custom_variant_picker",
           "settings": {
-            "enable_upload": false,
             "add_on": "",
+            "enable_upload": false,
+            "filter_variants": "non alc",
             "picker_type": "button",
             "color_swatch_names": "Colour",
             "variant_picture_swatch_names": "",
