@@ -232,8 +232,10 @@
 {%- assign fp = product.metafields.custom.fromprice -%}
 {%- assign from_text = blank -%}
 {%- if fp and fp.value and fp.value > 0 -%}
-{%- assign from_text = 'From ' | append: (fp.value | times: 100 | money_without_trailing_zeros) -%}
+  {%- capture fp_money -%}{{ fp.value | times: 100 | money_without_trailing_zeros }}{%- endcapture -%}
+  {%- assign from_text = 'From ' | append: fp_money -%}
 {%- endif -%}
+
 
 
 {% if price and collection_list != true %}
