@@ -1,13 +1,17 @@
 {%# SK CODE START %}
 {%- assign fp = product.metafields.custom.fromprice -%}
+{%- assign qty_mf = product.metafields.custom.bulk_qty -%} {%# integer metafield for threshold #%}
+{%- assign qty = 24 -%}
+{%- if qty_mf and qty_mf.value and qty_mf.value > 0 -%}{%- assign qty = qty_mf.value -%}{%- endif -%}
+
 {%- assign from_text = blank -%}
 {%- if fp and fp.value and fp.value > 0 -%}
   {%- capture fp_money -%}{{ fp.value | times: 100 | money_without_trailing_zeros }}{%- endcapture -%}
-  {%- assign from_text = 'From ' | append: fp_money -%}
+  {%- capture from_text -%}
+    <span class="price-amount">{{ fp_money }}</span><span class="price-suffix"> for {{ qty }} or more</span>
+  {%- endcapture -%}
 {%- endif -%}
 {%# SK CODE END %}
-
-
 
 
 
@@ -36,6 +40,10 @@
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
 -%}
+{%# SK CODE %}
+{% if from_text %}{% assign money_price = from_text %}{% endif %}
+
+{%# SK CODE END %}
 
 <div
   class="

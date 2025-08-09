@@ -59,11 +59,19 @@
         "price": {
           "type": "price",
           "settings": {
-            "override_price": "<p><strong><br/></strong></p>",
+            "override_price": "<h1>$16</h1>",
             "show_tax_included": true,
             "show_shipping_policy": true,
-            "size_text": 120,
+            "size_text": 180,
             "size_text_mobile": 140
+          }
+        },
+        "text_Rp8xBa": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "content": "<p>$10 per bottle when ordering 24 or more</p>",
+            "page": ""
           }
         },
         "metaproperty_bYmTwG": {
@@ -254,6 +262,7 @@
         "separator_Qt7zAY",
         "order_summary_FdWjWT",
         "price",
+        "text_Rp8xBa",
         "metaproperty_bYmTwG",
         "metaproperty_KqwHmR",
         "custom_variant_picker_Tzyh7n",
