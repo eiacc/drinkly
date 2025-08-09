@@ -1,6 +1,6 @@
 {%# SK CODE START %}
 {%- assign fp = product.metafields.custom.fromprice -%}
-{%- assign qty_mf = product.metafields.custom.bulk_qty -%} {# integer metafield for threshold #}
+{%- assign qty_mf = product.metafields.custom.bulk_qty -%} {%# integer metafield for threshold #%}
 {%- assign qty = 24 -%}
 {%- if qty_mf and qty_mf.value and qty_mf.value > 0 -%}{%- assign qty = qty_mf.value -%}{%- endif -%}
 
