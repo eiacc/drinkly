@@ -11,7 +11,10 @@
   }
 </style>
 
-{% assign current_step = steps | default: 0 %}
+{%- liquid 
+  assign current_step = steps | default: 0
+  assign variant_filter_rules = block.settings.filter_variants | downcase | split: '\n'
+-%}
 
 <custom-variant-picker
   data-block-id="{{ block.id }}"
@@ -150,14 +153,6 @@
                 <fieldset class="js product-form__input">
                   <ul class="{{ options_container_class }}__list {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}">
                     {%- for value in option.values -%}
-                      {%- liquid 
-                        assign variant_title = value | downcase
-                        assign variant_filter_rules = block.settings.filter_variants | downcase | split: '\n'
-
-                        if variant_filter_rules contains variant_title
-                          continue
-                        endif
-                      -%}
                       <li
                         class="{{ options_container_class }}__list__item {{ options_container_class }}__list__item--{{ picker_type }}"
                       >
@@ -178,6 +173,22 @@
 
                         {%- case picker_type -%}
                           {%- when 'dropdown' -%}
+                            {%- liquid
+                              assign variant_title = value | downcase | strip | replace: '(', '' | replace: ')', '' | replace: '\r', '' | replace: '  ', ' '
+
+                              assign should_skip = false
+                              for rule in variant_filter_rules
+                                assign rule_clean = rule | strip | replace: '\r', '' | downcase | replace: '(', '' | replace: ')', '' | replace: '  ', ' '
+                                if rule_clean != '' and variant_title contains rule_clean
+                                  assign should_skip = true
+                                  break
+                                endif
+                              endfor
+                              if should_skip
+                                continue
+                              endif
+                            -%}                                            
+
                             <div class="{{ options_container_class }}__list__item-image" data-product-sub-id="{{ value | downcase | replace: ' ', '-' }}">
                               {{ 'lifestyle-1' | placeholder_svg_tag }}
                             </div>
