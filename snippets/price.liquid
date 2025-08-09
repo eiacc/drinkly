@@ -33,8 +33,10 @@
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
 -%}
-{% if from_text %}{% assign money_price = from_text %}{% endif %}
 
+{%# SK CODE %}
+{% if from_text %}{% assign money_price = from_text %}{% endif %}
+{%# SK CODE END %}
 
 <div
   class="
