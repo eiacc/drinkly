@@ -84,8 +84,8 @@
         "metaproperty_KqwHmR": {
           "type": "metaproperty",
           "settings": {
-            "label": "Date or Comment Text",
-            "placeholder": "26th May 2027"
+            "label": "{{ product.metafields.custom.label_line_2_name.value }}",
+            "placeholder": "{{ product.metafields.custom.label_line_2_placeholder.value }}"
           }
         },
         "custom_variant_picker_Tzyh7n": {
