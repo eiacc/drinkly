@@ -71,7 +71,7 @@
           "name": "Bulk Text Info",
           "settings": {
             "heading": "",
-            "content": "<p>${{ product.metafields.custom.fromprice.value }} per bottle when ordering {{ product.metafields.custom.bulk_qty.value }} or more</p>",
+            "content": "<p>$10 per bottle when ordering {{ product.metafields.custom.bulk_qty.value }} or more</p>",
             "page": ""
           }
         },
