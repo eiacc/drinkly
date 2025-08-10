@@ -317,6 +317,50 @@
         "margin-top": 100,
         "margin-bottom": 100
       }
+    },
+    "rich_text_XhpFjh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qgNhHE": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        },
+        "text_cA64Fn": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>{{ collection.metafields.custom.collection_seo_heading.value }}</h2><p>{{ collection.metafields.custom.collection_seo_body | metafield_tag }}<br/><br/></p><p></p><p></p>",
+            "disable_on_mobile": false
+          }
+        },
+        "button_kMbKVt": {
+          "type": "button",
+          "settings": {
+            "button_select": "primary",
+            "button_label": "SHOP FULLY CUSTOMISED",
+            "button_link": "#top",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_qgNhHE",
+        "text_cA64Fn",
+        "button_kMbKVt"
+      ],
+      "name": "On Page SEO",
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
     }
   },
   "order": [
@@ -327,6 +371,7 @@
     "rich_text_bGVGWR_2",
     "features_banner_Xqw4VW",
     "testimonial_images_PAzxhF",
-    "newsletter_KQitJE"
+    "newsletter_KQitJE",
+    "rich_text_XhpFjh"
   ]
 }
