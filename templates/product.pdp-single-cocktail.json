@@ -69,22 +69,23 @@
         "metaproperty_bYmTwG": {
           "type": "metaproperty",
           "settings": {
-            "label": "Main Text",
-            "placeholder": "Bridget & Joshua"
+            "label": "{{ product.metafields.custom.label_line_1_name.value }}",
+            "placeholder": "{{ product.metafields.custom.label_line_1_placeholder.value }}"
           }
         },
         "metaproperty_KqwHmR": {
           "type": "metaproperty",
           "settings": {
-            "label": "Date or Comment Text",
-            "placeholder": "26th May 2027"
+            "label": "{{ product.metafields.custom.label_line_2_name.value }}",
+            "placeholder": "{{ product.metafields.custom.label_line_2_placeholder.value }}"
           }
         },
         "custom_variant_picker_6HefFW": {
           "type": "custom_variant_picker",
           "settings": {
-            "enable_upload": false,
             "add_on": "",
+            "enable_upload": false,
+            "filter_variants": "",
             "picker_type": "swatch",
             "color_swatch_names": "",
             "variant_picture_swatch_names": "",
