@@ -435,7 +435,7 @@
         "heading_mnJyLx": {
           "type": "heading",
           "settings": {
-            "heading": "Get 10% off your first order",
+            "heading": "Get $20 off your first order",
             "heading_disable_on_mobile": false,
             "size_heading": 200,
             "size_heading_mobile": 100
@@ -444,7 +444,7 @@
         "paragraph_afW3hE": {
           "type": "paragraph",
           "settings": {
-            "paragraph": "<p>Be the first to know about new collections and exclusive offers.</p>",
+            "paragraph": "<p>Join our email list for exclusive offers and the latest news an recieve $20 off your first order over $99.</p>",
             "text_disable_on_mobile": false
           }
         },
