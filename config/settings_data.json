@@ -89,7 +89,6 @@
     ],
     "enable_free_shipping_bar": false,
     "enable_product_discount": true,
-    "product_discount": "elegant-personalised-cocktails",
     "product_discount_quantity": "24",
     "product_discount_text": "Add ||quantity|| more to qualify for a $6 discount per bottle!",
     "product_discount_text_success": "You have unlocked the discount!",
@@ -108,6 +107,7 @@
     "custom-badge-1-input": "New",
     "animations": true,
     "disabled_animations_on_mobile": true,
+    "product_discount": "elegant-personalised-cocktails",
     "product_discount_amount": "24",
     "large_screen_logo_width": 120,
     "mobile_screen_logo_width": 90,
@@ -130,6 +130,11 @@
       "15132424025755801183": {
         "type": "shopify://apps/upload-lift/blocks/app-embed/3c98bdcb-7587-4ade-bfe4-7d8af00d05ca",
         "disabled": true,
+        "settings": {}
+      },
+      "15472879455061085326": {
+        "type": "shopify://apps/avada-order-limits/blocks/app-embed/d3021427-4f7b-49c8-8963-29d1d52b8956",
+        "disabled": false,
         "settings": {}
       }
     }
