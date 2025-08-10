@@ -56,6 +56,14 @@
           "type": "order_summary",
           "settings": {}
         },
+        "text_UF4kQx": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "content": "{{ product.description }}",
+            "page": ""
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -230,6 +238,7 @@
         "feature_tags_44iTGm",
         "separator_Qt7zAY",
         "order_summary_FdWjWT",
+        "text_UF4kQx",
         "price",
         "text_7UMywg",
         "custom_variant_picker_Tzyh7n",
