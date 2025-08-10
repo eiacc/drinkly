@@ -59,18 +59,28 @@
         "price": {
           "type": "price",
           "settings": {
-            "override_price": "<h2><strong>$</strong>{{ product.metafields.custom.fromprice.value }}</h2><p> per bottle for over 23<br/><br/></p>",
+            "override_price": "<h1>$16</h1>",
             "show_tax_included": true,
             "show_shipping_policy": true,
             "size_text": 120,
             "size_text_mobile": 140
           }
         },
+        "text_7UMywg": {
+          "type": "text",
+          "name": "Bulk Text Info",
+          "settings": {
+            "heading": "",
+            "content": "<p>${{ product.metafields.custom.fromprice.value }} per bottle when ordering {{ product.metafields.custom.bulk_qty.value }} or more</p>",
+            "page": ""
+          }
+        },
         "custom_variant_picker_Tzyh7n": {
           "type": "custom_variant_picker",
           "settings": {
-            "enable_upload": true,
             "add_on": "",
+            "enable_upload": true,
+            "filter_variants": "",
             "picker_type": "button",
             "color_swatch_names": "Colour",
             "variant_picture_swatch_names": "",
@@ -221,6 +231,7 @@
         "separator_Qt7zAY",
         "order_summary_FdWjWT",
         "price",
+        "text_7UMywg",
         "custom_variant_picker_Tzyh7n",
         "variant_picker",
         "buy_buttons",
