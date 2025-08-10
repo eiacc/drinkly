@@ -462,7 +462,7 @@
         "heading_KhxnCQ": {
           "type": "heading",
           "settings": {
-            "heading": "Get 10% off your first order",
+            "heading": "Get $20 off your first order",
             "heading_disable_on_mobile": false,
             "size_heading": 200,
             "size_heading_mobile": 160
@@ -528,7 +528,7 @@
         "text_irNUkw",
         "button_GpVU7N"
       ],
-      "name": "t:sections.rich-text.presets.name",
+      "name": "On Page SEO",
       "settings": {
         "section_width": "regular",
         "desktop_text_horizontal_position": "center",
