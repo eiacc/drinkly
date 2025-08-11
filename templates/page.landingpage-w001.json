@@ -407,10 +407,21 @@
             "desktop_image": "shopify://shop_images/Review_-_Vaness_Burke.webp",
             "image_link": ""
           }
+        },
+        "testimonial_EAdyQw": {
+          "type": "testimonial",
+          "settings": {
+            "icon_select": "100",
+            "text": "<p>\"We just wanted to say a huge thankyou for our custom cocktails for our wedding day. The looked amazing! And we had so many compliments, they were a huge hit, thanks again.\"</p>",
+            "author": "Natasha Forrester",
+            "desktop_image": "shopify://shop_images/Review_-_Natasha.webp",
+            "image_link": ""
+          }
         }
       },
       "block_order": [
-        "testimonial_h6DegQ"
+        "testimonial_h6DegQ",
+        "testimonial_EAdyQw"
       ],
       "name": "t:sections.testimonial_images.name",
       "settings": {
