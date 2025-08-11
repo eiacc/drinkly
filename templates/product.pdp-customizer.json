@@ -126,6 +126,10 @@
             "background_color": "rgba(0,0,0,0)"
           }
         },
+        "avada_order_limits_app_block_3YV8Km": {
+          "type": "shopify://apps/avada-order-limits/blocks/app-block/d3021427-4f7b-49c8-8963-29d1d52b8956",
+          "settings": {}
+        },
         "promo_67ttgj": {
           "type": "promo",
           "settings": {
@@ -269,6 +273,7 @@
         "custom_variant_picker_Tzyh7n",
         "variant_picker",
         "buy_buttons",
+        "avada_order_limits_app_block_3YV8Km",
         "promo_67ttgj",
         "promo_dJtMQK",
         "separator_X8PfGJ",
