@@ -44,7 +44,7 @@
         "heading_383H9U": {
           "type": "heading",
           "settings": {
-            "subheading": "<p>Personalise a design, choose your cocktails and we do the rest. <br/></p>",
+            "subheading": "<p>1) Pick a design <br/>2) Personalise the label<br/>3) Select your cocktails<br/>...and we do the rest. <br/></p>",
             "font_uppercase": "none",
             "disable_on_mobile": false
           }
