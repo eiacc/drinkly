@@ -24,6 +24,37 @@
         "margin-bottom": 60
       }
     },
+    "featured_collection_yfgptR": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Start Customising A Design",
+        "disable_on_mobile": false,
+        "hide_empty_section": false,
+        "collection": "wedding-cocktails",
+        "product_list": [],
+        "products_to_show": 8,
+        "enable_stack_products": true,
+        "show_view_all": true,
+        "button_select": "primary",
+        "number_of_column_desktop": 4,
+        "spacing_desktop": "8",
+        "make_products_full_width": true,
+        "number_of_column_mobile": 2.1,
+        "spacing_mobile": "16",
+        "text_alignment": "center",
+        "image_ratio": "square",
+        "show_video": false,
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_product_rating": true,
+        "enable_quick_add_button": true,
+        "color-body-text": "transparent",
+        "background_color": "transparent",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
     "image_banner_pwxXE9": {
       "type": "image-banner",
       "blocks": {
@@ -329,6 +360,7 @@
   },
   "order": [
     "main",
+    "featured_collection_yfgptR",
     "image_banner_pwxXE9",
     "rich_text_3PnVUe",
     "benefits_product_nN3UYD",
