@@ -630,16 +630,16 @@
         "164916093728eec38a-0": {
           "type": "heading",
           "settings": {
-            "heading": "Get $20 off your first order",
+            "heading": "Get $20 off",
             "heading_disable_on_mobile": false,
-            "size_heading": 200,
-            "size_heading_mobile": 180
+            "size_heading": 150,
+            "size_heading_mobile": 130
           }
         },
         "164916093728eec38a-1": {
           "type": "paragraph",
           "settings": {
-            "paragraph": "<p>Join our email list for exclusive offers and the latest news.</p>",
+            "paragraph": "<p>Join our email list and get $20 off your first order over $99</p>",
             "text_disable_on_mobile": false
           }
         },
