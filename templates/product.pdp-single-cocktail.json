@@ -385,26 +385,26 @@
         "margin-bottom": 20
       }
     },
-    "newsletter_Ptzh7r": {
+    "newsletter_LH9nGm": {
       "type": "newsletter",
       "blocks": {
-        "heading_nAQzGJ": {
+        "heading_cWDbAz": {
           "type": "heading",
           "settings": {
-            "heading": "Get $20 off your first order",
+            "heading": "Get $20 off",
             "heading_disable_on_mobile": false,
-            "size_heading": 200,
-            "size_heading_mobile": 180
+            "size_heading": 150,
+            "size_heading_mobile": 130
           }
         },
-        "paragraph_xJhH9R": {
+        "paragraph_63JGhw": {
           "type": "paragraph",
           "settings": {
-            "paragraph": "<p>Join our email list for exclusive offers and the latest news an receive $20 off your first order over $99.</p>",
+            "paragraph": "<p>Join our email list and get $20 off your first order over $99.</p>",
             "text_disable_on_mobile": false
           }
         },
-        "email_form_tbcehQ": {
+        "email_form_NAcHGV": {
           "type": "email_form",
           "settings": {
             "button_select": "primary"
@@ -412,15 +412,15 @@
         }
       },
       "block_order": [
-        "heading_nAQzGJ",
-        "paragraph_xJhH9R",
-        "email_form_tbcehQ"
+        "heading_cWDbAz",
+        "paragraph_63JGhw",
+        "email_form_NAcHGV"
       ],
       "settings": {
         "color-body-text": "#151515",
         "background_color": "#edf5f4",
-        "margin-top": 100,
-        "margin-bottom": 100
+        "margin-top": 52,
+        "margin-bottom": 52
       }
     }
   },
@@ -429,6 +429,6 @@
     "main",
     "reviews_GHHQiG",
     "testimonial_images_AGzLYr",
-    "newsletter_Ptzh7r"
+    "newsletter_LH9nGm"
   ]
 }
