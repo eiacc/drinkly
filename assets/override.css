@@ -342,7 +342,7 @@ custom-variant-picker {
 }
 
 .wt-product__option__body--swatches input.disabled + label::after {
-  background-color: transparent;
+  background-color: transparent!important;
 }
 
 .stamped-badge-starrating {
