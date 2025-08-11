@@ -74,7 +74,7 @@
         "product_list": [],
         "products_to_show": 8,
         "enable_stack_products": true,
-        "show_view_all": true,
+        "show_view_all": false,
         "button_select": "primary",
         "number_of_column_desktop": 4,
         "spacing_desktop": "8",
@@ -310,7 +310,7 @@
         "color-body-text": "rgba(0,0,0,0)",
         "background_color": "rgba(0,0,0,0)",
         "margin-top": 20,
-        "margin-bottom": 20
+        "margin-bottom": 0
       }
     },
     "benefits_product_nN3UYD": {
@@ -395,19 +395,6 @@
         "margin-bottom": 20
       }
     },
-    "button_dNqtVc": {
-      "type": "button",
-      "name": "t:sections.button.presets.name",
-      "settings": {
-        "button_select": "primary",
-        "button_horizontal_position": "center",
-        "button_label": "SELECT YOUR DESIGN",
-        "button_link": "#top_featcol",
-        "margin-top": 20,
-        "margin-bottom": 20,
-        "background_color": "rgba(0,0,0,0)"
-      }
-    },
     "testimonial_images_q7xd4V": {
       "type": "testimonial-images",
       "blocks": {
@@ -451,19 +438,6 @@
         "margin-top": 52,
         "margin-bottom": 20
       }
-    },
-    "button_QPxrMf": {
-      "type": "button",
-      "name": "t:sections.button.presets.name",
-      "settings": {
-        "button_select": "primary",
-        "button_horizontal_position": "center",
-        "button_label": "SHOP WEDDING FAVOURS",
-        "button_link": "",
-        "margin-top": 52,
-        "margin-bottom": 52,
-        "background_color": "rgba(0,0,0,0)"
-      }
     }
   },
   "order": [
@@ -475,8 +449,6 @@
     "image_banner_pwxXE9",
     "rich_text_3PnVUe",
     "benefits_product_nN3UYD",
-    "button_dNqtVc",
-    "testimonial_images_q7xd4V",
-    "button_QPxrMf"
+    "testimonial_images_q7xd4V"
   ]
 }
