@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
         if (node.nodeType === 1) {
           // ✅ Check if the injected element is from Stamped.io
           if (node.classList.contains("stamped-container")) {
-            console.log("Stamped.io widget injected:", node);
+            // console.log("Stamped.io widget injected:", node);
 
             // 🔥 Modify elements dynamically if needed
             customizeStampedWidget(node);
@@ -19,23 +19,23 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   function customizeStampedWidget(widget) {
-    console.log("");
-    const ratingWrapper = document.querySelector(".wt-rating");
-    const widgetReviewsCount = widget.getAttribute("data-count");
-    const widgetRating = widget.querySelector('[itemprop="ratingValue"]');
+    // console.log("");
+    // const ratingWrapper = document.querySelector(".wt-rating");
+    // const widgetReviewsCount = widget.getAttribute("data-count");
+    // const widgetRating = widget.querySelector('[itemprop="ratingValue"]');
 
-    if (ratingWrapper) {
-      const ratingCounter = ratingWrapper.querySelector(".wt-rating__counter");
-      const ratingStars = ratingWrapper.querySelector(".wt-rating__value");
-      if (ratingCounter && widgetReviewsCount) {
-        ratingCounter.innerHTML = `${widgetReviewsCount} ${widgetReviewsCount === 1 ? 'review' : 'reviews'}`;
-      }
+    // if (ratingWrapper) {
+    //   const ratingCounter = ratingWrapper.querySelector(".wt-rating__counter");
+    //   const ratingStars = ratingWrapper.querySelector(".wt-rating__value");
+    //   if (ratingCounter && widgetReviewsCount) {
+    //     ratingCounter.innerHTML = `${widgetReviewsCount} ${widgetReviewsCount === 1 ? 'review' : 'reviews'}`;
+    //   }
 
-      if (ratingStars && widgetRating) {
-        const tempRate = Number(widgetRating.getAttribute("content")) / 5 * 100;
-        ratingStars.style.width = `${tempRate}%`;
-      }
-    }
+    //   if (ratingStars && widgetRating) {
+    //     const tempRate = Number(widgetRating.getAttribute("content")) / 5 * 100;
+    //     ratingStars.style.width = `${tempRate}%`;
+    //   }
+    // }
 
 
     const styleTag = document.createElement("style");

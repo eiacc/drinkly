@@ -288,6 +288,8 @@
       {% if rating and reviews %}
         {% render 'rating', reviews: reviews, text_alignment: text_alignment %}
       {% endif %}
+
+      {% render 'stamped', product: product %}
     </a>
 
     {% if settings.enable_color_swatch %}

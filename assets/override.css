@@ -344,3 +344,7 @@ custom-variant-picker {
 .wt-product__option__body--swatches input.disabled + label::after {
   background-color: transparent;
 }
+
+.stamped-badge-starrating {
+  margin-right: .5rem!important;
+}

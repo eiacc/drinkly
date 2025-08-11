@@ -1326,8 +1326,8 @@
                 </drawer-select>
               </div>
             {%- when 'rating' -%}
-              {% render 'rating', reviews: product.metafields.reviews, main_product: true %}
-
+              {% comment %} {% render 'rating', reviews: product.metafields.reviews, main_product: true %} {% endcomment %}
+              {% render 'stamped', product: product %}
             {%- when 'text' -%}
               <span
                 class="wt-product__text-block__title headline__title {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}"
