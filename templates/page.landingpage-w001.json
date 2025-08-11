@@ -58,7 +58,7 @@
       "settings": {
         "desktop_text_horizontal_position": "center",
         "color-body-text": "transparent",
-        "background_color": "transparent",
+        "background_color": "#f7f3ee",
         "margin-top": 20,
         "margin-bottom": 20
       }
@@ -67,7 +67,7 @@
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "title": "Select a Design to start Customising",
+        "title": "Select a Design to Start Personalising",
         "disable_on_mobile": false,
         "hide_empty_section": false,
         "collection": "wedding-cocktails",
@@ -207,6 +207,7 @@
         "text_VK9Yiq",
         "button_Hk3W4F"
       ],
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "heading": "",
@@ -334,6 +335,7 @@
         "benefit_JmYY7A",
         "benefit_wwBBA6"
       ],
+      "disabled": true,
       "name": "t:sections.benefits_product.name",
       "settings": {
         "heading": "",
@@ -361,8 +363,8 @@
       "settings": {
         "button_select": "primary",
         "button_horizontal_position": "center",
-        "button_label": "SHOP WEDDING FAVOURS",
-        "button_link": "",
+        "button_label": "SELECT YOUR DESIGN",
+        "button_link": "#top_featcol",
         "margin-top": 20,
         "margin-bottom": 20,
         "background_color": "rgba(0,0,0,0)"
