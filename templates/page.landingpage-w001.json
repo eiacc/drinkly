@@ -128,8 +128,8 @@
       "settings": {
         "color-body-text": "#151515",
         "background_color": "#edf5f4",
-        "margin-top": 100,
-        "margin-bottom": 100
+        "margin-top": 76,
+        "margin-bottom": 76
       }
     },
     "features_banner_bX7rTW": {
@@ -292,7 +292,7 @@
           "type": "button",
           "settings": {
             "button_select": "primary",
-            "button_label": "START YOUR DESING NOW",
+            "button_label": "START YOUR DESIGN NOW",
             "button_link": "#top_featcol",
             "disable_on_mobile": false
           }
