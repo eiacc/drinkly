@@ -30,7 +30,7 @@
         "text_wbKEwH": {
           "type": "text",
           "settings": {
-            "text": "Luxurious Wedding Cocktails, Personalised to Perfection",
+            "text": "The Easiest Way to Add a Touch of Luxury to Your Wedding",
             "font_uppercase": "none",
             "disable_on_mobile": false,
             "size_heading": 100,
@@ -44,7 +44,7 @@
         "heading_383H9U": {
           "type": "heading",
           "settings": {
-            "subheading": "<p>Select your design, personalise the label, choose your cocktails and let us take care of the rest. <br/>All-natural, beautifully bottled, and 100% Australian made.</p>",
+            "subheading": "<p>Personalise the label, choose your cocktails and let us take care of the rest. <br/>All-natural, beautifully bottled, and 100% Australian made.</p>",
             "font_uppercase": "none",
             "disable_on_mobile": false
           }
@@ -92,6 +92,44 @@
         "background_color": "transparent",
         "margin-top": 20,
         "margin-bottom": 20
+      }
+    },
+    "newsletter_jEkxVg": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_MiEHX3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get $25 off",
+            "heading_disable_on_mobile": false,
+            "size_heading": 200,
+            "size_heading_mobile": 180
+          }
+        },
+        "paragraph_tzUmKA": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "<p>Join our email list to receive $25 off your first order!</p>",
+            "text_disable_on_mobile": false
+          }
+        },
+        "email_form_eC3tEf": {
+          "type": "email_form",
+          "settings": {
+            "button_select": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MiEHX3",
+        "paragraph_tzUmKA",
+        "email_form_eC3tEf"
+      ],
+      "settings": {
+        "color-body-text": "#151515",
+        "background_color": "#edf5f4",
+        "margin-top": 100,
+        "margin-bottom": 100
       }
     },
     "features_banner_bX7rTW": {
@@ -254,8 +292,8 @@
           "type": "button",
           "settings": {
             "button_select": "primary",
-            "button_label": "SHOP WEDDING FAVOURS",
-            "button_link": "shopify://collections/wedding-cocktails",
+            "button_label": "START YOUR DESING NOW",
+            "button_link": "#top_featcol",
             "disable_on_mobile": false
           }
         }
@@ -426,57 +464,19 @@
         "margin-bottom": 52,
         "background_color": "rgba(0,0,0,0)"
       }
-    },
-    "newsletter_jEkxVg": {
-      "type": "newsletter",
-      "blocks": {
-        "heading_MiEHX3": {
-          "type": "heading",
-          "settings": {
-            "heading": "Get $20 off your first order",
-            "heading_disable_on_mobile": false,
-            "size_heading": 200,
-            "size_heading_mobile": 180
-          }
-        },
-        "paragraph_tzUmKA": {
-          "type": "paragraph",
-          "settings": {
-            "paragraph": "<p>Join our email list for exclusive offers and the latest news.</p>",
-            "text_disable_on_mobile": false
-          }
-        },
-        "email_form_eC3tEf": {
-          "type": "email_form",
-          "settings": {
-            "button_select": "primary"
-          }
-        }
-      },
-      "block_order": [
-        "heading_MiEHX3",
-        "paragraph_tzUmKA",
-        "email_form_eC3tEf"
-      ],
-      "settings": {
-        "color-body-text": "#151515",
-        "background_color": "#edf5f4",
-        "margin-top": 100,
-        "margin-bottom": 100
-      }
     }
   },
   "order": [
     "main",
     "rich_text_with_image_6CR4ra",
     "featured_collection_yfgptR",
+    "newsletter_jEkxVg",
     "features_banner_bX7rTW",
     "image_banner_pwxXE9",
     "rich_text_3PnVUe",
     "benefits_product_nN3UYD",
     "button_dNqtVc",
     "testimonial_images_q7xd4V",
-    "button_QPxrMf",
-    "newsletter_jEkxVg"
+    "button_QPxrMf"
   ]
 }
