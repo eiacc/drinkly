@@ -568,7 +568,8 @@
 /**
  * /snippets/component-button.liquid
  */
-button {
+button,
+a.btn {
   background: var(--color-button-secondary-background);
   color: var(--color-button-secondary-text);
   border-color: var(--color-button-secondary-border);

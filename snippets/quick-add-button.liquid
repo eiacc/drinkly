@@ -1,6 +1,93 @@
+<a
+aria-label="{{ 'products.product.choose_option' | t }}"
+href="{{ url }}"
+class="btn button--full-width hero__button--secondary"
+type="button"
+class="form__send__button wt-contact__form__send--{{ block.settings.button_select }}"
+name="commit"
+data-product-url="{{ card_product.url }}"
+tabindex="0"
+{% if card_product.available == false %}
+  disabled
+{% endif %}
+aria-label="
+  {%- if card_product.available -%}
+    {{ 'products.product.add_to_cart' | t }}
+  {%- else -%}
+    {{ 'products.product.sold_out' | t }}
+  {%- endif -%}
+"
+>
+<span>
+  {%- if card_product.available -%}
+    {{ 'products.product.choose_option' | t }}
+  {%- else -%}
+    {{ 'products.product.sold_out' | t }}
+  {%- endif -%}
+</span>
+</a>
+
+  {% comment %}
 {% if card_product.variants.size > 1 %}
+  <a
+    aria-label="{{ 'products.product.choose_option' | t }}"
+    href="{{ url }}"
+    class="button--full-width hero__button--secondary"
+    type="button"
+    class="form__send__button wt-contact__form__send--{{ block.settings.button_select }}"
+    name="commit"
+    data-product-url="{{ card_product.url }}"
+    tabindex="0"
+    {% if card_product.available == false %}
+      disabled
+    {% endif %}
+    aria-label="
+      {%- if card_product.available -%}
+        {{ 'products.product.add_to_cart' | t }}
+      {%- else -%}
+        {{ 'products.product.sold_out' | t }}
+      {%- endif -%}
+    "
+  >
+    <span>
+      {%- if card_product.available -%}
+        {{ 'products.product.choose_option' | t }}
+      {%- else -%}
+        {{ 'products.product.sold_out' | t }}
+      {%- endif -%}
+    </span>
+  </a>
+
   <quick-add data-product-handle="{{ card_product.handle }}">
-    <button
+    <a
+      aria-label="{{ 'products.product.choose_option' | t }}"
+      href="{{  }}"
+      class="button--full-width hero__button--secondary"
+      type="button"
+      class="form__send__button wt-contact__form__send--{{ block.settings.button_select }}"
+      name="commit"
+      data-product-url="{{ card_product.url }}"
+      tabindex="0"
+      {% if card_product.available == false %}
+        disabled
+      {% endif %}
+      aria-label="
+        {%- if card_product.available -%}
+          {{ 'products.product.add_to_cart' | t }}
+        {%- else -%}
+          {{ 'products.product.sold_out' | t }}
+        {%- endif -%}
+      "
+    >
+      <span>
+        {%- if card_product.available -%}
+          {{ 'products.product.choose_option' | t }}
+        {%- else -%}
+          {{ 'products.product.sold_out' | t }}
+        {%- endif -%}
+      </span>
+    </a>
+     <button
       aria-label="{{ 'products.product.choose_option' | t }}"
       class="button--full-width hero__button--secondary"
       type="button"
@@ -78,3 +165,4 @@
     {%- endform -%}
   </product-form>
 {% endif %}
+  {% endcomment %}
