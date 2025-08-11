@@ -986,7 +986,7 @@
                   </drawer-select>
                 </div>
               {%- when 'rating' -%}
-                {% render 'rating', reviews: product.metafields.reviews, main_product: true %}
+                {% comment %} {% render 'rating', reviews: product.metafields.reviews, main_product: true %} {% endcomment %}
 
               {%- when 'text' -%}
                 <span
