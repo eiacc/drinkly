@@ -24,11 +24,50 @@
         "margin-bottom": 60
       }
     },
+    "rich_text_with_image_6CR4ra": {
+      "type": "rich-text-with-image",
+      "blocks": {
+        "text_wbKEwH": {
+          "type": "text",
+          "settings": {
+            "text": "Luxurious Wedding Cocktails, Personalised to Perfection",
+            "font_uppercase": "none",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100,
+            "line_height": 1.5,
+            "button_link1": "",
+            "button_link2": "",
+            "button_link3": ""
+          }
+        },
+        "heading_383H9U": {
+          "type": "heading",
+          "settings": {
+            "subheading": "<p>Select your design, personalise the label, choose your cocktails and let us take care of the rest. <br/>All-natural, beautifully bottled, and 100% Australian made.</p>",
+            "font_uppercase": "none",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "text_wbKEwH",
+        "heading_383H9U"
+      ],
+      "name": "t:sections.rich-text-with-image.presets.name",
+      "settings": {
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "transparent",
+        "background_color": "transparent",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
     "featured_collection_yfgptR": {
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "title": "Start Customising A Design",
+        "title": "Select a Design to start Customising",
         "disable_on_mobile": false,
         "hide_empty_section": false,
         "collection": "wedding-cocktails",
@@ -53,6 +92,73 @@
         "background_color": "transparent",
         "margin-top": 20,
         "margin-bottom": 20
+      }
+    },
+    "features_banner_bX7rTW": {
+      "type": "features-banner",
+      "blocks": {
+        "image_GpMVhh": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/ship-icon.png",
+            "select_icon": "close",
+            "heading": "Fast & Free Shipping",
+            "text": "<p>Free for orders over $50. Includes free package insurance to your door to cover accidental breakage.</p>",
+            "link": ""
+          }
+        },
+        "image_tJB4KQ": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Aus-icon.png",
+            "select_icon": "bag",
+            "heading": "Australian Made",
+            "text": "<p>From farm to bottle to printing, made from local producers and suppliers in our distillery in Melbourne.</p>",
+            "link": ""
+          }
+        },
+        "image_m9Fpye": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/leaf-icon.png",
+            "select_icon": "bag",
+            "heading": "Real Ingredients",
+            "text": "<p>No lab flavours or colours, we use only fruits and botanicals for our drinks.</p>",
+            "link": ""
+          }
+        },
+        "image_3FkQF3": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/recycle-icon.png",
+            "select_icon": "bag",
+            "heading": "Recyclable",
+            "text": "<p>All packaging is recyclable and the ornamental glass bottles make great vases we encourage re-using.</p>",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_GpMVhh",
+        "image_tJB4KQ",
+        "image_m9Fpye",
+        "image_3FkQF3"
+      ],
+      "settings": {
+        "heading": "Why Drinkly",
+        "size_heading_mobile": 80,
+        "size_heading": 70,
+        "icon_width_mobile": 52,
+        "icon_width_desktop": 64,
+        "icon_layout": "center",
+        "columns_desktop": "4",
+        "icon_layout_mobile": "grid",
+        "color_body_icon": "rgba(0,0,0,0)",
+        "color_background_icon": "rgba(0,0,0,0)",
+        "color_body_text": "rgba(0,0,0,0)",
+        "background_color": "#f7f3ee",
+        "margin-top": 88,
+        "margin-bottom": 88
       }
     },
     "image_banner_pwxXE9": {
@@ -360,7 +466,9 @@
   },
   "order": [
     "main",
+    "rich_text_with_image_6CR4ra",
     "featured_collection_yfgptR",
+    "features_banner_bX7rTW",
     "image_banner_pwxXE9",
     "rich_text_3PnVUe",
     "benefits_product_nN3UYD",
