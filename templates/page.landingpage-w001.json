@@ -57,8 +57,8 @@
       "name": "t:sections.rich-text-with-image.presets.name",
       "settings": {
         "desktop_text_horizontal_position": "center",
-        "color-body-text": "transparent",
-        "background_color": "#f7f3ee",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
         "margin-top": 20,
         "margin-bottom": 0
       }
@@ -88,8 +88,8 @@
         "show_vendor": false,
         "show_product_rating": true,
         "enable_quick_add_button": false,
-        "color-body-text": "transparent",
-        "background_color": "transparent",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
         "margin-top": 20,
         "margin-bottom": 20
       }
