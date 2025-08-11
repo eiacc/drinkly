@@ -12,11 +12,10 @@
       endif
     endfor
 
-    assign variant_ids = settings.product_discount.variants | map: 'id'
     assign total_quantity = 0
 
     for item in cart.items
-      if variant_ids contains item.variant_id
+      if discounted_product_ids contains item.variant_id
         assign total_quantity = total_quantity | plus: item.quantity
       endif
     endfor
