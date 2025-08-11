@@ -44,7 +44,7 @@
         "heading_383H9U": {
           "type": "heading",
           "settings": {
-            "subheading": "<p>Personalise the label, choose your cocktails and let us take care of the rest. <br/>All-natural, beautifully bottled, and 100% Australian made.</p>",
+            "subheading": "<p>Personalise a design, choose your cocktails and we do the rest. <br/></p>",
             "font_uppercase": "none",
             "disable_on_mobile": false
           }
@@ -60,21 +60,21 @@
         "color-body-text": "transparent",
         "background_color": "#f7f3ee",
         "margin-top": 20,
-        "margin-bottom": 20
+        "margin-bottom": 0
       }
     },
     "featured_collection_yfgptR": {
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "title": "Select a Design to Start Personalising",
+        "title": "",
         "disable_on_mobile": false,
         "hide_empty_section": false,
         "collection": "wedding-cocktails",
         "product_list": [],
-        "products_to_show": 8,
+        "products_to_show": 4,
         "enable_stack_products": true,
-        "show_view_all": false,
+        "show_view_all": true,
         "button_select": "primary",
         "number_of_column_desktop": 4,
         "spacing_desktop": "8",
@@ -87,7 +87,7 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_product_rating": true,
-        "enable_quick_add_button": true,
+        "enable_quick_add_button": false,
         "color-body-text": "transparent",
         "background_color": "transparent",
         "margin-top": 20,
@@ -102,8 +102,8 @@
           "settings": {
             "heading": "Get $20 off",
             "heading_disable_on_mobile": false,
-            "size_heading": 200,
-            "size_heading_mobile": 180
+            "size_heading": 180,
+            "size_heading_mobile": 100
           }
         },
         "paragraph_tzUmKA": {
