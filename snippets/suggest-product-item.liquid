@@ -21,10 +21,10 @@
         </div>
       {% endif %}
 
-      {% if rating %}
+      {% comment %} {% if rating %}
         {% assign rating_percent = rating.rating | times: 100.0 | divided_by: 5.0 %}
         {% render 'rating-stars', percent: rating_percent %}
-      {% endif %}
+      {% endif %} {% endcomment %}
     </div>
   </div>
 </a>

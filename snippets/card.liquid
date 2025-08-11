@@ -285,9 +285,9 @@
     {%endcomment%}
     {%# ORIGINAL CODE END  %}
 
-      {% if rating and reviews %}
+      {% comment %} {% if rating and reviews %}
         {% render 'rating', reviews: reviews, text_alignment: text_alignment %}
-      {% endif %}
+      {% endif %} {% endcomment %}
 
       {% render 'stamped', product: product %}
     </a>
