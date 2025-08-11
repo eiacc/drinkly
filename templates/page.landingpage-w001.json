@@ -100,7 +100,7 @@
         "heading_MiEHX3": {
           "type": "heading",
           "settings": {
-            "heading": "Get $25 off",
+            "heading": "Get $20 off",
             "heading_disable_on_mobile": false,
             "size_heading": 200,
             "size_heading_mobile": 180
@@ -109,7 +109,7 @@
         "paragraph_tzUmKA": {
           "type": "paragraph",
           "settings": {
-            "paragraph": "<p>Join our email list to receive $25 off your first order!</p>",
+            "paragraph": "<p>Join our email list to receive $20 off your first order over $99!</p>",
             "text_disable_on_mobile": false
           }
         },
