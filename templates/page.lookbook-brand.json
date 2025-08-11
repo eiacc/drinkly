@@ -71,7 +71,47 @@
         "image_beMh8x": {
           "type": "image",
           "settings": {
+            "desktop_image": "shopify://shop_images/ISP_-_Corporate_Single_-_Salesforce_-_1x1_-_01.webp",
+            "button_select": "primary",
+            "link": ""
+          }
+        },
+        "image_a9WQa4": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/ISP_-_Mixed_Corporate_Labels_-_White_Background_-_Flat_Pack_-_MISC_Size_-_12.webp",
+            "button_select": "primary",
+            "link": ""
+          }
+        },
+        "image_FQ4BR9": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/ISP_-_Custom_Espresso_Martini_Multiple_Brands_-_16x9_-_White_Wall_-_37.webp",
+            "button_select": "primary",
+            "link": ""
+          }
+        },
+        "image_NcwYbk": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/ISP_-_Custom_Espresso_Martini_-_16x9_-_White_Wall_-_07.webp",
+            "button_select": "primary",
+            "link": ""
+          }
+        },
+        "image_B3883M": {
+          "type": "image",
+          "settings": {
             "desktop_image": "shopify://shop_images/Keo_-_Gift_Set.webp",
+            "button_select": "primary",
+            "link": ""
+          }
+        },
+        "image_gFDkkh": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/ISP_-_Custom_Label_-_Grooming_for_Man_-_White_Background_-_Flat_Pack_-_MISC_Size_-_04.webp",
             "button_select": "primary",
             "link": ""
           }
@@ -85,7 +125,12 @@
         "image_yDLfTA",
         "image_iBEXHc",
         "image_7nAMfa",
-        "image_beMh8x"
+        "image_beMh8x",
+        "image_a9WQa4",
+        "image_FQ4BR9",
+        "image_NcwYbk",
+        "image_B3883M",
+        "image_gFDkkh"
       ],
       "settings": {
         "heading": "Brand Inspiration",
