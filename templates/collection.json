@@ -52,7 +52,7 @@
         "size_heading": 140,
         "size_heading_mobile": 120,
         "color-body-text": "#000000",
-        "background_color": "#f7f3ee",
+        "background_color": "rgba(0,0,0,0)",
         "margin-top": 24,
         "margin-bottom": 32
       }
@@ -70,8 +70,8 @@
         "show_video": false,
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_product_rating": false,
-        "enable_quick_add_button": true,
+        "show_product_rating": true,
+        "enable_quick_add_button": false,
         "text_alignment": "center",
         "toolbar_style": "buttons",
         "enable_sorting": true,
@@ -280,26 +280,26 @@
         "margin-bottom": 20
       }
     },
-    "newsletter_KQitJE": {
+    "newsletter_gPR3fw": {
       "type": "newsletter",
       "blocks": {
-        "heading_KhxnCQ": {
+        "heading_RWyEew": {
           "type": "heading",
           "settings": {
-            "heading": "Get 10% off your first order",
+            "heading": "Get $20 off",
             "heading_disable_on_mobile": false,
-            "size_heading": 200,
-            "size_heading_mobile": 160
+            "size_heading": 150,
+            "size_heading_mobile": 130
           }
         },
-        "paragraph_KJ3cj8": {
+        "paragraph_BMBnXT": {
           "type": "paragraph",
           "settings": {
-            "paragraph": "<p>Be the first to know about new collections and exclusive offers.</p>",
+            "paragraph": "<p>Join our email list and get $20 off your first order over $99.</p>",
             "text_disable_on_mobile": false
           }
         },
-        "email_form_UAcpDk": {
+        "email_form_JHAPwK": {
           "type": "email_form",
           "settings": {
             "button_select": "primary"
@@ -307,15 +307,15 @@
         }
       },
       "block_order": [
-        "heading_KhxnCQ",
-        "paragraph_KJ3cj8",
-        "email_form_UAcpDk"
+        "heading_RWyEew",
+        "paragraph_BMBnXT",
+        "email_form_JHAPwK"
       ],
       "settings": {
-        "color-body-text": "rgba(0,0,0,0)",
-        "background_color": "#ecf5f4",
-        "margin-top": 100,
-        "margin-bottom": 100
+        "color-body-text": "#151515",
+        "background_color": "#edf5f4",
+        "margin-top": 52,
+        "margin-bottom": 52
       }
     },
     "rich_text_XhpFjh": {
@@ -341,7 +341,7 @@
           "type": "button",
           "settings": {
             "button_select": "primary",
-            "button_label": "SHOP FULLY CUSTOMISED",
+            "button_label": "PICK A DESIGN",
             "button_link": "#top",
             "disable_on_mobile": false
           }
@@ -371,7 +371,7 @@
     "rich_text_bGVGWR_2",
     "features_banner_Xqw4VW",
     "testimonial_images_PAzxhF",
-    "newsletter_KQitJE",
+    "newsletter_gPR3fw",
     "rich_text_XhpFjh"
   ]
 }
