@@ -150,7 +150,7 @@
       },
       "15472879455061085326": {
         "type": "shopify://apps/avada-order-limits/blocks/app-embed/d3021427-4f7b-49c8-8963-29d1d52b8956",
-        "disabled": true,
+        "disabled": false,
         "settings": {}
       }
     }
