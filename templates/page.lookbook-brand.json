@@ -111,6 +111,14 @@
         "image_gFDkkh": {
           "type": "image",
           "settings": {
+            "desktop_image": "shopify://shop_images/ISP_-_Corporate_Foxtails_-_MISC.webp",
+            "button_select": "primary",
+            "link": ""
+          }
+        },
+        "image_KaUdtb": {
+          "type": "image",
+          "settings": {
             "desktop_image": "shopify://shop_images/ISP_-_Custom_Label_-_Grooming_for_Man_-_White_Background_-_Flat_Pack_-_MISC_Size_-_04.webp",
             "button_select": "primary",
             "link": ""
@@ -130,7 +138,8 @@
         "image_FQ4BR9",
         "image_NcwYbk",
         "image_B3883M",
-        "image_gFDkkh"
+        "image_gFDkkh",
+        "image_KaUdtb"
       ],
       "settings": {
         "heading": "Brand Inspiration",
