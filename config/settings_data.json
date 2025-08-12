@@ -9,6 +9,7 @@
  */
 {
   "current": {
+    "favicon": "shopify://shop_images/Drinky_Logomark_clear.png",
     "layout-width": 1600,
     "radius": 14,
     "button-radius": 30,
