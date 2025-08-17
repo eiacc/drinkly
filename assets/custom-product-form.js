@@ -79,10 +79,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
   
         filterList() {
-          const tags = productData.variants.map(variant => variant.tags).flat();
+          const tags = productData.variants
+            .filter(variant => Array.isArray(variant.tags)) // only keep variants with tags
+            .flatMap(variant => variant.tags);
+        
           const uniqueTags = [...new Set(tags)];
-  
+        
           uniqueTags.forEach(tag => {
+            if (!tag) return; // skip empty strings/null just in case
+        
             const li = document.createElement('li');
             li.classList.add('f-button__list__item', 'f-button__list__item--button');
             const id = `drawer-filter-${crypto.randomUUID()}`;

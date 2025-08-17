@@ -18,10 +18,15 @@
         "price": {{ variant.price | money | json }},
         {% if variant.featured_media %}
           "featured_image": {{ variant.featured_media | image_url: width: 600 | json }},
-          "featured_image_id": {{ variant.featured_media.id | json }},
+          "featured_image_id": {{ variant.featured_media.id | json }}
         {% endif %}
-        "tags": {{ variant.metafields.custom.tag | default: '[]' | json }}{% if variant.metafields.custom.minimum_quantity and variant.metafields.custom.minimum_quantity > 0 %},
-        "minimum_quantity": {{ variant.metafields.custom.minimum_quantity | json }}{% endif %}
+        {% if variant.metafields.custom.tag != blank %},
+          "tags": {{ variant.metafields.custom.tag | json }}
+        {% endif %}
+
+        {% if variant.metafields.custom.minimum_quantity and variant.metafields.custom.minimum_quantity > 0 %},
+          "minimum_quantity": {{ variant.metafields.custom.minimum_quantity | json }}
+        {% endif %}
       }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ],
