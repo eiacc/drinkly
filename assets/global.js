@@ -169,7 +169,7 @@ class QuantityCounter extends HTMLElement {
     if (this.minimumQuantity) {
       this.min = parseInt(this.minimumQuantity);
 
-      if (this.popupError) {
+      if (this.popupError && this.min >= currentValue) {
         this.popupError.setAttribute('data-state', 'active');
         this.popupError.querySelector('.product-cart-popup__title').innerHTML = `The minimum quantity for <strong>${this.getAttribute('data-item-title')}</strong> is <strong>${this.minimumQuantity}</strong>`;
       }
