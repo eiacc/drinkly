@@ -1,5 +1,5 @@
 window.productSummary = [];
-document.addEventListener("DOMContentLoaded", () => {  
+document.addEventListener("DOMContentLoaded", () => {
   if (!customElements.get("custom-product-form")) {
     customElements.define(
       "custom-product-form",
@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
           this.cart_button = null
           this.variant_size = this.querySelectorAll('[data-field]');
           this.product_popup_cart = document.querySelector('.product-cart-popup');
+          this.product_popup_error = document.querySelector('.product-cart-popup--error');
   
           this.product_popup_cart_update_button = null
           this.product_popup_cart_cancel_buttons = []
@@ -50,14 +51,13 @@ document.addEventListener("DOMContentLoaded", () => {
         init() {
           const variants = Array.isArray(productData?.variants) ? productData.variants : [];
           this.cart_button = document.getElementById("cart-icon-bubble");
-        
-          this.variant_image_wrappers.forEach(wrapper => {
-            const identifier = wrapper.dataset.productSubId;
-            
-            if (!identifier) return;
+          
+          for (const wrapper of this.variant_image_wrappers) {
+            const identifier = wrapper.getAttribute('data-product-sub-id');
+            if (!identifier) continue;
             
             const variant = variants.find(v => v.sub_id?.includes(identifier));
-            
+
             wrapper.innerHTML = '';
             if (variant?.featured_image) {
               const img = document.createElement('img');
@@ -65,14 +65,12 @@ document.addEventListener("DOMContentLoaded", () => {
               img.alt = variant.title || 'Product Image';
               wrapper.innerHTML = '';
               wrapper.appendChild(img);
-
-              // attach featured image id to input[name="quantity"]
+  
               const quantity_input = wrapper.parentElement.lastElementChild;
               if (quantity_input) quantity_input.dataset.featuredImageId = variant.featured_image_id;
             }
-  
-            wrapper.setAttribute('data-variant-tags', variant.tags.join(','));
-          });
+          }
+          
           this.filterList();
         }
   
@@ -173,16 +171,28 @@ document.addEventListener("DOMContentLoaded", () => {
     
             let totalVariants = 0;
             cart_temp.forEach(item => {
+              const prop = properties;
               const variant = variants.find(variant => variant.sub_id === item.sub_id);
               if (!variant.available && variant.inventory_quantity < 1) return;
   
               const qty = item.quantity > variant.inventory_quantity && !variant.available ? variant.inventory_quantity : item.quantity
               totalVariants += Number(qty);
+
+              if (variant.minimum_quantity ) {
+                prop['_minimum_quantity'] = variant.minimum_quantity;
+                if (Number(qty) < variant.minimum_quantity) {
+                  const err = new Error(`The minimum quantity for <strong>${variant.product.title}${variant.title ? ` - ${variant.title}` : ''}</strong> is <strong>${variant.minimum_quantity}</strong>`);
+                  err.data = {
+                    'status': 'minimum_quantity',
+                  }
+                  throw err;
+                }
+              }
   
               cart.push({
                 id: variant.id,
                 quantity: qty,
-                properties
+                properties: prop
               });
             });
   
@@ -208,8 +218,6 @@ document.addEventListener("DOMContentLoaded", () => {
   
               throw new Error('alter_cart');
             }
-    
-            console.log('cart', cart);
 
             const response = await fetch('/cart/add.js', {
               method: 'POST',
@@ -235,8 +243,12 @@ document.addEventListener("DOMContentLoaded", () => {
             this.buttonLoad(false);
   
             if (error.message === 'alter_cart') {
-              // console.error('error', error);
               this.product_popup_cart.setAttribute('data-state', 'active');
+            }
+
+            if (error.data?.status === 'minimum_quantity') {
+              this.product_popup_error.querySelector('.product-cart-popup__title').innerHTML = error.message;
+              this.product_popup_error.setAttribute('data-state', 'active');
             }
           }
         }

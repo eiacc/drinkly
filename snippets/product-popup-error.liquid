@@ -1,0 +1,78 @@
+{% style %}
+  .product-cart-popup[data-state="active"] {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .product-cart-popup {
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    pointer-events: none;
+  }
+
+  .product-cart-popup__content {
+    text-align: center;
+    background-color: white;
+    padding: 1.6rem 2.4rem;
+    width: max-content;
+    max-width: 450px;
+  }
+
+  .product-cart-popup__actions {
+    display: flex;
+    justify-content: center;
+    gap: .75rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    .product-cart-popup__content {
+      width: 100%;
+      max-width: 320px;
+    }
+
+    .product-cart-popup__title {
+      font-size: 1.6rem;
+      margin-bottom: 2.6rem;
+    }
+  }
+{% endstyle %}
+
+<popup-error class="product-cart-popup product-cart-popup--error" data-state="" data-button-type="cancel">
+  <div class="product-cart-popup__content">
+    <p class="product-cart-popup__title"></p>
+    <br>
+    <div class="product-cart-popup__actions">
+      <button class="product-cart-popup__action product-cart-popup__action--cancel" data-button-type="cancel">Cancel</button>
+    </div>
+  </div>
+</popup-error>
+
+<script>
+  if (!customElements.get('popup-error')) {
+    customElements.define('popup-error', class extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.querySelector('[data-button-type="cancel"]').addEventListener('click', this.close.bind(this));
+      }
+
+      close() {
+        this.setAttribute('data-state', '');
+      }
+    });
+  }
+</script>

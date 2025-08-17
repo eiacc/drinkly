@@ -2,10 +2,13 @@
 {
   "variants": [
     {% for variant in product.variants %}
-      {%- assign sub_id = variant.options | join: '-' | split: ' ' | join: '-' | downcase -%}
+      {%- assign sub_id = variant.options | join: '-' | replace: ' ', '-' | downcase -%}
       {
         "id": {{ variant.id | json }},
         "sub_id": {{ sub_id | json }},
+        "product": {
+          "title": {{ product.title | json }}
+        },
         "title": {{ variant.title | json }},
         "option1": {{ variant.option1 | json }},
         "option2": {{ variant.option2 | json }},
@@ -17,7 +20,8 @@
           "featured_image": {{ variant.featured_media | image_url: width: 600 | json }},
           "featured_image_id": {{ variant.featured_media.id | json }},
         {% endif %}
-        "tags": {{ variant.metafields.custom.tag | default: '[]' }}
+        "tags": {{ variant.metafields.custom.tag | default: '[]' | json }}{% if variant.metafields.custom.minimum_quantity and variant.metafields.custom.minimum_quantity > 0 %},
+        "minimum_quantity": {{ variant.metafields.custom.minimum_quantity | json }}{% endif %}
       }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ],

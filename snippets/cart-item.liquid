@@ -138,7 +138,7 @@
     </div>
     <div class="wt-cart__item__amount cart-page">
       <div class="item__details">
-        <quantity-counter class="counter-wrapper" data-cart="true">
+        <quantity-counter data-item-title="{{ item.title | default: item.product.title }}" {% if item.properties['_minimum_quantity'] %}data-minimum-quantity="{{ item.properties['_minimum_quantity'] }}"{% endif %} class="counter-wrapper" data-cart="true">
           <div class="counter">
             <button
               aria-label="{{- 'products.product.quantity.decrease' | t: product: item.product.title | escape -}}"

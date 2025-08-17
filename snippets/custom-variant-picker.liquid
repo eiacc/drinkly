@@ -247,7 +247,7 @@
       </custom-variant-options>
     {%- endunless -%}
   </div>
-
+  
   {%- assign product_add_on = block.settings.add_on -%}
   {% if product_add_on != blank %}
     {%- assign product_add_on_handle = product_add_on.handle | replace: '-', '_'-%}

@@ -140,6 +140,8 @@ class QuantityCounter extends HTMLElement {
   constructor() {
     super();
     this.changeEvent = new Event("change", { bubbles: true });
+    this.minimumQuantity = this.dataset.minimumQuantity || null;
+    this.popupError = document.querySelector('.product-cart-popup--error') || null;
   }
 
   connectedCallback() {
@@ -164,6 +166,14 @@ class QuantityCounter extends HTMLElement {
   onDecrease() {
     const currentValue = parseInt(this.counterEl.value);
     if (this.dataset.cart) this.min = 0;
+    if (this.minimumQuantity) {
+      this.min = parseInt(this.minimumQuantity);
+
+      if (this.popupError) {
+        this.popupError.setAttribute('data-state', 'active');
+        this.popupError.querySelector('.product-cart-popup__title').innerHTML = `The minimum quantity for <strong>${this.getAttribute('data-item-title')}</strong> is <strong>${this.minimumQuantity}</strong>`;
+      }
+    }
     if (currentValue > this.min) {
       this.updateValue(currentValue - 1);
     }
