@@ -2,7 +2,10 @@
 {
   "variants": [
     {% for variant in product.variants %}
-      {%- assign sub_id = variant.options | join: '-' | replace: ' ', '-' | downcase -%}
+      {%- liquid 
+        assign sub_id = variant.options | join: '-' | replace: ' ', '-' | downcase 
+        assign variant_title = variant.title | downcase  
+      -%}
       {
         "id": {{ variant.id | json }},
         "sub_id": {{ sub_id | json }},
@@ -24,7 +27,13 @@
           "tags": {{ variant.metafields.custom.tag | json }}
         {% endif %}
 
-        {% if variant.metafields.custom.minimum_quantity and variant.metafields.custom.minimum_quantity > 0 %},
+        {% comment %}
+          {% if variant.metafields.custom.minimum_quantity and variant.metafields.custom.minimum_quantity > 0 %},
+            "minimum_quantity": {{ variant.metafields.custom.minimum_quantity | json }}
+          {% endif %}
+        {% endcomment %}
+
+        {% if product.metafields.custom.minimum_quantity and product.metafields.custom.minimum_quantity > 0 and variant_title includes 'deluxe' %},
           "minimum_quantity": {{ variant.metafields.custom.minimum_quantity | json }}
         {% endif %}
       }{% unless forloop.last %},{% endunless %}
