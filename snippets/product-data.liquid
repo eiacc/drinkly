@@ -33,7 +33,7 @@
           {% endif %}
         {% endcomment %}
 
-        {% if product.metafields.custom.minimum_quantity and product.metafields.custom.minimum_quantity > 0 and variant_title includes 'deluxe' %},
+        {% if product.metafields.custom.minimum_quantity and product.metafields.custom.minimum_quantity > 0 and variant_title contains 'deluxe' %},
           "minimum_quantity": {{ variant.metafields.custom.minimum_quantity | json }}
         {% endif %}
       }{% unless forloop.last %},{% endunless %}
