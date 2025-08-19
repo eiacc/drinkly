@@ -456,13 +456,16 @@ document.addEventListener("DOMContentLoaded", () => {
       }
   
       handleEvent(type = null) {
-        console.log('test')
         this.pullData();
-      
+        
         const hasAllInputs = this.inputNames.every(name =>
           this.data.some(obj => obj.name === name)
         );
-      
+
+        console.log('test', this.data)
+        console.log('this.size', this.size)
+        console.log('hasAll', hasAllInputs)
+        
         if (this.data.length >= this.size && hasAllInputs) {
           this.enable();
         } else {
