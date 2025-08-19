@@ -576,7 +576,7 @@
             "desktop_image": "shopify://shop_images/Aus-icon.png",
             "select_icon": "bag",
             "heading": "Australian Made",
-            "text": "<p>From farm to bottle to printing, made from local producers and suppliers in our distillery in Melbourne.</p>",
+            "text": "<p>From local farms to our Melbourne distillery, every bottle is crafted and printed right here at home.</p>",
             "link": ""
           }
         },
@@ -586,7 +586,7 @@
             "desktop_image": "shopify://shop_images/leaf-icon.png",
             "select_icon": "bag",
             "heading": "Real Ingredients",
-            "text": "<p>No lab flavours or colours, we use only fruits and botanicals for our drinks.</p>",
+            "text": "<p>No lab flavours or colours, we use only real fruits and botanicals for our drinks.</p>",
             "link": ""
           }
         },
@@ -607,6 +607,7 @@
         "164580331573ddb00a-2",
         "164580331573ddb00a-3"
       ],
+      "name": "Drinkly Features",
       "settings": {
         "heading": "",
         "size_heading_mobile": 80,
