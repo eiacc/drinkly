@@ -39,7 +39,7 @@
           "type": "text",
           "settings": {
             "heading_text": "More Info",
-            "text": "<p>Frequently Asked Questions</p>"
+            "text": "<p><a href=\"/pages/faq\" target=\"_blank\" title=\"FAQ\">Frequently Asked Questions</a></p>"
           }
         }
       },
