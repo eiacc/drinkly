@@ -94,7 +94,7 @@
           "settings": {
             "add_on": "",
             "enable_upload": false,
-            "filter_variants": "",
+            "filter_variants": "Non Alc",
             "picker_type": "swatch",
             "color_swatch_names": "Colour",
             "variant_picture_swatch_names": "",
