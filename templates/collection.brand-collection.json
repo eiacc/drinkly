@@ -301,10 +301,10 @@
         "margin-bottom": 20
       }
     },
-    "features_banner_Xqw4VW": {
+    "features_banner_QYp8GQ": {
       "type": "features-banner",
       "blocks": {
-        "image_hq6ykz": {
+        "image_BXgrkL": {
           "type": "image",
           "settings": {
             "desktop_image": "shopify://shop_images/ship-icon.png",
@@ -314,43 +314,44 @@
             "link": ""
           }
         },
-        "image_zffmmm": {
+        "image_JjbVHd": {
           "type": "image",
           "settings": {
             "desktop_image": "shopify://shop_images/Aus-icon.png",
             "select_icon": "bag",
             "heading": "Australian Made",
-            "text": "<p>From farm to bottle to printing, made from local producers and suppliers in our distillery in Melbourne.</p>",
+            "text": "<p>From local farms to our Melbourne distillery, every bottle is crafted and printed right here at home.</p>",
             "link": ""
           }
         },
-        "image_Wt9AbJ": {
+        "image_U7pVLd": {
           "type": "image",
           "settings": {
             "desktop_image": "shopify://shop_images/leaf-icon.png",
             "select_icon": "bag",
             "heading": "Real Ingredients",
-            "text": "<p>We don’t do synthetic. Only real fruit and botanicals, just the way drinks should be.</p>",
+            "text": "<p>No lab flavours or colours, we use only real fruits and botanicals for our drinks.</p>",
             "link": ""
           }
         },
-        "image_QBgM9q": {
+        "image_ej8b99": {
           "type": "image",
           "settings": {
             "desktop_image": "shopify://shop_images/recycle-icon.png",
             "select_icon": "bag",
             "heading": "Recyclable",
-            "text": "<p>Our packaging’s planet-friendly, and the bottles double as vases, because great design deserves a second life.</p>",
+            "text": "<p>All packaging is recyclable and the ornamental glass bottles make great vases we encourage re-using.</p>",
             "link": ""
           }
         }
       },
       "block_order": [
-        "image_hq6ykz",
-        "image_zffmmm",
-        "image_Wt9AbJ",
-        "image_QBgM9q"
+        "image_BXgrkL",
+        "image_JjbVHd",
+        "image_U7pVLd",
+        "image_ej8b99"
       ],
+      "name": "Drinkly Features",
       "settings": {
         "heading": "",
         "size_heading_mobile": 80,
@@ -364,8 +365,8 @@
         "color_background_icon": "rgba(0,0,0,0)",
         "color_body_text": "rgba(0,0,0,0)",
         "background_color": "#f7f3ee",
-        "margin-top": 52,
-        "margin-bottom": 68
+        "margin-top": 88,
+        "margin-bottom": 88
       }
     },
     "testimonial_images_PAzxhF": {
@@ -546,7 +547,7 @@
     "product-grid",
     "brands_p4K6YB",
     "rich_text_bGVGWR_2",
-    "features_banner_Xqw4VW",
+    "features_banner_QYp8GQ",
     "testimonial_images_PAzxhF",
     "newsletter_kqmAX7",
     "rich_text_JdnBGe"

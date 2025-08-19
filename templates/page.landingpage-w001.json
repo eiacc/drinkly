@@ -132,10 +132,10 @@
         "margin-bottom": 20
       }
     },
-    "features_banner_bX7rTW": {
+    "features_banner_fCwT9N": {
       "type": "features-banner",
       "blocks": {
-        "image_GpMVhh": {
+        "image_XmQmMt": {
           "type": "image",
           "settings": {
             "desktop_image": "shopify://shop_images/ship-icon.png",
@@ -145,27 +145,27 @@
             "link": ""
           }
         },
-        "image_tJB4KQ": {
+        "image_mP6iVe": {
           "type": "image",
           "settings": {
             "desktop_image": "shopify://shop_images/Aus-icon.png",
             "select_icon": "bag",
             "heading": "Australian Made",
-            "text": "<p>From farm to bottle to printing, made from local producers and suppliers in our distillery in Melbourne.</p>",
+            "text": "<p>From local farms to our Melbourne distillery, every bottle is crafted and printed right here at home.</p>",
             "link": ""
           }
         },
-        "image_m9Fpye": {
+        "image_gJDV4W": {
           "type": "image",
           "settings": {
             "desktop_image": "shopify://shop_images/leaf-icon.png",
             "select_icon": "bag",
             "heading": "Real Ingredients",
-            "text": "<p>No lab flavours or colours, we use only fruits and botanicals for our drinks.</p>",
+            "text": "<p>No lab flavours or colours, we use only real fruits and botanicals for our drinks.</p>",
             "link": ""
           }
         },
-        "image_3FkQF3": {
+        "image_mfr8iU": {
           "type": "image",
           "settings": {
             "desktop_image": "shopify://shop_images/recycle-icon.png",
@@ -177,13 +177,14 @@
         }
       },
       "block_order": [
-        "image_GpMVhh",
-        "image_tJB4KQ",
-        "image_m9Fpye",
-        "image_3FkQF3"
+        "image_XmQmMt",
+        "image_mP6iVe",
+        "image_gJDV4W",
+        "image_mfr8iU"
       ],
+      "name": "Drinkly Features",
       "settings": {
-        "heading": "Why Drinkly",
+        "heading": "",
         "size_heading_mobile": 80,
         "size_heading": 70,
         "icon_width_mobile": 52,
@@ -195,8 +196,8 @@
         "color_background_icon": "rgba(0,0,0,0)",
         "color_body_text": "rgba(0,0,0,0)",
         "background_color": "#f7f3ee",
-        "margin-top": 20,
-        "margin-bottom": 44
+        "margin-top": 88,
+        "margin-bottom": 88
       }
     },
     "image_banner_pwxXE9": {
@@ -467,7 +468,7 @@
     "rich_text_with_image_6CR4ra",
     "featured_collection_yfgptR",
     "newsletter_jEkxVg",
-    "features_banner_bX7rTW",
+    "features_banner_fCwT9N",
     "image_banner_pwxXE9",
     "rich_text_3PnVUe",
     "benefits_product_nN3UYD",
