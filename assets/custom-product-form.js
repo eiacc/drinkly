@@ -409,7 +409,6 @@ document.addEventListener("DOMContentLoaded", () => {
           });
   
           if (errs > 0) throw new Error('please fill all metaproperties')
-          console.log('properties', properties)
           return properties;
         }
       }
