@@ -465,6 +465,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log('test', this.data)
         console.log('this.size', this.size)
         console.log('hasAll', hasAllInputs)
+        console.log('this.inputNames', this.inputNames)
         
         if (this.data.length >= this.size && hasAllInputs) {
           this.enable();
