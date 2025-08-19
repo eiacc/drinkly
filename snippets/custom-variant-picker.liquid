@@ -301,35 +301,63 @@
 
   {% comment %} if there are no variants {% endcomment %}
   {% if product.has_only_default_variant %}
-    {% assign current_step = current_step | plus: 1 %}
-    <input type="hidden" name="id" data-input="{{ current_step }}" value="{{ product.selected_or_first_available_variant.id }}">
+    <div>
+      <input type="hidden" name="id" data-input="{{ current_step | plus: 1 }}" value="{{ product.selected_or_first_available_variant.id }}">
+      
+      {% render 'component-counter' %}
+      <button
+        aria-label="
+          {%- if product.selected_or_first_available_variant.available -%}
+            {{ 'products.product.add_to_cart' | t }}
+          {%- else -%}
+            {{ 'products.product.sold_out' | t }}
+          {%- endif -%}
+        "
+        id="ProductSubmitButton-{{ section.id }}"
+        type="submit"
+        name="add"
+        class="inline-block js-add-to-cart product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
+        disabled
+      >
+        {% if settings['enable-bag-icon'] %}
+          {% render 'icons', id: 'bag' %}
+        {% endif %}
+        <span>
+          {%- if product.selected_or_first_available_variant.available -%}
+            {{ 'products.product.add_to_cart' | t }}
+          {%- else -%}
+            {{ 'products.product.sold_out' | t }}
+          {%- endif -%}
+        </span>
+        {% render 'button-loading-indicator' %}
+      </button>
+    </div>
+  {% else %}
+    <button
+      aria-label="
+        {%- if product.selected_or_first_available_variant.available -%}
+          {{ 'products.product.add_to_cart' | t }}
+        {%- else -%}
+          {{ 'products.product.sold_out' | t }}
+        {%- endif -%}
+      "
+      id="ProductSubmitButton-{{ section.id }}"
+      type="submit"
+      name="add"
+      class="inline-block js-add-to-cart product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
+      disabled
+    >
+      {% if settings['enable-bag-icon'] %}
+        {% render 'icons', id: 'bag' %}
+      {% endif %}
+      <span>
+        {%- if product.selected_or_first_available_variant.available -%}
+          {{ 'products.product.add_to_cart' | t }}
+        {%- else -%}
+          {{ 'products.product.sold_out' | t }}
+        {%- endif -%}
+      </span>
+      {% render 'button-loading-indicator' %}
+    </button>
   {% endif %}
-
-
-  <button
-    aria-label="
-      {%- if product.selected_or_first_available_variant.available -%}
-        {{ 'products.product.add_to_cart' | t }}
-      {%- else -%}
-        {{ 'products.product.sold_out' | t }}
-      {%- endif -%}
-    "
-    id="ProductSubmitButton-{{ section.id }}"
-    type="submit"
-    name="add"
-    class="inline-block js-add-to-cart product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
-    disabled
-  >
-    {% if settings['enable-bag-icon'] %}
-      {% render 'icons', id: 'bag' %}
-    {% endif %}
-    <span>
-      {%- if product.selected_or_first_available_variant.available -%}
-        {{ 'products.product.add_to_cart' | t }}
-      {%- else -%}
-        {{ 'products.product.sold_out' | t }}
-      {%- endif -%}
-    </span>
-    {% render 'button-loading-indicator' %}
-  </button>
 </custom-variant-picker>
