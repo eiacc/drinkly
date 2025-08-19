@@ -91,7 +91,6 @@
         },
         "custom_variant_picker_6HefFW": {
           "type": "custom_variant_picker",
-          "disabled": true,
           "settings": {
             "add_on": "",
             "enable_upload": false,
@@ -104,6 +103,7 @@
         },
         "variant_picker": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "picker_type": "button",
             "color_swatch_names": "",
