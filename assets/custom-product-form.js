@@ -175,6 +175,12 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!variants || variants.length < 1) return;
     
             let totalVariants = 0;
+
+            let item_data = {
+              minimum_quantity: null,
+              title: null
+            }
+
             cart_temp.forEach(item => {
               const prop = properties;
               const variant = variants.find(variant => variant.sub_id === item.sub_id);
@@ -183,15 +189,10 @@ document.addEventListener("DOMContentLoaded", () => {
               const qty = item.quantity > variant.inventory_quantity && !variant.available ? variant.inventory_quantity : item.quantity
               totalVariants += Number(qty);
 
-              if (variant.minimum_quantity ) {
+              if (variant.minimum_quantity && variant.minimum_quantity > 0) {
                 prop['_minimum_quantity'] = variant.minimum_quantity;
-                if (Number(qty) < variant.minimum_quantity) {
-                  const err = new Error(`The minimum quantity for <strong>${variant.product.title}${variant.title ? ` - ${variant.title}` : ''}</strong> is <strong>${variant.minimum_quantity}</strong>`);
-                  err.data = {
-                    'status': 'minimum_quantity',
-                  }
-                  throw err;
-                }
+                item_data.minimum_quantity = variant.minimum_quantity;
+                item_data.title = variant.product.title + (variant.title ? ` - ${variant.title}` : '');
               }
   
               cart.push({
@@ -200,6 +201,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 properties: prop
               });
             });
+
+            if (item_data.minimum_quantity && item_data.minimum_quantity > 0 && totalVariants < item_data.minimum_quantity) {
+              const err = new Error(`The minimum quantity for <strong>${item_data.title}</strong> is <strong>${item_data.minimum_quantity}</strong>`);
+              err.data = {
+                'status': 'minimum_quantity',
+              }
+              throw err;
+            }
   
             const addOns = this.querySelectorAll('[data-addon] input:checked')
             addOns.forEach(addOn => {
