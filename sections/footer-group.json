@@ -32,22 +32,14 @@
           "type": "text",
           "settings": {
             "heading_text": "About Us",
-            "text": "<p>Welcome to Drinkly by Three Foxes, where unforgettable gifts are bottled, labelled, and ready to impress.<br/><br/>1300 872 306</p>"
-          }
-        },
-        "text_gN3pWy": {
-          "type": "text",
-          "settings": {
-            "heading_text": "Contact Us",
-            "text": "<p>1300 872 306<br/><br/><a href=\"/pages/faq\" target=\"_blank\" title=\"FAQ\">Frequently Asked Questions</a></p>"
+            "text": "<p>Welcome to Drinkly by Three Foxes, where unforgettable gifts are bottled, labelled, and ready to impress.<br/><br/>ph: 1300 872 306<br/>em: hello@</p>"
           }
         }
       },
       "block_order": [
         "menu_TyWCqJ",
         "menu_DzCNd6",
-        "text_DY7pny",
-        "text_gN3pWy"
+        "text_DY7pny"
       ],
       "settings": {
         "show-social-media-icons": true,
