@@ -301,7 +301,7 @@
 
   {% comment %} if there are no variants {% endcomment %}
   {% if product.has_only_default_variant %}
-    <div>
+    <div class="wt-product__add-to-cart_form--wrapper">
       <input type="hidden" name="id" data-input="{{ current_step | plus: 1 }}" value="{{ product.selected_or_first_available_variant.id }}">
       
       {% render 'component-counter' %}
