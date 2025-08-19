@@ -330,7 +330,7 @@
   mobile-image-size="{{ section.settings.mobile-image }}"
   desktop-ratio="{{ section.settings.desktop-image-ratio }}"
 >
-  <{{ wrapper }} class="wt-product wt-product--{{ desktop_layout }}" data-option-size="{{ product.options_with_values.size }}">
+  <{{ wrapper }} class="wt-product wt-product--{{ desktop_layout }}" data-has-only-default-variant="{{ product.has_only_default_variant }}" data-option-size="{{ product.options_with_values.size }}">
     {% render 'product-head' %}
 
     <gallery-section
