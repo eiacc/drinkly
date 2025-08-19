@@ -447,7 +447,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Store unique names
         this.inputNames = [...uniqueNames];
   
-        this.size = uniqueNames.size + 1;
+        this.size = uniqueNames.size;
   
         this.inputs.forEach(input => {
           const eventType = input.type === 'checkbox' || input.type === 'radio' ? 'change' : 'input';
