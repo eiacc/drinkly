@@ -407,6 +407,7 @@ document.addEventListener("DOMContentLoaded", () => {
               
               if (key.toLowerCase().includes('artwork')) {
                 const file = property.querySelector('input[type="file"]')
+                console.log(file, file.value)
                 if (file) properties[key] = (file.value).split('/').pop();
               } else {
                 properties[key] = input.value;
