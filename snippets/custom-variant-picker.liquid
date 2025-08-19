@@ -246,11 +246,6 @@
         </script>
       </custom-variant-options>
     {%- endunless -%}
-
-
-    {% if product.options.size == 0 %}
-      <input data-input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-    {% endif %}
   </div>
   
   {%- assign product_add_on = block.settings.add_on -%}
@@ -291,9 +286,10 @@
   {%- endif -%}
 
   {%- if block.settings.enable_upload -%}
+    {% assign current_step = current_step | plus: 1 %}
     <custom-metaproperty class="extend">
       <div class="wt-product__option__title">
-        <p class="label">Step {{ current_step | plus: 1 }} Upload:</p>
+        <p class="label">Step {{ current_step }} Upload:</p>
       </div>
     
       <div>
@@ -302,6 +298,13 @@
       </div>
     </custom-metaproperty>
   {%- endif -%}
+
+
+  {% comment %} if there are no variants {% endcomment %}
+  {% unless product.options.size %}
+    {% assign current_step = current_step | plus: 1 %}
+    <input type="hidden" name="id" data-input="{{ current_step | plus: 1 }}" value="{{ product.selected_or_first_available_variant.id }}">
+  {% endunless %}
 
   <button
     aria-label="
