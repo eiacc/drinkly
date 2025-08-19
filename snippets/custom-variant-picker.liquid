@@ -246,6 +246,11 @@
         </script>
       </custom-variant-options>
     {%- endunless -%}
+
+
+    {% if product.options.size == 0 %}
+      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+    {% endif %}
   </div>
   
   {%- assign product_add_on = block.settings.add_on -%}
