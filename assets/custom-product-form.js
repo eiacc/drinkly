@@ -438,6 +438,8 @@ document.addEventListener("DOMContentLoaded", () => {
       connectedCallback() {
         this.add_to_cart_button = document.querySelector('custom-product-form button[type="submit"]');
         this.inputs = document.querySelectorAll('input[data-input]');
+
+        console.log('this.inputs', this.inputs)
         const filtered = Array.from(this.inputs)
         .filter(input => input.name !== 'quantity');
       
