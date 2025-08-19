@@ -342,7 +342,7 @@
           "type": "button",
           "settings": {
             "button_select": "primary",
-            "button_label": "PICK A DESIGN",
+            "button_label": "SELECT A DESIGN",
             "button_link": "#top",
             "disable_on_mobile": false
           }
