@@ -299,12 +299,12 @@
     </custom-metaproperty>
   {%- endif -%}
 
-
   {% comment %} if there are no variants {% endcomment %}
-  {% unless product.options.size %}
+  {% if product.has_only_default_variant %}
     {% assign current_step = current_step | plus: 1 %}
-    <input type="hidden" name="id" data-input="{{ current_step | plus: 1 }}" value="{{ product.selected_or_first_available_variant.id }}">
-  {% endunless %}
+    <input type="hidden" name="id" data-input="{{ current_step }}" value="{{ product.selected_or_first_available_variant.id }}">
+  {% endif %}
+
 
   <button
     aria-label="
