@@ -249,7 +249,7 @@
 
 
     {% if product.options.size == 0 %}
-      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+      <input data-input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
     {% endif %}
   </div>
   
