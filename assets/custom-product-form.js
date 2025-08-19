@@ -404,7 +404,7 @@ document.addEventListener("DOMContentLoaded", () => {
           
             if (match) {
               const key = match[1];
-              properties[key] = key.toLowerCase() === 'customlogo' ? input.split('/').pop(): input.value;
+              properties[key] = key.toLowerCase() === 'customlogo' ? input.value.split('/').pop(): input.value;
             }
           });
   
