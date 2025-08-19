@@ -30,7 +30,7 @@
         "text_wbKEwH": {
           "type": "text",
           "settings": {
-            "text": "A Simple Secret to Add a Touch of Wedding Luxury",
+            "text": "A Simple Secret to Affordable Wedding Luxury",
             "font_uppercase": "none",
             "disable_on_mobile": false,
             "size_heading": 100,
@@ -44,7 +44,7 @@
         "heading_383H9U": {
           "type": "heading",
           "settings": {
-            "subheading": "<p>1) Pick a design <br/>2) Personalise the label<br/>3) Select your cocktails<br/>...and we do the rest. <br/></p>",
+            "subheading": "<p><br/>1) Pick a design <br/>2) Personalise the label<br/>3) Select your cocktails<br/>...and we do the rest. <br/></p>",
             "font_uppercase": "none",
             "disable_on_mobile": false
           }
@@ -293,7 +293,7 @@
           "type": "button",
           "settings": {
             "button_select": "primary",
-            "button_label": "START YOUR DESIGN NOW",
+            "button_label": "SELECT A DESIGN",
             "button_link": "#top_featcol",
             "disable_on_mobile": false
           }
