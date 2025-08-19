@@ -38,8 +38,8 @@
         "text_gN3pWy": {
           "type": "text",
           "settings": {
-            "heading_text": "More Info",
-            "text": "<p><a href=\"/pages/faq\" target=\"_blank\" title=\"FAQ\">Frequently Asked Questions</a></p>"
+            "heading_text": "Contact Us",
+            "text": "<p>1300 872 306<br/><br/><a href=\"/pages/faq\" target=\"_blank\" title=\"FAQ\">Frequently Asked Questions</a></p>"
           }
         }
       },
