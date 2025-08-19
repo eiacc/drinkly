@@ -38,8 +38,8 @@
         "text_gN3pWy": {
           "type": "text",
           "settings": {
-            "heading_text": "FAQ",
-            "text": "<p><a href=\"/pages/faq\" title=\"FAQ\">Check out our FAQ page</a></p>"
+            "heading_text": "More Info",
+            "text": "<p>Frequently Asked Questions</p>"
           }
         }
       },
