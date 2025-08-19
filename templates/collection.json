@@ -134,7 +134,7 @@
             "desktop_image": "shopify://shop_images/ship-icon.png",
             "select_icon": "close",
             "heading": "Fast & Free Shipping",
-            "text": "<p>Free for orders over $90. Includes free package insurance to your door to cover accidental breakage.</p>",
+            "text": "<p>Free for orders over $50. Includes free package insurance to your door to cover accidental breakage.</p>",
             "link": ""
           }
         },
