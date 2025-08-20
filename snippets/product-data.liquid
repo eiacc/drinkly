@@ -1,60 +1,62 @@
-<script id="ProductDataJSON" type="application/json">
-{
-  "variants": [
-    {% for variant in product.variants %}
-      {%- liquid 
-        assign sub_id = variant.options | join: '-' | replace: ' ', '-' | downcase 
-        assign variant_title = variant.title | downcase  
-      -%}
-      {
-        "id": {{ variant.id | json }},
-        "sub_id": {{ sub_id | json }},
-        "product": {
-          "title": {{ product.title | json }}
-        },
-        "title": {{ variant.title | json }},
-        "option1": {{ variant.option1 | json }},
-        "option2": {{ variant.option2 | json }},
-        "option3": {{ variant.option3 | json }},
-        "available": {{ variant.available | json }},
-        "inventory_quantity": {{ variant.inventory_quantity | json }},
-        "price": {{ variant.price | money | json }},
-        {% if variant.featured_media %}
-          "featured_image": {{ variant.featured_media | image_url: width: 600 | json }},
-          "featured_image_id": {{ variant.featured_media.id | json }}
-        {% endif %}
-        {% if variant.metafields.custom.tag != blank %},
-          "tags": {{ variant.metafields.custom.tag | json }}
-        {% endif %}
-
-        {% comment %}
-          {% if variant.metafields.custom.minimum_quantity and variant.metafields.custom.minimum_quantity > 0 %},
-            "minimum_quantity": {{ variant.metafields.custom.minimum_quantity | json }}
+{% unless product.has_only_default_variant %}
+  <script id="ProductDataJSON" type="application/json">
+  {
+    "variants": [
+      {% for variant in product.variants %}
+        {%- liquid 
+          assign sub_id = variant.options | join: '-' | replace: ' ', '-' | downcase 
+          assign variant_title = variant.title | downcase  
+        -%}
+        {
+          "id": {{ variant.id | json }},
+          "sub_id": {{ sub_id | json }},
+          "product": {
+            "title": {{ product.title | json }}
+          },
+          "title": {{ variant.title | json }},
+          "option1": {{ variant.option1 | json }},
+          "option2": {{ variant.option2 | json }},
+          "option3": {{ variant.option3 | json }},
+          "available": {{ variant.available | json }},
+          "inventory_quantity": {{ variant.inventory_quantity | json }},
+          "price": {{ variant.price | money | json }},
+          {% if variant.featured_media %}
+            "featured_image": {{ variant.featured_media | image_url: width: 600 | json }},
+            "featured_image_id": {{ variant.featured_media.id | json }}
           {% endif %}
-        {% endcomment %}
+          {% if variant.metafields.custom.tag != blank %},
+            "tags": {{ variant.metafields.custom.tag | json }}
+          {% endif %}
 
-        {% if product.metafields.custom.minimum_quantity and product.metafields.custom.minimum_quantity > 0 and variant_title contains 'deluxe' %},
-          "minimum_quantity": {{ product.metafields.custom.minimum_quantity | json }}
-        {% endif %}
-      }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ],
-  "options": [
-    {% for option in product.options_with_values %}
-      {
-        "name": {{ option.name | json }},
-        "values": {{ option.values | json }}
-      }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ],
-  "images": [
-    {% for image in product.images %}
-      {{ image | image_url: width: 600 | json }}{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ]
-}
-</script>
-<script>const productData = JSON.parse(document.getElementById('ProductDataJSON').textContent);</script>
+          {% comment %}
+            {% if variant.metafields.custom.minimum_quantity and variant.metafields.custom.minimum_quantity > 0 %},
+              "minimum_quantity": {{ variant.metafields.custom.minimum_quantity | json }}
+            {% endif %}
+          {% endcomment %}
+
+          {% if product.metafields.custom.minimum_quantity and product.metafields.custom.minimum_quantity > 0 and variant_title contains 'deluxe' %},
+            "minimum_quantity": {{ product.metafields.custom.minimum_quantity | json }}
+          {% endif %}
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ],
+    "options": [
+      {% for option in product.options_with_values %}
+        {
+          "name": {{ option.name | json }},
+          "values": {{ option.values | json }}
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ],
+    "images": [
+      {% for image in product.images %}
+        {{ image | image_url: width: 600 | json }}{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+  </script>
+  <script>const productData = JSON.parse(document.getElementById('ProductDataJSON').textContent);</script>
+{% endunless %}
 <script src="{{ 'custom-product-form.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'custom-metaproperty.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'custom-variant-options.js' | asset_url }}" defer="defer"></script>
