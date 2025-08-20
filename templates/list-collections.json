@@ -166,12 +166,57 @@
         "margin-top": 52,
         "margin-bottom": 52
       }
+    },
+    "rich_text_7jimr9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JXXxJ3": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        },
+        "text_7nLRmN": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/><br/></p><p></p><p></p>",
+            "disable_on_mobile": false
+          }
+        },
+        "button_fciNyk": {
+          "type": "button",
+          "settings": {
+            "button_select": "primary",
+            "button_label": "PICK A TEMPLATE",
+            "button_link": "#top",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_JXXxJ3",
+        "text_7nLRmN",
+        "button_fciNyk"
+      ],
+      "name": "On Page SEO",
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
     }
   },
   "order": [
     "main",
     "features_banner_JQFdCW",
     "newsletter_RVPRTD",
-    "newsletter_F7LNzi"
+    "newsletter_F7LNzi",
+    "rich_text_7jimr9"
   ]
 }
