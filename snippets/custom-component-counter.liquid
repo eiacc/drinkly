@@ -15,7 +15,7 @@
         data-name="{{ name }}"
         type="text"
         name="quantity"
-        value="0"
+        value="{{ default_value | default: 0 }}"
         min="0"
         max="999"
         class="js-counter-quantity"
