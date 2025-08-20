@@ -31,6 +31,14 @@
         "914a1ef1-2299-430f-b59f-c92b47c0b2c0": {
           "type": "image",
           "settings": {
+            "desktop_image": "shopify://shop_images/SUA-IMG-ESP_7efaa037-12be-431d-b49f-0637adc80892.webp",
+            "button_select": "primary",
+            "link": ""
+          }
+        },
+        "image_3LHYjP": {
+          "type": "image",
+          "settings": {
             "desktop_image": "shopify://shop_images/UGC_-_Lucy_James_-_02.jpg",
             "button_select": "primary",
             "link": ""
@@ -84,6 +92,14 @@
             "link": ""
           }
         },
+        "image_3MxBHD": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/CTP-IMG-MRT_ba3635c1-237c-44b0-babb-82dc107586d2.webp",
+            "button_select": "primary",
+            "link": ""
+          }
+        },
         "image_DdMTJc": {
           "type": "image",
           "settings": {
@@ -105,12 +121,14 @@
         "165403149033c6e38b-0",
         "e0e65e1d-9db5-40fb-aa20-ca8d64764927",
         "914a1ef1-2299-430f-b59f-c92b47c0b2c0",
+        "image_3LHYjP",
         "96385f4d-1978-4698-a429-dcb4ce024765",
         "7b1b6bc3-f154-471d-b3b4-f28018c67f9c",
         "f4ac8b60-e686-4437-91b9-da06bb0d48a9",
         "dc1e9b66-7129-4303-8b3e-6ab6814c66a7",
         "e8ea11e0-aaca-4515-b1ff-2c9ad9ff6eb3",
         "9f4a9a8b-d9ef-4fbe-aa5c-dbde2e0811c3",
+        "image_3MxBHD",
         "image_DdMTJc",
         "image_fbAEV6"
       ],
