@@ -306,7 +306,7 @@
         assign value = product.title
         assign name = 'id'  
       -%}
-      {% render 'custom-component-counter', value: value, name: name %}
+      {% render 'custom-component-counter', value: value, name: name, default_value: 1 %}
 
       <button
         aria-label="
