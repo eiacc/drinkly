@@ -20,6 +20,14 @@
             "link": ""
           }
         },
+        "image_EkPnN9": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/BAS-IMG-TRO_2e1c3939-f78b-4d2b-9af6-677baf6db5cf.webp",
+            "button_select": "primary",
+            "link": ""
+          }
+        },
         "e0e65e1d-9db5-40fb-aa20-ca8d64764927": {
           "type": "image",
           "settings": {
@@ -119,6 +127,7 @@
       },
       "block_order": [
         "165403149033c6e38b-0",
+        "image_EkPnN9",
         "e0e65e1d-9db5-40fb-aa20-ca8d64764927",
         "914a1ef1-2299-430f-b59f-c92b47c0b2c0",
         "image_3LHYjP",
