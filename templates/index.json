@@ -695,6 +695,7 @@
         "paragraph_KddUNL",
         "email_form_HTRkn3"
       ],
+      "disabled": true,
       "settings": {
         "color-body-text": "#151515",
         "background_color": "#edf5f4",
