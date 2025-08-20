@@ -631,7 +631,7 @@
         "164916093728eec38a-0": {
           "type": "heading",
           "settings": {
-            "heading": "Get $20 off",
+            "heading": "Get $50 off - Special Launch Offer",
             "heading_disable_on_mobile": false,
             "size_heading": 150,
             "size_heading_mobile": 130
@@ -640,7 +640,7 @@
         "164916093728eec38a-1": {
           "type": "paragraph",
           "settings": {
-            "paragraph": "<p>Join our email list and get $20 off your first order over $99.</p>",
+            "paragraph": "<p>Join our email list and get $50 off your first order over $300.</p>",
             "text_disable_on_mobile": false
           }
         },
@@ -655,6 +655,45 @@
         "164916093728eec38a-0",
         "164916093728eec38a-1",
         "164916093728eec38a-2"
+      ],
+      "name": "Email signup Launch",
+      "settings": {
+        "color-body-text": "#151515",
+        "background_color": "#edf5f4",
+        "margin-top": 52,
+        "margin-bottom": 52
+      }
+    },
+    "newsletter_ENnDyQ": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_apiTDp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get $20 off",
+            "heading_disable_on_mobile": false,
+            "size_heading": 150,
+            "size_heading_mobile": 130
+          }
+        },
+        "paragraph_KddUNL": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "<p>Join our email list and get $20 off your first order over $99.</p>",
+            "text_disable_on_mobile": false
+          }
+        },
+        "email_form_HTRkn3": {
+          "type": "email_form",
+          "settings": {
+            "button_select": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_apiTDp",
+        "paragraph_KddUNL",
+        "email_form_HTRkn3"
       ],
       "settings": {
         "color-body-text": "#151515",
@@ -675,6 +714,7 @@
     "testimonial_images_9YE74N",
     "button_qK8rAG",
     "164580331540910010",
-    "1649160937e2665513"
+    "1649160937e2665513",
+    "newsletter_ENnDyQ"
   ]
 }
