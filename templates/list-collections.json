@@ -21,6 +21,50 @@
         "margin-bottom": 40
       }
     },
+    "rich_text_zVUGfH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_BQAemP": {
+          "type": "heading",
+          "settings": {
+            "heading": "Need Help?",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        },
+        "text_WdgNem": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Book a call with one of our team to help you go through the options.<br/><br/></p>",
+            "disable_on_mobile": false
+          }
+        },
+        "button_XqJQ3e": {
+          "type": "button",
+          "settings": {
+            "button_select": "primary",
+            "button_label": "BOOK A DISCOVERY CALL",
+            "button_link": "https://calendly.com/hello-threefoxes/discovery-call",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_BQAemP",
+        "text_WdgNem",
+        "button_XqJQ3e"
+      ],
+      "name": "Need Help",
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
     "features_banner_JQFdCW": {
       "type": "features-banner",
       "blocks": {
@@ -214,6 +258,7 @@
   },
   "order": [
     "main",
+    "rich_text_zVUGfH",
     "features_banner_JQFdCW",
     "newsletter_RVPRTD",
     "newsletter_F7LNzi",
