@@ -133,6 +133,182 @@
         "margin-bottom": 88
       }
     },
+    "brands_mq9gdk": {
+      "type": "brands",
+      "blocks": {
+        "image_Te9tXL": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-1.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_G8WWYw": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-2.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_7URDVR": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-3.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_G7zDGk": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-4.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_8tTq7M": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-5.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_q4bJtr": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-6.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_UgqT4i": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-7.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_FdPptk": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-8.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_ErftmH": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-9.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_fDFfyP": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-10.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_qAfD7b": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-11.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_A8JC8g": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-12.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_Qebn6t": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-13.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_er8BXL": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-14.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_RRazQd": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-15.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_AhyyKN": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-16.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_Jjhnf6": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-17.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_hMQh6L": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-18.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_QWUJAn": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-19.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        },
+        "image_4xFgkC": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Corp-Logo-20.png",
+            "link": "shopify://collections/brand-cocktails"
+          }
+        }
+      },
+      "block_order": [
+        "image_Te9tXL",
+        "image_G8WWYw",
+        "image_7URDVR",
+        "image_G7zDGk",
+        "image_8tTq7M",
+        "image_q4bJtr",
+        "image_UgqT4i",
+        "image_FdPptk",
+        "image_ErftmH",
+        "image_fDFfyP",
+        "image_qAfD7b",
+        "image_A8JC8g",
+        "image_Qebn6t",
+        "image_er8BXL",
+        "image_RRazQd",
+        "image_AhyyKN",
+        "image_Jjhnf6",
+        "image_hMQh6L",
+        "image_QWUJAn",
+        "image_4xFgkC"
+      ],
+      "settings": {
+        "heading": "Brands we've worked with!",
+        "animation": "marquee",
+        "animation_speed": "100",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 52,
+        "margin-bottom": 0
+      }
+    },
     "newsletter_RVPRTD": {
       "type": "newsletter",
       "blocks": {
@@ -260,6 +436,7 @@
     "main",
     "rich_text_zVUGfH",
     "features_banner_JQFdCW",
+    "brands_mq9gdk",
     "newsletter_RVPRTD",
     "newsletter_F7LNzi",
     "rich_text_7jimr9"
