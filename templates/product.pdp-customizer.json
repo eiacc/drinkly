@@ -126,10 +126,6 @@
             "background_color": "rgba(0,0,0,0)"
           }
         },
-        "avada_order_limits_app_block_3YV8Km": {
-          "type": "shopify://apps/avada-order-limits/blocks/app-block/d3021427-4f7b-49c8-8963-29d1d52b8956",
-          "settings": {}
-        },
         "promo_67ttgj": {
           "type": "promo",
           "settings": {
@@ -273,7 +269,6 @@
         "custom_variant_picker_Tzyh7n",
         "variant_picker",
         "buy_buttons",
-        "avada_order_limits_app_block_3YV8Km",
         "promo_67ttgj",
         "promo_dJtMQK",
         "separator_X8PfGJ",
@@ -456,6 +451,45 @@
         "title": "What Our Customers Have Been Saying..."
       }
     },
+    "newsletter_NdHdck": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_NLTeXd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get $50 off - Special Launch Offer",
+            "heading_disable_on_mobile": false,
+            "size_heading": 150,
+            "size_heading_mobile": 130
+          }
+        },
+        "paragraph_6TaGnc": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "<p>Join our email list and get $50 off your first order over $300.</p>",
+            "text_disable_on_mobile": false
+          }
+        },
+        "email_form_j7w89f": {
+          "type": "email_form",
+          "settings": {
+            "button_select": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NLTeXd",
+        "paragraph_6TaGnc",
+        "email_form_j7w89f"
+      ],
+      "name": "Email signup Launch",
+      "settings": {
+        "color-body-text": "#151515",
+        "background_color": "#edf5f4",
+        "margin-top": 52,
+        "margin-bottom": 52
+      }
+    },
     "newsletter_9PyHch": {
       "type": "newsletter",
       "blocks": {
@@ -487,6 +521,7 @@
         "paragraph_LLnAYN",
         "email_form_AENnw8"
       ],
+      "disabled": true,
       "settings": {
         "color-body-text": "#151515",
         "background_color": "#edf5f4",
@@ -502,6 +537,7 @@
     "testimonial_images_AGzLYr",
     "separator_hHXNyb",
     "reviews_GHHQiG",
+    "newsletter_NdHdck",
     "newsletter_9PyHch"
   ]
 }
