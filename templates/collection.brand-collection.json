@@ -457,6 +457,45 @@
         "margin-bottom": 20
       }
     },
+    "newsletter_aEaNHt": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_hawAhg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get $50 off - Special Launch Offer",
+            "heading_disable_on_mobile": false,
+            "size_heading": 150,
+            "size_heading_mobile": 130
+          }
+        },
+        "paragraph_X3PztE": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "<p>Join our email list and get $50 off your first order over $300.</p>",
+            "text_disable_on_mobile": false
+          }
+        },
+        "email_form_zgkVCi": {
+          "type": "email_form",
+          "settings": {
+            "button_select": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hawAhg",
+        "paragraph_X3PztE",
+        "email_form_zgkVCi"
+      ],
+      "name": "Email signup Launch",
+      "settings": {
+        "color-body-text": "#151515",
+        "background_color": "#edf5f4",
+        "margin-top": 52,
+        "margin-bottom": 52
+      }
+    },
     "newsletter_kqmAX7": {
       "type": "newsletter",
       "blocks": {
@@ -488,6 +527,7 @@
         "paragraph_33WkJ7",
         "email_form_J6NwrF"
       ],
+      "disabled": true,
       "settings": {
         "color-body-text": "#151515",
         "background_color": "#edf5f4",
@@ -549,6 +589,7 @@
     "rich_text_bGVGWR_2",
     "features_banner_QYp8GQ",
     "testimonial_images_PAzxhF",
+    "newsletter_aEaNHt",
     "newsletter_kqmAX7",
     "rich_text_JdnBGe"
   ]
