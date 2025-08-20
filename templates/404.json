@@ -19,9 +19,9 @@
         "link-text": "Back to Home",
         "button_select": "secondary",
         "button_disable_on_mobile": false,
-
+        "button_link": "/",
         "color-body-text": "rgba(0,0,0,0)",
-        "background_color": "transparent",
+        "background_color": "rgba(0,0,0,0)",
         "color-overlay-opacity": 0,
         "margin-top": 76,
         "margin-bottom": 72
