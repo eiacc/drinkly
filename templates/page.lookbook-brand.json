@@ -174,8 +174,8 @@
       "settings": {
         "button_select": "primary",
         "button_horizontal_position": "center",
-        "button_label": "SHOP WEDDING COCKTAILS",
-        "button_link": "shopify://collections/wedding-cocktails",
+        "button_label": "SHOP BRAND COCKTAILS",
+        "button_link": "shopify://pages/brand-gallery",
         "margin-top": 52,
         "margin-bottom": 52,
         "background_color": "rgba(0,0,0,0)"
