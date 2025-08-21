@@ -59,7 +59,7 @@
         "price": {
           "type": "price",
           "settings": {
-            "override_price": "<h1>$16</h1>",
+            "override_price": "",
             "show_tax_included": false,
             "show_shipping_policy": true,
             "size_text": 180,
