@@ -59,10 +59,10 @@
         "price": {
           "type": "price",
           "settings": {
-            "override_price": "<h1>$16</h1>",
-            "show_tax_included": true,
+            "override_price": "",
+            "show_tax_included": false,
             "show_shipping_policy": true,
-            "size_text": 120,
+            "size_text": 180,
             "size_text_mobile": 140
           }
         },
@@ -71,7 +71,7 @@
           "name": "Bulk Text Info",
           "settings": {
             "heading": "",
-            "content": "<p>$10 per bottle when ordering {{ product.metafields.custom.bulk_qty.value }} or more</p>",
+            "content": "<p>$9.99 per bottle when ordering {{ product.metafields.custom.bulk_qty.value }} or more</p>",
             "page": ""
           }
         },
