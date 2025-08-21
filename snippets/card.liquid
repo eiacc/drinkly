@@ -233,7 +233,7 @@
 {%- assign fp = product.metafields.custom.fromprice -%}
 {%- assign from_text = blank -%}
 {%- if fp and fp.value and fp.value > 0 -%}
-  {%- capture fp_money -%}{{ fp.value | times: 100 }}{%- endcapture -%}
+  {%- capture fp_money -%}{{ fp.value }}{%- endcapture -%}
   {%- capture from_text -%}<span class="price-item price-item--regular">From {{ fp_money }}</span>{%- endcapture -%}
 {%- endif -%}
 
