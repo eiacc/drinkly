@@ -229,6 +229,7 @@
       </{{ title_tag }}>
      
 {% # SK CODE START %}
+{%comment%}
 {%- assign fp = product.metafields.custom.fromprice -%}
 {%- assign from_text = blank -%}
 {%- if fp and fp.value and fp.value > 0 -%}
@@ -261,11 +262,11 @@
   </div>
 {% endif %}
 {%# SK CODE END %}
-
+{%endcomment%}
 
 
     {%# ORIGNAL CODE START  %}
-    {%comment%}
+    
       {% if price and collection_list != true %}
         <div class="card__price">
           {% if price_old -%}
@@ -282,7 +283,7 @@
           {% render 'price', product: product, show_compare_at_price: true, price_class: '' %}
         </div>
       {% endif %}
-    {%endcomment%}
+    
     {%# ORIGINAL CODE END  %}
 
       {% comment %} {% if rating and reviews %}
