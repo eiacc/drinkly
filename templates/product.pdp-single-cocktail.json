@@ -131,7 +131,7 @@
           "settings": {
             "content": "<p>Order {{ product.metafields.custom.bulk_qty.value }} bottles or more to unlock bulk price</p>",
             "text_alignment": "center",
-            "color-body-text": "#000000",
+            "color-body-text": "#151515",
             "background_color": "#ecf5e9"
           }
         },
