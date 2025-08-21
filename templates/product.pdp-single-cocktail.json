@@ -129,7 +129,7 @@
         "promo_67ttgj": {
           "type": "promo",
           "settings": {
-            "content": "<p> Order over 23 cocktails to unlock bulk price</p>",
+            "content": "<p>Order 24 or more cocktails to unlock bulk price</p>",
             "text_alignment": "center",
             "color-body-text": "#a04848",
             "background_color": "#f6f2ea"
