@@ -60,7 +60,7 @@
           "type": "price",
           "settings": {
             "override_price": "",
-            "show_tax_included": true,
+            "show_tax_included": false,
             "show_shipping_policy": true,
             "size_text": 120,
             "size_text_mobile": 140
@@ -69,9 +69,9 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button",
-            "color_swatch_names": "",
-            "variant_picture_swatch_names": "",
+            "picker_type": "dropdown",
+            "color_swatch_names": "Cock",
+            "variant_picture_swatch_names": "Cock",
             "thumb_size": 60,
             "radius": "default",
             "border_radius": 0,
@@ -204,10 +204,6 @@
             "product": "{{product}}",
             "field": ""
           }
-        },
-        "avada_order_limits_app_block_9NiThN": {
-          "type": "shopify://apps/avada-order-limits/blocks/app-block/d3021427-4f7b-49c8-8963-29d1d52b8956",
-          "settings": {}
         }
       },
       "block_order": [
@@ -231,8 +227,7 @@
         "5fed6e0f-fb7e-4874-8ba9-3321623fc828",
         "78809992-2318-4893-9402-6cfd49f50b6a",
         "d162f900-ee92-4311-b27d-d5f312fa73f2",
-        "upload_lift_app_block_PjNJ7A",
-        "avada_order_limits_app_block_9NiThN"
+        "upload_lift_app_block_PjNJ7A"
       ],
       "settings": {
         "enable_sticky_buy_button": true,
