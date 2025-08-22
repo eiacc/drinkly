@@ -25,7 +25,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "brand": "{{ product.vendor }}",
+            "brand": "FOR THE DAD WHO DESERVES SOMETHING SPECIAL",
             "size_text": 180,
             "size_text_mobile": 160
           }
@@ -95,8 +95,8 @@
           "settings": {
             "content": "<p>🎟️ Use code \"Beauty\" for 10% OFF!</p>",
             "text_alignment": "center",
-            "color-body-text": "#a04848",
-            "background_color": "#f6f2ea"
+            "color-body-text": "#151515",
+            "background_color": "#edf5f4"
           }
         },
         "payments_badge_EFynmG": {
@@ -247,6 +247,7 @@
     },
     "reviews_GHHQiG": {
       "type": "reviews",
+      "disabled": true,
       "name": "Reviews (Stamped)",
       "settings": {
         "title": "What Our Customers Have Been Saying..."
@@ -340,26 +341,26 @@
         "margin-bottom": 20
       }
     },
-    "newsletter_dznx9H": {
+    "newsletter_pxcjtR": {
       "type": "newsletter",
       "blocks": {
-        "heading_mnJyLx": {
+        "heading_Ctk4rA": {
           "type": "heading",
           "settings": {
-            "heading": "Get 10% off your first order",
+            "heading": "Get $50 off - Special Launch Offer",
             "heading_disable_on_mobile": false,
-            "size_heading": 200,
-            "size_heading_mobile": 100
+            "size_heading": 150,
+            "size_heading_mobile": 130
           }
         },
-        "paragraph_afW3hE": {
+        "paragraph_PKbKKb": {
           "type": "paragraph",
           "settings": {
-            "paragraph": "<p>Be the first to know about new collections and exclusive offers.</p>",
+            "paragraph": "<p>Join our email list and get $50 off your first order over $300.</p>",
             "text_disable_on_mobile": false
           }
         },
-        "email_form_gr8qVy": {
+        "email_form_kNyeyF": {
           "type": "email_form",
           "settings": {
             "button_select": "primary"
@@ -367,15 +368,16 @@
         }
       },
       "block_order": [
-        "heading_mnJyLx",
-        "paragraph_afW3hE",
-        "email_form_gr8qVy"
+        "heading_Ctk4rA",
+        "paragraph_PKbKKb",
+        "email_form_kNyeyF"
       ],
+      "name": "Email signup Launch",
       "settings": {
-        "color-body-text": "rgba(0,0,0,0)",
+        "color-body-text": "#151515",
         "background_color": "#edf5f4",
-        "margin-top": 100,
-        "margin-bottom": 100
+        "margin-top": 52,
+        "margin-bottom": 52
       }
     }
   },
@@ -384,6 +386,6 @@
     "main",
     "reviews_GHHQiG",
     "testimonial_images_AGzLYr",
-    "newsletter_dznx9H"
+    "newsletter_pxcjtR"
   ]
 }
