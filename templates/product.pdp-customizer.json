@@ -138,7 +138,7 @@
         "promo_dJtMQK": {
           "type": "promo",
           "settings": {
-            "content": "<p>Deluxe Foil has a min order of 18 bottles</p>",
+            "content": "<p>Deluxe Foil has a min order of {{ product.metafields.custom.minimum_quantity.value }} bottles</p>",
             "text_alignment": "center",
             "color-body-text": "#a04848",
             "background_color": "#ffffff"
