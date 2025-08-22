@@ -153,8 +153,8 @@
         "1c9b0bb2-fe62-4649-9439-76836162d773": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "How to use",
-            "content": "<p>Apply a small amount of the product to clean, dry skin. Massage gently until fully absorbed. Use daily for best results.</p>",
+            "heading": "Gift Set Options",
+            "content": "<p><strong>Choose from one of four cocktail sets<br/><br/>The Classic Trio</strong><br/>Espresso Martini 13% Alc.Vol.<br/>Negroni 18% Alc.Vol.<br/>Gin Martini 23% Alc.Vol.<br/><br/><strong>Best Seller Trio</strong><br/>Espresso Martini 13% Alc.Vol.<br/>Limoncello 20% Alc.Vol.<br/>Cranberry Peach & Rose 13% Alc.Vol.<br/><br/><strong>Fine Spirits Trio</strong><br/>Organic Vodka 37% Alc.Vol.<br/>Organic Gin 40% Alc.Vol.<br/>Gin Martini 23% Alc.Vol.<br/><br/><strong>Golden Hour Trio</strong><br/>Blood Orange Aperitivo 13%<br/>Limoncello 20% Alc.Vol.<br/>Club Tropicana 13% Alc.Vol.</p>",
             "metafield_variables": "",
             "page": "",
             "icon": "question_mark"
@@ -173,7 +173,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Ingredients ",
-            "content": "<p>Water, Glycerin, Niacinamide, Panthenol, Allantoin, Sodium Hyaluronate, Rose Extract, Preservatives.</p>",
+            "content": "<p>The cocktails and spirits gift sets are made exclusively by Three Foxes Organic Distillery from only the real fruits and botanicals with no nasty chemicals or preservatives.</p>",
             "metafield_variables": "",
             "page": "",
             "icon": "leaf"
@@ -191,8 +191,8 @@
         "d162f900-ee92-4311-b27d-d5f312fa73f2": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Delivery  and  return policy",
-            "content": "<p>Our team will ship your order within 5 business days. The time it takes to receive your order depends on the shipping method chosen at checkout. </p><p><br/></p><p>We hope you to love it, but if you need to make a return, breathe easy. Returns are always free and can be done in person or by mail. </p>",
+            "heading": "Delivery and Insurance policy",
+            "content": "<p>Our team will ship your order within 24hrs of receipt of order and we include free delivery insurance which covers accidental breakage right to your door.</p>",
             "metafield_variables": "",
             "page": "",
             "icon": "box"
@@ -259,9 +259,9 @@
           "type": "testimonial",
           "settings": {
             "icon_select": "100",
-            "text": "<p><strong>Best Wedding Favours Ever – Our Guests Couldn't Get Enough!</strong><br/><br/>\"We decided to gift our guests mini bottles of homemade limoncello as wedding favours, and WOW—what a hit! From the moment they saw the cute packaging to the very last sip, everyone was raving about them.<br/>We wanted to give our guests something personal and fun, and this was hands-down the best decision. If you're looking for a favour that people will actually love, these limoncello cocktails are it. Zero waste—every bottle was gone! Highly recommend! 🍋✨.\"</p>",
-            "author": "Vanessa Burke",
-            "desktop_image": "shopify://shop_images/Review_-_Vaness_Burke.webp",
+            "text": "<p><strong>Wow! Absolutely fabulous! Great service and excellent products!</strong><br/><br/>\"Its been 3 years running now that I get the tri gift boxes for my clients as a Xmas thankyou.<br/><br/>They are perfectly presented and the Negroni is always the favourite. Keep up the good work guys!\"</p>",
+            "author": "John Tanios",
+            "desktop_image": "shopify://shop_images/Review-John-Tanios.jpg",
             "image_link": ""
           }
         },
