@@ -25,7 +25,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "brand": "FOR THE DAD WHO DESERVES SOMETHING SPECIAL",
+            "brand": "x3 100ML BOTTLED COCKTAILS/SPIRITS",
             "size_text": 180,
             "size_text_mobile": 160
           }
@@ -93,7 +93,7 @@
         "promo_67ttgj": {
           "type": "promo",
           "settings": {
-            "content": "<p>🎟️ Use code \"Beauty\" for 10% OFF!</p>",
+            "content": "<p>FOR THE DAD WHO DESERVES SOMETHING SPECIAL</p>",
             "text_alignment": "center",
             "color-body-text": "#151515",
             "background_color": "#edf5f4"
