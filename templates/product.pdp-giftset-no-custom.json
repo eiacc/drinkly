@@ -93,7 +93,7 @@
         "promo_67ttgj": {
           "type": "promo",
           "settings": {
-            "content": "<p>FOR THE DAD WHO DESERVES SOMETHING SPECIAL</p>",
+            "content": "<p>For the dad who deservers something special</p>",
             "text_alignment": "center",
             "color-body-text": "#151515",
             "background_color": "#edf5f4"
@@ -153,7 +153,7 @@
         "1c9b0bb2-fe62-4649-9439-76836162d773": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Gift Set Options",
+            "heading": "Cocktail Set Options",
             "content": "<p><strong>Choose from one of four cocktail sets<br/><br/>The Classic Trio</strong><br/>Espresso Martini 13% Alc.Vol.<br/>Negroni 18% Alc.Vol.<br/>Gin Martini 23% Alc.Vol.<br/><br/><strong>Best Seller Trio</strong><br/>Espresso Martini 13% Alc.Vol.<br/>Limoncello 20% Alc.Vol.<br/>Cranberry Peach & Rose 13% Alc.Vol.<br/><br/><strong>Fine Spirits Trio</strong><br/>Organic Vodka 37% Alc.Vol.<br/>Organic Gin 40% Alc.Vol.<br/>Gin Martini 23% Alc.Vol.<br/><br/><strong>Golden Hour Trio</strong><br/>Blood Orange Aperitivo 13%<br/>Limoncello 20% Alc.Vol.<br/>Club Tropicana 13% Alc.Vol.</p>",
             "metafield_variables": "",
             "page": "",
