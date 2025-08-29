@@ -34,23 +34,23 @@
 
   {%- assign custom_text = settings.product_discount_text | replace: '||quantity||', remaining_quantity -%}
 
-  {% unless total_quantity < 1 %}{% continue %}{% endunless %}
-    
-  <product-discount>
-    <div class="wt-free-shipping-bar">
-      <p class="wt-free-shipping-bar__text">
-        {% if remaining_quantity > 0 %}
-          {{ custom_text }}
-        {% else %}
-          {{ settings.product_discount_text_success }}
-        {% endif %}
-      </p>
-      <div class="wt-progress-bar">
-        <div
-          class="wt-progress-bar__fill"
-          style="width: {{ progress_percentage }}%; background-color: {% if progress_percentage == 100 %}green{% else %}red{%- endif -%};"
-        ></div>
+  {%- if total_quantity > 0 -%}
+    <product-discount>
+      <div class="wt-free-shipping-bar">
+        <p class="wt-free-shipping-bar__text">
+          {% if remaining_quantity > 0 %}
+            {{ custom_text }}
+          {% else %}
+            {{ settings.product_discount_text_success }}
+          {% endif %}
+        </p>
+        <div class="wt-progress-bar">
+          <div
+            class="wt-progress-bar__fill"
+            style="width: {{ progress_percentage }}%; background-color: {% if progress_percentage == 100 %}green{% else %}red{%- endif -%};"
+          ></div>
+        </div>
       </div>
-    </div>
-  </product-discount>
+    </product-discount>
+  {%- endif -%}
 {%- endif -%}
