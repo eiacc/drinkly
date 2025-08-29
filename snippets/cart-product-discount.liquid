@@ -35,7 +35,7 @@
   {%- assign custom_text = settings.product_discount_text | replace: '||quantity||', remaining_quantity -%}
 
   {%- if total_quantity > 0 -%}
-    <product-discount>
+    <product-discount data-total-quantity="{{ total_quantity }}">
       <div class="wt-free-shipping-bar">
         <p class="wt-free-shipping-bar__text">
           {% if remaining_quantity > 0 %}
